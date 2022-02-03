@@ -1,1 +1,1 @@
-# WeColService
+# WeCol
