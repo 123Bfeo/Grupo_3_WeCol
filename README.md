@@ -12,9 +12,9 @@ Como plataforma, somos una ventanilla única en la comercialización de artícul
 ### Descripción del público objetivo
 
 El segmento de mercado al cual apunta nuestro sitio web es amplio y heterogéneo, incluyendo múltiples grupos etarios y actividades profesionales resumidas en los siguientes perfiles:
-•	Estudiantes de todas las edades.
-•	Profesionales de todas las áreas.
-•	Empresas con actividades económicas enfocadas en la industria y los servicios.
+* Estudiantes de todas las edades.
+* Profesionales de todas las áreas.
+* Empresas con actividades económicas enfocadas en la industria y los servicios.
 
 
 ### Descripción de los integrantes del grupo
