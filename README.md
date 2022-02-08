@@ -1,4 +1,7 @@
-#Grupo_3_WeCol
+### Grupo_3_WeCol
+
+![Image text](https://github.com/123Bfeo/Grupo_3_WeCol/blob/main/docs/logo/WeCol.jpeg)
+
 
 ### Descripción de la oferta de productos
 
