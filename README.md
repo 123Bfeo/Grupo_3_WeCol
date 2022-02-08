@@ -1,4 +1,39 @@
-#Grupo_3_WeCol
+### Grupo_3_WeCol
+
+![Image text](https://github.com/123Bfeo/Grupo_3_WeCol/blob/main/docs/logo/WeCol.jpeg)
+
+
+### Descripción de la oferta de productos
+
+WeCol S.A.S. está orientada al comercio electrónico cuyo objetivo principal es conectar empresas y consumidores a una selecta oferta de productos tecnológicos con gran posicionamiento en el mercado, los cuales cuentan con certificación de alta calidad, y generan soluciones efectivas a las necesidades de nuestros clientes.
+
+Como plataforma, somos una ventanilla única en la comercialización de artículos óptimos para uso en el hogar, en el trabajo y en los espacios de ocio: Smart tv’s, consolas de videojuegos (Nintendo, Xbox, PlayStation), computadoras en su más amplia oferta (tipo Gamer, corporativas, de uso personal) y smartphones. Además, contamos con un catálogo especializado para mejorar la experiencia de nuestros clientes en el uso de estos dispositivos: Diademas Wireless, teclados y mouse ergonómicos.
+
+### Descripción del público objetivo
+
+El segmento de mercado al cual apunta nuestro sitio web es amplio y heterogéneo, incluyendo múltiples grupos etarios y actividades profesionales resumidas en los siguientes perfiles:
+•	Estudiantes de todas las edades.
+•	Profesionales de todas las áreas.
+•	Empresas con actividades económicas enfocadas en la industria y los servicios.
+
+
+### Descripción de los integrantes del grupo
+
+### Jhon Jairo Carvajal Florez:
+Tecnologo en operaciones logisticas y musico de profesion apasionado por los ambientes de alta montaña, amante a los video juegos y el mundo tecnologico , sabe escuchar dar opiniones y soluciones frente a los problemas que se lleguen a presentar con aptitudes de liderar y guiar amable gentil y alegre y en ocaciones de caracter fuerte, mis labores en la pagina por el momento han sido las de ayudar al equipo en la solucion de ideas.
+
+### Luis David Nuñez: 
+Tecnólogo en Redes, Estudiante de Desarrollo web FullStack apasionado por el mundo tecnológico, esta convencido que por medio de las tecnologías se pueden dar soluciones a grandes necesidades que hoy afectan a la humanidad.
+le gusta afrontar retos que lleven a las exigencias de sus habilidades, busca aprender de las personas que lo rodean y le gusta escuchar la opinión de otros al momento de encontrar soluciones a un problema
+mis labores en la pagina por el momento fue el de apoyar al equipo en la soluciones de tareas
+
+### Sergio González Sánchez: 
+Es un estudiante de Desarrollo Web FullStack a quién le interesa el desarrollo Frontend y posee gran pasión por aprender otras formas de desarrollo, le gusta enseñar a los demás pues tiene gran paciencia para hacerlo, por el momento el la página se ha encargado de apoyar con el diseño del Wireframe pues conoce el uso de la herramienta a pesar de no ser Diseñador.
+
+ ### Julián Camilo Escobar Ortiz:
+Administrador Público y Tecbólogo en Desarrollo de Software con experiencia en backend, con gran capacidad de trabajo y con interes por la música y la lectura.
+
+
 
 ### Buscar inspiración en referentes del mercado
 
