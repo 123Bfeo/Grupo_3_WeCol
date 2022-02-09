@@ -1,4 +1,26 @@
-#Grupo_3_WeCol
+# Grupo_3_WeCol
+
+### Descripción de los integrantes del grupo
+
+#### Sergio González Sánchez
+
+    Es un estudiante de Desarrollo Web Full Stack, posee gran interés por el desarrollo Frontend y su pasión es aprender otras formas de desarrollo. Tiene el don de enseñar a los demás con paciencia y esmero. Actualmente, su rol como integrante de nuestra plataforma consiste en apoyar con el diseño de la página web y desarrollo metodológico del Wireframe conforme nuestro plan de trabajo, pues cuenta con nociones solidas del uso de la herramienta “Figma”. Además, es quien supervisa, define y delega las actividades requeridas para el cumplimiento adecuado y en término de los Sprints. 
+
+#### Luis David Nuñez 
+
+    Es Tecnólogo en Redes y estudiante de Desarrollo web Full Stack, su pasión es el mundo tecnológico, por ello, su filosofía es que los recursos tecnológicos son la solución a muchas de las necesidades que hoy aquejan a la humanidad. Posee grandes habilidades de comunicación y trabajo en equipo, especialmente en el planteamiento de soluciones o alternativas a problemas. Actualmente, su rol como integrante del proyecto consiste en la realización, control, seguimiento y verificación de la realización de todas las actividades de cada uno de nuestros integrantes en “Github”. 
+
+#### Jhon Jairo Carvajal Flórez 
+
+    Es tecnólogo en operaciones logísticas, musico de profesión y estudiante de Desarrollo web Full Stack, su pasión son los ambientes de alta montaña y las actividades al aire libre. Tiene gran destreza con los video juegos y está interesado en adquirir nuevos conocimientos en el sector tecnológico. Cuenta con habilidades de comunicación asertiva, inteligencia emocional, liderazgo y trabajo en equipo. Actualmente, su rol como integrante del proyecto consiste en verificar que el desarrollo del plan de trabajo se haga conforme a los parámetros del Wireframe y presentar alternativas para el desarrollo optimo del mismo.
+
+#### Julián Camilo Escobar Ortiz 
+
+    Es Administrador Público, Tecnólogo en Desarrollo de Software y estudiante de Desarrollo Web Full Stack, su pasión es la música y la lectura. Posee experiencia en backend y en la coordinación y cooperación de trabajo en equipos. Cuenta con habilidades de comunicación asertiva y gestión de proyectos grupales bajo cronograma. Actualmente, su rol como integrante del proyecto consiste en elaborar la propuesta comercial del listado de productos con su respectiva descripción para nuestro e-commerce, la verificación de nuestra temática y el público objetivo.
+
+#### Jennifer Pérez Romero
+
+    Es abogada en el sector tecnológico y estudiante de Desarrollo web Full Stack, posee gran interés en el derecho de propiedad intelectual, especialmente en el ámbito tecnológico y se apasiona por aprender nuevos idiomas. Cuenta con habilidades de investigación y redacción, coordinación, liderazgo y trabajo en equipo y gestión de proyectos conforme al plan de trabajo. Actualmente, su rol como integrante del proyecto consiste en la elaboración de todos los documentos jurídicos requeridos para la página, la redacción y corrección de estilo y la administración, control y seguimiento de todas las actividades en “Trello”.   
 
 ### Buscar inspiración en referentes del mercado
 
@@ -11,16 +33,16 @@
 [Amazon](https://www.amazon.com/)
 
 ### Descripcion de por que elegimos estos sitios web como inspiracion 
-Estos sitios web los elegimos ya que en ellos encontramos ideas claras para la implementacion de nuestro e-commerce. <br>
 
-Las plantillas de  [Templatemonster](https://www.templatemonster.com/es/categoria/tienda-software-plantillas/), fueron de gran ayuda al momento  de entender cual seria el  flujo de nuestra plataforma e-commerce.<br>
+    Escogimos esto sitios pues fueron los principales referentes en cuanto al diseño, estilo, productos, público objetivo y, en general, concepto de e-commerce que se acercaban más a nuestras ideas para el desarrollo de nuestro sitio web. <br>
 
-[Amazon](https://www.amazon.com/) y [Mercado Libre](https://www.mercadolibre.com.co/), nos brindaron ideas importantes al monmento de recolectar la informacion de nuestros usuarios, como resultados de estas ideas se crearon entonces los  términos de políticas de Privacidad y tratamiento de datos.
-También de ambos sitios sacamos ideas para la descripcion del los productos.<br>
+        1.	[Logitechg](https://www.logitechg.com/es-roam/community.html) y [Mercado Libre](https://www.mercadolibre.com.co/) fueron esenciales para desarrollar nuestro esquema de trabajo en cuanto a la política de privacidad y tratamiento de datos de los visitantes y usuarios de nuestro sitio web. <br>
 
-Otra de las plataformas elegidas es [Fallabella](https://www.falabella.com.co/falabella-co), nos permitio realizar una pequeña recoleccion datos basada en precios de los productos, los cuales nuestro E-commerce ofrecera. <br>
+        2.	[Fallabella](https://www.falabella.com.co/falabella-co), [Amazon](https://www.amazon.com/) y [Mercado Libre](https://www.mercadolibre.com.co/) fueron referentes para la creación de nuestro catálogo de productos, su descripción y posibles precios. <br>
 
-ya para terminar tenemos este sitio web [Collect Ui](https://collectui.com/challenges/sign-up?sort=latest), en el cual encontramos respuetas acerca de como podriamos diseñar algunas de nuestras sesiones en sitio web.
-Este sitio web nos ayudo a denir el formulario de Iniciar Sesión y Registro.
+        3.	[Collect UI](https://collectui.com/challenges/sign-up?sort=latest) fue una fuente de inspiración en el ámbito estético de nuestro sitio web, tales como el diseño de las secciones de nuestra plataforma web y los formularios para iniciar sesión y de registro. <br>
+
+        4.	Las plantillas de [Templatemonster](https://www.templatemonster.com/es/categoria/tienda-software-plantillas/) se tomaron como referente para escoger y elaborar el flujo de nuestra plataforma e-commerce. <br>
+
 
 
