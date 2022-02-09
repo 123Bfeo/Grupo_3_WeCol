@@ -1,5 +1,20 @@
 # Grupo_3_WeCol  
 *Link Trello: https://trello.com/invite/b/yI2ayq40/4d43a6fc2c1dbe2d7586c877d8f35118/sprint1*
+
+### Descripción de la oferta de productos
+
+WeCol S.A.S. está orientada al comercio electrónico cuyo objetivo principal es conectar empresas y consumidores a una selecta oferta de productos tecnológicos con gran posicionamiento en el mercado, los cuales cuentan con certificación de alta calidad, y generan soluciones efectivas a las necesidades de nuestros clientes.
+
+Como plataforma, somos una ventanilla única en la comercialización de artículos óptimos para uso en el hogar, en el trabajo y en los espacios de ocio: Smart tv’s, consolas de videojuegos (Nintendo, Xbox, PlayStation), computadoras en su más amplia oferta (tipo Gamer, corporativas, de uso personal) y smartphones. Además, contamos con un catálogo especializado para mejorar la experiencia de nuestros clientes en el uso de estos dispositivos: Diademas Wireless, teclados y mouse ergonómicos.
+
+### Descripción del público objetivo
+
+El segmento de mercado al cual apunta nuestro sitio web es amplio y heterogéneo, incluyendo múltiples grupos etarios y actividades profesionales resumidas en los siguientes perfiles:
+
+* Estudiantes de todas las edades.
+* Profesionales de todas las áreas.
+* Empresas con actividades económicas enfocadas en la industria y los servicios.
+
 ### Descripción de los integrantes del grupo
 
 #### Sergio González Sánchez
