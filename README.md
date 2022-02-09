@@ -1,5 +1,5 @@
-# Grupo_3_WeCol
-
+# Grupo_3_WeCol  
+*Link Trello: https://trello.com/invite/b/yI2ayq40/4d43a6fc2c1dbe2d7586c877d8f35118/sprint1*
 ### Descripción de los integrantes del grupo
 
 #### Sergio González Sánchez
