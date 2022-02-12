@@ -1,0 +1,26 @@
+{
+  "name": "grupo_3_wecol",
+  "version": "1.0.0",
+  "description": "*Link Sprint1:* https://trello.com/invite/b/yI2ayq40/4d43a6fc2c1dbe2d7586c877d8f35118/sprint1 \\ *Link Figma:* https://www.figma.com/file/8Ys6LGI5Kl3sqP7J0lMNBA/WeCol?node-id=0%3A1",
+  "main": "app.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/123Bfeo/Grupo_3_WeCol.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/123Bfeo/Grupo_3_WeCol/issues"
+  },
+  "homepage": "https://github.com/123Bfeo/Grupo_3_WeCol#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}

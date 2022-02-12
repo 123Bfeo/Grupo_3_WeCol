@@ -1,0 +1,7 @@
+@import "./normalize.css";
+
+/* Secciones */
+@import "./header.css";
+
+/* Components */
+@import "./components/card.css";
