@@ -33,6 +33,12 @@ pages.forEach((page) => {
   }
 });
 
+// Enlace a componenten Header
+app.get("/header", (req, res) => {
+  const header = path.join(__dirname, "./components/header.html");
+  res.sendFile(header);
+});
+
 const port = 3000;
 app.listen(port, () =>
   console.log(`El servidor se está ejecutando en el puerto ${port}`)

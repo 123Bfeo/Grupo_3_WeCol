@@ -1,7 +1,23 @@
-@import "./normalize.css";
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap");
+
+/* Reset */
+@import "./reset.css";
 
 /* Secciones */
 @import "./header.css";
 
 /* Components */
+@import "./components/wrapper.css";
 @import "./components/card.css";
+@import "./components/button.css";
+
+:root {
+  /* Colores */
+  --bg-dark: #0f0e0e;
+  --white: #fff;
+  --secondary: #e78a00;
+
+  /* Tipografías */
+  --link-header: "Source Serif Pro";
+}
