@@ -1,0 +1,5 @@
+.recommendationsMain {
+  background-color: rgb(87, 4, 4);
+  width: 100vw;
+  height: calc(100vh - 100px);
+}

@@ -1,0 +1,5 @@
+.brands {
+  background-color: rgb(62, 124, 103);
+  width: 100vw;
+  height: calc(100vh - 100px);
+}

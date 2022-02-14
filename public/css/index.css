@@ -7,6 +7,13 @@
 /* Secciones */
 @import "./header.css";
 @import "./hero.css";
+@import "./main.css";
+@import "./recommendationsMain.css";
+@import "./categories.css";
+@import "./ofers.css";
+@import "./new.css";
+@import "./brands.css";
+@import "./newsLater.css";
 
 /* Components */
 @import "./components/wrapper.css";

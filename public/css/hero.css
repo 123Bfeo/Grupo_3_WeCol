@@ -1,3 +1,8 @@
+.hero {
+  background-color: rgb(2, 59, 2);
+  width: 100vw;
+  height: calc(100vh - 100px);
+}
 .hero_banner {
   position: absolute;
 }
