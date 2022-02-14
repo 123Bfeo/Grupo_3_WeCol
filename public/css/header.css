@@ -25,6 +25,7 @@
   overflow-x: hidden;
   opacity: 0;
   border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
   transition: opacity 0.25s ease-in-out, inline-size 0.25s, right 0s 0.25s;
 }
 .nav ul {
@@ -72,8 +73,6 @@ nav a {
 .user {
   display: none;
 }
-@media screen and (min-width: 500px) {
-}
 @media screen and (min-width: 580px) {
   .user {
     display: block;
@@ -89,6 +88,7 @@ nav a {
     block-size: 100%;
     opacity: 1;
     border-top: none;
+    border-left: none;
     padding-inline-start: 0;
   }
   .nav ul {

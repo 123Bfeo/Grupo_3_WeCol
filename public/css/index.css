@@ -6,6 +6,7 @@
 
 /* Secciones */
 @import "./header.css";
+@import "./hero.css";
 
 /* Components */
 @import "./components/wrapper.css";
@@ -20,4 +21,7 @@
 
   /* Tipografías */
   --link-header: "Source Serif Pro";
+}
+body {
+  background-color: var(--bg-dark);
 }

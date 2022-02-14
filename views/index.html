@@ -4,10 +4,67 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="/js/header.js"></script>
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
     <link rel="stylesheet" href="/css/index.css" />
     <title>Inicio</title>
   </head>
   <body>
-    <h1>Home</h1>
+    <header class="header">
+      <section class="wrapper">
+        <a href="/header" class="logo">
+          <img src="/img/Logo.svg" alt="Wecol" title="Wecol" />
+        </a>
+        <nav class="nav" id="nav">
+          <article class="login">
+            <span> Te damos la Bienvenida</span>
+            <div class="btn-log">
+              <a href="/login">
+                <button class="btn-small btn-login">Iniciar Sesión</button>
+              </a>
+              <a href="/register">
+                <button class="btn-small btn-register">Registrarse</button>
+              </a>
+            </div>
+          </article>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/aboutUs">Quiénes Somos</a></li>
+            <li><a href="/contact">Contáctanos</a></li>
+          </ul>
+        </nav>
+        <article class="header-right">
+          <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+          </button>
+          <a href="/login" class="user">
+            <i class="fas fa-user"></i>
+          </a>
+          <a href="/productCart">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+        </article>
+      </section>
+    </header>
+    <main class="main">
+      <section class="hero wrapper">
+        <picture class="hero_banner">
+          <img src="/img/mouse-logitech.png" alt="" />
+          <div class="hero_description">
+            <h1>Logitech Mx Master 3</h1>
+            <button class="addToCart">
+              <span> Añadir al carrito</span>
+              <a href="/productCart">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </button>
+          </div>
+        </picture>
+      </section>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/0b3eb0d831.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
