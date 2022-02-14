@@ -28,7 +28,7 @@
 
   /* Tipografías */
   --link-header: "Source Serif Pro";
-  --subtituloH2: "Source Serif Pro" 40px bold;
+  --subtituloH2: "Source Serif Pro";
 }
 body {
   background-color: var(--bg-dark);
