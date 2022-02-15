@@ -26,29 +26,28 @@
 }
 
 .card-employee {
-  background-color: white;
+  background-color: var(--gb-dark);
+  width: 239px;
+  border-radius: 4px;
 }
-.card-header {
-  position: relative;
-  border: 1px solid red;
-  display: block;
-  width: 200px;
-}
-
-.card-header img {
+.card-head img {
   width: 100%;
 }
 
-.card-footer {
-  background-color: green;
+.card-foot {
+  background-color: var(--white);
   display: flex;
   flex-direction: column;
-  width: 100%;
+  align-items: center;
+  border-top: 1px solid var(--text-gray);
+  border-radius: 8px;
 }
 
-.card-footer .name {
-  border: 1px solid red;
+.card-foot .name {
+  font: var(--btn-small);
 }
 
-.card-footer .job-title {
+.card-foot .job-title {
+  text-align: center;
+  color: var(--text-gray);
 }
