@@ -24,23 +24,31 @@
   width: 100%;
   align-items: center;
 }
-.about .Jennifer-1 img {
-  width: 100%;
-  align-items: center;
+
+.card-employee {
+  background-color: white;
 }
-.about .Julian-2 img {
-  width: 100%;
-  align-items: center;
+.card-header {
+  position: relative;
+  border: 1px solid red;
+  display: block;
+  width: 200px;
 }
-.about .Luis-3 img {
+
+.card-header img {
   width: 100%;
-  align-items: center;
 }
-.about .Jhon-4 img {
+
+.card-footer {
+  background-color: green;
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  align-items: center;
 }
-.about .Sergio-5 img {
-  width: 100%;
-  align-items: center;
+
+.card-footer .name {
+  border: 1px solid red;
+}
+
+.card-footer .job-title {
 }
