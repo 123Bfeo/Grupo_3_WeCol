@@ -15,6 +15,7 @@
 @import "./new.css";
 @import "./brands.css";
 @import "./newsLater.css";
+@import "./aboutUs.css";
 
 /* Components */
 @import "./components/wrapper.css";
@@ -26,6 +27,7 @@
   --bg-dark: #0f0e0e;
   --white: #fff;
   --secondary: #e78a00;
+  --text-gray: #5b5b5b;
 
   /* Tipografías */
   --link-header: "Source Serif Pro";
