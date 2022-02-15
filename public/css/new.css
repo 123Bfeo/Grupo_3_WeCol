@@ -1,0 +1,5 @@
+.new {
+  background-color: rgb(5, 119, 119);
+  width: 100vw;
+  height: calc(100vh - 100px);
+}

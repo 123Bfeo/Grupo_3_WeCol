@@ -1,5 +1,6 @@
 # Grupo_3_WeCol  
 *Link Sprint1:* https://trello.com/invite/b/yI2ayq40/4d43a6fc2c1dbe2d7586c877d8f35118/sprint1 \
+*link Sprint2:* https://trello.com/invite/b/VcmHEOr9/70362851b7e87ec9830c66571c7c2b4d/sprint2 \
 *Link Figma:* https://www.figma.com/file/8Ys6LGI5Kl3sqP7J0lMNBA/WeCol?node-id=0%3A1
 
 ### Descripción de la oferta de productos

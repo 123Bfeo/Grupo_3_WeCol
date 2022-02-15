@@ -1,55 +1,25 @@
-.hero_banner {
-  position: absolute;
+.hero {
+  width: 100vw;
 }
-.hero_banner img {
-  inline-size: 100%;
+.hero-content {
+  position: relative;
+  display: flex;
 }
-.hero_description {
+.hero-content img {
+  width: 100%;
+}
+.hero .hero-product {
   position: absolute;
-  bottom: 20%;
+  color: var(--white);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  gap: 8px;
+  align-self: center;
   width: 100%;
-  gap: 24px;
-}
-.hero_description h1 {
-  color: var(--white);
-  text-align: center;
-}
-.addToCart {
-  display: flex;
-  align-items: center;
-  padding: 8px;
-  border: none;
-  background-color: var(--secondary);
-  color: var(--white);
-  font-weight: 700;
-  border-radius: 4px;
-  max-inline-size: 150px;
-  font-size: 12px;
-}
-.addToCart i {
-  color: var(--white);
 }
 @media screen and (min-width: 768px) {
-  .addToCart {
-    color: var(--white);
-    font-size: 24px;
-    padding: 16px;
-    max-inline-size: 300px;
-  }
-  .hero_description {
-    bottom: 0;
-  }
-  .hero_description h1 {
-    font-size: 48px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero_banner {
-    height: calc(100vh - 100px);
-    top: 0;
+  .hero .hero-product {
+    gap: 32px;
   }
 }

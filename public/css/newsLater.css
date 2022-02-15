@@ -1,0 +1,5 @@
+.newsLater {
+  background-color: rgb(124, 62, 18);
+  width: 100vw;
+  height: calc(100vh - 100px);
+}
