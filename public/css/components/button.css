@@ -3,6 +3,23 @@
   padding: 8px 16px;
   border-radius: 4px;
 }
+.btn {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: var(--white);
+  background-color: var(--secondary);
+  font: var(--btn-small);
+}
+.btn-add i {
+  color: var(--white);
+}
+@media screen and (min-width: 768px) {
+  .btn {
+    padding: 16px 24px;
+  }
+}
+
 .btn-login {
   background-color: var(--secondary);
   color: var(--white);

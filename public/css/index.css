@@ -1,6 +1,10 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap");
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+=======
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+>>>>>>> 4c7dfc1338e1c6d1f0616b72a11aae3834eff441
 
 /* Reset */
 @import "./reset.css";
@@ -31,9 +35,28 @@
 
   /* Tipografías */
   --link-header: "Source Serif Pro";
+<<<<<<< HEAD
   --subtituloH2: "Source Serif Pro";
   --parrafo: "Roboto";
+=======
+  --tituloH1Small: bold 24px/32px "Source Serif Pro";
+  --tituloH1Bigger: bold 48px/56px "Source Serif Pro";
+  --subtituloH2: bold 40px/48px "Source Serif Pro";
+
+  /* Botones */
+  --btn-small: bold 16px/24px "Roboto";
+>>>>>>> 4c7dfc1338e1c6d1f0616b72a11aae3834eff441
 }
 body {
   background-color: var(--bg-dark);
+}
+.titulo {
+  font: var(--tituloH1Small);
+  color: var(--white);
+}
+@media (min-width: 768px) {
+  .titulo {
+    font: var(--tituloH1Bigger);
+    color: var(--white);
+  }
 }
