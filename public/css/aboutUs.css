@@ -1,0 +1,46 @@
+.about .descripcion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.about .subtitulo {
+  font-family: var(--subtituloH2);
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--secondary);
+}
+
+.about p {
+  max-width: 736px;
+  text-align: justify;
+  color: var(--text-gray);
+  font-size: 24px;
+  font-family: var(--parrafo);
+}
+
+.about .imagen-banner img {
+  width: 100%;
+  align-items: center;
+}
+.about .Jennifer-1 img {
+  width: 100%;
+  align-items: center;
+}
+.about .Julian-2 img {
+  width: 100%;
+  align-items: center;
+}
+.about .Luis-3 img {
+  width: 100%;
+  align-items: center;
+}
+.about .Jhon-4 img {
+  width: 100%;
+  align-items: center;
+}
+.about .Sergio-5 img {
+  width: 100%;
+  align-items: center;
+}
