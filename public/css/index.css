@@ -30,7 +30,7 @@
   /* Tipografías */
   --link-header: "Source Serif Pro";
   --tituloH1Small: bold 24px/32px "Source Serif Pro";
-  --tituloH1Medium: bold 48px/56px "Source Serif Pro";
+  --tituloH1Bigger: bold 48px/56px "Source Serif Pro";
   --subtituloH2: bold 40px/48px "Source Serif Pro";
 
   /* Botones */
@@ -45,7 +45,7 @@ body {
 }
 @media (min-width: 768px) {
   .titulo {
-    font: var(--tituloH1Medium);
+    font: var(--tituloH1Bigger);
     color: var(--white);
   }
 }
