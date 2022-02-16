@@ -9,7 +9,7 @@
 @import "./header.css";
 @import "./hero.css";
 @import "./main.css";
-@import "./recommendationsMain.css";
+@import "./hero-recommended.css";
 @import "./categories.css";
 @import "./ofers.css";
 @import "./new.css";
@@ -27,14 +27,20 @@
   /* Colores */
   --bg-dark: #0f0e0e;
   --white: #fff;
-  --secondary: #e78a00;
+  --secondary: rgb(231, 138, 0);
+  --placeholder: rgba(231, 138, 0, 0.5);
   --text-gray: #5b5b5b;
 
   /* Tipografías */
-  --link-header: "Source Serif Pro";
-  --tituloH1Small: bold 24px/32px "Source Serif Pro";
-  --tituloH1Bigger: bold 48px/56px "Source Serif Pro";
-  --subtituloH2: bold 40px/48px "Source Serif Pro";
+  --primaryFont: "Roboto";
+  --secondFont: "Source Serif Pro";
+  --link-header: var(--secondFont);
+  --tituloH1Small: bold 24px/32px var(--secondFont);
+  --tituloH1Bigger: bold 48px/56px var(--secondFont);
+  --subtituloH2: bold 40px/48px var(--secondFont);
+  --subtituloH3: bold 24px/32px var(--secondFont);
+  --small-paragraph: 16px/24px var(--primaryFont);
+  --litte-small-paragraph: 12px/16px var(--primaryFont);
 
   /* Botones */
   --btn-small: bold 16px/24px "Roboto";
@@ -44,11 +50,25 @@ body {
 }
 .titulo {
   font: var(--tituloH1Small);
+}
+.subtituloH2 {
+  font: var(--subtituloH2);
+}
+.subtituloH3 {
+  font: var(--subtituloH3);
+}
+
+.white {
   color: var(--white);
+}
+.orange {
+  color: var(--secondary);
+}
+.gray {
+  color: var(--text-gray);
 }
 @media (min-width: 768px) {
   .titulo {
     font: var(--tituloH1Bigger);
-    color: var(--white);
   }
 }
