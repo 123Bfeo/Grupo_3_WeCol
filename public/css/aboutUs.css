@@ -27,8 +27,11 @@
 
 .card-employee {
   background-color: var(--gb-dark);
-  width: 239px;
+  width: 230px;
   border-radius: 4px;
+}
+.card-employee img {
+  width: 100%;
 }
 .card-head img {
   width: 100%;

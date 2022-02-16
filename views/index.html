@@ -51,7 +51,7 @@
         <div class="hero-content">
           <img src="/img/mouse-logitech.png" alt="Banner" title="Banner" />
           <div class="hero-product">
-            <h2 class="titulo">Logitech Mx Master 3</h2>
+            <h2 class="titulo white">Logitech Mx Master 3</h2>
             <button class="btn btn-add">
               <span>Añadir al carrito</span>
               <a href="/productCart">
@@ -61,28 +61,30 @@
           </div>
         </div>
       </section>
-      <section class="recommendationsMain wrapper">
-        <article>
-          <picture>
-            <img src="/img/mouse.png" alt="" />
-          </picture>
-        </article>
-        <article>
-          <article>
+      <section class="hero-recommended wrapper">
+        <div class="recommended-content">
+          <article class="left-img">
             <picture>
-              <img src="/img/headphone.png" alt="" />
+              <img src="/img/mouse.png" alt="" />
             </picture>
           </article>
-          <article>
-            <picture>
-              <img src="/img/marshall.png" alt="" />
+          <article class="right-img">
+            <picture class="img-top">
+              <img src="/img/headphone.png" alt="Headphone" title="Headphone" />
+            </picture>
+            <picture class="img-bottom">
+              <img
+                src="/img/marshall.png"
+                alt="Marshall Speaker"
+                title="Marshall Speaker"
+              />
             </picture>
           </article>
-        </article>
+        </div>
       </section>
       <section class="categories wrapper">
-        <h3 class="subtituloH3">
-          <span>Ver más categorías</span>
+        <h3 class="subtituloH3 orange">
+          <span>Ver todas las categorías</span>
           <i class="fas fa-chevron-right"></i>
         </h3>
         <article class="categories-card">
@@ -91,35 +93,56 @@
             <span>Mouse</span>
           </div>
           <div class="categorie">
-            <i class="fas fa-mouse"></i>
+            <i class="fas fa-keyboard"></i>
             <span>Teclados</span>
           </div>
           <div class="categorie">
-            <i class="fas fa-mouse"></i>
+            <i class="fas fa-headphones-alt"></i>
             <span>Audifonos</span>
           </div>
           <div class="categorie">
-            <i class="fas fa-mouse"></i>
+            <i class="fas fa-clock"></i>
             <span>Relojes</span>
           </div>
           <div class="categorie">
-            <i class="fas fa-mouse"></i>
+            <i class="fab fa-autoprefixer"></i>
             <span>Accesorios</span>
           </div>
           <div class="categorie">
-            <i class="fas fa-mouse"></i>
+            <i class="fas fa-laptop"></i>
             <span>Portátiles</span>
           </div>
           <div class="categorie">
-            <i class="fas fa-mouse"></i>
+            <i class="fas fa-mobile"></i>
             <span>Celulares</span>
-          </div>
-          <div class="arrowRight">
-            <i class="fas fa-chevron-right"></i>
           </div>
         </article>
       </section>
-      <section class="ofers wrapper"></section>
+      <section class="ofers wrapper">
+        <h2 class="subtituloH2 gray">Productos en Oferta</h2>
+        <article class="ofers-cards">
+          <div class="card-off">
+            <picture class="card-img">
+              <img src="/img/earphone.png" alt="earphone" title="earphone" />
+            </picture>
+            <div class="card-off-description">
+              <span class="product-name">AirPods</span>
+              <span class="product-price">
+                <div class="real-price">$2.650.000</div>
+                <i>-</i>
+                <div class="current-price">$1.897.500</div>
+              </span>
+              <div class="available">
+                <span class="available-quantity">
+                  <p>Disponibles: 5</p>
+                  <p>Vendidos: 2</p>
+                </span>
+                <button class="progress-quantity"></button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
       <section class="new wrapper"></section>
       <section class="brands wrapper"></section>
       <section class="newsLater wrapper"></section>
