@@ -1,12 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Detalles del producto</title>
-  </head>
-  <body>
-    <h1>Detalles del producto</h1>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script defer src="/js/header.js"></script>
+  <script defer src="https://kit.fontawesome.com/0b3eb0d831.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+  <link rel="stylesheet" href="/css/index.css" />
+  <title>Header</title>
+</head>
+
+<body>
+  <header class="header">
+    <section class="wrapper">
+      <a href="/header" class="logo">
+        <img src="/img/Logo.svg" alt="Wecol" title="Wecol" />
+      </a>
+      <nav class="nav" id="nav">
+        <article class="login">
+          <span> Te damos la Bienvenida</span>
+          <div class="btn-log">
+            <a href="/login">
+              <button class="btn-small btn-login">Iniciar Sesión</button>
+            </a>
+            <a href="/register">
+              <button class="btn-small btn-register">Registrarse</button>
+            </a>
+          </div>
+        </article>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/aboutUs">Quiénes Somos</a></li>
+          <li><a href="/contact">Contáctanos</a></li>
+        </ul>
+      </nav>
+      <article class="header-right">
+        <button class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+        <a href="/login" class="user">
+          <i class="fas fa-user"></i>
+        </a>
+        <a href="/productCart">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+      </article>
+    </section>
+  </header>
+
+
+
+
+
+
+<!--Primera seccion-->
+
+  <section>
+
+    <div class="Contenedor">
+      <h3>Informacion Personal</h3>
+
+      <!--Contenedor informacion perosnal-->
+      <div class="infoPersonal">
+        <label for="nombre apellido">
+          <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+          <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+        </label>
+
+        <label for="celular">
+          <input type="tel" name="celular" id="celular" placeholder="Celular">
+        </label>
+
+        <label for="Correo">
+          <input type="email" name="Correo" id="Correo" placeholder="Correo">
+        </label>
+
+        <label for="Identificacion tipo">
+          <input type="number" name="identificacion" id="Identificacion" placeholder="Identificacion">
+          <input type="text" name="Tipo" id="tipo" placeholder="Tipo de Identificacion">
+        </label>
+
+      </div>
+
+      <h3>Direccion</h3>
+      <p>Recuerda seleccionar la dirección de envío y facturación a la que deseas enviar tu orden.
+        * Esta dirección se verá reflejada en el resumen de tu pedido. *</p>
+
+      <!--Contenedor direccion personal-->
+      
+      <div class="Direccion">
+        <p> + Agregar una Direccion</p>
+        <label for="nombre apellido">
+          <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+          <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+        </label>
+
+        <label for="TelefonoCel">
+          <input type="tel" name="TelefonoCel" id="TelefonoCel" placeholder="Telefono Celular">
+        </label>
+
+        <label for="TelefonoFi">
+          <input type="tel" name="TelefonoFi" id="TelefonoFi" placeholder="Telefono Fijo">
+        </label>
+
+        <label for="direccion direccion1">
+          <input type="tex" name="direccion" id="direccion" placeholder="Direccion">
+          <input type="text" name="direccion1" id="direccion1" placeholder="Barrio/Piso/Oficina/Apto">
+        </label>
+
+        <label for="codigoP pais">
+          <input type="number" name="codigoP" id="codigoP" placeholder="Codigo Postal">
+          <input type="text" name="pais" id="pais" placeholder="Pais">
+        </label>
+
+        <label for="Departamento Ciudad">
+          <input type="text" name="Departamento" id="Departamento" placeholder="Departamento">
+          <input type="text" name="Ciudad" id="Ciudad" placeholder="Ciudad">
+        </label>
+      </div>
+        <button value="submit" class="direction">Guardar Direccion</button>
+    </div>
+  </section>
+
+
+
+
+
+<!--segunada seccion-->
+  <section>
+    <div class="resumen">
+      <h2>Resumen de compra</h2>
+      <div class="articulos">
+          <h4>x1 USB Speaker Portable</h4>
+          <p>$100.00</p>
+          <h4>x1 Joystick Pro</h4>
+          <p>$100.00</p>
+          <h4>x1 Smarphone 5G</h4>
+          <p>$100.00</p>
+      </div>
+      <h4>total</h4>
+      <p>$300.00</p>
+      <button value="submit">Continar con la Compra</button>
+      <p>Forma de pago aceptadas</p>
+      <div>
+        <p>iconos</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+
 </html>

@@ -16,6 +16,7 @@
 @import "./brands.css";
 @import "./newsLater.css";
 @import "./aboutUs.css";
+@import "./productDetail.css";
 
 /* Components */
 @import "./components/wrapper.css";

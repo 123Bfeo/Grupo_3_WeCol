@@ -1,0 +1,46 @@
+
+.Contenedor h3{
+    font: var(--tituloH1Small);
+    color:var( --secondary);
+}
+.Contenedor p{
+    color: var(--white);
+}
+.Contenedor button {
+    color: var(--secondary);
+    border: solid 1px var(--secondary);
+}
+
+
+/*Primera Seccion*/
+
+/*Informacion personala*/
+.infoPersonal label input{
+    color: var(--secondary);
+}
+.infoPersonal  input::placeholder{
+    color: var(--secondary);
+}
+
+/*informacion Direccion*/
+.Direccion p{
+    color: var(--white);
+    background-color: var(--secondary);
+}
+.Direccion label input{
+    color: var(--secondary);
+}
+.Direccion  input::placeholder{
+    color: var(--secondary);
+}
+
+
+
+
+/*segunda seccion*/
+.resumen{
+background-color:var(--white);
+}
+.resumen h3{
+    font:var(--subtituloH2);
+    }
