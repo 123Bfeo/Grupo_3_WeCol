@@ -35,7 +35,7 @@
   /* Tipografías */
   --primaryFont: "Roboto";
   --secondFont: "Source Serif Pro";
-  --link-header: var(--secondFont);
+  --link-header: bold 16px/24px var(--secondFont);
   --tituloH1Small: bold 24px/32px var(--secondFont);
   --tituloH1Bigger: bold 48px/56px var(--secondFont);
   --subtituloH2: bold 40px/48px var(--secondFont);
