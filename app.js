@@ -34,8 +34,8 @@ pages.forEach((page) => {
 });
 
 // Enlace a componenten Header
-app.get("/header", (req, res) => {
-  const header = path.join(__dirname, "./components/header.html");
+app.get("/footer", (req, res) => {
+  const header = path.join(__dirname, "./components/footer.html");
   res.sendFile(header);
 });
 

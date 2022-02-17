@@ -14,6 +14,19 @@
 .btn-add i {
   color: var(--white);
 }
+.btn-add-cart {
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary);
+  color: var(--white);
+  font: var(--btn-small);
+  border: none;
+  border-radius: 4px;
+}
+.btn-add-cart i {
+  color: var(--white);
+}
 @media screen and (min-width: 768px) {
   .btn {
     padding: 16px 24px;
