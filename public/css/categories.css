@@ -1,34 +1,32 @@
 .categories {
-  background-color: rgb(122, 95, 100);
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
-  /* height: calc(100vh - 100px); */
+  gap: 48px;
+  overflow: hidden;
 }
 
 .categories-card {
   display: flex;
-  gap: 56px;
-  overflow-x: hidden;
-  border: 1px solid red;
-  align-items: center;
+  gap: 32px;
 }
 .categories-card .categorie {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid red;
 }
 
 .categories-card .categorie i {
   font-size: 8rem;
+  color: var(--white);
 }
 .categories-card .categorie span {
   font-size: 2rem;
+  color: var(--white);
 }
-
-.categories-card .arrowRight {
-  font-size: 5rem;
+.categories .subtituloH3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
