@@ -55,141 +55,168 @@
 
 
 
-  <!--Primera seccion-->
+  <!--Contenedor Global-->
+  <div class="padre">
 
-  <section>
+    <!--Primera seccion-->
+    <section class="PrimerSec">
+      <div class="Contenedor">
+        <h3>Informacion Personal ▼</h3>
 
-    <div class="Contenedor">
-      <h3>Informacion Personal ▼</h3>
+        <!--Contenedor informacion perosnal-->
+        <div class="infoPersonal">
 
-      <!--Contenedor informacion perosnal-->
-      <div class="infoPersonal">
-        <form action="">
-          <label for="nombre">
-            <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-          </label>
-          <label for="apellido">
-            <input type="text" name="apellido" id="apellido" placeholder="Apellido">
-          </label>
+          <form action="">
+            <div class="blockNombre">
+              <label for="nombre">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+              </label>
+              <label for="apellido">
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+              </label>
+            </div>
+              
+            <div class="blockNombre">
+              <label for="celular">
+                <input type="tel" name="celular" id="celular" placeholder="Celular">
+              </label>
+              <label for="Correo">
+                <input type="email" name="Correo" id="Correo" placeholder="Correo">
+              </label>
+            </div>
+            <div class="blockNombre">
+              <label for="Identificacion ">
+                <input type="number" name="identificacion" id="Identificacion" placeholder="Identificación">
+              </label>
+
+              <label for="tipo">
+                <input type="text" name="Tipo" id="tipo" placeholder="Tipo de Identificación">
+              </label>
+            </div>
+          </form>
+        </div>
+
+        <h3>Direccion ▼</h3>
+
+        <div class="sugerido1">
+          <p class="sugerido">Recuerda seleccionar la dirección de envío y facturación a la que deseas enviar tu orden.
+            * Esta dirección se verá reflejada en el resumen de tu pedido. *</p>
+        </div>
 
 
+        <div class="agregarDir">
+          <p class="agregar"> + Agregar una Dirección</p>
+        </div>
 
-          <label for="celular">
-            <input type="tel" name="celular" id="celular" placeholder="Celular">
-          </label>
+        <!--Contenedor direccion personal-->
+        <div class="Direccion">
 
-          <label for="Correo">
-            <input type="email" name="Correo" id="Correo" placeholder="Correo">
-          </label>
-
-          <label for="Identificacion ">
-            <input type="number" name="identificacion" id="Identificacion" placeholder="Identificación">
-          </label>
-          <label for="tipo">
-            <input type="text" name="Tipo" id="tipo" placeholder="Tipo de Identificación">
-          </label>
-        </form>
-      </div>
-
-      <h3>Direccion ▼</h3>
-      <p class="sugerido">Recuerda seleccionar la dirección de envío y facturación a la que deseas enviar tu orden.
-        * Esta dirección se verá reflejada en el resumen de tu pedido. *</p>
-
-      <!--Contenedor direccion personal-->
-      <div class="agregarDir">
-        <p class="agregar"> + Agregar una Dirección</p>
-      </div>
-      <div class="Direccion">
-        <form action="">
-          <label for="nombre">
-            <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-          </label>
-          <label for="apellido">
-            <input type="text" name="apellido" id="apellido" placeholder="Apellido">
-          </label>
-
-          <label for="TelefonoCel">
-            <input type="tel" name="TelefonoCel" id="TelefonoCel" placeholder="Teléfono Celular">
-          </label>
-
-          <label for="TelefonoFi">
-            <input type="tel" name="TelefonoFi" id="TelefonoFi" placeholder="Teléfono Fijo">
-          </label>
-
-          <label for="dirección">
-            <input type="tex" name="direccion" id="direccion" placeholder="Dirección">
-          </label>
-          <label for="direccion1">
-            <input type="text" name="direccion1" id="direccion1" placeholder="Barrio/Piso/Oficina/Apto">
-          </label>
-
-          <label for="códigoP ">
-            <input type="number" name="codigoP" id="codigoP" placeholder="Código Postal">
-          </label>
-          <label for="pais">
-            <input type="text" name="pais" id="pais" placeholder="País">
-          </label>
-
-          <label for="Departamento">
-            <input type="text" name="Departamento" id="Departamento" placeholder="Departamento">
+          <form action="">
+          <div class="blockNombre">
+            <label for="nombre">
+              <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+            </label>
             
-          </label>
-          <label for="Ciudad">
-            <input type="text" name="Ciudad" id="Ciudad" placeholder="Ciudad">
-          </label>
-        </form>
-      </div>
-      <div class="boton2">
-        <button value="submit" class="direction">Guardar Dirección</button>
-      </div>
+            <label for="apellido">
+              <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+            </label>
+          </div>
 
-    </div>
-  </section>
+          <div class="blockNombre">
+            <label for="TelefonoCel">
+              <input type="tel" name="TelefonoCel" id="TelefonoCel" placeholder="Teléfono Celular">
+            </label>
 
+            <label for="TelefonoFi">
+              <input type="tel" name="TelefonoFi" id="TelefonoFi" placeholder="Teléfono Fijo">
+            </label>
+          </div>
 
+          <div class="blockNombre">
+            <label for="dirección">
+              <input type="tex" name="direccion" id="direccion" placeholder="Dirección">
+            </label>
 
+            <label for="direccion1">
+              <input type="text" name="direccion1" id="direccion1" placeholder="Barrio/Piso/Oficina/Apto">
+            </label>
+          </div>
 
+          <div class="blockNombre">
+            <label for="códigoP ">
+              <input type="number" name="codigoP" id="codigoP" placeholder="Código Postal">
+            </label>
 
-  <!--segunada seccion-->
-  <section>
-    <div class="resumen">
-      <h3>Resumen de compra ▼</h3>
-      <div class="articulos">
-        <div class="art1">
-          <h4>x1 USB Speaker Portable</h4>
-          <p>$100.00</p>
+            <label for="pais">
+              <input type="text" name="pais" id="pais" placeholder="País">
+            </label>
+          </div>
+
+          <div class="blockNombre">
+            <label for="Departamento">
+              <input type="text" name="Departamento" id="Departamento" placeholder="Departamento">
+            </label>
+
+            <label for="Ciudad">
+              <input type="text" name="Ciudad" id="Ciudad" placeholder="Ciudad">
+            </label>
+          </div>
+
+          </form>
+
         </div>
-        <div class="art1">
-          <h4>x1 Joystick Pro</h4>
-          <p>$100.00</p>
-        </div>
-        <div class="art1">
-          <h4>x1 Smarphone 5G</h4>
-          <p>$100.00</p>
-        </div>
-      </div>
-      <p class="verificacion">Tus paquetes pueden llegar en envíos diferentes. VERIFICA TU DIRECCIÓN DE ENVÍO. Una vez
-        la compra es
-        finalizada,
-        los cambios dependerán de la disponibilidad de la transportadora.</p>
-      <div class="totalpago">
-        <p>total</p>
-        <p>$300.00</p>
-      </div>
-      <div class="boton">
-        <button value="submit">Continar con la Compra</button>
-      </div>
 
-      <p class="pago">Forma de pago aceptadas</p>
-      <div class="iconos">
-        <i class="fab fa-cc-visa"></i>
-        <i class="fab fa-cc-mastercard"></i>
-        <i class="fab fa-cc-amex"></i>
-        <i class="fab fa-cc-paypal"></i>
-      </div>
-    </div>
-  </section>
+        <div class="boton2">
+          <button value="submit" class="direction">Guardar Dirección</button>
+        </div>
 
+      </div>
+    </section>
+
+
+
+
+
+    <!--segunada seccion-->
+    <section class="SegundoSec">
+      <div class="resumen">
+        <h3>Resumen de compra ▼</h3>
+        <div class="articulos">
+          <div class="art1">
+            <h4>x1 USB Speaker Portable</h4>
+            <p>$100.00</p>
+          </div>
+          <div class="art1">
+            <h4>x1 Joystick Pro</h4>
+            <p>$100.00</p>
+          </div>
+          <div class="art1">
+            <h4>x1 Smarphone 5G</h4>
+            <p>$100.00</p>
+          </div>
+        </div>
+        <p class="verificacion">Tus paquetes pueden llegar en envíos diferentes. VERIFICA TU DIRECCIÓN DE ENVÍO. Una vez
+          la compra es
+          finalizada,
+          los cambios dependerán de la disponibilidad de la transportadora.</p>
+        <div class="totalpago">
+          <p>total</p>
+          <p>$300.00</p>
+        </div>
+        <div class="boton">
+          <button value="submit">Continar con la Compra</button>
+        </div>
+
+        <p class="pago">Forma de pago aceptadas</p>
+        <div class="iconos">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-amex"></i>
+          <i class="fab fa-cc-paypal"></i>
+        </div>
+      </div>
+    </section>
+  </div>
 </body>
 
 </html>

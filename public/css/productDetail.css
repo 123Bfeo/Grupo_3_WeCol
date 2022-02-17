@@ -30,10 +30,16 @@
 .agregarDir{
     width: 40%;
 }
-
+/**/
+.Contenedor .sugerido{
+    font:var(--litte-small-paragraph);
+    padding-left: 45px;
+    padding-bottom: 20px;
+    padding-right: 5px;
+    padding-top: 10px;
+}
 
 /*Primera Seccion*/
-
 /*Informacion personala*/
 .infoPersonal{
 margin-top: 10px;
@@ -49,18 +55,7 @@ margin-bottom:10px;
 }
 .infoPersonal  input::placeholder{
     color: var(--secondary);
-
 }
-
-/**/
-.Contenedor .sugerido{
-    font:var(--litte-small-paragraph);
-    padding-left: 45px;
-    padding-bottom: 20px;
-    padding-right: 5px;
-    padding-top: 10px;
-}
-
 
 /*informacion Direccion*/
 .Direccion{
@@ -136,7 +131,6 @@ margin-bottom:10px;
     font:var(--small-paragraph) ;
     margin-bottom: 20px;
 }
-
 .pago{
     text-align: center;
 }
@@ -150,7 +144,9 @@ margin-bottom:10px;
     padding: 8px;
 }
 
-@media (max-width:414px){
+
+/*Version Mobil*/
+@media (max-width:580px){
     .Contenedor h3{
         text-align: center;
     }
@@ -171,12 +167,12 @@ margin-bottom:10px;
         justify-content: center;
         flex-direction: row;
     }
-    .Contenedor label input{
-        padding: 10px 25px;
+    .infoPersonal label input{
+        padding: 10px 35px;
         
     }
     .Direccion label input{
-        padding: 10px 25px;
+        padding: 10px 35px;
     }
     .Contenedor .boton2{
         display: flex;
@@ -184,4 +180,75 @@ margin-bottom:10px;
         margin-top: 20px;
     }
     
+}
+
+
+@media (min-width:581px){
+    .padre{
+        width: 100%;
+        display: flex;
+    }
+    form{
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .sugerido1{
+        width: 40%;
+        font:var(--litte-small-paragraph);
+        ;
+        padding:0px;
+    }
+    .agregarDir{
+        width:38%;
+        display: flex;
+        justify-content:flex-start;
+    }
+    .agregarDir .agregar{
+        box-shadow: 3px 3px 1px white ;
+    }
+    .blockNombre{
+    display: flex;
+    justify-content: space-around;
+    }
+    .Contenedor{
+        margin-left: 20px;
+    }
+    .sugerido1{
+        width: 30em;
+    }
+    .agregarDir{
+        width:25em;
+        display: flex;
+        justify-content:flex-start;
+        padding-left: 5px;
+    }
+    .agregarDir .agregar{
+        box-shadow: 3px 3px 1px white ;
+    }
+    .infoPersonal label input{
+        padding: 10px 40px;
+        margin-bottom: 10px;
+    }
+    .Direccion label input{
+        padding: 10px 40px;
+        margin-bottom: 10px;
+    }
+    label{
+        margin: 5px;
+    }
+    .Contenedor .sugerido{
+        font:var(--litte-small-paragraph);
+        padding-left: 30px;
+        padding-bottom: 20px;
+        padding-right: 5px;
+        padding-top: 10px;
+    }
+    .Contenedor .boton2{
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 5px;
+    }
+
 }
