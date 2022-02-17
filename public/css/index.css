@@ -16,6 +16,7 @@
 @import "./brands.css";
 @import "./newsLater.css";
 @import "./aboutUs.css";
+@import "./productDetail.css";
 
 /* Components */
 @import "./components/wrapper.css";
@@ -34,6 +35,8 @@
   --tituloH1Small: bold 24px/32px "Source Serif Pro";
   --tituloH1Bigger: bold 48px/56px "Source Serif Pro";
   --subtituloH2: bold 40px/48px "Source Serif Pro";
+  --span1: "Roboto";
+  --title: "Poppins";
 
   /* Botones */
   --btn-small: bold 16px/24px "Roboto";
