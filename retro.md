@@ -1,4 +1,5 @@
 Retroalimentación del primer Sprint
+
 Como equipo estamos enfocados en nuestra mejora continua, por ello, dentro de nuestra metodología evaluativa iniciaremos identificando nuestros puntos fuertes y débiles durante el desarrollo del primer sprint. Posteriormente, utilizaremos parte de la metodología de retrospectiva de la estrella de mar para identificar que actividades y tareas podemos realizar con el fin de optimizar nuestro proceso de aprendizaje y la eficiencia de nuestro trabajo como equipo.
 
 1. ¿Qué hicimos bien en nuestro primer Sprint?
