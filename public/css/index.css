@@ -17,6 +17,8 @@
 @import "./newsLater.css";
 @import "./aboutUs.css";
 @import "./footer.css";
+@import "./productDetail.css";
+@import "./productCart.css";
 
 /* Components */
 @import "./components/wrapper.css";
