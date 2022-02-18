@@ -56,12 +56,12 @@
 
 
   <!--Contenedor Global-->
-  <div class="padre">
+  <div class="padre wrapper">
 
     <!--Primera seccion-->
     <section class="PrimerSec">
       <div class="Contenedor">
-        <h3>Informacion Personal ▼</h3>
+        <h3>Informacion Personal <i class="fas fa-chevron-down" id="desplegar"></i></h3>
 
         <!--Contenedor informacion perosnal-->
         <div class="infoPersonal">
@@ -75,7 +75,7 @@
                 <input type="text" name="apellido" id="apellido" placeholder="Apellido">
               </label>
             </div>
-              
+
             <div class="blockNombre">
               <label for="celular">
                 <input type="tel" name="celular" id="celular" placeholder="Celular">
@@ -96,7 +96,7 @@
           </form>
         </div>
 
-        <h3>Direccion ▼</h3>
+        <h3>Direccion <i class="fas fa-chevron-down" id="desplegar"></i></h3>
 
         <div class="sugerido1">
           <p class="sugerido">Recuerda seleccionar la dirección de envío y facturación a la que deseas enviar tu orden.
@@ -112,58 +112,63 @@
         <div class="Direccion">
 
           <form action="">
-          <div class="blockNombre">
-            <label for="nombre">
-              <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-            </label>
-            
-            <label for="apellido">
-              <input type="text" name="apellido" id="apellido" placeholder="Apellido">
-            </label>
-          </div>
+            <div class="blockNombre">
+              <label for="etiqueta">
+                <input type="text" name="etiqueta" id="etiqueta" placeholder="Etiqueta para la direccion">
+              </label>
+              <div>
 
-          <div class="blockNombre">
-            <label for="TelefonoCel">
-              <input type="tel" name="TelefonoCel" id="TelefonoCel" placeholder="Teléfono Celular">
-            </label>
+                <div class="blockNombre">
+                  <label for="nombre">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                  </label>
 
-            <label for="TelefonoFi">
-              <input type="tel" name="TelefonoFi" id="TelefonoFi" placeholder="Teléfono Fijo">
-            </label>
-          </div>
+                  <label for="apellido">
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+                  </label>
+                </div>
 
-          <div class="blockNombre">
-            <label for="dirección">
-              <input type="tex" name="direccion" id="direccion" placeholder="Dirección">
-            </label>
+                <div class="blockNombre">
+                  <label for="TelefonoCel">
+                    <input type="tel" name="TelefonoCel" id="TelefonoCel" placeholder="Teléfono Celular">
+                  </label>
 
-            <label for="direccion1">
-              <input type="text" name="direccion1" id="direccion1" placeholder="Barrio/Piso/Oficina/Apto">
-            </label>
-          </div>
+                  <label for="TelefonoFi">
+                    <input type="tel" name="TelefonoFi" id="TelefonoFi" placeholder="Teléfono Fijo">
+                  </label>
+                </div>
 
-          <div class="blockNombre">
-            <label for="códigoP ">
-              <input type="number" name="codigoP" id="codigoP" placeholder="Código Postal">
-            </label>
+                <div class="blockNombre">
+                  <label for="dirección">
+                    <input type="tex" name="direccion" id="direccion" placeholder="Dirección">
+                  </label>
 
-            <label for="pais">
-              <input type="text" name="pais" id="pais" placeholder="País">
-            </label>
-          </div>
+                  <label for="Direccion1">
+                    <input type="text" name="direccion1" id="Direccion1" placeholder="Barrio/Piso/Oficina/Apto">
+                  </label>
+                </div>
 
-          <div class="blockNombre">
-            <label for="Departamento">
-              <input type="text" name="Departamento" id="Departamento" placeholder="Departamento">
-            </label>
+                <div class="blockNombre">
+                  <label for="CodigoP ">
+                    <input type="number" name="codigoP" id="CodigoP" placeholder="Código Postal">
+                  </label>
 
-            <label for="Ciudad">
-              <input type="text" name="Ciudad" id="Ciudad" placeholder="Ciudad">
-            </label>
-          </div>
+                  <label for="Pais">
+                    <input type="text" name="pais" id="Pais" placeholder="País">
+                  </label>
+                </div>
+
+                <div class="blockNombre">
+                  <label for="Departamento">
+                    <input type="text" name="Departamento" id="Departamento" placeholder="Departamento">
+                  </label>
+
+                  <label for="Ciudad">
+                    <input type="text" name="Ciudad" id="Ciudad" placeholder="Ciudad">
+                  </label>
+                </div>
 
           </form>
-
         </div>
 
         <div class="boton2">
@@ -180,7 +185,7 @@
     <!--segunada seccion-->
     <section class="SegundoSec">
       <div class="resumen">
-        <h3>Resumen de compra ▼</h3>
+        <h3>Resumen de compra <i class="fas fa-chevron-down fa-lg" id="desplegar1"></i></h3>
         <div class="articulos">
           <div class="art1">
             <h4>x1 USB Speaker Portable</h4>

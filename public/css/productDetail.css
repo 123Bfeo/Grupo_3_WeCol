@@ -26,13 +26,20 @@
     font-size: var(--litte-small-paragraph);
     color: var(--white);
     background-color: var(--secondary);
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+}
+.Contenedor .agregar:hover{
+    background-color: var(--white);
+
 }
 .agregarDir{
     width: 40%;
 }
 /**/
-.Contenedor .sugerido{
-    font:var(--litte-small-paragraph);
+.sugerido1{
+    width: 100%;
+    font:var(--span-small);
     padding-left: 45px;
     padding-bottom: 20px;
     padding-right: 5px;
@@ -45,35 +52,37 @@
 margin-top: 10px;
 margin-bottom:10px;
 }
+
+/*------------------------*/
 .infoPersonal label input{
     color: var(--secondary);
     background-color: var(--bg-dark);
     border-radius:8px ;
-    padding: 8px 4px;
-    margin-bottom: 8px;
-    opacity: 0.6;
+    font: var( --span-small);
 }
 .infoPersonal  input::placeholder{
-    color: var(--secondary);
+    color: var(--placeholder);
 }
+/*---------------------------*/
+
 
 /*informacion Direccion*/
 .Direccion{
     margin-top: 10px;
     
 }
+
+/*------------------------*/
 .Direccion label input{
     color: var(--secondary);
     background-color: var(--bg-dark);
     border-radius:8px ;
-    margin-bottom: 8px;
-    padding: 8px 4px;
-    opacity: 0.6;
+
 }
 .Direccion  input::placeholder{
-    color: var(--secondary);
+    color: var(--placeholder);
 }
-
+/*---------------------------*/
 
 
 
@@ -91,6 +100,7 @@ margin-bottom:10px;
     color: var(--secondary);
     background-color: var(--white);
     border: solid 2px var(--secondary);
+    font: var();
     border-radius: 8px;
     padding: 10px 20px;
     transition-property: background-color, color;
@@ -111,6 +121,7 @@ margin-bottom:10px;
     border-bottom: solid 2px var(--bg-dark) ;  
     display: flex;
     flex-direction: column;
+    font:var(--small-paragraph                    ) ;
 }
 .art1{
     margin-top:10px;
@@ -121,7 +132,7 @@ margin-bottom:10px;
 
 .resumen .verificacion{
     color: var(--secondary);
-    font: var(--litte-small-paragraph);
+    font: var(--span-small);
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -143,6 +154,9 @@ margin-bottom:10px;
     font-size:35px; 
     padding: 8px;
 }
+.blockNombre{
+    font: var( --span-small);
+}
 
 
 /*Version Mobil*/
@@ -162,6 +176,7 @@ margin-bottom:10px;
     .agregarDir .agregar{
         box-shadow: 3px 3px 1px white ;
     }
+    /*---------------------------*/
     label{
         display: flex;
         justify-content: center;
@@ -169,16 +184,34 @@ margin-bottom:10px;
     }
     .infoPersonal label input{
         padding: 10px 35px;
+        margin-bottom: 8px;
         
     }
     .Direccion label input{
         padding: 10px 35px;
+        margin-bottom: 8px;
     }
+    /*--------------------------*/
     .Contenedor .boton2{
         display: flex;
         justify-content: center;
         margin-top: 20px;
     }
+    #desplegar1{
+        color: var(--secondary);
+        padding: 0px;
+        font-size: 24px;
+    }
+    .padre{
+        display: flex;
+        flex-direction:column-reverse;
+    }
+    .SegundoSec{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
     
 }
 
@@ -189,15 +222,13 @@ margin-bottom:10px;
         display: flex;
     }
     form{
-        width: 50%;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
     }
     .sugerido1{
         width: 40%;
-        font:var(--litte-small-paragraph);
-        ;
+        font:var(--span-small);
         padding:0px;
     }
     .agregarDir{
@@ -209,34 +240,14 @@ margin-bottom:10px;
         box-shadow: 3px 3px 1px white ;
     }
     .blockNombre{
-    display: flex;
-    justify-content: space-around;
+        width:40rem;
+        font: var( --span-small);
     }
     .Contenedor{
         margin-left: 20px;
     }
     .sugerido1{
         width: 30em;
-    }
-    .agregarDir{
-        width:25em;
-        display: flex;
-        justify-content:flex-start;
-        padding-left: 5px;
-    }
-    .agregarDir .agregar{
-        box-shadow: 3px 3px 1px white ;
-    }
-    .infoPersonal label input{
-        padding: 10px 40px;
-        margin-bottom: 10px;
-    }
-    .Direccion label input{
-        padding: 10px 40px;
-        margin-bottom: 10px;
-    }
-    label{
-        margin: 5px;
     }
     .Contenedor .sugerido{
         font:var(--litte-small-paragraph);
@@ -245,10 +256,40 @@ margin-bottom:10px;
         padding-right: 5px;
         padding-top: 10px;
     }
+    .agregarDir{
+        width: 250px;
+        display: flex;
+        justify-content:flex-start;
+        padding-left: 5px;
+    }
+    .agregarDir .agregar{
+        width: 250px;
+        box-shadow: 3px 3px 1px white ;
+    }
+
+
+    /*------------------------*/
+    .infoPersonal label input{
+        width:250px;
+        padding: 10px 30px;
+        margin: 5px 0px 5px 5px;
+    }
+    .Direccion label input{
+        margin: 5px 0px 5px 5px;;  
+        padding: 10px 30px;
+        width: 250px;
+    }
+    /*----------------------*/
     .Contenedor .boton2{
         display: flex;
         justify-content: flex-start;
         margin-left: 5px;
+    }
+
+    #desplegar1{
+        color: var(--secondary);
+        padding: 0px;
+        font-size: 24px;
     }
 
 }
