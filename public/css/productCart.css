@@ -1,0 +1,31 @@
+
+.padre{
+    display: flex;
+}
+
+.articulo{
+    display: flex;
+    border-bottom: 1px solid var(--secondary);
+    border-top: 1px solid var(--secondary);
+}
+.articulo .hijoArt{
+    display: flex;
+}
+.Seleccion{
+    display: flex;
+}
+.primeraSec h3{
+    color: var(--text-gray);
+}
+.primeraSec p{
+    color: var(--secondary);
+}
+.primeraSec .Selec{
+    color: var(--white);
+}
+.cantidad{
+    display: flex;
+}
+.cantidad input{
+    width: 100px;
+}
