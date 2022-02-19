@@ -183,13 +183,14 @@ margin-bottom:10px;
         flex-direction: row;
     }
     .infoPersonal label input{
-        padding: 10px 35px;
-        margin-bottom: 8px;
-        
+        padding: 10px 30px;
+        margin: 5px 0px 5px 5px;
+        width:240px;
     }
     .Direccion label input{
-        padding: 10px 35px;
-        margin-bottom: 8px;
+        margin: 5px 0px 5px 5px;;  
+        padding: 10px 30px;
+        width: 240px;
     }
     /*--------------------------*/
     .Contenedor .boton2{
@@ -267,7 +268,6 @@ margin-bottom:10px;
         box-shadow: 3px 3px 1px white ;
     }
 
-
     /*------------------------*/
     .infoPersonal label input{
         width:250px;
@@ -282,15 +282,14 @@ margin-bottom:10px;
     /*----------------------*/
     .Contenedor .boton2{
         margin-left: 5px;
+        margin-top: 8px;
     }
     .Contenedor .direction{
         padding: 10px 25px;
     }
-
     #desplegar1{
         color: var(--secondary);
         padding: 0px;
         font-size: 24px;
     }
-
 }
