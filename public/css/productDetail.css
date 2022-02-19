@@ -281,9 +281,10 @@ margin-bottom:10px;
     }
     /*----------------------*/
     .Contenedor .boton2{
-        display: flex;
-        justify-content: flex-start;
         margin-left: 5px;
+    }
+    .Contenedor .direction{
+        padding: 10px 25px;
     }
 
     #desplegar1{
