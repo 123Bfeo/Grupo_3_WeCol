@@ -21,8 +21,8 @@
   justify-content: space-between;
   width: 50%;
 }
-.info-section .company .footer-titulo {
-  margin-block-end: 100px;
+.footer-head .info-section nav ul li a {
+  color: var(--gray2);
 }
 .footer-head .siguenos .social {
   display: flex;
@@ -48,9 +48,10 @@
 .logo-description .description-company {
   width: 254px;
 }
-.footer-titulo {
+h6[class="footer-titulo"] {
   font: var(--link-header);
   color: var(--text-gray);
+  margin-block-end: 24px;
 }
 
 .footer-foot {
