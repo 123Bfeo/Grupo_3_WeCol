@@ -27,9 +27,32 @@
 .btn-add-cart i {
   color: var(--white);
 }
+.form-login .btn-login {
+  border: 1px solid var(--secondary);
+  background: none;
+  font: var(--punctuation);
+  font-size: 16px;
+  color: var(--secondary);
+  padding: 8px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.form-login .btn-register {
+  border: 1px solid var(--secondary);
+  background: none;
+  font: var(--punctuation);
+  font-size: 16px;
+  color: var(--secondary);
+  padding: 8px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+}
 @media screen and (min-width: 768px) {
   .btn {
     padding: 16px 24px;
+  }
+  .form-login .btn-login {
+    font-size: 16px;
   }
 }
 
