@@ -21,6 +21,7 @@
 @import "./productCart.css";
 @import "./privacyPolitics.css";
 @import "./agreePolitics.css";
+@import "./login.css";
 
 /* Components */
 @import "./components/wrapper.css";
