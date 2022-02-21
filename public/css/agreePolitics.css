@@ -1,0 +1,21 @@
+.agree-body {
+  background-color: #fff;
+}
+.agree-main {
+  display: flex;
+  gap: 40px;
+}
+.agree-main .subtituloH3 {
+  max-width: 700px;
+  text-align: center;
+}
+.agree-content {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.agree-content p {
+  text-align: justify;
+}
