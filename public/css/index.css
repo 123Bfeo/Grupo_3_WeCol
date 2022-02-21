@@ -20,6 +20,7 @@
 @import "./productDetail.css";
 @import "./productCart.css";
 @import "./privacyPolitics.css";
+@import "./agreePolitics.css";
 
 /* Components */
 @import "./components/wrapper.css";
