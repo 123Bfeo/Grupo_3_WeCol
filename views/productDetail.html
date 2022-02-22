@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header ">
     <section class="wrapper">
       <a href="/header" class="logo">
         <img src="/img/Logo.svg" alt="Wecol" title="Wecol" />
@@ -49,23 +49,13 @@
       </article>
     </section>
   </header>
-
-
-
-
-
-
   <!--Contenedor Global-->
-  <div class="padre wrapper">
+  <main class="padre wrapper">
+    <section class="sectionFormulario">
 
-    <!--Primera seccion-->
-    <section class="PrimerSec">
-      <div class="Contenedor">
         <h3>Informacion Personal <i class="fas fa-chevron-down" id="desplegar"></i></h3>
-
         <!--Contenedor informacion perosnal-->
-        <div class="infoPersonal">
-
+        <div class="informacionPersonal">
           <form action="">
             <div class="blockNombre">
               <label for="nombre">
@@ -75,7 +65,6 @@
                 <input type="text" name="apellido" id="apellido" placeholder="Apellido">
               </label>
             </div>
-
             <div class="blockNombre">
               <label for="celular">
                 <input type="tel" name="celular" id="celular" placeholder="Celular">
@@ -93,97 +82,85 @@
                 <input type="text" name="Tipo" id="tipo" placeholder="Tipo de Identificación">
               </label>
             </div>
-          </form>
-        </div>
 
-        <h3>Direccion <i class="fas fa-chevron-down" id="desplegar"></i></h3>
+            <h3>Direccion <i class="fas fa-chevron-down" id="desplegar"></i></h3>
 
-        <div class="sugerido1">
-          <p class="sugerido">Recuerda seleccionar la dirección de envío y facturación a la que deseas enviar tu orden.
-            * Esta dirección se verá reflejada en el resumen de tu pedido. *</p>
-        </div>
+            <div class="recordatorio">
+              <p>Recuerda seleccionar la dirección de envío y facturación a la que deseas enviar tu
+                orden.
+                * Esta dirección se verá reflejada en el resumen de tu pedido. *</p>
+            </div>
 
 
-        <div class="agregarDir">
-          <p class="agregar"> + Agregar una Dirección</p>
-        </div>
-
-        <!--Contenedor direccion personal-->
-        <div class="Direccion">
-
-          <form action="">
-            <div class="blockNombre">
+            <div class="agregarDir">
+              <div>
+                <p class="agregar"> + Agregar una Dirección</p>
+              </div>
               <label for="etiqueta">
                 <input type="text" name="etiqueta" id="etiqueta" placeholder="Etiqueta para la direccion">
               </label>
-              <div>
+            </div>
 
-                <div class="blockNombre">
-                  <label for="nombre">
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-                  </label>
+            <!--Contenedor direccion personal-->
 
-                  <label for="apellido">
-                    <input type="text" name="apellido" id="apellido" placeholder="Apellido">
-                  </label>
-                </div>
 
-                <div class="blockNombre">
-                  <label for="TelefonoCel">
-                    <input type="tel" name="TelefonoCel" id="TelefonoCel" placeholder="Teléfono Celular">
-                  </label>
 
-                  <label for="TelefonoFi">
-                    <input type="tel" name="TelefonoFi" id="TelefonoFi" placeholder="Teléfono Fijo">
-                  </label>
-                </div>
 
-                <div class="blockNombre">
-                  <label for="dirección">
-                    <input type="tex" name="direccion" id="direccion" placeholder="Dirección">
-                  </label>
+              <div class="blockNombre">
+                <label for="nombre">
+                  <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                </label>
 
-                  <label for="Direccion1">
-                    <input type="text" name="direccion1" id="Direccion1" placeholder="Barrio/Piso/Oficina/Apto">
-                  </label>
-                </div>
+                <label for="apellido">
+                  <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+                </label>
+              </div>
 
-                <div class="blockNombre">
-                  <label for="CodigoP ">
-                    <input type="number" name="codigoP" id="CodigoP" placeholder="Código Postal">
-                  </label>
+              <div class="blockNombre">
+                <label for="TelefonoCel">
+                  <input type="tel" name="TelefonoCel" id="TelefonoCel" placeholder="Teléfono Celular">
+                </label>
 
-                  <label for="Pais">
-                    <input type="text" name="pais" id="Pais" placeholder="País">
-                  </label>
-                </div>
+                <label for="TelefonoFi">
+                  <input type="tel" name="TelefonoFi" id="TelefonoFi" placeholder="Teléfono Fijo">
+                </label>
+              </div>
 
-                <div class="blockNombre">
-                  <label for="Departamento">
-                    <input type="text" name="Departamento" id="Departamento" placeholder="Departamento">
-                  </label>
+              <div class="blockNombre">
+                <label for="dirección">
+                  <input type="tex" name="direccion" id="direccion" placeholder="Dirección">
+                </label>
 
-                  <label for="Ciudad">
-                    <input type="text" name="Ciudad" id="Ciudad" placeholder="Ciudad">
-                  </label>
-                </div>
+                <label for="Direccion1">
+                  <input type="text" name="direccion1" id="Direccion1" placeholder="Barrio/Piso/Oficina/Apto">
+                </label>
+              </div>
 
+              <div class="blockNombre">
+                <label for="CodigoP ">
+                  <input type="number" name="codigoP" id="CodigoP" placeholder="Código Postal">
+                </label>
+
+                <label for="Pais">
+                  <input type="text" name="pais" id="Pais" placeholder="País">
+                </label>
+              </div>
+              <div class="blockNombre">
+                <label for="Departamento">
+                  <input type="text" name="Departamento" id="Departamento" placeholder="Departamento">
+                </label>
+                <label for="Ciudad">
+                  <input type="text" name="Ciudad" id="Ciudad" placeholder="Ciudad">
+                </label>
+              </div>
           </form>
         </div>
-
-        <div class="boton2">
+        <div class="botonGuardar">
           <button value="submit" class="direction">Guardar Dirección</button>
         </div>
-
-      </div>
     </section>
-
-
-
-
-
     <!--segunada seccion-->
-    <section class="SegundoSec">
+    <section class="productosApagar">
       <div class="resumen">
         <h3>Resumen de compra <i class="fas fa-chevron-down fa-lg" id="desplegar1"></i></h3>
         <div class="articulos">
@@ -205,10 +182,10 @@
           finalizada,
           los cambios dependerán de la disponibilidad de la transportadora.</p>
         <div class="totalpago">
-          <p>total</p>
+          <p>Total</p>
           <p>$300.00</p>
         </div>
-        <div class="boton">
+        <div class="boton2">
           <button value="submit">Continar con la Compra</button>
         </div>
 
@@ -221,7 +198,8 @@
         </div>
       </div>
     </section>
-  </div>
+  </main>
+
   <footer class="footer">
     <section class="wrapper">
       <article class="footer-head">
@@ -229,8 +207,7 @@
           <a href="/" class="logo">
             <img src="/img/logo.svg" alt="wecol" title="wecol" />
           </a>
-          <span class="description-company"
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          <span class="description-company">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor.
           </span>
         </section>

@@ -1,139 +1,53 @@
 
-.padre{
+.productCart{
     display: flex;
-    margin-top:20px;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.productList{
+width: 50%;
 }
 
-.articulo{
+.detailProductCard{
     display: flex;
-    border-bottom: 1px solid var(--secondary);
-    border-top: 1px solid var(--secondary);
+    justify-content: space-between;
+    align-items: center;
+    border: solid red 1px;
 }
-.articulo .hijoArt{
-    width: 10rem;
-    display: flex;
-    justify-content:flex-start;
+.detailProductCard i{
+    color: var(--secondary);
 }
-.hijoArt .checkbox{
-    width: 40%;
+.productOption{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    gap: 24px;
 }
-.primeraSec h3{
+.productOption picture{
+    width: 200px;
+    
+}
+.productOption picture img{
+    width: 100%;
+}
+.nombrePrecio h3{
     font: var(--small-paragraph);
     color: var(--text-gray);
-    padding-bottom: 8px;
 }
-.primeraSec p{
+.nombrePrecio p{
     color: var(--secondary);
-    font: var(--small-paragraph);
-    padding-bottom: 15px;
+    font: var(--subtituloH3Small);
 }
-.primeraSec .Selec{
-    color: var(--white);
+.summaryOfPurchase{
+    max-width: 420px;
 }
-.productosElegidos{
-    width: 45%;
+@media(min-width:768px){
+   
+.productCart{
     display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    padding-left: 10px;
-}
-.articulo .nombrePrecio{
-    width: 100%;
-    margin-top: 15px;
-    display: flex;
-    flex-direction: column;
-}
+    flex-direction: row;
+    justify-content: space-between;
 
-
-
-/*añadir mas unidades*/
-.cantidad{
-    display: flex;
-}
-.cantidad input{
-    text-align: center;
-    padding: 8px 5px;
-    background-color: var(--bg-dark);
-    border: none;
-    color: var(--secondary);
-    width: 30px;
-}
-.cantidad button{
-    padding: 8px 10px;
-    font-size: 18px;
-    border: none;
-    border-radius: 3px;
-    background-color: var(--secondary);
-    color:var(--white);
-}
-.cantidad #disminuir{
-    padding: 8px 12px;
-    font-size: 18px;
-    border: none;
-    border-radius: 3px;
-    background-color: var(--white);
-    color: var(--secondary);
-}
-.hijoArt img{
-    position:static;
-    width:130px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-/*eliminar articulo de carrito*/
-.articulo .eliminar{
-    width:5rem;
-    color: var(--secondary);
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-.padre .primeraSec{
-    order: 1;
-}
-/*efecto para papeler*/
-.eliminar i:hover{
-    color: var(--white);
-}
-
-/*version table escritorio */
-@media (min-width:581px){
-    .padre{
-        display: flex;
-        justify-content: space-between;
-    }
-    .contenedorProductos{
-        width: 100%;
-    }
-    .primeraSec{
-        width: 50%;
-    }
-    .segundoSec{
-        width: 40%;
-        display: flex;
-        justify-content: flex-end;
-    }
-    .resumen {
-        width:50rem;
-        margin-top: 0px;
-
-    }
-    .articulo .eliminar{
-        width: 10%;
-        color: var(--secondary);
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-    .padre {
-        flex-direction: row-reverse;
-    }
-
+} 
 }

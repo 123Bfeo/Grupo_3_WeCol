@@ -1,231 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="/js/header.js"></script>
+    <script
+      defer
+      src="https://kit.fontawesome.com/0b3eb0d831.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <title>Header</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script defer src="/js/header.js"></script>
-  <script defer src="https://kit.fontawesome.com/0b3eb0d831.js" crossorigin="anonymous"></script>
-  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
-  <link rel="stylesheet" href="/css/index.css" />
-  <title>Header</title>
-</head>
+  <body>
+    <header class="header">
+      <section class="wrapper">
+        <a href="/header" class="logo">
+          <img src="/img/Logo.svg" alt="Wecol" title="Wecol" />
+        </a>
+        <nav class="nav" id="nav">
+          <article class="login">
+            <span> Te damos la Bienvenida</span>
+            <div class="btn-log">
+              <a href="/login">
+                <button class="btn-small btn-login">Iniciar Sesión</button>
+              </a>
+              <a href="/register">
+                <button class="btn-small btn-register">Registrarse</button>
+              </a>
+            </div>
+          </article>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/aboutUs">Quiénes Somos</a></li>
+            <li><a href="/contact">Contáctanos</a></li>
+          </ul>
+        </nav>
+        <article class="header-right">
+          <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+          </button>
+          <a href="/login" class="user">
+            <i class="fas fa-user"></i>
+          </a>
+          <a href="/productCart">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+        </article>
+      </section>
+    </header>
 
-<body>
-  <header class="header">
-    <section class="wrapper">
-      <a href="/header" class="logo">
-        <img src="/img/Logo.svg" alt="Wecol" title="Wecol" />
-      </a>
-      <nav class="nav" id="nav">
-        <article class="login">
-          <span> Te damos la Bienvenida</span>
-          <div class="btn-log">
-            <a href="/login">
-              <button class="btn-small btn-login">Iniciar Sesión</button>
+    <main class="productCart wrapper" id="productCart">
+      <section class="productList">
+        <div class="contenedorProductos">
+          <article class="detailProductCard">
+            <div class="productOption">
+              <picture class="imgProduct">
+                <img src="/img/earphone.png" alt="" />
+              </picture>
+  
+              <div class="productosElegidos">
+                <div class="nombrePrecio">
+                  <h3>USB Speaker Portable</h3>
+                  <p>$100.99</p>
+                </div>
+  
+                <div class="cantidad">
+                  <button id="disminuir" onclick="disminuir()">-</button>
+                  <input type="text" id="cantidad" value="0"/>
+                  <button id="aumentar1" onclick="aumentar(event.target)">+</button>
+                </div>
+              </div>
+            </div>
+            <i class="fas fa-trash-alt"></i>
+          </article>
+          <article class="detailProductCard">
+            <div class="productOption">
+              <picture class="imgProduct">
+                <img src="/img/earphone.png" alt="" />
+              </picture>
+  
+              <div class="productosElegidos">
+                <div class="nombrePrecio">
+                  <h3>USB Speaker Portable</h3>
+                  <p>$100.99</p>
+                </div>
+  
+                <div class="cantidad">
+                  <button id="disminuir" onclick="disminuir()">-</button>
+                  <input type="text" id="cantidad" value="0"/>
+                  <button id="aumentar1" onclick="aumentar(event.target)">+</button>
+                </div>
+              </div>
+            </div>
+            <i class="fas fa-trash-alt"></i>
+          </article>
+          <article class="detailProductCard">
+            <div class="productOption">
+              <picture class="imgProduct">
+                <img src="/img/earphone.png" alt="" />
+              </picture>
+  
+              <div class="productosElegidos">
+                <div class="nombrePrecio">
+                  <h3>USB Speaker Portable</h3>
+                  <p>$100.99</p>
+                </div>
+  
+                <div class="cantidad">
+                  <button id="disminuir" onclick="disminuir()">-</button>
+                  <input type="text" id="cantidad" value="0"/>
+                  <button id="aumentar1" onclick="aumentar(event.target)">+</button>
+                </div>
+              </div>
+            </div>
+            <i class="fas fa-trash-alt"></i>
+          </article>
+        </div>
+      </section>
+
+      <section class="summaryOfPurchase">
+        <div class="resumen">
+          <h3>
+            Resumen de compra
+            <i class="fas fa-chevron-down fa-lg" id="desplegar1"></i>
+          </h3>
+          <div class="articulos">
+            <div class="art1">
+              <h4>x1 USB Speaker Portable</h4>
+              <p>$100.00</p>
+            </div>
+            <div class="art1">
+              <h4>x1 Joystick Pro</h4>
+              <p>$100.00</p>
+            </div>
+            <div class="art1">
+              <h4>x1 Smarphone 5G</h4>
+              <p>$100.00</p>
+            </div>
+          </div>
+          <p class="verificacion">
+            Tus paquetes pueden llegar en envíos diferentes. VERIFICA TU
+            DIRECCIÓN DE ENVÍO. Una vez la compra es finalizada, los cambios
+            dependerán de la disponibilidad de la transportadora.
+          </p>
+          <div class="totalpago">
+            <p>Total</p>
+            <p>$300.00</p>
+          </div>
+          <div class="boton">
+            <button value="submit">Continar con la Compra</button>
+          </div>
+
+          <p class="pago">Forma de pago aceptadas</p>
+          <div class="iconos">
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-amex"></i>
+            <i class="fab fa-cc-paypal"></i>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <section class="wrapper">
+        <article class="footer-head">
+          <section class="logo-description">
+            <a href="/" class="logo">
+              <img src="/img/logo.svg" alt="wecol" title="wecol" />
             </a>
-            <a href="/register">
-              <button class="btn-small btn-register">Registrarse</button>
-            </a>
+            <span class="description-company"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </span>
+          </section>
+          <section class="info-section">
+            <section class="company">
+              <h6 class="footer-titulo">Empresa</h6>
+              <nav>
+                <ul>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/quienesSomos">Quiénes Somos</a></li>
+                  <li><a href="contactenos">Contáctenos</a></li>
+                </ul>
+              </nav>
+            </section>
+            <section class="info">
+              <h6 class="footer-titulo">Información</h6>
+              <nav>
+                <ul>
+                  <li><a href="">Métodos de pago</a></li>
+                  <li><a href="">Política de Privacidad</a></li>
+                </ul>
+              </nav>
+            </section>
+            <section class="siguenos">
+              <h6 class="footer-titulo">Siguenos</h6>
+              <ul class="social">
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-facebook-square"></i></a>
+                </li>
+              </ul>
+            </section>
+          </section>
+        </article>
+        <article class="footer-foot">
+          <div class="made-for">
+            Hecho con ❤️ por Checho, Jenni, Luis, Juli y Jhon
+          </div>
+          <div class="copyright">
+            Colombia 2022 - Todos los derechos reservados
           </div>
         </article>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/aboutUs">Quiénes Somos</a></li>
-          <li><a href="/contact">Contáctanos</a></li>
-        </ul>
-      </nav>
-      <article class="header-right">
-        <button class="menu-toggle" id="menuToggle">
-          <i class="fas fa-bars"></i>
-        </button>
-        <a href="/login" class="user">
-          <i class="fas fa-user"></i>
-        </a>
-        <a href="/productCart">
-          <i class="fas fa-shopping-cart"></i>
-        </a>
-      </article>
-    </section>
-  </header>
+      </section>
+    </footer>
 
-
-
-
-  <div class="padre wrapper">
-    <section class="primeraSec">
-      <div class="contenedorProductos">
-        <div class="articulo">
-
-          <div class="hijoArt">
-            <img src="/img/earphone.png" alt="">
-          </div>
-
-          <div class="productosElegidos">
-            <div class="nombrePrecio">
-              <h3>USB Speaker Portable</h3>
-              <p>$100.99</p>
-            </div>
-
-            <div class="cantidad">
-              <button id='disminuir' onclick="disminuir()">-</button>
-              <input type="text" id="cantidad" value="0">
-              <button id='aumentar1' onclick="aumentar(event.target)">+</button>
-            </div>
-          </div>
-          <div class="eliminar"><i class="fas fa-trash-alt"></i></div>
-        </div>
-
-        <div class="articulo">
-          <div class="hijoArt">
-            <img src="/img/macbookAir.png" alt="">
-          </div>
-
-          <div class="productosElegidos">
-            <div class="nombrePrecio">
-              <h3>USB Speaker Portable</h3>
-              <p>$100.99</p>
-            </div>
-
-            <div class="cantidad">
-              <button id='disminuir' onclick="disminuir()">-</button>
-              <input type="text" id="cantidad" value="0">
-              <button id='aumentar2' onclick="aumentar(event.target)">+</button>
-            </div>
-          </div>
-          <div class="eliminar"><i class="fas fa-trash-alt"></i></div>
-        </div>
-
-        <div class="articulo">
-          <div class="hijoArt">
-            <img src="/img/earphone.png">
-          </div>
-
-          <div class="productosElegidos">
-            <div class="nombrePrecio">
-              <h3>USB Speaker Portable</h3>
-              <p>$100.99</p>
-            </div>
-
-            <div class="cantidad">
-              <button id='disminuir' onclick="disminuir()">-</button>
-              <input type="text" id="cantidad" value="0">
-              <button id='aumentar' onclick="aumentar()">+</button>
-            </div>
-          </div>
-          <div class="eliminar"><i class="fas fa-trash-alt"></i></div>
-          
-        </div>
-      </div>
-    </section>
-
-
-    <section class="segundoSec">
-      <div class="resumen">
-        <h3>Resumen de compra <i class="fas fa-chevron-down fa-lg" id="desplegar1"></i></h3>
-        <div class="articulos">
-          <div class="art1">
-            <h4>x1 USB Speaker Portable</h4>
-            <p>$100.00</p>
-          </div>
-          <div class="art1">
-            <h4>x1 Joystick Pro</h4>
-            <p>$100.00</p>
-          </div>
-          <div class="art1">
-            <h4>x1 Smarphone 5G</h4>
-            <p>$100.00</p>
-          </div>
-        </div>
-        <p class="verificacion">Tus paquetes pueden llegar en envíos diferentes. VERIFICA TU DIRECCIÓN DE ENVÍO. Una vez
-          la compra es
-          finalizada,
-          los cambios dependerán de la disponibilidad de la transportadora.</p>
-        <div class="totalpago">
-          <p>Total</p>
-          <p>$300.00</p>
-        </div>
-        <div class="boton">
-          <button value="submit">Continar con la Compra</button>
-        </div>
-
-        <p class="pago">Forma de pago aceptadas</p>
-        <div class="iconos">
-          <i class="fab fa-cc-visa"></i>
-          <i class="fab fa-cc-mastercard"></i>
-          <i class="fab fa-cc-amex"></i>
-          <i class="fab fa-cc-paypal"></i>
-        </div>
-      </div>
-    </section>
-
-  </div>
-  <footer class="footer">
-    <section class="wrapper">
-      <article class="footer-head">
-        <section class="logo-description">
-          <a href="/" class="logo">
-            <img src="/img/logo.svg" alt="wecol" title="wecol" />
-          </a>
-          <span class="description-company">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor.
-          </span>
-        </section>
-        <section class="info-section">
-          <section class="company">
-            <h6 class="footer-titulo">Empresa</h6>
-            <nav>
-              <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/quienesSomos">Quiénes Somos</a></li>
-                <li><a href="contactenos">Contáctenos</a></li>
-              </ul>
-            </nav>
-          </section>
-          <section class="info">
-            <h6 class="footer-titulo">Información</h6>
-            <nav>
-              <ul>
-                <li><a href="">Métodos de pago</a></li>
-                <li><a href="">Política de Privacidad</a></li>
-              </ul>
-            </nav>
-          </section>
-          <section class="siguenos">
-            <h6 class="footer-titulo">Siguenos</h6>
-            <ul class="social">
-              <li><a href="#"><i class="fab fa-instagram"></a></i></li>
-              <li><a href="#"><i class="fab fa-twitter"></a></i></li>
-              <li><a href="#"><i class="fab fa-facebook-square"></a></i></li>
-            </ul>
-          </section>
-        </section>
-      </article>
-      <article class="footer-foot">
-        <div class="made-for">
-          Hecho con ❤️ por Checho, Jenni, Luis, Juli y Jhon
-        </div>
-        <div class="copyright">
-          Colombia 2022 - Todos los derechos reservados
-        </div>
-      </article>
-    </section>
-  </footer>
-  <script>
-    function aumentar() {
-      let cambioDeValor = parseInt(document.getElementById("cantidad").value)
-      ++cambioDeValor; //cambioDeValor += 1;  //cambioDeValor + 1;
-      document.getElementById("cantidad").value = cambioDeValor;
-    }
-    function disminuir() {
-      let cambioDeValor = parseInt(document.getElementById("cantidad").value)
-      if (cambioDeValor > 0) {
-        --cambioDeValor; //cambioDeValor -= 1;  //cambioDeValor - 1;
+    <script>
+      function aumentar() {
+        let cambioDeValor = parseInt(document.getElementById("cantidad").value);
+        ++cambioDeValor; //cambioDeValor += 1;  //cambioDeValor + 1;
+        document.getElementById("cantidad").value = cambioDeValor;
       }
-      document.getElementById("cantidad").value = cambioDeValor;
-    }
-  </script>
-</body>
-
+      function disminuir() {
+        let cambioDeValor = parseInt(document.getElementById("cantidad").value);
+        if (cambioDeValor > 0) {
+          --cambioDeValor; //cambioDeValor -= 1;  //cambioDeValor - 1;
+        }
+        document.getElementById("cantidad").value = cambioDeValor;
+      }
+    </script>
+  </body>
 </html>

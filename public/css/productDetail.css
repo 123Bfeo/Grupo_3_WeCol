@@ -1,295 +1,187 @@
-.Contenedor{
-    margin: 24px;
-}
-.Contenedor h3{
-    font: var(--subtituloH3);
-    color:var( --secondary);
-}
-.Contenedor p{
-    color: var(--white);
-}
-.Contenedor button {
-    color: var(--secondary);
-    background-color: var(--bg-dark);
-    border: solid 1px var(--secondary);
-    border-radius: 8px;
-    padding: 10px;
-    transition-property: background-color, color;
-    transition-duration: 0.5s;
-}
-.Contenedor button:hover{
-    background-color: var(--secondary);
-    color: var(--white);
-    
-}
-.Contenedor .agregar{
-    font-size: var(--litte-small-paragraph);
-    color: var(--white);
-    background-color: var(--secondary);
-    transition-property: background-color, color;
-    transition-duration: 0.5s;
-}
-.Contenedor .agregar:hover{
-    background-color: var(--white);
 
-}
-.agregarDir{
-    width: 40%;
-}
-/**/
-.sugerido1{
-    width: 100%;
-    font:var(--span-small);
-    padding-left: 45px;
-    padding-bottom: 20px;
-    padding-right: 5px;
-    padding-top: 10px;
-}
-
-/*Primera Seccion*/
-/*Informacion personala*/
-.infoPersonal{
-margin-top: 10px;
-margin-bottom:10px;
-}
-
-/*------------------------*/
-.infoPersonal label input{
-    color: var(--secondary);
-    background-color: var(--bg-dark);
-    border-radius:8px ;
-    font: var( --span-small);
-}
-.infoPersonal  input::placeholder{
-    color: var(--placeholder);
-}
-/*---------------------------*/
-
-
-/*informacion Direccion*/
-.Direccion{
+.sectionFormulario h3{
+    text-align: center;
     margin-top: 10px;
-    
-}
-
-/*------------------------*/
-.Direccion label input{
+    margin-bottom: 20px;
     color: var(--secondary);
-    background-color: var(--bg-dark);
-    border-radius:8px ;
+    font: var(--small-paragraph);
+}
 
-}
-.Direccion  input::placeholder{
-    color: var(--placeholder);
-}
-/*---------------------------*/
-
-
-
-/*segunda seccion*/
-.resumen{
-    padding: 20px;
-    margin: 24px;
-    background-color:var(--white);
-    color: var(--bg-dark);
-}
-.resumen h3{
-    font:var(--subtituloH3);
-}
-.resumen button {
-    color: var(--secondary);
-    background-color: var(--white);
-    border: solid 2px var(--secondary);
-    font: var();
-    border-radius: 8px;
-    padding: 10px 20px;
-    transition-property: background-color, color;
-    transition-duration: 0.5s;
-}
-.resumen button:hover{
-    background-color: var(--secondary);
-    color: var(--white);
-    
-}
-.boton{
-    display: flex;
-    justify-content: center;
-    margin-bottom:20px;
-}
-.articulos{
-    border-top: solid 1px var(--bg-dark);
-    border-bottom: solid 2px var(--bg-dark) ;  
+form {
     display: flex;
     flex-direction: column;
-    font:var(--small-paragraph                    ) ;
+    align-items: center;
 }
-.art1{
-    margin-top:10px;
-    margin-bottom: 10px;
+.blockNombre {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
 }
+.informacionPersonal label {
+    margin-bottom: 5px;
+    margin-right: 5px;
 
-.resumen .verificacion{
-    color: var(--secondary);
+}
+.informacionPersonal input {
+    width: 100%;
+    padding: 8px 20px 8px 20px;
+    border-radius: 8px;
+    border:  solid 1px var(--text-gray);
+    background-color: var(--bg-dark);
+}
+.informacionPersonal input::placeholder{
+    color: var(--placeholder);
     font: var(--span-small);
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
-.totalpago{
-    display: flex;
-    justify-content: space-between;
-    font:var(--small-paragraph) ;
-    margin-bottom: 20px;
-}
-.pago{
+form .recordatorio{
     text-align: center;
+    margin-bottom: 10px;
+    color: var(--white);
+    font: var(--span-small);
 }
-.iconos{
+.agregarDir {
+    margin-bottom: 5px;
+}
+.agregarDir .agregar {
+    color: var(--white);
+    font: var(--span-small);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    background-color: var(--secondary);
+    box-shadow: 3px 3px 1px rgb(255, 255, 255);
+}
+.sectionFormulario .botonGuardar{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.sectionFormulario button{
+    padding: 8px 20px;
+    border-radius: 8px;
+    background-color: var(--bg-dark);
+    color: var(--secondary);
+    border: solid 1px var(--secondary);
+    font: var(--span-small);
+}
+.productosApagar{
     width: 100%;
     display: flex;
-    justify-content: center;  
+    justify-content: center;
 }
-.resumen i{
-    font-size:35px; 
-    padding: 8px;
+.productosApagar .resumen{
+background-color: var(--white);
+padding: 8px;
+width: 80%;
 }
-.blockNombre{
-    font: var( --span-small);
+.productosApagar .resumen h3{
+color: var(--secondary);
+font:var(--small-paragraph);
+margin-bottom: 8px;
+}
+.productosApagar .resumen .verificacion{
+    color: var(--secondary);
+    font:var(--span-small);
+    text-align: center;
+    padding-bottom: 8px;
+    margin-top: 20px;
+}
+.productosApagar .resumen .totalpago{
+    display: flex;
+    justify-content: space-between;
+    font:var(--small-paragraph);
+    margin-bottom: 10px;
+}
+.productosApagar .resumen .boton2{
+    display: flex;
+    justify-content: center;
+}
+.productosApagar .resumen button{
+    border: solid 1px var(--secondary);
+    border-radius: 8px;
+    background-color: var(--white);
+    padding: 8px 8px;
+}
+.resumen .pago{
+    text-align: center;
+    font: var(--span-small);
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+.resumen .iconos{
+    display: flex;
+    justify-content: center;
+}
+.resumen .iconos i{
+    font-size:30px;
+    margin: 5px;
+}
+.articulos{
+    border-top: 1px solid var(--text-gray);
+    border-bottom: 1px solid var(--text-gray);
+}
+.articulos .art1{
+    display:flex ;
+    justify-content:space-between;
+    margin-bottom:10px;
+    margin-top: 8px;
+}
+.articulos .art1 h4{
+    font: var(--span-small);
+}
+.articulos .art1 p{
+    font: var(--span-small);
 }
 
-
-/*Version Mobil*/
-@media (max-width:580px){
-    .Contenedor h3{
-        text-align: center;
-    }
-    .Contenedor .sugerido{
-        padding:10px 20px;
-        text-align:left;
-    }
-    .agregarDir{
-        width:100%;
-        display: flex;
-        justify-content: center;
-    }
-    .agregarDir .agregar{
-        box-shadow: 3px 3px 1px white ;
-    }
-    /*---------------------------*/
-    label{
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-    }
-    .infoPersonal label input{
-        padding: 10px 30px;
-        margin: 5px 0px 5px 5px;
-        width:240px;
-    }
-    .Direccion label input{
-        margin: 5px 0px 5px 5px;;  
-        padding: 10px 30px;
-        width: 240px;
-    }
-    /*--------------------------*/
-    .Contenedor .boton2{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-    #desplegar1{
-        color: var(--secondary);
-        padding: 0px;
-        font-size: 24px;
-    }
+@media (min-width:768px){
     .padre{
         display: flex;
-        flex-direction:column-reverse;
+        flex-direction: row;
+        justify-content: space-between;
     }
-    .SegundoSec{
+    .blockNombre {
+        display: flex;
+        flex-direction: row;
+    }
+    .productosApagar{
+        width: 80%;
+        display: flex;
+        justify-content: flex-end;
+        margin-top:20px;
+    }
+    .productosApagar .resumen{
+        background-color: var(--white);
+        padding: 8px;
+        width: 65%;
+        height: 80%;
+    }
+    form {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items:flex-start;
     }
-    
-    
-}
-
-
-@media (min-width:581px){
-    .padre{
-        width: 100%;
-        display: flex;
-    }
-    form{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
-    .sugerido1{
-        width: 40%;
-        font:var(--span-small);
-        padding:0px;
-    }
-    .agregarDir{
-        width:38%;
-        display: flex;
-        justify-content:flex-start;
-    }
-    .agregarDir .agregar{
-        box-shadow: 3px 3px 1px white ;
-    }
-    .blockNombre{
-        width:40rem;
-        font: var( --span-small);
-    }
-    .Contenedor{
-        margin-left: 20px;
-    }
-    .sugerido1{
-        width: 30em;
-    }
-    .Contenedor .sugerido{
-        font:var(--litte-small-paragraph);
-        padding-left: 30px;
-        padding-bottom: 20px;
-        padding-right: 5px;
-        padding-top: 10px;
-    }
-    .agregarDir{
-        width: 250px;
-        display: flex;
-        justify-content:flex-start;
-        padding-left: 5px;
-    }
-    .agregarDir .agregar{
-        width: 250px;
-        box-shadow: 3px 3px 1px white ;
-    }
-
-    /*------------------------*/
-    .infoPersonal label input{
-        width:250px;
-        padding: 10px 30px;
-        margin: 5px 0px 5px 5px;
-    }
-    .Direccion label input{
-        margin: 5px 0px 5px 5px;;  
-        padding: 10px 30px;
-        width: 250px;
-    }
-    /*----------------------*/
-    .Contenedor .boton2{
-        margin-left: 5px;
-        margin-top: 8px;
-    }
-    .Contenedor .direction{
-        padding: 10px 25px;
-    }
-    #desplegar1{
+    .sectionFormulario h3{
+        text-align: left;
+        margin-top: 10px;
+        margin-bottom: 20px;
         color: var(--secondary);
-        padding: 0px;
-        font-size: 24px;
+        font: var(--small-paragraph);
+    }
+    .sectionFormulario .botonGuardar{
+        display: flex;
+        justify-content:flex-start;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    form .recordatorio{
+        width: 60%;
+        text-align:left;
+        margin-bottom: 20px;
+        color: var(--white);
+        font: var(--span-small);
     }
 }
+
+                            
