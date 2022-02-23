@@ -22,6 +22,7 @@
 @import "./privacyPolitics.css";
 @import "./agreePolitics.css";
 @import "./login.css";
+@import "./register.css";
 
 /* Components */
 @import "./components/wrapper.css";
