@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/123Bfeo/Grupo_3_WeCol#readme",
   "dependencies": {
-    "express": "^4.17.2"
+    "express": "^4.17.3"
   }
 }

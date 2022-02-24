@@ -1,0 +1,49 @@
+.main-login {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.main-login picture {
+  display: none;
+  width: 400px;
+}
+.main-login picture img {
+  width: 100%;
+}
+.form-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
+  width: 100%;
+  padding-block: 100px;
+}
+.form-login ~ .footer {
+  position: absolute;
+  bottom: 0;
+}
+.form-login .botones {
+  display: flex;
+  gap: 16px;
+}
+.form-login .forgot-password {
+  color: var(--placeholder);
+  font: var(--parrafo);
+  text-align: center;
+}
+.forgot-password a {
+  text-decoration: underline;
+  color: var(--placeholder);
+}
+@media screen and (min-width: 768px) {
+  .main-login {
+    justify-content: space-between;
+  }
+  .form-login {
+    width: 50%;
+  }
+  .main-login picture {
+    display: block;
+  }
+}
