@@ -18,6 +18,12 @@
 @import "./aboutUs.css";
 @import "./productDetail.css";
 @import "./footer.css";
+@import "./productDetail.css";
+@import "./productCart.css";
+@import "./privacyPolitics.css";
+@import "./agreePolitics.css";
+@import "./login.css";
+@import "./register.css";
 
 /* Components */
 @import "./components/wrapper.css";
@@ -32,6 +38,7 @@
   --placeholder: rgba(231, 138, 0, 0.5);
   --text-gray: #5b5b5b;
   --stars-color: #ffd687;
+  --gray2: #383838;
 
   /* Tipografías */
   --link-header: "Source Serif Pro";
@@ -42,11 +49,12 @@
   --title: "Poppins";
   --primaryFont: "Roboto";
   --secondFont: "Source Serif Pro";
-  --link-header: var(--secondFont);
+  --link-header: bold 16px/24px var(--secondFont);
   --tituloH1Small: bold 24px/32px var(--secondFont);
   --tituloH1Bigger: bold 48px/56px var(--secondFont);
   --subtituloH2: bold 40px/48px var(--secondFont);
   --subtituloH3: bold 24px/32px var(--secondFont);
+  --subtituloH3Small: bold 16px/24px var(--secondFont);
   --parrafo: 24px/32px var(--primaryFont);
   --small-paragraph: 16px/24px var(--primaryFont);
   --span-small: 12px/16px var(--primaryFont);

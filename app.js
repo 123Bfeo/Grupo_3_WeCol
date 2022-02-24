@@ -6,7 +6,6 @@ const publicPath = path.join(__dirname, "public");
 app.use(express.static(publicPath));
 
 const pages = [
-  "footer",
   "index",
   "productDetail",
   "register",

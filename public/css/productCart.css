@@ -1,0 +1,163 @@
+.productCart {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.productList {
+  width: 95%;
+}
+.detailProductCard {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.productOption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+  box-shadow: 3px 2px 7px rgba(146, 144, 144, 0.397),
+    -2px -2px 7px rgba(146, 144, 144, 0.397);
+  width: 100%;
+}
+.productosElegidos {
+  width: 50%;
+}
+.productOption i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+  color: var(--secondary);
+  font-size: 30px;
+}
+.productOption button {
+  background-color: var(--secondary);
+  width: 45px;
+  height: 40px;
+  border-radius: 8px;
+  color: var(--white);
+  font: var(--small-paragraph);
+  border: none;
+}
+.productOption .cantidad {
+  display: flex;
+  justify-content: center;
+  margin: 8px 0px 8px 0px;
+}
+.productOption #cantidad {
+  background-color: var(--white);
+  width: 38px;
+  text-align: center;
+  color: var(--white);
+  border: none;
+  background-color: var(--bg-dark);
+}
+.productOption picture {
+  width: 100%;
+}
+.productOption picture img {
+  width: 80%;
+  margin: 10px;
+}
+.nombrePrecio h3 {
+  font: var(--small-paragraph);
+  color: var(--text-gray);
+}
+.nombrePrecio p {
+  color: var(--secondary);
+  font: var(--subtituloH3Small);
+}
+/* estilo resumen*/
+.summaryOfPurchase {
+  max-width: 420px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.summaryOfPurchase .resumen {
+  padding: 8px;
+  width: 90%;
+  background-color: var(--white);
+}
+.summaryOfPurchase .resumen h3 {
+  color: var(--secondary);
+  font: var(--small-paragraph);
+  margin-bottom: 8px;
+}
+.summaryOfPurchase .resumen .verificacion {
+  color: var(--secondary);
+  font: var(--span-small);
+  text-align: center;
+  padding-bottom: 8px;
+  margin-top: 20px;
+}
+.summaryOfPurchase .resumen .totalpago {
+  display: flex;
+  justify-content: space-between;
+  font: var(--small-paragraph);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.summaryOfPurchase .resumen .boton {
+  display: flex;
+  justify-content: center;
+}
+.summaryOfPurchase .resumen button {
+  border: solid 1px var(--secondary);
+  border-radius: 8px;
+  background-color: var(--white);
+  padding: 8px 8px;
+  font: var(--small-paragraph);
+  color: var(--secondary);
+  transition: duration 2s;
+  transition-property: background-color;
+}
+.summaryOfPurchase .resumen button:hover {
+  background-color: var(--secondary);
+  color: var(--white);
+}
+
+@media (min-width: 769px) {
+  .productCart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .detailProductCard {
+    display: flex;
+    flex-direction: row;
+  }
+  .productOption {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+  }
+  .productOption picture {
+    width: 200px;
+  }
+  .productOption picture img {
+    width: 100%;
+    margin: 10px;
+  }
+  .summaryOfPurchase {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .productOption .cantidad {
+    display: flex;
+    justify-content: flex-start;
+    margin: 8px 0px 8px 0px;
+  }
+  .productosElegidos {
+    text-align: left;
+  }
+}
