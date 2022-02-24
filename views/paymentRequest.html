@@ -48,53 +48,57 @@
     </header>
     <main class="main paymentRequest">
       <section class="informaciónTarjeta">
-        <h3 class="x">Tarjeta de Crédito</h3>
         <div>
-          <label for="AgregarTarjeta">
-            <imput type="x" placeholder="Agregar Tarjeta" />
-          </label>
+          <h3 class="x">Tarjeta de Crédito</h3>
+          <i class="fas fa-chevron-down"></i>
         </div>
         <div>
-          <label for="etiquetaTarjeta">
-            <imput
-              type="text"
-              name="Etiqueta"
-              placeholder="Etiqueta para la tarjeta"
-            />
-          </label>
+          <i class="fas fa-plus"></i>
+          <span> Agregar Tarjeta </span>
         </div>
-        <div>
-          <label for="FechaCaducidad">
-            <imput type="date" name="Fecha" placeholder="Fecha de Caducidad" />
-          </label>
-        </div>
-        <div>
-          <label for="numeroDocumento">
+        <form action="informacionTarjeta">
+          <label for="numeroTarjeta">
             <imput
               type="number"
-              name="numero documento"
-              placeholder="Numero de documento"
-            />
-          </label>
-        </div>
-        <div>
-          <label for="etiquetaTarjeta">
-            <imput
-              type="text"
               name="Etiqueta"
-              placeholder="Etiqueta para la tarjeta"
+              id="numeroTarjeta"
+              placeholder="Número de tarjeta"
             />
           </label>
-        </div>
-        <div>
-          <label for="titularTarjeta">
-            <imput type="text" name="titular" placeholder="Nombre Titular" />
+
+          <label for="x">
+            <imput type="date" name="Fecha" placeholder="Fecha de Caducidad" />
           </label>
-        </div>
+          <div>
+            <div>
+              <label for="numeroDocumento">
+                <imput
+                  type="number"
+                  name="numero documento"
+                  placeholder="Numero de documento"
+                />
+              </label>
+              <label for="etiquetaTarjeta">
+                <imput
+                  type="text"
+                  name="Etiqueta"
+                  placeholder="Etiqueta para la tarjeta"
+                />
+              </label>
+            </div>
+            <div>
+              <label for="titularTarjeta">
+                <imput
+                  type="text"
+                  name="titular"
+                  placeholder="Nombre Titular"
+                />
+              </label>
+            </div>
+          </div>
+        </form>
       </section>
-      <form action="/Tarjetade credito/">
-        <div></div>
-      </form>
+      <section class="resumenCompra"></section>
     </main>
     <script
       src="https://kit.fontawesome.com/0b3eb0d831.js"
