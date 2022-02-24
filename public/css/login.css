@@ -1,5 +1,4 @@
 .main-login {
-  /* background-color: #fff; */
   height: 100%;
   display: flex;
   justify-content: center;
@@ -19,50 +18,10 @@
   gap: 56px;
   width: 100%;
   padding-block: 100px;
-  /* border: 1px solid red; */
 }
-.form-login label {
-  position: relative;
-  width: 100%;
-  max-width: 400px;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid var(--secondary);
-}
-.form-login input {
-  line-height: 32px;
-  padding-inline: 8px;
-  border: none;
-  /* border-bottom: 1px solid var(--secondary); */
-  outline: none;
-  width: 100%;
-  font: var(--parrafo);
-  background: none;
-  color: var(--white);
-  padding-inline: 8px 48px;
-}
-.form-login input::placeholder {
-  font: var(--parrafo);
-  color: var(--placeholder);
-}
-
 .form-login ~ .footer {
   position: absolute;
   bottom: 0;
-}
-.form-login .user-login i {
-  position: absolute;
-  right: 0;
-  color: var(--placeholder);
-  font-size: 24px;
-  margin-block-end: 8px;
-}
-.form-login .password i {
-  position: absolute;
-  right: 0;
-  color: var(--placeholder);
-  font-size: 24px;
-  margin-block-end: 8px;
 }
 .form-login .botones {
   display: flex;

@@ -1,0 +1,32 @@
+.form-label10 {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--secondary);
+}
+.form-label10 input {
+  line-height: 32px;
+  padding-inline: 8px;
+  border: none;
+  /* border-bottom: 1px solid var(--secondary); */
+  outline: none;
+  width: 100%;
+  font: var(--parrafo);
+  background: none;
+  color: var(--white);
+  padding-inline: 8px 48px;
+}
+.form-label10 input::placeholder {
+  font: var(--parrafo);
+  color: var(--placeholder);
+}
+
+.form-label10 i {
+  position: absolute;
+  right: 0;
+  color: var(--placeholder);
+  font-size: 24px;
+  margin-block-end: 8px;
+}

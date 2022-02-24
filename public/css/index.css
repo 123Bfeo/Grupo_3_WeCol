@@ -23,6 +23,8 @@
 @import "./agreePolitics.css";
 @import "./login.css";
 @import "./register.css";
+@import "./form.css";
+@import "./paymentRequest.css";
 
 /* Components */
 @import "./components/wrapper.css";
