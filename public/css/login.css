@@ -1,0 +1,24 @@
+.main-login {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.main-login picture {
+  display: none;
+  width: 400px;
+}
+.main-login picture img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .main-login {
+    justify-content: space-between;
+  }
+  .form-login {
+    width: 50%;
+  }
+  .main-login picture {
+    display: block;
+  }
+}

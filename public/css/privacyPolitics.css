@@ -1,0 +1,31 @@
+.main-politics {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+.politics-body {
+  background-color: #fff;
+}
+.hero-politics {
+  max-width: 800px;
+  margin: auto;
+}
+.hero-politics img {
+  width: 100%;
+}
+.main-politics p {
+  font: var(--small-paragraph);
+  text-align: justify;
+}
+.main-politics h3 {
+  font: var(--subtituloH3Small);
+}
+.main-politics ul {
+  list-style: inside;
+}
+
+.main-politics .description-main-politic {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

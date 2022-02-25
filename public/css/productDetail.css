@@ -1,0 +1,209 @@
+.sectionFormulario h3 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: var(--secondary);
+  font: var(--small-paragraph);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blockNombre {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.informacionPersonal label {
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+.informacionPersonal input {
+  width: 100%;
+  padding: 8px 20px 8px 20px;
+  border-radius: 8px;
+  border: solid 1px var(--text-gray);
+  background-color: var(--bg-dark);
+}
+.informacionPersonal input::placeholder {
+  color: var(--placeholder);
+  font: var(--span-small);
+}
+form .recordatorio {
+  text-align: center;
+  margin-bottom: 10px;
+  color: var(--white);
+  font: var(--span-small);
+}
+.agregarDir {
+  margin-bottom: 5px;
+}
+.agregarDir .agregar {
+  color: var(--white);
+  font: var(--span-small);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  margin-bottom: 10px;
+  background-color: var(--secondary);
+  box-shadow: 3px 3px 1px rgb(255, 255, 255);
+}
+.sectionFormulario .botonGuardar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.sectionFormulario button {
+  padding: 8px 20px;
+  border-radius: 8px;
+  background-color: var(--bg-dark);
+  color: var(--secondary);
+  border: solid 1px var(--secondary);
+  font: var(--span-small);
+}
+.productosApagar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.productosApagar .resumen {
+  background-color: var(--white);
+  padding: 8px;
+  width: 80%;
+}
+.productosApagar .resumen h3 {
+  color: var(--secondary);
+  font: var(--small-paragraph);
+  margin-bottom: 8px;
+}
+.productosApagar .resumen .verificacion {
+  color: var(--secondary);
+  font: var(--span-small);
+  text-align: center;
+  padding-bottom: 8px;
+  margin-top: 20px;
+}
+.productosApagar .resumen .totalpago {
+  display: flex;
+  justify-content: space-between;
+  font: var(--small-paragraph);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.productosApagar .resumen .boton2 {
+  display: flex;
+  justify-content: center;
+}
+.productosApagar .resumen button {
+  border: solid 1px var(--secondary);
+  border-radius: 8px;
+  background-color: var(--white);
+  padding: 8px 8px;
+  color: var(--secondary);
+  transition-duration: 2s;
+    transition-property: background-color;
+}
+.productosApagar .resumen  button:hover{
+  background-color: var(--secondary);
+  color: var(--white);
+}
+.resumen .pago {
+  text-align: center;
+  font: var(--span-small);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.resumen .iconos {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.resumen .iconos i {
+  font-size: 30px;
+  margin: 5px;
+}
+.articulos {
+  border-top: 1px solid var(--text-gray);
+  border-bottom: 1px solid var(--text-gray);
+}
+.articulos .art1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 8px;
+  padding: 5px 0px 5px 0px;
+}
+.articulos .art1 h4 {
+  font: var(--span-small);
+}
+.articulos .art1 p {
+  font: var(--span-small);
+}
+
+@media (min-width: 768px) {
+  .padre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .blockNombre {
+    display: flex;
+    flex-direction: row;
+  }
+  .productosApagar {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  .productosApagar .resumen {
+    background-color: var(--white);
+    padding: 15px;
+    width: 65%;
+    height: 80%;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .sectionFormulario h3 {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: var(--secondary);
+    font: var(--small-paragraph);
+  }
+  .sectionFormulario .botonGuardar {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .botonGuardar button{
+    transition-duration: 2s;
+    transition-property: background-color;
+  }
+  .botonGuardar button:hover{
+    background-color: var(--secondary);
+    color: var(--white);
+  }
+  .botonGuardar button{
+    transition-duration: 2s;
+    transition-property: background-color;
+  }
+  .botonGuardar button:hover{
+    background-color: var(--secondary);
+    color: var(--white);
+  }
+  form .recordatorio {
+    width: 60%;
+    text-align: left;
+    margin-bottom: 20px;
+    color: var(--white);
+    font: var(--span-small);
+  }
+}
