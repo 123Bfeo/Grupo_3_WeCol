@@ -53,6 +53,10 @@
   padding: 32px;
   align-items: center;
 }
+.finalItem .item {
+  display: flex;
+  gap: 16px;
+}
 .envioProductos {
   color: var(--secondary);
   font: var(--span-small);
@@ -96,6 +100,10 @@
   background-color: var(--white);
   font: var(--subtituloH3Small);
 }
+.totalPago {
+  display: flex;
+  gap: 240px;
+}
 .formasPago {
   display: flex;
   flex-direction: row;
@@ -104,4 +112,6 @@
   padding: 32px;
 }
 .iconosPago {
+  display: flex;
+  gap: 16px;
 }
