@@ -7,7 +7,6 @@ app.use(express.static(publicPath));
 
 const pages = [
   "index",
-  "productDetail",
   "register",
   "login",
   "aboutUs",
@@ -17,9 +16,9 @@ const pages = [
   "payForm",
   "privacyPolitics",
   "agreePolitics",
-  "productDet",
+  "productDetail",
   "productDetDesc",
-  "productDetTec"
+  "productDetTec",
 ];
 
 pages.forEach((page) => {
