@@ -53,9 +53,10 @@
   padding: 32px;
   align-items: center;
 }
-.finalItem .item {
+.item {
   display: flex;
-  gap: 16px;
+  justify-content: space-between;
+  width: 340px;
 }
 .envioProductos {
   color: var(--secondary);
