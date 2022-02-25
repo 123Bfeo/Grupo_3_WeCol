@@ -13,7 +13,7 @@ const pages = [
   "contact",
   "productCart",
   "facture",
-  "payForm",
+  "paymentRequest",
   "privacyPolitics",
   "agreePolitics",
   "productDetail",
