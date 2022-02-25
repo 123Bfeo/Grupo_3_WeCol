@@ -46,59 +46,123 @@
         </article>
       </section>
     </header>
-    <main class="main paymentRequest">
-      <section class="informaciónTarjeta">
-        <div>
-          <h3 class="x">Tarjeta de Crédito</h3>
+    <main class="mainPaymentRequest">
+      <section class="informacionTarjeta">
+        <div class="creditCard">
+          <h3 class="creditcardtitle">Tarjeta de Crédito</h3>
           <i class="fas fa-chevron-down"></i>
         </div>
-        <div>
-          <i class="fas fa-plus"></i>
-          <span> Agregar Tarjeta </span>
-        </div>
-        <form action="informacionTarjeta">
+          <button class="addCard"> 
+            <i class="fas fa-plus"></i>
+            Agregar Tarjeta </button>
+        <form action="cardInformation">
           <label for="numeroTarjeta">
-            <imput
-              type="number"
-              name="Etiqueta"
+            <input
+              type="text"
+              name="numeroTajertaId"
               id="numeroTarjeta"
               placeholder="Número de tarjeta"
             />
           </label>
-
-          <label for="x">
-            <imput type="date" name="Fecha" placeholder="Fecha de Caducidad" />
+          <label for="nombreApellido">
+            <input
+              type="text"
+              name="nombre"
+              id="nombreApellido"
+              placeholder="Nombre y apellido"
+            />
           </label>
           <div>
             <div>
-              <label for="numeroDocumento">
-                <imput
-                  type="number"
-                  name="numero documento"
-                  placeholder="Numero de documento"
+              <label for="fechaExpiracion">
+                <input
+                  type="date"
+                  name="fecha"
+                  id="fechaExpiracion"
+                  placeholder="Fecha de Expiración"
                 />
               </label>
-              <label for="etiquetaTarjeta">
-                <imput
-                  type="text"
-                  name="Etiqueta"
-                  placeholder="Etiqueta para la tarjeta"
+              <label for="codigoSeguridad">
+                <input
+                  type="number"
+                  name="codigo"
+                  id="codigoSeguridad"
+                  placeholder="Código de Seguridad"
                 />
               </label>
             </div>
             <div>
-              <label for="titularTarjeta">
-                <imput
+              <label for="tipoDocumento">
+                <input
                   type="text"
-                  name="titular"
-                  placeholder="Nombre Titular"
+                  name="documento"
+                  placeholder="Tipo de documento"
+                />
+                <i class="fas fa-chevron-down"></i>
+              </label>
+              <label for="numeroDocumento">
+                <input
+                  type="number"
+                  name="numero"
+                  placeholder="Número de documento"
                 />
               </label>
             </div>
           </div>
         </form>
       </section>
-      <section class="resumenCompra"></section>
+      <section class="resumenCompra">
+        <div class="resumenCompraTitle">
+          <h3 class="resumentitle">Resumen de compra</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="finalItems">
+          <div class="fistItem">
+            <span>x1</span>
+            <span>USB Speaker Portable</span>
+            <span>$100.0</span>
+          </div>
+          <br>
+          <div class="secondItem">
+            <span>x1</span>
+            <span>USB Speaker Portable</span>
+            <span>$100.0</span>
+          </div>
+          <br>
+          <div class="tirdItem">
+            <span>x1</span>
+            <span>USB Speaker Portable</span>
+            <span>$100.0</span>
+          </div>
+        </div>
+        <div class="envioProductos">
+          <span>
+            Tus paquetes pueden llegar en envíos diferentes. VERIFICA TU
+            DIRECCIÓN DE ENVÍO. Una vez la compra es finalizada, los cambios
+            dependerán de la disponibilidad de la transportadora.
+          </span>
+        </div>
+        <div class="totalPago">
+          <span>Total</span>
+          <span>$300.00</span>
+        </div>
+        <div class="promocion">
+          <label for="codigoPromocion">
+            <input
+              type="text"
+              name="codigoDescuento"
+              placeholder="Cangear código"
+            />
+            <button class="canjearCodigo">Canjear</button>
+        </div>
+        <button class="finalizarCompra">Finalizar compra</button>
+        <span class="formasPago"> Formas de pago aceptadas </span>
+        <div class="iconosPago">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-amex"></i>
+        </div>
+      </section>
     </main>
     <script
       src="https://kit.fontawesome.com/0b3eb0d831.js"
