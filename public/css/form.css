@@ -1,3 +1,11 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+}
+
 .form-label10 {
   position: relative;
   width: 100%;
@@ -10,7 +18,6 @@
   line-height: 32px;
   padding-inline: 8px;
   border: none;
-  /* border-bottom: 1px solid var(--secondary); */
   outline: none;
   width: 100%;
   font: var(--parrafo);
@@ -29,4 +36,21 @@
   color: var(--placeholder);
   font-size: 24px;
   margin-block-end: 8px;
+}
+.form-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.footForm {
+  color: var(--placeholder);
+  font: var(--parrafo);
+  text-align: center;
+  margin-block-start: 24px;
+}
+.footForm a {
+  text-decoration: underline;
+  color: var(--placeholder);
 }
