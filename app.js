@@ -17,6 +17,9 @@ const pages = [
   "payForm",
   "privacyPolitics",
   "agreePolitics",
+  "productDet",
+  "productDetDesc",
+  "productDetTec"
 ];
 
 pages.forEach((page) => {

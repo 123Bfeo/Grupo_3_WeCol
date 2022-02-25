@@ -1,6 +1,7 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 
 /* Reset */
 @import "./reset.css";
@@ -16,8 +17,10 @@
 @import "./brands.css";
 @import "./newsLater.css";
 @import "./aboutUs.css";
+@import "./productDetail.css";
 @import "./footer.css";
 @import "./productDetail.css";
+@import "./productDet.css";
 @import "./productCart.css";
 @import "./privacyPolitics.css";
 @import "./agreePolitics.css";
@@ -25,6 +28,7 @@
 @import "./register.css";
 @import "./form.css";
 @import "./paymentRequest.css";
+@import "./contact.css";
 
 /* Components */
 @import "./components/wrapper.css";
@@ -42,6 +46,12 @@
   --gray2: #383838;
 
   /* Tipografías */
+  --link-header: "Source Serif Pro";
+  --tituloH1Small: bold 24px/32px "Source Serif Pro";
+  --tituloH1Bigger: bold 48px/56px "Source Serif Pro";
+  --subtituloH2: bold 40px/48px "Source Serif Pro";
+  --span1: "Roboto";
+  --title: "Poppins";
   --primaryFont: "Roboto";
   --secondFont: "Source Serif Pro";
   --link-header: bold 16px/24px var(--secondFont);

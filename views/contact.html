@@ -1,12 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contáctanos</title>
-  </head>
-  <body>
-    <h1>Contáctanos</h1>
-  </body>
-</html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script defer src="/js/header.js"></script>
+  <script defer src="https://kit.fontawesome.com/0b3eb0d831.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+  <link rel="stylesheet" href="/css/index.css" />
+  <title>Detalles del producto</title>
+</head>
+
+<body>
+  <header class="header">
+    <section class="wrapper">
+      <a href="/header" class="logo">
+        <img src="/img/Logo.svg" alt="Wecol" title="Wecol" />
+      </a>
+      <nav class="nav" id="nav">
+        <article class="login">
+          <span> Te damos la Bienvenida</span>
+          <div class="btn-log">
+            <a href="/login">
+              <button class="btn-small btn-login">Iniciar Sesión</button>
+            </a>
+            <a href="/register">
+              <button class="btn-small btn-register">Registrarse</button>
+            </a>
+          </div>
+        </article>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/aboutUs">Quiénes Somos</a></li>
+          <li><a href="/contact">Contáctanos</a></li>
+        </ul>
+      </nav>
+      <article class="header-right">
+        <button class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+        <a href="/login" class="user">
+          <i class="fas fa-user"></i>
+        </a>
+        <a href="/productCart">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+      </article>
+    </section>
+  </header>
+
+  <section class="form-contact">
+    <div class="con-desc">
+      <div class="con-tit">
+        <h3>Contáctanos</h3>
+      </div>
+      <p>Si tienes dudas y deseas conocer más acerca de nuestra política de privacidad y tratamiento de datos o, por el
+        contrario, ya no quieres continuar con nuestra suscripción de correos promocionales o que usemos tus datos
+        personales contáctanos a través de:
+      </p><br>
+      <p>E-mail: wecoltecuida@wecol.com.co</p>
+      <p>Teléfono: (+57) 320 459 1245</p>
+      <p><br>
+        De igual forma, te informamos que nuestro correo para solicitudes, quejas, reclamos, sugerencias o
+        felicitaciones es atencionalcliente@wecol.com.co y que nuestro correo de notificaciones judiciales es
+        notificacionesjudiciales@wecol.com.co
+      </p>
+
+    </div>
+    <div class="con-desc">
+      <form class="con-form">
+        <label>Nombre completo</label>
+        <br>
+        <input type="text" placeholder="Juan">
+        <br>
+        <label>Correo electrónico</label>
+        <br>
+        <input type="text" placeholder="juan@gmail.com">
+        <br>
+        <label>Mensaje</label>
+        <br>
+        <textarea name="textarea" rows="10" cols="50"></textarea>
+        <br>
+        <button type="submit">Enviar Mensaje</button>
+        
+      </form>
+
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+
+  <footer class="footer">
+    <section class="wrapper">
+      <article class="footer-head">
+        <section class="logo-description">
+          <a href="/" class="logo">
+            <img src="/img/logo.svg" alt="wecol" title="wecol" />
+          </a>
+          <span class="description-company">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor.
+          </span>
+        </section>
+        <section class="info-section">
+          <section class="company">
+            <h6 class="footer-titulo">Empresa</h6>
+            <nav>
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/quienesSomos">Quiénes Somos</a></li>
+                <li><a href="contactenos">Contáctenos</a></li>
+              </ul>
+            </nav>
+          </section>
+          <section class="info">
+            <h6 class="footer-titulo">Información</h6>
+            <nav>
+              <ul>
+                <li><a href="">Métodos de pago</a></li>
+                <li><a href="">Política de Privacidad</a></li>
+              </ul>
+            </nav>
+          </section>
+          <section class="siguenos">
+            <h6 class="footer-titulo">Siguenos</h6>
+            <ul class="social">
+              <li><a href="#"><i class="fab fa-instagram"></a></i></li>
+              <li><a href="#"><i class="fab fa-twitter"></a></i></li>
+              <li><a href="#"><i class="fab fa-facebook-square"></a></i></li>
+            </ul>
+          </section>
+        </section>
+      </article>
+      <article class="footer-foot">
+        <div class="made-for">
+          Hecho con ❤️ por Checho, Jenni, Luis, Juli y Jhon
+        </div>
+        <div class="copyright">
+          Colombia 2022 - Todos los derechos reservados
+        </div>
+      </article>
+    </section>
+  </footer>
+</body>
