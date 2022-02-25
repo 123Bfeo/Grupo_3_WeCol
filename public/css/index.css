@@ -1,6 +1,8 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
 
 /* Reset */
 @import "./reset.css";
@@ -19,11 +21,13 @@
 @import "./productDetail.css";
 @import "./footer.css";
 @import "./productDetail.css";
+@import "./productDet.css";
 @import "./productCart.css";
 @import "./privacyPolitics.css";
 @import "./agreePolitics.css";
 @import "./login.css";
 @import "./register.css";
+@import "./contact.css";
 
 /* Components */
 @import "./components/wrapper.css";
