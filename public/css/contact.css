@@ -62,3 +62,18 @@
     color: var(--white);
     text-align: justify;
 }
+
+
+@media screen and (max-width: 580px) {
+    
+    .form-contact{
+        flex-direction: column;
+    }
+
+    .con-desc{
+        width: 90%;
+        margin: 5px 10px;
+        padding: 5px 20px;
+    }
+
+}
