@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="/js/header.js"></script>
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <title>Header</title>
+  </head>
+  <body>
+    <header class="header">
+      <section class="wrapper">
+        <a href="/header" class="logo">
+          <img src="/img/Logo.svg" alt="Wecol" title="Wecol" />
+        </a>
+        <nav class="nav" id="nav">
+          <article class="login">
+            <span> Te damos la Bienvenida</span>
+            <div class="btn-log">
+              <a href="/login">
+                <button class="btn-small btn-login">Iniciar Sesión</button>
+              </a>
+              <a href="/register">
+                <button class="btn-small btn-register">Registrarse</button>
+              </a>
+            </div>
+          </article>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/aboutUs">Quiénes Somos</a></li>
+            <li><a href="/contact">Contáctanos</a></li>
+          </ul>
+        </nav>
+        <article class="header-right">
+          <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+          </button>
+          <a href="/login" class="user">
+            <i class="fas fa-user"></i>
+          </a>
+          <a href="/productCart">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+        </article>
+      </section>
+    </header>
+    <main class="mainPaymentRequest">
+      <section class="informacionTarjeta">
+        <div class="creditCard">
+          <h3 class="creditcardtitle">Tarjeta de Crédito</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+          <button class="addCard"> 
+            <i class="fas fa-plus"></i>
+            Agregar Tarjeta </button>
+        <form action="cardInformation">
+          <label for="numeroTarjeta">
+            <input
+              type="text"
+              name="numeroTajertaId"
+              id="numeroTarjeta"
+              placeholder="Número de tarjeta"
+            />
+          </label>
+          <label for="nombreApellido">
+            <input
+              type="text"
+              name="nombre"
+              id="nombreApellido"
+              placeholder="Nombre y apellido"
+            />
+          </label>
+          <div>
+            <div>
+              <label for="fechaExpiracion">
+                <input
+                  type="date"
+                  name="fecha"
+                  id="fechaExpiracion"
+                  placeholder="Fecha de Expiración"
+                />
+              </label>
+              <label for="codigoSeguridad">
+                <input
+                  type="number"
+                  name="codigo"
+                  id="codigoSeguridad"
+                  placeholder="Código de Seguridad"
+                />
+              </label>
+            </div>
+            <div>
+              <label for="tipoDocumento">
+                <input
+                  type="text"
+                  name="documento"
+                  placeholder="Tipo de documento"
+                />
+                <i class="fas fa-chevron-down"></i>
+              </label>
+              <label for="numeroDocumento">
+                <input
+                  type="number"
+                  name="numero"
+                  placeholder="Número de documento"
+                />
+              </label>
+            </div>
+          </div>
+        </form>
+      </section>
+      <section class="resumenCompra">
+        <div class="resumenCompraTitle">
+          <h3 class="resumentitle">Resumen de compra</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="finalItems">
+          <div class="item">
+            <span>x1</span>
+            <span>USB Speaker Portable</span>
+            <span>$100.00</span>
+          </div>
+          <br>
+          <div class="item">
+            <span>x1</span>
+            <span>Joystick Pro</span>
+            <span>$100.00</span>
+          </div>
+          <br>
+          <div class="item">
+            <span>x1</span>
+            <span>Smartphone 5G</span>
+            <span>$100.00</span>
+          </div>
+        </div>
+        <div class="envioProductos">
+          <span>
+            Tus paquetes pueden llegar en envíos diferentes. VERIFICA TU
+            DIRECCIÓN DE ENVÍO. Una vez la compra es finalizada, los cambios
+            dependerán de la disponibilidad de la transportadora.
+          </span>
+        </div>
+        <div class="totalPago">
+          <span>Total</span>
+          <span>$300.00</span>
+        </div>
+        <div class="promocion">
+          <label for="codigoPromocion">
+            <input
+              type="text"
+              name="codigoDescuento"
+              placeholder="Cangear código"
+            />
+            <button class="canjearCodigo">Canjear</button>
+        </div>
+        <button class="finalizarCompra">Finalizar compra</button>
+        <span class="formasPago"> Formas de pago aceptadas </span>
+        <div class="iconosPago">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-amex"></i>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/0b3eb0d831.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
