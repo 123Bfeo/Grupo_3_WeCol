@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 
-
 /* Reset */
 @import "./reset.css";
 
@@ -27,6 +26,8 @@
 @import "./agreePolitics.css";
 @import "./login.css";
 @import "./register.css";
+@import "./form.css";
+@import "./paymentRequest.css";
 @import "./contact.css";
 
 /* Components */
@@ -91,6 +92,15 @@ body {
 }
 .placeholder {
   color: var(--placeholder);
+}
+.gap16 {
+  gap: 16px;
+}
+.gap24 {
+  gap: 24px;
+}
+.gap32 {
+  gap: 32px;
 }
 @media (min-width: 768px) {
   .titulo {

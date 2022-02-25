@@ -1,0 +1,28 @@
+.register-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid green;
+  width: 100%;
+}
+.politicsContainer picture {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .register-content {
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 100px;
+  }
+  .politicsContainer {
+    max-width: 50%;
+  }
+  .politicsContainer picture {
+    display: block;
+  }
+  .politicsContainer picture img {
+    width: 100%;
+  }
+}
