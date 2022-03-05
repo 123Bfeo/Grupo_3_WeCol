@@ -1,0 +1,35 @@
+<% products.forEach( prod => {%>
+    <article class="card">
+      <% let e = "/productDet/"+prod.id %>
+      <a href=<%= e %>>
+      <picture class="card-img">
+        <img alt="product-image" src=<%= prod.image %>>
+      </picture>
+    </a>
+      <div class="card-description">
+        <div class="name-price">
+          <span class="name-product"><%= prod.name %></span>
+          <span class="price-product"><%= prod.price %></span>
+        </div>
+        <hr />
+        <div class="rate-cart">
+          <div class="rate">
+            <div class="punctuation"><%= prod.rating %></div>
+            <span class="star-score">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </span>
+          </div>
+          <button class="btn-add-cart">
+            <span>Añadir al carrito</span>
+            <a href="/productCart">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </button>
+        </div>
+      </div>
+    </article>
+  <% }) %>

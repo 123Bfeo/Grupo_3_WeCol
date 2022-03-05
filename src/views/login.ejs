@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/Head') %>
+
+  <body>
+    <%- include('./partials/Header') %>
+
+    <main class="main-login wrapper">
+      <picture>
+        <img src="/img/mouse2.png" alt="Mouse" title="Mouse" />
+      </picture>
+      <form action="" method="POST" class="form gap32">
+        <article class="form-content gap32">
+          <label for="" class="form-label10">
+            <input type="text" placeholder="Usuario o correo electrónico" />
+            <i class="fas fa-user"></i>
+          </label>
+          <label for="" class="form-label10">
+            <input type="password" placeholder="Contraseña" />
+            <i class="fas fa-lock"></i>
+          </label>
+        </article>
+        <article class="btnContainer">
+          <button type="submit" class="btn btnFirst">Iniciar Sesión</button>
+          <a href="/register" class="btn btnSecond"> Registrarse </a>
+        </article>
+        <span class="footForm"
+          >¿ Olvidaste tu contraseña ? <a href="/forgotPassword">Recuperala</a>
+        </span>
+      </form>
+    </main>
+
+    <%- include('./partials/Footer') %>
+  </body>
+</html>

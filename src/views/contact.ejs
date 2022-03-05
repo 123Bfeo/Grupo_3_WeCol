@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/Head') %>
+
+  <body>
+    <%- include('./partials/Header') %>
+
+    <section class="form-contact">
+      <div class="con-desc">
+        <div class="con-tit">
+          <h3>Contáctanos</h3>
+        </div>
+        <p>
+          Si tienes dudas y deseas conocer más acerca de nuestra política de
+          privacidad y tratamiento de datos o, por el contrario, ya no quieres
+          continuar con nuestra suscripción de correos promocionales o que
+          usemos tus datos personales contáctanos a través de:
+        </p>
+        <br />
+        <p>E-mail: wecoltecuida@wecol.com.co</p>
+        <p>Teléfono: (+57) 320 459 1245</p>
+        <p>
+          <br />
+          De igual forma, te informamos que nuestro correo para solicitudes,
+          quejas, reclamos, sugerencias o felicitaciones es
+          atencionalcliente@wecol.com.co y que nuestro correo de notificaciones
+          judiciales es notificacionesjudiciales@wecol.com.co
+        </p>
+      </div>
+      <div class="con-desc">
+        <form class="con-form">
+          <label>Nombre completo</label>
+          <br />
+          <input type="text" placeholder="Juan" />
+          <br />
+          <label>Correo electrónico</label>
+          <br />
+          <input type="text" placeholder="juan@gmail.com" />
+          <br />
+          <label>Mensaje</label>
+          <br />
+          <textarea name="textarea" rows="10" cols="50"></textarea>
+          <br />
+          <button type="submit">Enviar Mensaje</button>
+        </form>
+      </div>
+    </section>
+
+    <%- include('./partials/Footer') %>
+  </body>
+</html>
