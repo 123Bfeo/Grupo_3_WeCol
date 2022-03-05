@@ -25,3 +25,9 @@ Como equipo estamos enfocados en nuestra mejora continua, por ello, dentro de nu
 **Less of:** Es importante entender en que etapa se encuentra nuestro proyecto, por ello, una vez finalizada nuestra etapa de planeación, la etapa de ejecución y cumplimento de entregables conforme a nuestro cronograma adquiere mayor relevancia, puesto que entre más rápido identifiquemos los errores dentro nuestras actividades tendremos un margen de tiempo mayor para solucionarlos o consultar con nuestros docentes. En conclusión, requerimos enfocarnos más en las etapas y cronogramas de entregables pactados.
 
 **Stop Doing:** Queremos ser un poco más rígidos en cuanto a la entrega de nuestros avances con el fin de desarrollar mejor nuestra eficiencia y compromiso grupal. Lo anterior, debido a que cada vez el nivel de complejidad de las actividades va aumentando conforme se avanzan los sprints.
+
+## Retroalimentación del Segundo Sprint
+
+Como equipo estamos enfocados en nuestra mejora continua, por ello, dentro de nuestra metodología evaluativa iniciaremos identificando nuestros puntos fuertes y débiles durante el desarrollo del primer sprint. Posteriormente, utilizaremos parte de la metodología de retrospectiva de la estrella de mar para identificar que actividades y tareas podemos realizar con el fin de optimizar nuestro proceso de aprendizaje y la eficiencia de nuestro trabajo como equipo.
+
+### 1. ¿Qué hicimos bien en nuestro primer Sprint?
