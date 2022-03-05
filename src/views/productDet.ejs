@@ -15,7 +15,7 @@
 <body>
   <header class="header">
     <section class="wrapper">
-      <a href="/header" class="logo">
+      <a href="/" class="logo">
         <img src="/img/Logo.svg" alt="Wecol" title="Wecol" />
       </a>
       <nav class="nav" id="nav">
@@ -53,7 +53,7 @@
     <section class="prueb">
       <div class="img-product">
         <picture>
-          <img src="/img/referenciaDetail.png" alt="">
+          <img alt="" src=<%= product.image %> >
         </picture>
         <div class="slider">
           <button>
@@ -67,10 +67,10 @@
       <div class="det-product">
         <div id="dp-header">
           <label class="grey-word">Product > </label>
-          <label class="yellow-word">Macbook Air 2021</label>
+          <label class="yellow-word"><%= product.name %></label>
         </div>
         <div class="rate">
-          <div class="punctuation">5.0</div>
+          <div class="punctuation"><%= product.rating %></div>
           <span class="star-score">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -81,10 +81,10 @@
           </span>
         </div>
         <div class="main-name">
-          <label class="f">Macbook Air 2021</label>
+          <label class="f"><%= product.name %></label>
         </div>
         <div>
-          <label class="d"><u>$6.800.000</u></label>
+          <label class="d"><u><%= product.price %></u></label>
         </div>
         <div class="dp-descripcion">
           <i class="fas fa-truck"></i>
@@ -97,8 +97,7 @@
         </div>
         <section class="aboutProduct">
           <h3>Descripción</h3>
-          <p>Nuestra notebook más ligera y delgada vuelve completamente renovada por dentro. Gracias al chip M1 de
-            Apple, el CPU es hasta 3.5 veces más rápido y el GPU hasta 5 veces más veloz.</p>
+          <p><%= product.description %></p>
         </section>
         <div>
           <label>Cantidad</label>

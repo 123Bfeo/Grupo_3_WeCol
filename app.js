@@ -1,48 +1,23 @@
 const express = require("express");
 const app = express();
 const path = require("path");
+const mainRoutes = require('./src/routers/appMain');
+const productRoutes = require('./src/routers/products');
+const factureController = require('./src/routers/facture');
+const userController = require('./src/routers/users');
 
-const publicPath = path.join(__dirname, "public");
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'src/views'));
+
+const publicPath = path.resolve("public");
+console.log(publicPath);
 app.use(express.static(publicPath));
 
-const pages = [
-  "index",
-  "productDetail",
-  "register",
-  "login",
-  "aboutUs",
-  "contact",
-  "productCart",
-  "facture",
-  "payForm",
-  "privacyPolitics",
-  "agreePolitics",
-  "productDet",
-  "productDetDesc",
-  "productDetTec"
-];
-
-pages.forEach((page) => {
-  if (page == "index") {
-    app.get("/", (req, res) => {
-      const home = path.join(__dirname, "./views/index.html");
-      res.sendFile(home);
-    });
-  } else {
-    app.get(`/${page}`, (req, res) => {
-      const home = path.join(__dirname, `./views/${page}.html`);
-      res.sendFile(home);
-    });
-  }
-});
-
-// Enlace a componenten Header
-app.get("/footer", (req, res) => {
-  const header = path.join(__dirname, "./components/footer.html");
-  res.sendFile(header);
-});
+//Invocación de rutas
+app.use('/', mainRoutes,productRoutes,factureController,userController);
 
 const port = 3000;
 app.listen(port, () =>
   console.log(`El servidor se está ejecutando en el puerto ${port}`)
 );
+
