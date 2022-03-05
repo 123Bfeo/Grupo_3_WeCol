@@ -9,11 +9,11 @@
   <script defer src="https://kit.fontawesome.com/0b3eb0d831.js" crossorigin="anonymous"></script>
   <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
   <link rel="stylesheet" href="/css/index.css" />
-  <title>Header</title>
+  <title>Detalles del producto</title>
 </head>
 
 <body>
-  <header class="header ">
+  <header class="header">
     <section class="wrapper">
       <a href="/header" class="logo">
         <img src="/img/Logo.svg" alt="Wecol" title="Wecol" />
@@ -49,157 +49,303 @@
       </article>
     </section>
   </header>
-  <!--Contenedor Global-->
-  <main class="padre wrapper">
-    <section class="sectionFormulario">
-
-        <h3>Informacion Personal <i class="fas fa-chevron-down" id="desplegar"></i></h3>
-        <!--Contenedor informacion perosnal-->
-        <div class="informacionPersonal">
-          <form action="">
-            <div class="blockNombre">
-              <label for="nombre">
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-              </label>
-              <label for="apellido">
-                <input type="text" name="apellido" id="apellido" placeholder="Apellido">
-              </label>
-            </div>
-            <div class="blockNombre">
-              <label for="celular">
-                <input type="tel" name="celular" id="celular" placeholder="Celular">
-              </label>
-              <label for="Correo">
-                <input type="email" name="Correo" id="Correo" placeholder="Correo">
-              </label>
-            </div>
-            <div class="blockNombre">
-              <label for="Identificacion ">
-                <input type="number" name="identificacion" id="Identificacion" placeholder="Identificación">
-              </label>
-
-              <label for="tipo">
-                <input type="text" name="Tipo" id="tipo" placeholder="Tipo de Identificación">
-              </label>
-            </div>
-
-            <h3>Direccion <i class="fas fa-chevron-down" id="desplegar"></i></h3>
-
-            <div class="recordatorio">
-              <p>Recuerda seleccionar la dirección de envío y facturación a la que deseas enviar tu
-                orden.
-                * Esta dirección se verá reflejada en el resumen de tu pedido. *</p>
-            </div>
-
-
-            <div class="agregarDir">
-              <div>
-                <p class="agregar"> + Agregar una Dirección</p>
-              </div>
-              <label for="etiqueta">
-                <input type="text" name="etiqueta" id="etiqueta" placeholder="Etiqueta para la direccion">
-              </label>
-            </div>
-
-            <!--Contenedor direccion personal-->
-
-
-
-
-              <div class="blockNombre">
-                <label for="nombre">
-                  <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-                </label>
-
-                <label for="apellido">
-                  <input type="text" name="apellido" id="apellido" placeholder="Apellido">
-                </label>
-              </div>
-
-              <div class="blockNombre">
-                <label for="TelefonoCel">
-                  <input type="tel" name="TelefonoCel" id="TelefonoCel" placeholder="Teléfono Celular">
-                </label>
-
-                <label for="TelefonoFi">
-                  <input type="tel" name="TelefonoFi" id="TelefonoFi" placeholder="Teléfono Fijo">
-                </label>
-              </div>
-
-              <div class="blockNombre">
-                <label for="dirección">
-                  <input type="tex" name="direccion" id="direccion" placeholder="Dirección">
-                </label>
-
-                <label for="Direccion1">
-                  <input type="text" name="direccion1" id="Direccion1" placeholder="Barrio/Piso/Oficina/Apto">
-                </label>
-              </div>
-
-              <div class="blockNombre">
-                <label for="CodigoP ">
-                  <input type="number" name="codigoP" id="CodigoP" placeholder="Código Postal">
-                </label>
-
-                <label for="Pais">
-                  <input type="text" name="pais" id="Pais" placeholder="País">
-                </label>
-              </div>
-              <div class="blockNombre">
-                <label for="Departamento">
-                  <input type="text" name="Departamento" id="Departamento" placeholder="Departamento">
-                </label>
-                <label for="Ciudad">
-                  <input type="text" name="Ciudad" id="Ciudad" placeholder="Ciudad">
-                </label>
-              </div>
-          </form>
-        </div>
-        <div class="botonGuardar">
-          <button value="submit" class="direction">Guardar Dirección</button>
-        </div>
-    </section>
-    <!--segunada seccion-->
-    <section class="productosApagar">
-      <div class="resumen">
-        <h3>Resumen de compra <i class="fas fa-chevron-down fa-lg" id="desplegar1"></i></h3>
-        <div class="articulos">
-          <div class="art1">
-            <h4>x1 USB Speaker Portable</h4>
-            <p>$100.00</p>
-          </div>
-          <div class="art1">
-            <h4>x1 Joystick Pro</h4>
-            <p>$100.00</p>
-          </div>
-          <div class="art1">
-            <h4>x1 Smarphone 5G</h4>
-            <p>$100.00</p>
-          </div>
-        </div>
-        <p class="verificacion">Tus paquetes pueden llegar en envíos diferentes. VERIFICA TU DIRECCIÓN DE ENVÍO. Una vez
-          la compra es
-          finalizada,
-          los cambios dependerán de la disponibilidad de la transportadora.</p>
-        <div class="totalpago">
-          <p>Total</p>
-          <p>$300.00</p>
-        </div>
-        <div class="boton2">
-          <button value="submit">Continar con la Compra</button>
-        </div>
-
-        <p class="pago">Forma de pago aceptadas</p>
-        <div class="iconos">
-          <i class="fab fa-cc-visa"></i>
-          <i class="fab fa-cc-mastercard"></i>
-          <i class="fab fa-cc-amex"></i>
-          <i class="fab fa-cc-paypal"></i>
+  <main>
+    <section class="prueb">
+      <div class="img-product">
+        <picture>
+          <img src="/img/referenciaDetail.png" alt="">
+        </picture>
+        <div class="slider">
+          <button>
+            < </button>
+              <img src="/img/referenciaDetail.png" alt="">
+              <img src="/img/detalle2.png" alt="">
+              <img src="/img/detalle3.png" alt="">
+              <button> > </button>
         </div>
       </div>
-    </section>
-  </main>
+      <div class="det-product">
+        <div id="dp-header">
+          <label class="grey-word">Product > </label>
+          <label class="yellow-word">Macbook Air 2021</label>
+        </div>
+        <div class="rate">
+          <div class="punctuation">5.0</div>
+          <span class="star-score">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <label class="grey-word">Opiniones(12) | vendido 99</label>
+          </span>
+        </div>
+        <div class="main-name">
+          <label class="f">Macbook Air 2021</label>
+        </div>
+        <div>
+          <label class="d"><u>$6.800.000</u></label>
+        </div>
+        <div class="dp-descripcion">
+          <i class="fas fa-truck"></i>
+          <label class="etiqueta-blanca">Envío gratis</label>
+          <i class="fas fa-shopping-cart" id="camion"></i>
+          <label class="etiqueta-blanca">En stock</label>
+        </div>
+        <div>
+          <hr>
+        </div>
+        <section class="aboutProduct">
+          <h3>Descripción</h3>
+          <p>Nuestra notebook más ligera y delgada vuelve completamente renovada por dentro. Gracias al chip M1 de
+            Apple, el CPU es hasta 3.5 veces más rápido y el GPU hasta 5 veces más veloz.</p>
+        </section>
+        <div>
+          <label>Cantidad</label>
+          <article class="detailProductCard">
+            <div class="productOption">
+              <div class="cantidad">
+                <button id="disminuir" onclick="disminuir()">-</button>
+                <input type="text" id="cantidad" value="0" />
+                <button id="aumentar1" onclick="aumentar(event.target)">
+                  +
+                </button>
+              </div>
+            </div>
+          </article>
 
+          <button class="btn-add-cart">
+            <span>Añadir al carrito</span>
+            <a href="/productCart">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </button>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+  <section>
+    <div class="hiper">
+      <a class="enlaces" href="/productDet">Opiniones</a>
+      <a class="enlaces" href="/productDetDesc">Descripción</a>
+      <a class="enlaces" href="/productDetTec">Detalles Técnicos</a>
+    </div>
+    <div class="qa">
+      <input class="question" type="text" placeholder="Agregar opinion o pregunta">
+      <button>Comentar</button>
+    </div>
+    <div class="opinions">
+      <div class="opinion">
+        <p>
+          Buenas tardes. ¿Tienen en color gris espacial?
+        </p>
+        <p class="desc">* Hola, si lo puedes pedir en gris espacial.</p>
+      </div>
+      <div class="opinion">
+        <p>
+          Amigo depronto manejas Macbook air de 16gb - 256?
+        </p>
+        <p class="desc">* Hola, el AIR de 16GB RAM - 256GB no lo manejamos, solo version PRO.</p>
+      </div>
+      <div class="opinion">
+        <p>
+          Tienes disponibilidad inmediata ?
+        </p>
+        <p class="desc">*  Hola, si tenemos una unidad para entrega inmediata.</p>
+      </div>
+      <div class="opinion">
+        <p>
+          Hola, es posible que venga con teclado de fábrica en español ?
+        </p>
+        <p class="desc">* Hola, al momento no es posible.</p>
+      </div>
+      <div class="opinion">
+        <p>
+          Hola buen día. ¿el tema de garantía como se maneja?
+        </p>
+        <p class="desc">* dado si algo me llegará a fallar a dónde lo podría llevar aquí en Colombia?, ya que entiendo estos vienen de manera importada.
+          Hola, la garantía de Apple es global funciona de manera global, en Colombia te funciona sin problema en cualquier centro de Servicio técnico Apple en el país.
+          </p>
+      </div>
+    </div>
+     
+  </section>
+  <section>
+    <section class="ofers wrapper">
+      <h2 class="subtituloH2 gray">Productos en Oferta</h2>
+      <article class="ofers-cards">
+        <div class="card-off">
+          <picture class="card-img">
+            <img src="/img/recomended.png" alt="earphone" title="earphone" />
+            <span>25% OFF</span>
+          </picture>
+          <div class="card-off-description">
+            <span class="product-name">AirPods</span>
+            <span class="product-price">
+              <div class="real-price">$2.650.000</div>
+              <i>-</i>
+              <div class="current-price">$1.897.500</div>
+            </span>
+            <div class="available">
+              <span class="available-quantity">
+                <p>Disponibles: 5</p>
+                <p>Vendidos: 2</p>
+              </span>
+              <button class="progress-quantity"></button>
+            </div>
+          </div>
+        </div>
+        <div class="card-off">
+          <picture class="card-img">
+            <img src="/img/recomended.png" alt="earphone" title="earphone" />
+            <span>25% OFF</span>
+          </picture>
+          <div class="card-off-description">
+            <span class="product-name">AirPods</span>
+            <span class="product-price">
+              <div class="real-price">$2.650.000</div>
+              <i>-</i>
+              <div class="current-price">$1.897.500</div>
+            </span>
+            <div class="available">
+              <span class="available-quantity">
+                <p>Disponibles: 5</p>
+                <p>Vendidos: 2</p>
+              </span>
+              <button class="progress-quantity"></button>
+            </div>
+          </div>
+        </div>
+        <div class="card-off">
+          <picture class="card-img">
+            <img src="/img/recomended.png" alt="earphone" title="earphone" />
+            <span>25% OFF</span>
+          </picture>
+          <div class="card-off-description">
+            <span class="product-name">AirPods</span>
+            <span class="product-price">
+              <div class="real-price">$2.650.000</div>
+              <i>-</i>
+              <div class="current-price">$1.897.500</div>
+            </span>
+            <div class="available">
+              <span class="available-quantity">
+                <p>Disponibles: 5</p>
+                <p>Vendidos: 2</p>
+              </span>
+              <button class="progress-quantity"></button>
+            </div>
+          </div>
+        </div>
+        <div class="card-off">
+          <picture class="card-img">
+            <img src="/img/recomended.png" alt="earphone" title="earphone" />
+            <span>25% OFF</span>
+          </picture>
+          <div class="card-off-description">
+            <span class="product-name">AirPods</span>
+            <span class="product-price">
+              <div class="real-price">$2.650.000</div>
+              <i>-</i>
+              <div class="current-price">$1.897.500</div>
+            </span>
+            <div class="available">
+              <span class="available-quantity">
+                <p>Disponibles: 5</p>
+                <p>Vendidos: 2</p>
+              </span>
+              <button class="progress-quantity"></button>
+            </div>
+          </div>
+        </div>
+        <div class="card-off">
+          <picture class="card-img">
+            <img src="/img/recomended.png" alt="earphone" title="earphone" />
+            <span>25% OFF</span>
+          </picture>
+          <div class="card-off-description">
+            <span class="product-name">AirPods</span>
+            <span class="product-price">
+              <div class="real-price">$2.650.000</div>
+              <i>-</i>
+              <div class="current-price">$1.897.500</div>
+            </span>
+            <div class="available">
+              <span class="available-quantity">
+                <p>Disponibles: 5</p>
+                <p>Vendidos: 2</p>
+              </span>
+              <button class="progress-quantity"></button>
+            </div>
+          </div>
+        </div>
+        <div class="card-off">
+          <picture class="card-img">
+            <img src="/img/recomended.png" alt="earphone" title="earphone" />
+            <span>25% OFF</span>
+          </picture>
+          <div class="card-off-description">
+            <span class="product-name">AirPods</span>
+            <span class="product-price">
+              <div class="real-price">$2.650.000</div>
+              <i>-</i>
+              <div class="current-price">$1.897.500</div>
+            </span>
+            <div class="available">
+              <span class="available-quantity">
+                <p>Disponibles: 5</p>
+                <p>Vendidos: 2</p>
+              </span>
+              <button class="progress-quantity"></button>
+            </div>
+          </div>
+        </div>
+        <div class="card-off">
+          <picture class="card-img">
+            <img src="/img/recomended.png" alt="earphone" title="earphone" />
+            <span>25% OFF</span>
+          </picture>
+          <div class="card-off-description">
+            <span class="product-name">AirPods</span>
+            <span class="product-price">
+              <div class="real-price">$2.650.000</div>
+              <i>-</i>
+              <div class="current-price">$1.897.500</div>
+            </span>
+            <div class="available">
+              <span class="available-quantity">
+                <p>Disponibles: 5</p>
+                <p>Vendidos: 2</p>
+              </span>
+              <button class="progress-quantity"></button>
+            </div>
+          </div>
+        </div>
+        <div class="card-off">
+          <picture class="card-img">
+            <img src="/img/recomended.png" alt="earphone" title="earphone" />
+            <span>25% OFF</span>
+          </picture>
+          <div class="card-off-description">
+            <span class="product-name">AirPods</span>
+            <span class="product-price">
+              <div class="real-price">$2.650.000</div>
+              <i>-</i>
+              <div class="current-price">$1.897.500</div>
+            </span>
+            <div class="available">
+              <span class="available-quantity">
+                <p>Disponibles: 5</p>
+                <p>Vendidos: 2</p>
+              </span>
+              <button class="progress-quantity"></button>
+            </div>
+          </div>
+        </div>
+  </section>
+  </section>
   <footer class="footer">
     <section class="wrapper">
       <article class="footer-head">
@@ -207,7 +353,8 @@
           <a href="/" class="logo">
             <img src="/img/logo.svg" alt="wecol" title="wecol" />
           </a>
-          <span class="description-company">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          <span class="description-company"
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor.
           </span>
         </section>
@@ -251,6 +398,20 @@
       </article>
     </section>
   </footer>
+  <script>
+    function aumentar() {
+      let cambioDeValor = parseInt(document.getElementById("cantidad").value);
+      ++cambioDeValor; //cambioDeValor += 1;  //cambioDeValor + 1;
+      document.getElementById("cantidad").value = cambioDeValor;
+    }
+    function disminuir() {
+      let cambioDeValor = parseInt(document.getElementById("cantidad").value);
+      if (cambioDeValor > 0) {
+        --cambioDeValor; //cambioDeValor -= 1;  //cambioDeValor - 1;
+      }
+      document.getElementById("cantidad").value = cambioDeValor;
+    }
+  </script>
 </body>
-</html>
 
+</html>

@@ -1,0 +1,118 @@
+.mainPaymentRequest {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 56px;
+  gap: 32px;
+}
+.creditCard {
+  color: var(--secondary);
+  font: var(--subtituloH3);
+}
+.informacionTarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px;
+  gap: 8px;
+}
+.addCard {
+  background-color: var(--secondary);
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  color: var(--white);
+  border-bottom: none;
+  box-shadow: 2px 2px 0px;
+}
+.cardInformation {
+  color: 1px solid var(--white);
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.numeroTarjeta {
+  width: 8px;
+}
+.resumenCompra {
+  background-color: var(--white);
+  padding: 32px;
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.resumenCompraTitle {
+  font: var(--subtituloH3);
+}
+.resumenCompraTitle .fa-chevron-down {
+  color: var(--secondary);
+}
+.finalItems {
+  border-top: 1px solid var(--gray2);
+  padding: 32px;
+  align-items: center;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  width: 340px;
+}
+.envioProductos {
+  color: var(--secondary);
+  font: var(--span-small);
+  text-align: justify;
+  border-top: 1px solid var(--gray2);
+  padding: 32px;
+}
+.totalPago {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.promocion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px;
+  position: relative;
+}
+.codigoPromocion {
+  border-color: 1px solid var(--secondary);
+  box-sizing: border-box;
+  background-color: var(--white);
+  padding: 16px 24px;
+}
+.canjearCodigo {
+  position: absolute;
+  background-color: var(--secondary);
+  right: 8px;
+  border-radius: 4px;
+  color: var(--white);
+}
+.finalizarCompra {
+  border-radius: 8px;
+  box-sizing: border-box;
+  border-color: var(--secondary);
+  color: var(--secondary);
+  padding: 16px 24px;
+  background-color: var(--white);
+  font: var(--subtituloH3Small);
+}
+.totalPago {
+  display: flex;
+  gap: 240px;
+}
+.formasPago {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px;
+}
+.iconosPago {
+  display: flex;
+  gap: 16px;
+}

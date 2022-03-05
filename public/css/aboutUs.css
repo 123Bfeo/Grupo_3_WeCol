@@ -5,6 +5,9 @@
   gap: 16px;
 }
 
+.about .our-team .descripcion {
+  margin-bottom: 56px;
+}
 .about .subtitulo {
   font-family: var(--subtituloH2);
   font-size: 40px;
@@ -20,9 +23,19 @@
   font-family: var(--parrafo);
 }
 
+.about .parrafo-descripcion {
+  width: 376px;
+}
 .about .imagen-banner img {
   width: 100%;
   align-items: center;
+}
+
+.about .our-team-cards {
+  display: flex;
+  gap: 56px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card-employee {
