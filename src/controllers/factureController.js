@@ -8,6 +8,9 @@ const factureController = {
   payForm: (req, res) => {
     res.render('payForm');
   },
+  paymentRequest: (req, res) => {
+    res.render('paymentRequest');
+  },
 };
 
 module.exports = factureController;
