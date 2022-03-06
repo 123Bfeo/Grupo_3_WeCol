@@ -92,15 +92,6 @@
     border-radius: 8px;
     height: auto;
 }
-.slider{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 30px;
-    
-}
-
-
 
 .aboutProduct{
     margin: 10px;

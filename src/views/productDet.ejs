@@ -15,14 +15,7 @@
         <picture>
           <img alt="" src=<%= product.image %> >
         </picture>
-        <div class="slider">
-          <button>
-            < </button>
-              <img src="/img/referenciaDetail.png" alt="">
-              <img src="/img/detalle2.png" alt="">
-              <img src="/img/detalle3.png" alt="">
-              <button> > </button>
-        </div>
+      <%- include('./partials/sliderDetail') %>
       </div>
       <div class="det-product">
         <div id="dp-header">
@@ -63,13 +56,7 @@
           <label>Cantidad</label>
           <article class="detailProductCard">
             <div class="productOption">
-              <div class="cantidad">
-                <button id="disminuir" onclick="disminuir()">-</button>
-                <input type="text" id="cantidad" value="0" />
-                <button id="aumentar1" onclick="aumentar(event.target)">
-                  +
-                </button>
-              </div>
+              <%- include('./partials/quantity') %>
             </div>
           </article>
 
