@@ -1,56 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/js/header.js"></script>
-    <script
-      defer
-      src="https://kit.fontawesome.com/0b3eb0d831.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
-    <link rel="stylesheet" href="/css/index.css" />
-    <title>Iniciar Sesión</title>
-  </head>
+  <%- include('./partials/Head') %>
+
   <body>
-    <header class="header">
-      <section class="wrapper">
-        <a href="/header" class="logo">
-          <img src="/img/Logo.svg" alt="Wecol" title="Wecol" />
-        </a>
-        <nav class="nav" id="nav">
-          <article class="login">
-            <span> Te damos la Bienvenida</span>
-            <div class="btn-log">
-              <a href="/login">
-                <button class="btn-small btn-login">Iniciar Sesión</button>
-              </a>
-              <a href="/register">
-                <button class="btn-small btn-register">Registrarse</button>
-              </a>
-            </div>
-          </article>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/aboutUs">Quiénes Somos</a></li>
-            <li><a href="/contact">Contáctanos</a></li>
-          </ul>
-        </nav>
-        <article class="header-right">
-          <button class="menu-toggle" id="menuToggle">
-            <i class="fas fa-bars"></i>
-          </button>
-          <a href="/login" class="user">
-            <i class="fas fa-user"></i>
-          </a>
-          <a href="/productCart">
-            <i class="fas fa-shopping-cart"></i>
-          </a>
-        </article>
-      </section>
-    </header>
+    <%- include('./partials/Header') %>
+
     <main class="main-login wrapper">
       <picture>
         <img src="/img/mouse2.png" alt="Mouse" title="Mouse" />
@@ -75,63 +29,7 @@
         </span>
       </form>
     </main>
-    <footer class="footer">
-      <section class="wrapper">
-        <article class="footer-head">
-          <section class="logo-description">
-            <a href="/" class="logo">
-              <img src="/img/logo.svg" alt="wecol" title="wecol" />
-            </a>
-            <span class="description-company"
-              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor.
-            </span>
-          </section>
-          <section class="info-section">
-            <section class="company">
-              <h6 class="footer-titulo">Empresa</h6>
-              <nav>
-                <ul>
-                  <li><a href="/">Home</a></li>
-                  <li><a href="/quienesSomos">Quiénes Somos</a></li>
-                  <li><a href="contactenos">Contáctenos</a></li>
-                </ul>
-              </nav>
-            </section>
-            <section class="info">
-              <h6 class="footer-titulo">Información</h6>
-              <nav>
-                <ul>
-                  <li><a href="">Métodos de pago</a></li>
-                  <li><a href="">Política de Privacidad</a></li>
-                </ul>
-              </nav>
-            </section>
-            <section class="siguenos">
-              <h6 class="footer-titulo">Siguenos</h6>
-              <ul class="social">
-                <li>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-facebook-square"></i></a>
-                </li>
-              </ul>
-            </section>
-          </section>
-        </article>
-        <article class="footer-foot">
-          <div class="made-for">
-            Hecho con ❤️ por Checho, Jenni, Luis, Juli y Jhon
-          </div>
-          <div class="copyright">
-            Colombia 2022 - Todos los derechos reservados
-          </div>
-        </article>
-      </section>
-    </footer>
+
+    <%- include('./partials/Footer') %>
   </body>
 </html>

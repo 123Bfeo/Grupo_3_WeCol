@@ -5,13 +5,16 @@
 }
 .btn {
   border: 1px solid var(--secondary);
-  padding: 16px 24px;
+  padding: 12px 24px;
   border-radius: 4px;
   color: var(--white);
   background: none;
   font: var(--btn-small);
   font-size: 16px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 .btnFirst {
   background: var(--secondary);
