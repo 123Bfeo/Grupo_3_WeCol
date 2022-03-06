@@ -34,6 +34,7 @@
 @import "./components/wrapper.css";
 @import "./components/card.css";
 @import "./components/button.css";
+@import "./compnents/sliderDetail.css";
 
 :root {
   /* Colores */
