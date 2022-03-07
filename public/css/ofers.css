@@ -46,10 +46,7 @@
   align-items: center;
   background-color: var(--gb-dark);
 }
-.card-off-description .product-name {
-  color: var(--text-gray);
-  font: var(--small-paragraph);
-}
+
 .card-off-description .product-price {
   display: flex;
 }

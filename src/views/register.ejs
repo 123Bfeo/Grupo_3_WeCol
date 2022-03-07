@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/Head') %>
+
+  <body>
+    <%- include('./partials/Header') %>
+
+    <main class="main wrapper">
+      <section class="register-content">
+        <article class="form-container gap24">
+          <form action="" class="form gap24">
+            <article class="form-content gap24">
+              <label for="" class="form-label10">
+                <input type="text" placeholder="Nombre" />
+                <i class="fas fa-user"></i>
+              </label>
+              <label for="" class="form-label10">
+                <input type="text" placeholder="Apellido" required />
+                <i class="fas fa-user"></i>
+              </label>
+              <label for="" class="form-label10">
+                <input type="email" placeholder="Correo electrónico" required />
+                <i class="fas fa-at"></i>
+              </label>
+              <label for="" class="form-label10">
+                <input type="password" placeholder="Contraseña" required />
+                <i class="fas fa-lock"></i>
+              </label>
+            </article>
+            <article class="btnContainer">
+              <button type="submit" class="btn btnSecond">Registrarse</button>
+            </article>
+          </form>
+          <div class="footForm">
+            <span
+              >Ya estás registrado ? <a href="/login">Iniciar Sesión</a>
+            </span>
+            <div>
+              <span>Registrarse con</span>
+              <div class="social">
+                <i class="fab fa-google"></i>
+                <i class="fab fa-facebook"></i>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="politicsContainer">
+          <picture>
+            <img src="/img/keyboard.png" alt="" />
+          </picture>
+          <div>
+            <input type="checkbox" />
+            <span
+              >Declaro que leí y acepto la
+              <a href=""
+                >Política de Privacidad y Tratamiento de Datos de WeCol</a
+              >
+            </span>
+          </div>
+          <div>
+            <input type="checkbox" />
+            <span
+              >Autorizo el tratamiento de mis datos personales conforme a la
+              <a href=""> Política de Tratamiento de Datos de WeCol</a></span
+            >
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <%- include('./partials/Footer') %>
+  </body>
+</html>
