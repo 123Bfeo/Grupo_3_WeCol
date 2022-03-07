@@ -10,16 +10,3 @@
   color: var(--secondary);
   font: var(--subtituloH3);
 }
-.rate {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-.rate .punctuation {
-  color: var(--text-gray);
-  font: var(--punctuation);
-}
-.rate .star-score {
-  display: flex;
-  color: var(--stars-color);
-}
