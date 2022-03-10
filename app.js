@@ -1,10 +1,10 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const mainRoutes = require('./src/routers/appMain');
-const productRoutes = require('./src/routers/products');
-const factureController = require('./src/routers/facture');
-const userController = require('./src/routers/users');
+const mainRoutes = require('./src/routers/main.routes');
+const productRoutes = require('./src/routers/products.routes');
+const factureController = require('./src/routers/facture.routes');
+const userController = require('./src/routers/users.routes');
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'src/views'));
