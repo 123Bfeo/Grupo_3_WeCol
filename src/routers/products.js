@@ -10,7 +10,7 @@ const productController = require(CONTROLLER_PATH);
 
 productRoutes.get('/products', productController.allProducts);
 productRoutes.get('/productDet/:id', productController.productDetail);
-
+productRoutes.get('/adminProducts',productController.adminProducts);
 
 module.exports = productRoutes;
 

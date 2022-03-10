@@ -29,6 +29,7 @@
 @import './form.css';
 @import './paymentRequest.css';
 @import './contact.css';
+@import './adminProducts.css';
 
 /* Components */
 @import './components/borders.css';

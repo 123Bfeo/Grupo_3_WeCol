@@ -9,6 +9,7 @@ const userController = require(CONTROLLER_PATH);
 
 userRoutes.get('/register',userController.register);
 userRoutes.get('/login',userController.login);
+userRoutes.post('/loginUser',userController.loginUser);
 
 module.exports = userRoutes;
 

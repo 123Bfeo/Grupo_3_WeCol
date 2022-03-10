@@ -12,6 +12,9 @@ app.set('views', path.join(__dirname, 'src/views'));
 const publicPath = path.resolve('public');
 app.use(express.static(publicPath));
 
+app.use(express.urlencoded({extended: false}));
+app.use(express.json());
+
 // Invocación de rutas
 app.use('/', mainRoutes, productRoutes, factureController, userController);
 

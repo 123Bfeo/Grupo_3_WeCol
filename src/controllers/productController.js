@@ -12,6 +12,9 @@ const productController = {
     let findProduct = products.find((prod) => prod.id == req.params.id);
     res.render('productDet', { product: findProduct });
   },
+  adminProducts: (req,res)=>{
+    res.render('adminProducts');
+  }
 };
 
 module.exports = productController;
