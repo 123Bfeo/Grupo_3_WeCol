@@ -1,10 +1,10 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 
 /* Reset */
-@import './reset.css';
+@import "./reset.css";
 
 /* Secciones */
 @import './header.css';
@@ -39,6 +39,40 @@
 @import './components/sliderDetail.css';
 @import './components/productDetailHero.css';
 @import './components/quantity.css';
+@import "./header.css";
+@import "./hero.css";
+@import "./main.css";
+@import "./hero-recommended.css";
+@import "./categories.css";
+@import "./ofers.css";
+@import "./new.css";
+@import "./brands.css";
+@import "./newsLater.css";
+@import "./aboutUs.css";
+@import "./productDetail.css";
+@import "./footer.css";
+@import "./productDetail.css";
+@import "./productDet.css";
+@import "./productCart.css";
+@import "./privacyPolitics.css";
+@import "./agreePolitics.css";
+@import "./login.css";
+@import "./register.css";
+@import "./form.css";
+@import "./paymentRequest.css";
+@import "./contact.css";
+@import "./adminCreate.css";
+
+/* Components */
+@import "./components/borders.css";
+@import "./components/wrapper.css";
+@import "./components/card.css";
+@import "./components/button.css";
+@import "./compnents/sliderDetail.css";
+@import "./components/productDetailHero.css";
+@import "./components/quantity.css";
+@import "./components/allProductStock.css";
+@import "./components/adminListStock.css";
 
 :root {
   /* Colores */
@@ -46,28 +80,27 @@
   --white: #fff;
   --secondary: rgb(231, 138, 0);
   --placeholder: rgba(231, 138, 0, 0.5);
-  --text-gray: #5b5b5b;
+  --text-gray: rgb(91, 91, 91);
+  --text-gray-opacity: rgba(91, 91, 91, 0.5);
   --stars-color: #ffd687;
   --gray2: #383838;
+  --blue-admin-i: #0832de;
 
   /* Tipografías */
-  --link-header: 'Source Serif Pro';
-  --tituloH1Small: bold 24px/32px 'Source Serif Pro';
-  --tituloH1Bigger: bold 48px/56px 'Source Serif Pro';
-  --subtituloH2: bold 40px/48px 'Source Serif Pro';
-  /* --title: 'Poppins'; */
-  --primaryFont: 'Roboto';
-  --secondFont: 'Source Serif Pro';
+  --primaryFont: "Roboto";
+  --secondFont: "Source Serif Pro";
   --link-header: bold 16px/24px var(--secondFont);
   --tituloH1Small: bold 24px/32px var(--secondFont);
   --tituloH1Bigger: bold 48px/56px var(--secondFont);
   --subtituloH2: bold 40px/48px var(--secondFont);
+  --subtituloH2Small: bold 32px/40px var(--secondFont);
   --subtituloH3: bold 24px/32px var(--secondFont);
   --subtituloH3Small: bold 16px/24px var(--secondFont);
   --parrafo: 24px/32px var(--primaryFont);
   --small-paragraph: 16px/24px var(--primaryFont);
   --span1: 12px/16px var(--primaryFont);
   --punctuation: bold 24px/32px var(--primaryFont);
+  --stockNumber: 64px/72px var(--primaryFont);
 
   /* Botones */
   --btn-small: bold 12px/16px var(--primaryFont);
@@ -81,6 +114,10 @@ body {
 .subtituloH2 {
   font: var(--subtituloH2);
 }
+.subtituloH2Small {
+  font: var(--subtituloH2Small);
+}
+
 .subtituloH3 {
   font: var(--subtituloH3);
 }

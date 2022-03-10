@@ -1,0 +1,91 @@
+.adminCreateMain {
+  display: flex;
+  gap: 32px;
+}
+.administratorInformation {
+  position: sticky;
+  color: var(--white);
+  border-right: 2px solid var(--text-gray);
+  padding: 72px 0;
+  padding-left: 16px;
+}
+.adminInfo {
+  display: flexbox;
+}
+.adminProfile {
+  display: flex;
+  align-items: center;
+  padding-top: 72px;
+}
+.adminProfile img {
+  width: 70%;
+}
+.adminProfile h3 {
+  margin-right: 16px;
+}
+.adminSideOptions {
+  display: flexbox;
+  padding: 56px 0;
+}
+.adminSideOptions span {
+  font: var(--small-paragraph);
+}
+.adminSideOptions i {
+  font-size: 32px;
+}
+.adminSideOptions div {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 16px;
+  transition: all 600ms;
+}
+.adminSideOptions div:hover {
+  background-color: var(--text-gray-opacity);
+}
+.adminSearchProducts {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 16px 0;
+}
+.adminSearchProducts input {
+  padding: 12px 0px 12px 32px;
+  inline-size: 832px;
+  border-radius: 4px;
+  border: 1px solid var(--text-gray);
+  background-color: var(--bg-dark);
+  color: var(--white);
+}
+.adminSearchButton {
+  background-color: var(--secondary);
+  padding: 12px 52px;
+  border-radius: 4px;
+  color: var(--white);
+  position: absolute;
+  left: 659.5px;
+}
+.adminListOptions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.adminFilterProduct {
+  display: flex;
+  gap: 24px;
+}
+.adminFilterProduct div {
+  background-color: var(--white);
+  padding: 5px 16px;
+  border-radius: 4px;
+  font: var(--small-paragraph);
+}
+.adminFilterProduct div i {
+  color: var(--blue-admin-i);
+}
+.adminListOptions i {
+  background-color: var(--white);
+  color: var(--blue-admin-i);
+  padding: 8px;
+  border-radius: 4px;
+}

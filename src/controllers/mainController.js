@@ -20,6 +20,10 @@ const mainController = {
   agreePolitics: (req, res) => {
     res.render("agreePolitics");
   },
+
+  adminCreate: (req, res) => {
+    res.render("adminCreate");
+  },
 };
 
 module.exports = mainController;
