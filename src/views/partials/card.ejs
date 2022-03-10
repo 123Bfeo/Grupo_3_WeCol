@@ -3,18 +3,17 @@ product.id %>
 <a href="<%= productDet %>" class="cardLink">
   <article class="card">
     <picture class="card-img">
-      <img alt="product-image" src="<%= product.image %>" />
+      <img alt="product-image" src="<%=product.image.img1 %>" />
     </picture>
     <div class="card-description">
       <div class="name-price">
         <span class="name-product"><%= product.name %></span>
-        <span class="price-product"><%= product.price %></span>
+        <span class="price-product">$ <%= product.price %></span>
       </div>
-      <hr />
-      <div class="rate-cart">
+      <div class="rateStars">
         <div class="rate">
-          <div class="punctuation"><%= product.rating %></div>
-          <span class="star-score">
+          <div class="punctuationRate"><%= product.rating %></div>
+          <span class="starRate">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -22,12 +21,10 @@ product.id %>
             <i class="far fa-star"></i>
           </span>
         </div>
-        <button class="btn-add-cart">
+        <a href="/productCart" class="btn btn-add-cart">
           <span>Añadir al carrito</span>
-          <a href="/productCart">
-            <i class="fas fa-shopping-cart"></i>
-          </a>
-        </button>
+          <i class="fas fa-shopping-cart"></i>
+        </a>
       </div>
     </div>
   </article>

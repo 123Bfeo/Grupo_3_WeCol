@@ -1,0 +1,59 @@
+<section class="productDetailHero">
+  <picture class="imgProduct"> 
+    <%- include('./sliderDetail') %> </picture>
+  <article class="detailsProduct">
+    <div class="breadRate">
+      <div class="breadcrumb">
+        <span class="gray">Product <i class="fas fa-angle-right"></i> </span>
+        <span class="orange"><%= product.name %></span>
+      </div>
+      <div class="rateCount">
+        <div class="rate">
+          <div class="punctuationRate"><%= product.rating %></div>
+          <div class="starRate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="count">
+          <span>Opiniones(12)</span>
+          <span>|</span>
+          <span>Vendido (99)</span>
+        </div>
+      </div>
+    </div>
+    <div class="productInfo">
+      <div class="name-price">
+        <span class="name-product"><%= product.name %></span>
+        <span class="price-product">$ <%= product.price %></span>
+      </div>
+      <div class="deliveryStock">
+        <div>
+          <i class="fas fa-truck"></i>
+          <span class="span1">Envío gratis</span>
+        </div>
+        <div>
+          <i class="fas fa-shopping-cart" id="camion"></i>
+          <span class="span1">En stock</span>
+        </div>
+      </div>
+      <section class="descriptionProduct">
+        <span class="span1">Descripción</span>
+        <p><%= product.description %></p>
+      </section>
+    </div>
+    <div class="productQuantity">
+      <div class="quantity">
+        <span>Cantidad</span>
+        <div class="productOption"><%- include('./quantity') %></div>
+      </div>
+      <a href="/productCart" class="btn btn-add-cart">
+        <span>Añadir al carrito</span>
+        <i class="fas fa-shopping-cart"></i>
+      </a>
+    </div>
+  </article>
+</section>

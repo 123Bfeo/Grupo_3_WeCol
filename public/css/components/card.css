@@ -12,6 +12,10 @@
   width: 300px;
   border: 1px solid var(--text-gray);
   border-radius: 32px;
+  transition: all 500ms;
+}
+.cards-new .card:hover {
+  box-shadow: 0px 0px 8px 2px var(--text-gray);
 }
 .cards-new .card picture {
   width: 250px;
@@ -31,18 +35,13 @@
   gap: 16px;
 }
 .cards-new .card .card-description .name-price {
+  width: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom: 1px solid var(--white);
 }
-.cards-new .card .card-description .name-product {
-  color: var(--text-gray);
-  font: var(--parrafo);
-}
-.cards-new .card .card-description .price-product {
-  font: var(--subtituloH3);
-  color: var(--secondary);
-}
+
 .cards-new .card .card-description hr {
   width: 100%;
   border: 1px solid #fff;

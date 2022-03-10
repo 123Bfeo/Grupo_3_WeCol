@@ -5,46 +5,68 @@
     "price": "6.800.000",
     "description": "Nuestra notebook más ligera y delgada vuelve completamente renovada por dentro. Gracias al chip M1 de Apple, el CPU es hasta 3.5 veces más rápido y el GPU hasta 5 veces más veloz.",
     "rating": "5.0",
-    "image": "/img/macbookAir.png"
+    "image": {
+      "img1": "/img/macbookAir.png",
+      "img2": "/img/razer.jpg",
+      "img3":"/img/iphone.png",
+      "img4": "/img/macbookAir.png",
+      "img5": "/img/razer.jpg",
+      "img6":"/img/iphone.png"
+    }
   },
+
   {
     "id": "2",
     "name": "Razer Blade 15",
-    "price": "$3850.42",
+    "price": "3850.42",
     "description": "Más Potencia. El procesador Intel Core i H de décima generación proporciona el máximo nivel de rendimiento con hasta 5.0 GHz Max Turbo y 6 núcleos. | Supercargador: Los gráficos NVIDIA GeForce GTX 1660 Ti son un supercargador ultrarrápido para los juegos más populares de la actualidad.",
-    "rating": "4",
-    "image": "/img/razer.jpg"
+    "rating": "4.0",
+    "image": {
+      "img1": "/img/macbookAir.png",
+      "img2": "/img/razer.jpg",
+      "img3":"/img/iphone.png",
+      "img4": "/img/macbookAir.png",
+      "img5": "/img/razer.jpg",
+      "img6":"/img/iphone.png"
+    }
   },
   {
     "id": "3",
     "name": "Iphone X 2019",
-    "price": "$1400.83",
+    "price": "1400.83",
     "description": "Mayor rendimiento, su memoria RAM de 3 GB permite que tu smartphone funcione de manera fluida y sin demoras al realizar distintas tareas, jugar o navegar.",
-    "rating": 3,
-    "image": "/img/iphone.png"
+    "rating": 3.0,
+    "image": {
+      "img1": "/img/macbookAir.png",
+      "img2": "/img/razer.jpg",
+      "img3":"/img/iphone.png",
+      "img4": "/img/macbookAir.png",
+      "img5": "/img/razer.jpg",
+      "img6":"/img/iphone.png"
+    }
   },
   {
     "id": "4",
     "name": "Mackbook Air 2021",
-    "price": "$1500.78",
+    "price": "1500.78",
     "description": "Nuestra notebook más ligera y delgada vuelve completamente renovada por dentro. Gracias al chip M1 de Apple, el CPU es hasta 3.5 veces más rápido y el GPU hasta 5 veces más veloz.",
-    "rating": "5",
+    "rating": "5.0",
     "image": "/img/macbookAir.png"
   },
   {
     "id": "5",
     "name": "Razer Blade 15",
-    "price": "$3850.42",
+    "price": "3850.42",
     "description": "Más Potencia. El procesador Intel Core i H de décima generación proporciona el máximo nivel de rendimiento con hasta 5.0 GHz Max Turbo y 6 núcleos. | Supercargador: Los gráficos NVIDIA GeForce GTX 1660 Ti son un supercargador ultrarrápido para los juegos más populares de la actualidad.",
-    "rating": "4",
+    "rating": "4.0",
     "image": "/img/razer.jpg"
   },
   {
     "id": "6",
     "name": "Iphone X 2019",
-    "price": "$1400.83",
+    "price": "1400.83",
     "description": "Mayor rendimiento, su memoria RAM de 3 GB permite que tu smartphone funcione de manera fluida y sin demoras al realizar distintas tareas, jugar o navegar.",
-    "rating": 3,
+    "rating": 3.0,
     "image": "/img/iphone.png"
   }
 ]
