@@ -1,0 +1,51 @@
+.adminListStock {
+  padding: 24px;
+}
+.adminNewProduct {
+  background-color: var(--secondary);
+  padding: 8px 12px;
+  border-radius: 4px;
+  color: var(--white);
+  font: var(--small-paragraph);
+  inline-size: 92px;
+}
+.adminItem {
+  display: flex;
+  border: 1px solid var(--text-gray);
+  justify-content: space-between;
+  border-radius: 16px;
+  align-items: center;
+  padding: 4px 16px;
+  margin-top: 24px;
+}
+.adminEditImgProduct {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.adminEditImgProduct input {
+  outline: 1px solid #1e5180;
+}
+.adminEditImgProduct span {
+  font: var(--link-header);
+  color: #323c47;
+}
+.adminItem picture {
+  width: 64px;
+  display: block;
+}
+.adminItem picture img {
+  width: 100%;
+  border-radius: 50%;
+}
+.adminEditDetail {
+  justify-content: space-between;
+}
+.adminEditDetail span {
+  color: var(--text-gray);
+  font: var(--btn-smallh);
+  padding: 16px;
+}
+.adminEditTrash i {
+  color: var(--secondary);
+}
