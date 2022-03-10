@@ -19,10 +19,13 @@ const mainController = {
   },
   agreePolitics: (req, res) => {
     res.render("agreePolitics");
+<<<<<<< HEAD
   },
 
   adminCreate: (req, res) => {
     res.render("adminCreate");
+=======
+>>>>>>> main
   },
 };
 
