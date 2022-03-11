@@ -1,30 +1,33 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 const products = JSON.parse(
-  fs.readFileSync(path.resolve('src/models/products.JSON'))
+  fs.readFileSync(path.resolve("src/models/products.JSON"))
 );
 
 const mainController = {
   index: (req, res) => {
-    res.render('index', { products: products });
+    res.render("index", { products: products });
   },
   aboutUs: (req, res) => {
-    res.render('aboutUs');
+    res.render("aboutUs");
   },
   contact: (req, res) => {
-    res.render('contact');
+    res.render("contact");
   },
   privacyPolitics: (req, res) => {
-    res.render('privacyPolitics');
+    res.render("privacyPolitics");
   },
   agreePolitics: (req, res) => {
-    res.render('agreePolitics');
+    res.render("agreePolitics");
   },
   register: (req, res) => {
-    res.render('./users/register');
+    res.render("./users/register");
   },
   login: (req, res) => {
-    res.render('./users/login');
+    res.render("./users/login");
+  },
+  adminCreate: (req, res) => {
+    res.render("adminCreate");
   },
 };
 
