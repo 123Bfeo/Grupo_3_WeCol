@@ -15,6 +15,6 @@ app.use(express.static(publicPath));
 // Invocación de rutas
 app.use("/", mainRoutes, productRoutes, factureController, userController);
 
-app.listen(process.env.PORT || 3000, () => {
-  console.log(`Servidor corriendo en el puerto 3000`);
+app.listen(process.env.PORT || 3030, () => {
+  console.log(`Servidor corriendo en el puerto 3030`);
 });
