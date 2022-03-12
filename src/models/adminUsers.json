@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "name": "Sergio González Sánchez",
+    "email": "soysergiogonzalez@outlook.es",
+    "password": "o@YmGPD7fMpM3gXvu",
+    "role": "admin"
+  },
+  {
+    "id": "2",
+    "name": "Jennifer Perez",
+    "email": "jenniferwecol",
+    "password": "jpr2022",
+    "role": "admin"
+  },
+  {
+    "id": "3",
+    "name": "Julian Camilo Escobar",
+    "email": "julian96081@gmail.com",
+    "password": "jce2022",
+    "role": "admin"
+  }
+]

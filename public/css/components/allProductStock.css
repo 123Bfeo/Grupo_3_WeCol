@@ -1,10 +1,10 @@
 .allProductStock {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   color: var(--white);
-  width: 830px;
+  width: 100%;
   align-items: center;
-  height: 140px;
 }
 .verticalLine {
   width: 2px;
@@ -21,4 +21,24 @@
   color: var(--secondary);
   text-align: center;
   display: block;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .allProductStock{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .allProductStock div{
+    justify-content: center;
+    margin: 12px  ;
+  }
+
+  .verticalLine {
+    width: 100%;
+    background-color: var(--secondary);
+    height: 2px;
+  }
 }

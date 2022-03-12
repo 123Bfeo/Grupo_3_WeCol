@@ -7,6 +7,38 @@
 @import "./reset.css";
 
 /* Secciones */
+@import './header.css';
+@import './hero.css';
+@import './main.css';
+@import './hero-recommended.css';
+@import './categories.css';
+@import './ofers.css';
+@import './new.css';
+@import './brands.css';
+@import './newsLater.css';
+@import './aboutUs.css';
+@import './productDetail.css';
+@import './footer.css';
+@import './productDetail.css';
+@import './productDet.css';
+@import './productCart.css';
+@import './privacyPolitics.css';
+@import './agreePolitics.css';
+@import './login.css';
+@import './register.css';
+@import './form.css';
+@import './paymentRequest.css';
+@import './contact.css';
+@import './adminProducts.css';
+
+/* Components */
+@import './components/borders.css';
+@import './components/wrapper.css';
+@import './components/card.css';
+@import './components/button.css';
+@import './components/sliderDetail.css';
+@import './components/productDetailHero.css';
+@import './components/quantity.css';
 @import "./header.css";
 @import "./hero.css";
 @import "./main.css";

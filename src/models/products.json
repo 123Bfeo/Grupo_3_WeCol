@@ -6,15 +6,9 @@
     "description": "Nuestra notebook más ligera y delgada vuelve completamente renovada por dentro. Gracias al chip M1 de Apple, el CPU es hasta 3.5 veces más rápido y el GPU hasta 5 veces más veloz.",
     "rating": "5.0",
     "image": {
-      "img1": "/img/macbookAir.png",
-      "img2": "/img/razer.jpg",
-      "img3":"/img/iphone.png",
-      "img4": "/img/macbookAir.png",
-      "img5": "/img/razer.jpg",
-      "img6":"/img/iphone.png"
+      "img1": "/img/macbookAir.png"
     }
   },
-
   {
     "id": "2",
     "name": "Razer Blade 15",
@@ -22,12 +16,12 @@
     "description": "Más Potencia. El procesador Intel Core i H de décima generación proporciona el máximo nivel de rendimiento con hasta 5.0 GHz Max Turbo y 6 núcleos. | Supercargador: Los gráficos NVIDIA GeForce GTX 1660 Ti son un supercargador ultrarrápido para los juegos más populares de la actualidad.",
     "rating": "4.0",
     "image": {
-      "img1": "/img/macbookAir.png",
-      "img2": "/img/razer.jpg",
-      "img3":"/img/iphone.png",
+      "img1": "/img/razer.jpg",
+      "img2": "/img/macbookAir.png",
+      "img3": "/img/iphone.png",
       "img4": "/img/macbookAir.png",
       "img5": "/img/razer.jpg",
-      "img6":"/img/iphone.png"
+      "img6": "/img/iphone.png"
     }
   },
   {
@@ -35,14 +29,14 @@
     "name": "Iphone X 2019",
     "price": "1400.83",
     "description": "Mayor rendimiento, su memoria RAM de 3 GB permite que tu smartphone funcione de manera fluida y sin demoras al realizar distintas tareas, jugar o navegar.",
-    "rating": 3.0,
+    "rating": "3.0",
     "image": {
-      "img1": "/img/macbookAir.png",
-      "img2": "/img/razer.jpg",
-      "img3":"/img/iphone.png",
+      "img1": "/img/iphone.png",
+      "img2": "/img/macbookAir.png",
+      "img3": "/img/razer.jpg",
       "img4": "/img/macbookAir.png",
       "img5": "/img/razer.jpg",
-      "img6":"/img/iphone.png"
+      "img6": "/img/iphone.png"
     }
   },
   {
@@ -51,7 +45,14 @@
     "price": "1500.78",
     "description": "Nuestra notebook más ligera y delgada vuelve completamente renovada por dentro. Gracias al chip M1 de Apple, el CPU es hasta 3.5 veces más rápido y el GPU hasta 5 veces más veloz.",
     "rating": "5.0",
-    "image": "/img/macbookAir.png"
+    "image": {
+      "img1": "/img/macbookAir.png",
+      "img2": "/img/iphone.png",
+      "img3": "/img/razer.jpg",
+      "img4": "/img/macbookAir.png",
+      "img5": "/img/razer.jpg",
+      "img6": "/img/iphone.png"
+    }
   },
   {
     "id": "5",
@@ -59,14 +60,82 @@
     "price": "3850.42",
     "description": "Más Potencia. El procesador Intel Core i H de décima generación proporciona el máximo nivel de rendimiento con hasta 5.0 GHz Max Turbo y 6 núcleos. | Supercargador: Los gráficos NVIDIA GeForce GTX 1660 Ti son un supercargador ultrarrápido para los juegos más populares de la actualidad.",
     "rating": "4.0",
-    "image": "/img/razer.jpg"
+    "image": {
+      "img1": "/img/razer.jpg",
+      "img2": "/img/macbookAir.png",
+      "img3": "/img/iphone.png",
+      "img4": "/img/macbookAir.png",
+      "img5": "/img/razer.jpg",
+      "img6": "/img/iphone.png"
+    }
   },
   {
     "id": "6",
     "name": "Iphone X 2019",
     "price": "1400.83",
     "description": "Mayor rendimiento, su memoria RAM de 3 GB permite que tu smartphone funcione de manera fluida y sin demoras al realizar distintas tareas, jugar o navegar.",
-    "rating": 3.0,
-    "image": "/img/iphone.png"
+    "rating": "3.0",
+    "image": {
+      "img1": "/img/iphone.png",
+      "img2": "/img/macbookAir.png",
+      "img3": "/img/razer.jpg",
+      "img4": "/img/macbookAir.png",
+      "img5": "/img/razer.jpg",
+      "img6": "/img/iphone.png"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Celular Alcatel",
+    "price": "234",
+    "description": "Prueba de descripción",
+    "rating": "5.0",
+    "image": {
+      "img1": "/img/macbookAir.png",
+      "img2": "/img/macbookAir.png"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Samsung A20",
+    "price": "23900",
+    "description": "El celular con la mejor gama para poder acceder a todas sus funcionalidades",
+    "rating": "5.0",
+    "image": {
+      "img1": "/img/macbookAir.png",
+      "img2": "/img/macbookAir.png"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Mousepad",
+    "price": "12333",
+    "description": "Mouse Esenses con diseño ergonomico y facil de utilizar",
+    "rating": "5.0",
+    "image": {
+      "img1": "/img/macbookAir.png",
+      "img2": "/img/macbookAir.png"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Audifonos",
+    "price": "1400",
+    "description": "Alta tecnología",
+    "rating": "5.0",
+    "image": {
+      "img1": "/img/macbookAir.png",
+      "img2": "/img/macbookAir.png"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Toshiba PRO",
+    "price": "2500",
+    "description": "Producto de importación",
+    "rating": "5.0",
+    "image": {
+      "img1": "/img/macbookAir.png"
+    }
   }
 ]
