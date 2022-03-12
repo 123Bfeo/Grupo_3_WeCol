@@ -1,9 +1,9 @@
 [
   {
     "id": "1",
-    "name": "Sergio Gonzalez",
-    "email": "",
-    "password": "sgs2022",
+    "name": "Sergio González Sánchez",
+    "email": "soysergiogonzalez@outlook.es",
+    "password": "o@YmGPD7fMpM3gXvu",
     "role": "admin"
   },
   {
@@ -21,4 +21,3 @@
     "role": "admin"
   }
 ]
- 
