@@ -18,7 +18,7 @@ app.use(express.json());
 // Invocación de rutas
 app.use('/', mainRoutes, productRoutes, factureController, userController);
 
-const port = 3030;
+const port = 3000;
 app.listen(process.env.PORT || port, () => {
   console.log(`Servidor corriendo en el puerto ${port}`);
 });
