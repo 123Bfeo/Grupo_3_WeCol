@@ -7,6 +7,7 @@ const userRoutes = express.Router();
 const CONTROLLER_PATH = path.resolve('src/controllers/user.controller');
 const userController = require(CONTROLLER_PATH);
 
+
 userRoutes.get('/register', userController.register);
 userRoutes.get('/login', userController.login);
 
