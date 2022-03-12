@@ -20,9 +20,8 @@ const mainController = {
   agreePolitics: (req, res) => {
     res.render("agreePolitics");
   },
-
   adminCreate: (req, res) => {
-    res.render("adminCreate",{products:products});
+    res.render("adminCreate",{ products: products });
   },
 };
 
