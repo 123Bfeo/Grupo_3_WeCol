@@ -24,6 +24,9 @@
           <button type="submit" class="btn btnFirst">Iniciar Sesión</button>
           <a href="/register" class="btn btnSecond"> Registrarse </a>
         </article>
+        <%if(err){%>
+          <span class="err">Usuario o contraseña incorrectos</span>
+        <%}%>
         <span class="footForm"
           >¿ Olvidaste tu contraseña ? <a href="/forgotPassword">Recuperala</a>
         </span>

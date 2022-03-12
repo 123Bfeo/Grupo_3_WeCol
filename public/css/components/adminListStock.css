@@ -3,11 +3,10 @@
 }
 .adminNewProduct {
   background-color: var(--secondary);
-  padding: 8px 12px;
   border-radius: 4px;
   color: var(--white);
   font: var(--small-paragraph);
-  inline-size: 92px;
+  padding: 12px 10px;
 }
 .adminItem {
   display: flex;

@@ -9,6 +9,7 @@ const CONTROLLER_PATH = path.resolve('src/controllers/productController');
 const productController = require(CONTROLLER_PATH);
 
 productRoutes.get('/products', productController.allProducts);
+productRoutes.post('/products/insert', productController.insertProduct);
 productRoutes.get('/productDet/:id', productController.productDetail);
 productRoutes.get('/adminProducts',productController.adminProducts);
 

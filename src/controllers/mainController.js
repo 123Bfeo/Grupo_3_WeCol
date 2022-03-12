@@ -22,7 +22,7 @@ const mainController = {
   },
 
   adminCreate: (req, res) => {
-    res.render("adminCreate");
+    res.render("adminCreate",{products:products});
   },
 };
 

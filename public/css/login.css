@@ -11,6 +11,15 @@
   width: 100%;
 }
 
+.err{
+  background-color: rgb(202, 65, 65);
+  color: aliceblue;
+  font-family: var(--primaryFont);
+  padding: 10px 20px;
+  border-radius: 8px;
+  border-color: azure;
+}
+
 @media screen and (min-width: 768px) {
   .main-login {
     justify-content: space-between;

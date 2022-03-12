@@ -1,6 +1,5 @@
 .modalDialog {
 	position: fixed;
-	font-family: Arial, Helvetica, sans-serif;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -18,16 +17,64 @@
 	pointer-events: auto;
 }
 .modalDialog .modal-content {
-	width: 35vw;
+	font-family: var(--primaryFont);
+	width: 45%;
 	position: relative;
+	height: auto;
 	margin: 10% auto;
-	padding: 5px 20px 13px 20px;
+	padding: 5px 10px 13px 10px;
 	border-radius: 10px;
 	background: #fff;
   	-webkit-transition: opacity 400ms ease-in;
 	-moz-transition: opacity 400ms ease-in;
 	transition: opacity 400ms ease-in;
+	display: flex;
+	flex-direction: column;
 }
+
+.item-product {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.item-product textarea{
+	width: 80%;
+	font-family: var(--primaryFont);
+}
+
+.item-product input{
+	font-family: var(--primaryFont);
+	border-radius: 8px;
+}
+
+.iplabel{
+	background-color: var(--secondary);
+	border-radius: 8px;
+	padding: 4px 2px;
+	color: white;
+	width: 20vw;
+	border-style: solid;
+	width: 100%;
+}
+
+
+
+.form-product{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.form-product button{
+	background-color: var(--secondary);
+	color: white;
+	font-family: var(--primaryFont);
+	padding: 5px 5px;
+	text-align: center;
+	border-radius: 6px;
+}
+
 .close {
 	background: #606061;
 	color: #FFFFFF;
@@ -46,6 +93,17 @@
 	-webkit-box-shadow: 1px 1px 3px #000;
 	box-shadow: 1px 1px 3px #000;
 }
+
 .close:hover { 
-    background: #00d9ff; 
+    background: var(--secondary); 
 }
+
+@media screen and (max-width: 768px) {
+
+	.modalDialog .modal-content {
+		width: 90%;
+	}
+
+	
+
+  }

@@ -1,103 +1,30 @@
 <section class="adminListStock">
-  <article class="adminNewProduct">
-    <i class="fas fa-file-medical"></i>
-    <span>Nuevo</span>
-  </article>
+  <a href="#openModal">
+    <button class="adminNewProduct">
+      <span>Nuevo Producto</span>
+    </button>
+  </a>
   <article class="adminListEdit">
-    <div class="adminItem">
-      <div class="adminEditImgProduct">
-        <input type="checkbox" />
-        <picture>
-          <img src="./img/audifonosAdmin.png" alt="" />
-        </picture>
-        <span>Diadema</span>
+    <%products.forEach(prod =>{%>
+      <div class="adminItem">
+        <div class="adminEditImgProduct">
+          <input type="checkbox" />
+          <picture>
+            <img src="<%=prod.image.img1%>" alt="" />
+          </picture>
+          <span><%=prod.name%></span>
+        </div>
+        <div class="adminEditDetail">
+          <span>Disponible</span>
+          <span>Cantidad</span>
+          <span><%=prod.price%></span>
+          <span>2 days ago</span>
+        </div>
+        <div class="adminEditTrash">
+          <i class="fas fa-trash-alt"></i>
+          <i class="fas fa-trash-alt"></i>
+        </div>
       </div>
-      <div class="adminEditDetail">
-        <span>Disponible</span>
-        <span>Cantidad</span>
-        <span>50.000</span>
-        <span>2 days ago</span>
-      </div>
-      <div class="adminEditTrash">
-        <i class="fas fa-trash-alt"></i>
-        <i class="fas fa-trash-alt"></i>
-      </div>
-    </div>
-    <div class="adminItem">
-      <div class="adminEditImgProduct">
-        <input type="checkbox" />
-        <picture>
-          <img src="./img/audifonosAdmin.png" alt="" />
-        </picture>
-        <span>Diadema</span>
-      </div>
-      <div class="adminEditDetail">
-        <span>Disponible</span>
-        <span>Cantidad</span>
-        <span>50.000</span>
-        <span>2 days ago</span>
-      </div>
-      <div class="adminEditTrash">
-        <i class="fas fa-trash-alt"></i>
-        <i class="fas fa-trash-alt"></i>
-      </div>
-    </div>
-    <div class="adminItem">
-      <div class="adminEditImgProduct">
-        <input type="checkbox" />
-        <picture>
-          <img src="./img/audifonosAdmin.png" alt="" />
-        </picture>
-        <span>Diadema</span>
-      </div>
-      <div class="adminEditDetail">
-        <span>Disponible</span>
-        <span>Cantidad</span>
-        <span>50.000</span>
-        <span>2 days ago</span>
-      </div>
-      <div class="adminEditTrash">
-        <i class="fas fa-trash-alt"></i>
-        <i class="fas fa-trash-alt"></i>
-      </div>
-    </div>
-    <div class="adminItem">
-      <div class="adminEditImgProduct">
-        <input type="checkbox" />
-        <picture>
-          <img src="./img/audifonosAdmin.png" alt="" />
-        </picture>
-        <span>Diadema</span>
-      </div>
-      <div class="adminEditDetail">
-        <span>Disponible</span>
-        <span>Cantidad</span>
-        <span>50.000</span>
-        <span>2 days ago</span>
-      </div>
-      <div class="adminEditTrash">
-        <i class="fas fa-trash-alt"></i>
-        <i class="fas fa-trash-alt"></i>
-      </div>
-    </div>
-    <div class="adminItem">
-      <div class="adminEditImgProduct">
-        <input type="checkbox" />
-        <picture>
-          <img src="./img/audifonosAdmin.png" alt="" />
-        </picture>
-        <span>Diadema</span>
-      </div>
-      <div class="adminEditDetail">
-        <span>Disponible</span>
-        <span>Cantidad</span>
-        <span>50.000</span>
-        <span>2 days ago</span>
-      </div>
-      <div class="adminEditTrash">
-        <i class="fas fa-trash-alt"></i>
-        <i class="fas fa-trash-alt"></i>
-      </div>
-    </div>
+    <%})%>
   </article>
 </section>
