@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const methodOverride = require('method-override');
 const mainRoutes = require('./src/routers/main.routes');
 const productRoutes = require('./src/routers/products.routes');
 const factureController = require('./src/routers/facture.routes');
@@ -11,6 +12,8 @@ app.set('views', path.join(__dirname, 'src/views'));
 
 const publicPath = path.resolve('public');
 app.use(express.static(publicPath));
+
+app.use(methodOverride('_method'));
 
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
