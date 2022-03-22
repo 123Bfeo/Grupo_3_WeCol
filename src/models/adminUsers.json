@@ -20,5 +20,12 @@
     "email": "julian96081@gmail.com",
     "password": "jce2022",
     "role": "admin"
+  },
+  {
+    "id": "4",
+    "name": "Luis David Nunez Rocha",
+    "email": "Ldnr13@hotmail.com",
+    "password": "Ldnr2023",
+    "role": "admin"
   }
 ]
