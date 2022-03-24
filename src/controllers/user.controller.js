@@ -1,15 +1,17 @@
 
 const fs = require('fs');
 const path = require('path');
-const adminUsers = JSON.parse(fs.readFileSync(path.resolve('src/models/adminUsers.JSON')));
+const adminUsers = JSON.parse(fs.readFileSync(path.resolve('src/data/adminUsers.JSON')));
 
 const userController = {
   register: (req, res) => {
-    res.render('./users/register');
+    const title = 'Registro'
+    res.render('./users/register',{title});
   },
   login: (req, res) => {
     let err = false;
-    res.render('./users/login',{err:err});
+    const title = 'Login'
+    res.render('./users/login',{err:err,title});
   },
   loginUser:(req,res)=>{ 
     let email = req.body.email;
@@ -19,7 +21,8 @@ const userController = {
       res.redirect('/adminCreate');
     }else{
       let err = true;
-      res.render('./users/login',{err:err});
+      const title = 'Login'
+      res.render('./users/login',{err:err,title});
     } 
   }
 };

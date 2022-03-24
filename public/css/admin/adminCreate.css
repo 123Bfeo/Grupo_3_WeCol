@@ -13,6 +13,9 @@
   padding-left: 16px;
 }
 
+.deletebutton{
+  background-color: rgb(216, 84, 84);
+}
 .adminInfo {
   display: flex;
   flex-direction: column;
