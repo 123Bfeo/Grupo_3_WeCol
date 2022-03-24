@@ -24,7 +24,6 @@
                 <i class="fas fa-trash-alt"></i>
                 <span>Eliminar Productos</span>
               </div>
-            </div>
           </article>
         </aside>
         <section class="adminProductInformation">
@@ -85,6 +84,32 @@
         </div>
       </div>
 
+      </div>
+      </article>
+      </aside>
+      <section class="adminProductInformation">
+        <%- include("./partials/allProductStock") %>
+          <article class="adminSearchProducts">
+            <input type="text" placeholder="Search" />
+            <button class="adminSearchButton">Buscar</button>
+          </article>
+          <article class="adminListOptions">
+            <div class="adminFilterProduct">
+              <div>
+                <span>Todo</span>
+                <i class="fas fa-angle-down"></i>
+              </div>
+              <div>
+                <span>Todas las marcas</span>
+                <i class="fas fa-angle-down"></i>
+              </div>
+            </div>
+            <i class="fas fa-list"></i>
+          </article>
+          <%- include("./partials/adminListStock") %>
+      </section>
+      </main>
+      <%- include('./admin/modalCreateProduct')%>
   </body>
 
 </html>

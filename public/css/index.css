@@ -1,10 +1,10 @@
 /* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 
 /* Reset */
-@import "./reset.css";
+@import './reset.css';
 
 /* Secciones */
 @import './header.css';
@@ -32,47 +32,43 @@
 @import './adminProducts.css';
 
 /* Components */
+@import './header.css';
+@import './hero.css';
+@import './main.css';
+@import './hero-recommended.css';
+@import './categories.css';
+@import './ofers.css';
+@import './new.css';
+@import './brands.css';
+@import './newsLater.css';
+@import './aboutUs.css';
+@import './productDetail.css';
+@import './footer.css';
+@import './productDetail.css';
+@import './productDet.css';
+@import './productCart.css';
+@import './privacyPolitics.css';
+@import './agreePolitics.css';
+@import './login.css';
+@import './register.css';
+@import './form.css';
+@import './paymentRequest.css';
+@import './contact.css';
+@import './adminCreate.css';
+
+/* Components */
 @import './components/borders.css';
 @import './components/wrapper.css';
 @import './components/card.css';
 @import './components/button.css';
-@import './components/sliderDetail.css';
+@import './compnents/sliderDetail.css';
 @import './components/productDetailHero.css';
 @import './components/quantity.css';
-@import "./header.css";
-@import "./hero.css";
-@import "./main.css";
-@import "./hero-recommended.css";
-@import "./categories.css";
-@import "./ofers.css";
-@import "./new.css";
-@import "./brands.css";
-@import "./newsLater.css";
-@import "./aboutUs.css";
-@import "./productDetail.css";
-@import "./footer.css";
-@import "./productDetail.css";
-@import "./productDet.css";
-@import "./productCart.css";
-@import "./privacyPolitics.css";
-@import "./agreePolitics.css";
-@import "./login.css";
-@import "./register.css";
-@import "./form.css";
-@import "./paymentRequest.css";
-@import "./contact.css";
-@import "./adminCreate.css";
+@import './components/allProductStock.css';
+@import './components/adminListStock.css';
 
-/* Components */
-@import "./components/borders.css";
-@import "./components/wrapper.css";
-@import "./components/card.css";
-@import "./components/button.css";
-@import "./compnents/sliderDetail.css";
-@import "./components/productDetailHero.css";
-@import "./components/quantity.css";
-@import "./components/allProductStock.css";
-@import "./components/adminListStock.css";
+/* Admin */
+@import './admin/modalCreateProduct.css';
 
 :root {
   /* Colores */
@@ -87,8 +83,8 @@
   --blue-admin-i: #0832de;
 
   /* Tipografías */
-  --primaryFont: "Roboto";
-  --secondFont: "Source Serif Pro";
+  --primaryFont: 'Roboto';
+  --secondFont: 'Source Serif Pro';
   --link-header: bold 16px/24px var(--secondFont);
   --tituloH1Small: bold 24px/32px var(--secondFont);
   --tituloH1Bigger: bold 48px/56px var(--secondFont);
