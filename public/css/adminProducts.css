@@ -32,6 +32,10 @@
 	flex-direction: column;
 }
 
+.modalDialog .modal-content .deletebutton{
+	background-color: rgb(202, 78, 78);
+}
+
 .item-product {
 	display: flex;
 	flex-direction: column;

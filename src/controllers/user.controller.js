@@ -1,7 +1,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const adminUsers = JSON.parse(fs.readFileSync(path.resolve('src/models/adminUsers.JSON')));
+const adminUsers = JSON.parse(fs.readFileSync(path.resolve('src/data/adminUsers.JSON')));
 
 const userController = {
   register: (req, res) => {

@@ -52,7 +52,7 @@
       <div id="openModal" class="modalDialog">
         <div class="modal-content">
           <a href="#close" title="Close" class="close">X</a>
-          <form action="/products/insert" method="post" class="form-product">
+          <form action="/products/insert" method="post" class="form-product" enctype="multipart/form-data">
             <h3>FORMULARIO DE REGISTRO</h3>
             <br>
             <div class="item-product">
@@ -65,7 +65,7 @@
               <div class="iplabel">
                 <label for="price">Ingrese el precio de venta</label>
               </div>
-              <input type="number" min="1" name="price" placeholder="Precio" required="true">
+              <input type="number" min="1" name="price" placeholder="Precio" required="true" step="any">
             </div>
             <div class="item-product">
               <div class="iplabel">
@@ -79,7 +79,7 @@
               </div>
               <input type="file" name="image" required="true">
             </div><br>
-            <button type="submit">Enviar Formulario</button>
+            <button type="submit">CARGAR PRODUCTO</button>
 
           </form>
         </div>
