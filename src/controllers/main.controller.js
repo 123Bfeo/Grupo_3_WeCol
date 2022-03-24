@@ -6,23 +6,29 @@ const productModel = require('../models/product.model');
 const mainController = {
   index: (req, res) => {
     let products = productModel.read();
-    res.render("index", { products: products });
+    const title = 'Home';
+    res.render("index", { products: products, title });
   },
   aboutUs: (req, res) => {
-    res.render("aboutUs");
+    const title = 'Detalle de producto';
+    res.render("aboutUs",{title});
   },
   contact: (req, res) => {
-    res.render("contact");
+    const title = 'Contacto';
+    res.render("contact",{title});
   },
   privacyPolitics: (req, res) => {
-    res.render("privacyPolitics");
+    const title = 'Política de Privacidad';
+    res.render("privacyPolitics",{title});
   },
   agreePolitics: (req, res) => {
-    res.render("agreePolitics");
+    const title = 'Politicas';
+    res.render("agreePolitics",{title});
   },
   adminCreate: (req, res) => {
+    const title = 'Administrador Productos';
     let products = productModel.read();
-    res.render("adminCreate",{ products: products });
+    res.render("./admin/adminCreate",{ products: products , title });
   },
 };
 

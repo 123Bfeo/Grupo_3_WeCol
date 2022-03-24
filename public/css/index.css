@@ -29,7 +29,7 @@
 @import './form.css';
 @import './paymentRequest.css';
 @import './contact.css';
-@import './adminProducts.css';
+
 
 /* Components */
 @import './header.css';
@@ -54,7 +54,7 @@
 @import './form.css';
 @import './paymentRequest.css';
 @import './contact.css';
-@import './adminCreate.css';
+
 
 /* Components */
 @import './components/borders.css';
@@ -64,11 +64,15 @@
 @import './compnents/sliderDetail.css';
 @import './components/productDetailHero.css';
 @import './components/quantity.css';
-@import './components/allProductStock.css';
-@import './components/adminListStock.css';
+
 
 /* Admin */
 @import './admin/modalCreateProduct.css';
+@import './admin/allProductStock.css';
+@import './admin/adminListStock.css';
+@import './admin/adminCreate.css';
+@import './admin/adminProducts.css';
+
 
 :root {
   /* Colores */

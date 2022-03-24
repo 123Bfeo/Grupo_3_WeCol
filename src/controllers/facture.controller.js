@@ -1,15 +1,19 @@
 const factureController = {
   productCart: (req, res) => {
-    res.render('productCart');
+    const title = 'Carrito de Compras';
+    res.render('./products/productCart',{title});
   },
   facture: (req, res) => {
-    res.render('productDetail');
+    const title = 'Factura de compra';
+    res.render('./products/productDetail',{title});
   },
   payForm: (req, res) => {
-    res.render('payForm');
+    const title = 'formulario de pago';
+    res.render('payForm',{title});
   },
   paymentRequest: (req, res) => {
-    res.render('paymentRequest');
+    const title = 'paymentRequest';
+    res.render('paymentRequest',{title});
   },
 };
 

@@ -4,17 +4,20 @@ const productModel = require('../models/product.model');
 
 const productController = {
   allProducts: (req, res) => {
-    res.render("product");
+    const title = 'Admin'
+    res.render("product",{title});
   },
   productDetail: (req, res) => {
     let products = productModel.read();
     let findProduct = products.find((prod) => prod.id == req.params.id);
     let arrayImg = findProduct.image;
     const arr = Object.values(arrayImg);
-    res.render("productDet", { product: findProduct, arrayImg: arr });
+    const title = 'Detalle de producto';
+    res.render("./products/productDet", { product: findProduct, arrayImg: arr , title });
   },
   adminProducts: (req, res) => {
-    res.render('adminProducts');
+    const title = 'administrador producto';
+    res.render('adminProducts',{title});
   },
   insertProduct: (req, res) => {
     let ext = path.extname(req.file.filename);
