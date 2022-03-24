@@ -1,27 +1,33 @@
-const fs = require("fs");
-const path = require("path");
+const fs = require('fs');
+const path = require('path');
 const products = JSON.parse(
-  fs.readFileSync(path.resolve("src/models/products.JSON"))
+  fs.readFileSync(path.resolve('src/models/products.JSON'))
 );
 
 const mainController = {
   index: (req, res) => {
-    res.render("index", { products: products });
+    const title = 'Inicio - WeCol';
+    res.render('index', { title, products });
   },
   aboutUs: (req, res) => {
-    res.render("aboutUs");
+    const title = 'Sobre Nosotros';
+    res.render('aboutUs', { title });
   },
   contact: (req, res) => {
-    res.render("contact");
+    const title = 'Contáctanos';
+    res.render('contact', { title });
   },
   privacyPolitics: (req, res) => {
-    res.render("privacyPolitics");
+    const title = 'Políticas de Privacidad';
+    res.render('privacyPolitics', { title });
   },
   agreePolitics: (req, res) => {
-    res.render("agreePolitics");
+    const title = 'Acepción de politicas';
+    res.render('agreePolitics', { title });
   },
   adminCreate: (req, res) => {
-    res.render("adminCreate",{ products: products });
+    const title = 'Admin';
+    res.render('adminCreate', { title, products });
   },
 };
 
