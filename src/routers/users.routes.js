@@ -7,8 +7,11 @@ const userRoutes = express.Router();
 const CONTROLLER_PATH = path.resolve('src/controllers/user.controller');
 const userController = require(CONTROLLER_PATH);
 
+const validatorMiddleware = require('../middlewares/validatorMiddleware');
+const validatorLoginUser = validatorMiddleware.loginUser();
+
 userRoutes.get('/register', userController.register);
 userRoutes.get('/login', userController.login);
-userRoutes.post('/loginUser', userController.loginUser);
+userRoutes.post('/loginUser',validatorLoginUser,userController.loginUser);
 
 module.exports = userRoutes;

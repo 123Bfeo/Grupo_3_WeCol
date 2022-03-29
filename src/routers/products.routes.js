@@ -2,29 +2,28 @@
 const express = require('express');
 const path = require('path');
 const productRoutes = express.Router();
-const multer = require('multer');
-
 //Importaciones
 const CONTROLLER_PATH = path.resolve('src/controllers/product.controller');
 const productController = require(CONTROLLER_PATH);
 
-const storage = multer.diskStorage({
-    destination:(req,file,cb)=>{
-        const dest = path.resolve('public/img');
-        cb(null, dest); 
-    },
-    filename:(req,file,cb)=>{
-        const name = Date.now()+'_'+path.extname(file.originalname);
-        cb(null, name);
-    }
-});
+//Middelwares
+const validatorMiddleware = require('../middlewares/validatorMiddleware');
+const fileMiddleware = require('../middlewares/fileMiddleware');
 
-const upload = multer({storage : storage});
+//Instancias de los middlewares
+const validateCreateProduct = validatorMiddleware.createProduct();
+const upload = fileMiddleware.addFile();
+
 
 productRoutes.get('/products', productController.allProducts);
-productRoutes.post('/products/insert',upload.single('image'),productController.insertProduct);
+productRoutes.post('/products/insert',upload.single('image'),validateCreateProduct,productController.insertProduct);
 productRoutes.get('/productDet/:id', productController.productDetail);
-productRoutes.put('/product/editProduct/:id',upload.single('imageEdit'),productController.editProduct);
+productRoutes.put('/product/editProduct/:id',upload.single('imageEdit'),validateCreateProduct,productController.editProduct);
 productRoutes.delete('/product/deleteProduct/:id',productController.deleteProduct);
+productRoutes.get('/product/createProduct',productController.loadProduct);
+productRoutes.get('/products/searchProduct',productController.searchProduct);
+productRoutes.get('/product/adminProductBy',productController.loadMainAdminProductBy);
+productRoutes.get('/product/adminProductMain',productController.loadMainAdminProduct);
+productRoutes.get('/product/editProduct/:id',productController.loadEditProduct);
 
 module.exports = productRoutes;

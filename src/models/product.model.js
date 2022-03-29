@@ -5,14 +5,16 @@ const path = require("path");
 const productModel = {
 
     create: function (body, req) {
-        const { nombre, price, desc } = body;
+        const { name, price, description, category, brand } = body;
         let products = productModel.read();
         let number = Number(products[products.length - 1].id);
         let product = {
             id: number + 1,
-            name: nombre,
+            name: name,
             price: price,
-            description: desc,
+            description: description,
+            category: category,
+            brand: brand,
             rating: "5.0",
             image: {
                 img1: `/img/${req.filename}`,
@@ -49,14 +51,13 @@ const productModel = {
     update: function (data, file, id, products) {
         products.forEach(product => {
             if (product.id == id) {
-                product.name = data.nombre;
+                product.name = data.name;
                 product.price = data.price;
-                product.description = data.desc;
+                product.description = data.description;
+                product.category = data.category;
+                product.brand = data.brand;
                 if (file) {
-                    if (path.extname(file.filename) == '.jpg' || path.extname(file.filename) == '.png' || path.extname(file.filename) == '.jpeg') {
-                        product.image.img1 = '/img/' + file.filename;
-                    }
-
+                     product.image.img1 = '/img/' + file.filename;
                 }
             }
         });

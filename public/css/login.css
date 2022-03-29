@@ -11,6 +11,13 @@
   width: 100%;
 }
 
+.label-err-log{
+  background-color: rgb(206, 54, 54);
+  color: white; 
+  padding: 5px 10%;
+  border-radius: 8px;
+  font-family: var(--primaryFont);
+}
 .err{
   background-color: rgb(202, 65, 65);
   color: aliceblue;

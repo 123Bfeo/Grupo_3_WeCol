@@ -29,6 +29,7 @@
 @import './form.css';
 @import './paymentRequest.css';
 @import './contact.css';
+@import './adminProductMain.css';
 
 
 /* Components */
@@ -54,6 +55,7 @@
 @import './form.css';
 @import './paymentRequest.css';
 @import './contact.css';
+@import './create.css';
 
 
 /* Components */

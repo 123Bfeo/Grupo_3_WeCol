@@ -1,9 +1,7 @@
 <section class="adminListStock">
-  <a href="#openModal">
-    <button class="adminNewProduct">
-      <span>Nuevo Producto</span>
-    </button>
-  </a>
+  <form action="/product/createProduct">
+    <input type="submit" class="adminNewProduct" value="Nuevo Producto">
+  </form>
   <article class="adminListEdit">
     <%products.forEach(prod=>{%>
       <div class="adminItem">

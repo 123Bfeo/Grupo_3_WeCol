@@ -1,0 +1,164 @@
+.ap-main{
+    font-family: var(--primaryFont);
+}
+
+.ap-title{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: var(--secondary);
+    width: 100%;
+    padding: 15px;
+}
+
+.ap-buscador-contenedor-nombre{
+    width: 30%;
+}
+
+.ap-buscador-contenedor-nombre .text-search{
+    height: 30px;
+    width: 100%;
+    padding: 2px 5%;
+}
+
+.ap-buscador-contenedor-nombre .text-search ::placeholder{
+    color: var(--secondary);
+}
+
+.ap-insertar button{
+    background-color: var(--secondary);
+    color: white;
+    padding: 10px 10%;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+
+.ap-form-selects{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+}
+
+.ap-menu{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    justify-content: center;
+    padding: 20px 10%;
+}
+
+.ap-from-select-one > select{
+    width: 90%;
+    height: 30px;
+}
+
+.ap-form-button{
+    width: 30%;
+    margin: 10px 35%;
+}
+
+.ap-form-button > input{
+    background-color: var(--secondary);
+    width: 100%;
+    color: white;
+    padding: 5px 15%;
+    border-radius: 8px;
+}
+
+.ap-form-button-name{
+    width: 60%;
+    margin: 10px 20%;
+}
+
+.ap-form-button-name > input{ 
+    background-color: var(--secondary);
+    width: 100%;
+    color: white;
+    padding: 5px 15%;
+    border-radius: 8px;
+}
+
+
+.ap-buscador{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    gap: 20px;
+}
+
+.ap-buscador-contenedor-categoria-marca > h3{
+    text-align: center;
+}
+
+
+.ap-buscador-titulo{
+    text-align: center;
+    background-color: var(--secondary);
+    border-radius: 8px;
+}
+
+.ap-buscador .ap-buscador-contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+}
+
+.ap-card{
+    background-color:white;
+    width: 20%;
+    margin: 10px 1%;
+    text-align: center;
+    border-radius: 15px;
+
+}
+
+.ap-card button{
+    height: 40px;
+    margin: 10px 4%;
+    padding: 2px 2%;
+    border-radius: 15px;
+    border-style: none;
+    font-family: var(--primaryFont);
+    background-color: var(--secondary);
+    color: white;
+    font-family: var(--primaryFont);
+
+}
+
+.ap-card form{
+    text-align: center;
+}
+
+.ap-card h3{
+    margin: 10px 0;
+    width: 100%;
+}
+
+.ap-card img{
+    width: 90%;
+    height: 200px;
+    margin: 2px 5%;
+    border-radius: 8px;
+}
+
+.ap-section{
+    margin: 20px 1%;
+}
+
+.ap-contenedor{
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1%;
+    justify-content: center;
+    border-color: wheat;
+    border-style: solid;
+    border-radius: 8px;
+}

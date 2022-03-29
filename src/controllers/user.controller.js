@@ -1,7 +1,8 @@
 
 const fs = require('fs');
 const path = require('path');
-const adminUsers = JSON.parse(fs.readFileSync(path.resolve('src/data/adminUsers.JSON')));
+const {validationResult} = require('express-validator');
+const userModel = require(path.resolve('src/models/user.model'));
 
 const userController = {
   register: (req, res) => {
@@ -14,7 +15,17 @@ const userController = {
     res.render('./users/login',{err:err,title});
   },
   loginUser:(req,res)=>{ 
-    let email = req.body.email;
+
+    const errors = validationResult(req);
+    if(!errors.isEmpty()){
+      res.render('./users/login',{error: errors.mapped(),old:req.body})
+    }else{
+      let adminUsers = userModel.readAdminUsers();
+      res.send(adminUsers);
+
+    }
+
+    /* let email = req.body.email;
     let password = req.body.password;
     let findUser = adminUsers.find(user => user.email==email&&user.password==password);
     if(findUser){
@@ -23,7 +34,7 @@ const userController = {
       let err = true;
       const title = 'Login'
       res.render('./users/login',{err:err,title});
-    } 
+    }  */
   }
 };
 
