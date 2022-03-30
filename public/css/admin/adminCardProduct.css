@@ -37,41 +37,37 @@
   width: 100%;
   border-radius: 50%;
 }
-.adminEditDetail .available {
+.adminItemCard .adminEditDetail .available {
   border: 1px solid green;
   width: 100%;
   padding-inline-end: 100px;
 }
-.adminEditDetail .price {
+.adminItemCard .adminEditDetail .price {
   border: 1px solid rebeccapurple;
   width: 100%;
   text-align: right;
   display: flex;
   align-items: center;
-  /* display: block; */
 }
-.adminEditDetail .price:before {
+.adminItemCard .adminEditDetail .price:before {
   content: '$ ';
 }
 
-.adminEditDetail {
+.adminItemCard .adminEditDetail {
   border: 1px solid red;
   display: flex;
-  /* gap:56px; */
   width: 300px;
 }
-.adminEditDetail span {
+.adminItemCard .adminEditDetail span {
   color: var(--text-gray);
   font: var(--small-paragraph);
-  /* padding: 16px; */
 }
-.adminEditTrash {
+.adminItemCard .adminEditTrash {
   display: flex;
   gap: 8px;
   border: 1px solid green;
-
 }
-.adminEditTrash i {
+.adminItemCard .adminEditTrash i {
   color: var(--secondary);
   font-size: 24px;
 }
