@@ -1,4 +1,3 @@
-
 const fs = require('fs');
 const path = require('path');
 const {validationResult} = require('express-validator');
@@ -6,13 +5,13 @@ const userModel = require(path.resolve('src/models/user.model'));
 
 const userController = {
   register: (req, res) => {
-    const title = 'Registro'
-    res.render('./users/register',{title});
+    const title = 'Registro';
+    res.render('./users/register', { title });
   },
   login: (req, res) => {
     let err = false;
-    const title = 'Login'
-    res.render('./users/login',{err:err,title});
+    const title = 'Login';
+    res.render('./users/login', { err: err, title });
   },
   loginUser:(req,res)=>{ 
 
@@ -30,10 +29,12 @@ const userController = {
 
     /* let email = req.body.email;
     let password = req.body.password;
-    let findUser = adminUsers.find(user => user.email==email&&user.password==password);
-    if(findUser){
+    let findUser = adminUsers.find(
+      (user) => user.email == email && user.password == password
+    );
+    if (findUser) {
       res.redirect('/adminCreate');
-    }else{
+    } else {
       let err = true;
       const title = 'Login'
       res.render('./users/login',{err:err,title});

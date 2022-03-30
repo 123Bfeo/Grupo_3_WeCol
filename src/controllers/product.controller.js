@@ -1,7 +1,6 @@
-const fs = require("fs");
-const path = require("path");
 const { validationResult } = require('express-validator');
 //Importaciones modelos
+const path = require('path');
 const productModel = require('../models/product.model');
 
 const {readCategoriesAndBrands} = require('../models/appdata.model');
@@ -24,7 +23,11 @@ const productController = {
     let arrayImg = findProduct.image;
     const arr = Object.values(arrayImg);
     const title = 'Detalle de producto';
-    res.render("./products/productDet", { product: findProduct, arrayImg: arr, title });
+    res.render('./products/productDet', {
+      product: findProduct,
+      arrayImg: arr,
+      title,
+    });
   },
   adminProducts: (req, res) => {
     const title = 'administrador producto';
@@ -50,7 +53,6 @@ const productController = {
       res.redirect('/product/adminProductMain');
 
     }
-
   },
   editProduct: (req, res) => {
 

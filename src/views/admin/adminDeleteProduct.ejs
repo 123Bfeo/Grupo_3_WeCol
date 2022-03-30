@@ -1,0 +1,10 @@
+<div id="<%= modDelete %>" class="modalDialog">
+    <div class="modal-content">
+        <a href="#close" title="Close" class="close">X</a>
+        <form action="/product/deleteProduct/<%= prod.id %>?_method=DELETE" method="post" class="form-product"
+              enctype="multipart/form-data">
+            <label>¿Está seguro que desea eliminar el producto <%= prod.name %>?</label>
+            <button class="deletebutton"type="submit">ELIMINAR PRODUCTO</button>
+        </form>
+    </div>
+</div>
