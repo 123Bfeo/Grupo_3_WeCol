@@ -91,20 +91,5 @@
       "img1": "/img/macbookAir.png",
       "img2": "/img/macbookAir.png"
     }
-  },
-  {
-    "id": 8,
-    "name": "COBISCORP",
-    "price": "23423",
-    "description": "sdasdas",
-    "rating": "5.0",
-    "image": {
-      "img1": "/img/1648092330052_.jpg",
-      "img2": "/img/iphone.png",
-      "img3": "/img/razer.jpg",
-      "img4": "/img/macbookAir.png",
-      "img5": "/img/razer.jpg",
-      "img6": "/img/iphone.png"
-    }
   }
 ]

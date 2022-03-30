@@ -46,7 +46,10 @@
 @import './admin/adminListStock.css';
 @import './admin/adminCreate.css';
 @import './admin/adminProducts.css';
+@import './admin/adminCardProduct.css';
 
+/* Partials */
+@import './partials/btn_adminCreateProduct.css';
 
 :root {
   /* Colores */

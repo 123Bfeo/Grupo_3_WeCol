@@ -1,91 +1,10 @@
 <section class="adminListStock">
-  <a href="#openModal" class='btn_adminNewProduct'>
-        <span class="text">Nuevo Producto</span>
-        <div class="icon">
-            <i class="fas fa-plus"></i>
-        </div>
-  </a>
+    <%- include('../partials/btn_adminCreateProduct') %>
   <article class="adminListEdit">
-    <%products.forEach(prod=>{%>
-      <div class="adminItem">
-        <div class="adminEditImgProduct">
-          <input type="checkbox" />
-          <picture>
-            <img src="<%=prod.image.img1%>" alt="" />
-          </picture>
-          <span>
-            <%=prod.name%>
-          </span>
-        </div>
-        <div class="adminEditDetail">
-          <span>Disponible</span>
-          <span>Cantidad</span>
-          <span>
-            <%=prod.price%>
-          </span>
-          <span>2 days ago</span>
-        </div>
-        <div class="adminEditTrash">
-          <% let enlaceEdit='#modalEdit' +prod.id %>
-          <% let enlaceDelete='#modalDelete' +prod.id %>
-          <% let modEdit='modalEdit' +prod.id %>
-          <% let modDelete='modalDelete' +prod.id %>
-          <a href="<%=enlaceDelete%>"><i class="fas fa-trash-alt"></i></a>
-          <a href="<%=enlaceEdit%>"><i class="fas fa-bars"></i></a>
-        </div>
-      </div>
-      <div id="<%=modEdit%>" class="modalDialog">
-        <div class="modal-content">
-          <a href="#close" title="Close" class="close">X</a>
-          <form action="/product/editProduct/<%=prod.id%>?_method=PUT" method="post" class="form-product"
-            enctype="multipart/form-data">
-            <h3>FORMULARIO DE EDICIÓN</h3>
-            <br>
-            <div class="item-product">
-              <div class="iplabel">
-                <label for="nombre">Ingrese nombre del producto</label>
-              </div>
-              <input type="text" name="nombre" placeholder="Nombre" required="true" value="<%=prod.name%>">
-            </div>
-            <div class="item-product">
-              <div class="iplabel">
-                <label for="price">Ingrese el precio de venta</label>
-              </div>
-              <input type="number" step="any" min="1" name="price" placeholder="Precio" required="true"
-                value="<%=prod.price%>">
-            </div>
-            <div class="item-product">
-              <div class="iplabel">
-                <label for="desc">Ingrese una descripción del producto</label>
-              </div>
-              <textarea name="desc" id="" cols="70" rows="2" required="true"><%=prod.description%></textarea>
-            </div>
-            <div class="item-product">
-              <div class="iplabel">
-                <label for="image">Cargue una imagen del producto</label>
-              </div>
-              <input type="file" name="imageEdit">
-            </div><br>
-            <button type="submit">EDITAR PRODUCTO</button>
-
-          </form>
-        </div>
-      </div>
-
-      
-      <div id="<%=modDelete%>" class="modalDialog">
-        <div class="modal-content">
-          <a href="#close" title="Close" class="close">X</a>
-          <form action="/product/deleteProduct/<%=prod.id%>?_method=DELETE" method="post" class="form-product"
-            enctype="multipart/form-data">
-            <label>¿Está seguro que desea eliminar el producto <%=prod.name%>?</label>
-            <br>
-            <br>
-            <button class="deletebutton"type="submit">ELIMINAR PRODUCTO</button>
-          </form>
-        </div>
-      </div>
-
-    <%})%>
+      <% products.forEach(prod=>{ %>
+          <%- include('./adminCardProduct', { prod: prod }) %>
+          <% const modDelete = 'modalDelete' + prod.id %>
+          <%- include('./adminDeleteProduct', { prod, modDelete })%>
+      <%})%>
   </article>
 </section>
