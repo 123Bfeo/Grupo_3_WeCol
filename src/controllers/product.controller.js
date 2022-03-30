@@ -108,7 +108,8 @@ const productController = {
   },
   loadMainAdminProduct : (req,res)=>{
     let products = productModel.read();
-    res.render('./admin/adminProductMain',{categories,brands,products});
+    const title = "Administrador de productos";
+    res.render('./admin/adminProductMain',{categories,brands,products,title});
   },
   searchProducstBy: (req,res)=>{
     let category = req.query.category;
