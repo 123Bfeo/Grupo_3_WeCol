@@ -1,0 +1,42 @@
+<div class="ap-buscador-contenedor-categoria-marca">
+  <h3>Busqueda por categoría/marca</h3>
+  <form action="/product/adminProductBy" method="get" class="ap-buscador-form">
+    <div class="ap-form-selects">
+      <div class="ap-from-select-one">
+        <label for="search">Seleccione la categoría</label>
+        <select name="category">
+          <%if(locals.categories){%>
+          <option value="">Seleccione</option>
+          <%categories.forEach(cat =>{%>
+          <option value="<%=cat.nombre%>"><%=cat.nombre%></option>
+          <% }) %> <%}%>
+        </select>
+      </div>
+      <div class="ap-from-select-one">
+        <label for="search">Seleccione la marca</label>
+        <select name="brand">
+          <%if(locals.brands){%>
+          <option value="">Seleccione</option>
+          <%brands.forEach(brand =>{%>
+          <option value="<%=brand.nombre%>"><%=brand.nombre%></option>
+          <% }) %> <%}%>
+        </select>
+      </div>
+    </div>
+    <div class="ap-form-button">
+      <input type="submit" value="Buscar" />
+    </div>
+    <% if(locals.errCB){%>
+    <label
+      for="err"
+      style="
+        background-color: rgb(190, 68, 68);
+        width: 100%;
+        text-align: center;
+        border-radius: 8px;
+      "
+      ><%=errCB%></label
+    >
+    <%}%>
+  </form>
+</div>

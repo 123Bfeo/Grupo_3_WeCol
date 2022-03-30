@@ -1,229 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <%-include('../partials/Head')%>
-</head>
-<body class="ap-main">
+  </head>
+  <body class="ap-main">
     <%-include('../partials/Header')%>
     <div class="ap-title">
-        <h2>PANEL DE ADMINISTRACIÓN PARA PRODUCTOS WECOL</h2>
+      <h2>PANEL DE ADMINISTRACIÓN PARA PRODUCTOS WECOL</h2>
     </div>
     <section class="ap-section">
-
-        <div class="ap-menu">
-            <div class="ap-insertar">
-                <a href="/product/createProduct">
-                    <button type="submit">AGREGAR NUEVO PRODUCTO</button>
-                </a>
-            </div>
-            <div class="ap-buscador">
-                <div class="ap-buscador-titulo">
-                    <h3>BUSCAR PRODUCTOS</h3>
-                </div>
-                <div class="ap-buscador-contenedor">
-                    <div class="ap-buscador-contenedor-nombre">
-                        <form action="/products/searchProduct">
-                            <label for="search"><h3>Buscar por nombre</h3></label>
-                            <br>
-                            <input type="text" name="search" class="text-search" placeholder="Producto">
-                            <% if(locals.err){%>
-                                <label for="err" style="background-color: rgb(190, 68, 68);width: 100%;"><%=err%></label>
-                            <%}%>
-                            <div class="ap-form-button-name">
-                                <input type="submit" value="Buscar">
-                                
-                            </div>
-                        </form> 
-                    </div>
-                    <div class="ap-buscador-contenedor-categoria-marca">
-                        <h3>Busqueda por categoría/marca</h3>
-                        <form action="/product/adminProductBy" method="get" class="ap-buscador-form">
-                            <div class="ap-form-selects">
-                                <div class="ap-from-select-one"> 
-                                    <label for="search">Seleccione la categoría</label>
-                                    <select name="category">
-                                        <%if(locals.categories){%>
-                                            <option value="">Seleccione</option>
-                                            <%categories.forEach(cat =>{%>
-                                                <option value="<%=cat.nombre%>"><%=cat.nombre%></option>
-                                            <% }) %>
-                                        <%}%>
-                                    </select>
-                                </div>
-                                <div class="ap-from-select-one">
-                                    <label for="search">Seleccione la marca</label>
-                                    <select name="brand">
-                                        <%if(locals.brands){%>
-                                            <option value="">Seleccione</option>
-                                            <%brands.forEach(brand =>{%>
-                                                <option value="<%=brand.nombre%>"><%=brand.nombre%></option>
-                                            <% }) %>
-                                        <%}%>
-                                    </select>
-                                </div>
-                                
-                            </div>
-                            <div class="ap-form-button">
-                                <input type="submit" value="Buscar">
-                            </div>
-                            <% if(locals.errCB){%>
-                                <label for="err" style="background-color: rgb(190, 68, 68);width: 100%; text-align: center;border-radius: 8px;"><%=errCB%></label>
-                            <%}%>
-                        </form> 
-                    </div>
-                </div> 
-            </div>
+      <%-include("./adminFilterSearch")%>
+      <%-include("./btn_adminCreateProduct")%>
+      <div class="ap-contenedor">
+        <% if(locals.find){%> <% find.forEach(prod =>{%>
+        <div class="ap-card">
+          <h3><%= prod.name%></h3>
+          <img src="<%=prod.image.img1%>" alt="imagen" />
+          <h3>$ <%= prod.price%></h3>
+          <% let enlaceEdit='/product/editProduct/'+prod.id %> <% let
+          enlaceDelete='#modalDelete' +prod.id %> <% let modDelete='modalDelete'
+          +prod.id %>
+          <a href="<%=enlaceEdit%>"
+            ><button name="" id="">Editar producto</button></a
+          >
+          <br />
+          <a href="<%=enlaceDelete%>"><button>Eliminar producto</button></a>
         </div>
-        
-        <div class="ap-contenedor">
-            <% if(locals.find){%>
-                <% find.forEach(prod =>{%>
-                    <div class="ap-card">
-                        <h3><%= prod.name%></h3>
-                        <img src="<%=prod.image.img1%>" alt="imagen">
-                        <h3>$ <%= prod.price%></h3>
-                        <% let enlaceEdit='/product/editProduct/'+prod.id %>
-                        <% let enlaceDelete='#modalDelete' +prod.id %>
-                        <% let modDelete='modalDelete' +prod.id %>
-                        <a href="<%=enlaceEdit%>"><button name="" id="">Editar producto</button></a>
-                        <br>
-                        <a href="<%=enlaceDelete%>"><button >Eliminar producto</button></a>
-                    </div>
 
-                    <div id="<%=modDelete%>" class="modalDialog">
-                        <div class="modal-content">
-                          <a href="#close" title="Close" class="close">X</a>
-                          <form action="/product/deleteProduct/<%=prod.id%>?_method=DELETE" method="post" class="form-product"
-                            enctype="multipart/form-data">
-                            <label>¿Está seguro que desea eliminar el producto <%=prod.name%>?</label>
-                            <br>
-                            <br>
-                            <button class="deletebutton"type="submit">ELIMINAR PRODUCTO</button>
-                          </form>
-                        </div>
-                      </div>
-
-                <%})%>
-            <%}else if(locals.noFind){%>
-                <br><br>
-                <h3 style="color: white;"><%=noFind%></h3>
-                <br><br>
-            <%}else if(locals.products){%>
-                <% products.forEach(prod =>{%>
-                    <div class="ap-card">
-                        <h3><%= prod.name%></h3>
-                        <img src="<%=prod.image.img1%>" alt="imagen">
-                        <h3>$ <%= prod.price%></h3>
-                        <% let enlaceEdit='/product/editProduct/'+prod.id %>
-                        <% let enlaceDelete='#modalDelete' +prod.id %>
-                        <% let modDelete='modalDelete' +prod.id %>
-                        <a href="<%=enlaceEdit%>"><button name="" id="">Editar producto</button></a>
-                        <br>
-                        <a href="<%=enlaceDelete%>"><button >Eliminar producto</button></a>
-                    </div>
-
-                    <div id="<%=modDelete%>" class="modalDialog">
-                        <div class="modal-content">
-                          <a href="#close" title="Close" class="close">X</a>
-                          <form action="/product/deleteProduct/<%=prod.id%>?_method=DELETE" method="post" class="form-product"
-                            enctype="multipart/form-data">
-                            <label>¿Está seguro que desea eliminar el producto <%=prod.name%>?</label>
-                            <br>
-                            <br>
-                            <button class="deletebutton"type="submit">ELIMINAR PRODUCTO</button>
-                          </form>
-                        </div>
-                      </div>
-
-                <%})%>
-            <%}else if(locals.productsByBrand){%>
-                <% productsByBrand.forEach(prod =>{%>
-                    <div class="ap-card">
-                        <h3><%= prod.name%></h3>
-                        <img src="<%=prod.image.img1%>" alt="imagen">
-                        <h3>$ <%= prod.price%></h3>
-                        <% let enlaceEdit='/product/editProduct/'+prod.id %>
-                        <% let enlaceDelete='#modalDelete' +prod.id %>
-                        <% let modDelete='modalDelete' +prod.id %>
-                        <a href="<%=enlaceEdit%>"><button name="" id="">Editar producto</button></a>
-                        <br>
-                        <a href="<%=enlaceDelete%>"><button >Eliminar producto</button></a>
-                    </div>
-
-                    <div id="<%=modDelete%>" class="modalDialog">
-                        <div class="modal-content">
-                          <a href="#close" title="Close" class="close">X</a>
-                          <form action="/product/deleteProduct/<%=prod.id%>?_method=DELETE" method="post" class="form-product"
-                            enctype="multipart/form-data">
-                            <label>¿Está seguro que desea eliminar el producto <%=prod.name%>?</label>
-                            <br>
-                            <br>
-                            <button class="deletebutton"type="submit">ELIMINAR PRODUCTO</button>
-                          </form>
-                        </div>
-                      </div>
-
-                <%})%>
-
-            <%}else if(locals.productsByBcategory){%>
-                <% productsByBcategory.forEach(prod =>{%>
-                    <div class="ap-card">
-                        <h3><%= prod.name%></h3>
-                        <img src="<%=prod.image.img1%>" alt="imagen">
-                        <h3>$ <%= prod.price%></h3>
-                        <% let enlaceEdit='/product/editProduct/'+prod.id %>
-                        <% let enlaceDelete='#modalDelete' +prod.id %>
-                        <% let modDelete='modalDelete' +prod.id %>
-                        <a href="<%=enlaceEdit%>"><button name="" id="">Editar producto</button></a>
-                        <br>
-                        <a href="<%=enlaceDelete%>"><button >Eliminar producto</button></a>
-                    </div>
-
-                    <div id="<%=modDelete%>" class="modalDialog">
-                        <div class="modal-content">
-                          <a href="#close" title="Close" class="close">X</a>
-                          <form action="/product/deleteProduct/<%=prod.id%>?_method=DELETE" method="post" class="form-product"
-                            enctype="multipart/form-data">
-                            <label>¿Está seguro que desea eliminar el producto <%=prod.name%>?</label>
-                            <br>
-                            <br>
-                            <button class="deletebutton"type="submit">ELIMINAR PRODUCTO</button>
-                          </form>
-                        </div>
-                      </div>
-
-                <%})%>
-            <%}else if(locals.productsByBcategoryAndBrand){%>
-                <% productsByBcategoryAndBrand.forEach(prod =>{%>
-                    <div class="ap-card">
-                        <h3><%= prod.name%></h3>
-                        <img src="<%=prod.image.img1%>" alt="imagen">
-                        <h3>$ <%= prod.price%></h3>
-                        <% let enlaceEdit='/product/editProduct/'+prod.id %>
-                        <% let enlaceDelete='#modalDelete' +prod.id %>
-                        <% let modDelete='modalDelete' +prod.id %>
-                        <a href="<%=enlaceEdit%>"><button name="" id="">Editar producto</button></a>
-                        <br>
-                        <a href="<%=enlaceDelete%>"><button >Eliminar producto</button></a>
-                    </div>
-
-                    <div id="<%=modDelete%>" class="modalDialog">
-                        <div class="modal-content">
-                          <a href="#close" title="Close" class="close">X</a>
-                          <form action="/product/deleteProduct/<%=prod.id%>?_method=DELETE" method="post" class="form-product"
-                            enctype="multipart/form-data">
-                            <label>¿Está seguro que desea eliminar el producto <%=prod.name%>?</label>
-                            <br>
-                            <br>
-                            <button class="deletebutton"type="submit">ELIMINAR PRODUCTO</button>
-                          </form>
-                        </div>
-                      </div>
-
-                <%})%>
-            <%}else{}%>
+        <div id="<%=modDelete%>" class="modalDialog">
+          <div class="modal-content">
+            <a href="#close" title="Close" class="close">X</a>
+            <form
+              action="/product/deleteProduct/<%=prod.id%>?_method=DELETE"
+              method="post"
+              class="form-product"
+              enctype="multipart/form-data"
+            >
+              <label
+                >¿Está seguro que desea eliminar el producto
+                <%=prod.name%>?</label
+              >
+              <br />
+              <br />
+              <button class="deletebutton" type="submit">
+                ELIMINAR PRODUCTO
+              </button>
+            </form>
+          </div>
         </div>
+
+        <%})%> <%}else if(locals.noFind){%>
+        <br /><br />
+        <h3 style="color: white"><%=noFind%></h3>
+        <br /><br />
+        <%}else if(locals.products){%> <% products.forEach(prod =>{%>
+        <div class="ap-card">
+          <h3><%= prod.name%></h3>
+          <img src="<%=prod.image.img1%>" alt="imagen" />
+          <h3>$ <%= prod.price%></h3>
+          <% let enlaceEdit='/product/editProduct/'+prod.id %> <% let
+          enlaceDelete='#modalDelete' +prod.id %> <% let modDelete='modalDelete'
+          +prod.id %>
+          <a href="<%=enlaceEdit%>"
+            ><button name="" id="">Editar producto</button></a
+          >
+          <br />
+          <a href="<%=enlaceDelete%>"><button>Eliminar producto</button></a>
+        </div>
+
+        <div id="<%=modDelete%>" class="modalDialog">
+          <div class="modal-content">
+            <a href="#close" title="Close" class="close">X</a>
+            <form
+              action="/product/deleteProduct/<%=prod.id%>?_method=DELETE"
+              method="post"
+              class="form-product"
+              enctype="multipart/form-data"
+            >
+              <label
+                >¿Está seguro que desea eliminar el producto
+                <%=prod.name%>?</label
+              >
+              <br />
+              <br />
+              <button class="deletebutton" type="submit">
+                ELIMINAR PRODUCTO
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <%})%> <%}else if(locals.productsByBrand){%> <%
+        productsByBrand.forEach(prod =>{%>
+        <div class="ap-card">
+          <h3><%= prod.name%></h3>
+          <img src="<%=prod.image.img1%>" alt="imagen" />
+          <h3>$ <%= prod.price%></h3>
+          <% let enlaceEdit='/product/editProduct/'+prod.id %> <% let
+          enlaceDelete='#modalDelete' +prod.id %> <% let modDelete='modalDelete'
+          +prod.id %>
+          <a href="<%=enlaceEdit%>"
+            ><button name="" id="">Editar producto</button></a
+          >
+          <br />
+          <a href="<%=enlaceDelete%>"><button>Eliminar producto</button></a>
+        </div>
+
+        <div id="<%=modDelete%>" class="modalDialog">
+          <div class="modal-content">
+            <a href="#close" title="Close" class="close">X</a>
+            <form
+              action="/product/deleteProduct/<%=prod.id%>?_method=DELETE"
+              method="post"
+              class="form-product"
+              enctype="multipart/form-data"
+            >
+              <label
+                >¿Está seguro que desea eliminar el producto
+                <%=prod.name%>?</label
+              >
+              <br />
+              <br />
+              <button class="deletebutton" type="submit">
+                ELIMINAR PRODUCTO
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <%})%> <%}else if(locals.productsByBcategory){%> <%
+        productsByBcategory.forEach(prod =>{%>
+        <div class="ap-card">
+          <h3><%= prod.name%></h3>
+          <img src="<%=prod.image.img1%>" alt="imagen" />
+          <h3>$ <%= prod.price%></h3>
+          <% let enlaceEdit='/product/editProduct/'+prod.id %> <% let
+          enlaceDelete='#modalDelete' +prod.id %> <% let modDelete='modalDelete'
+          +prod.id %>
+          <a href="<%=enlaceEdit%>"
+            ><button name="" id="">Editar producto</button></a
+          >
+          <br />
+          <a href="<%=enlaceDelete%>"><button>Eliminar producto</button></a>
+        </div>
+
+        <div id="<%=modDelete%>" class="modalDialog">
+          <div class="modal-content">
+            <a href="#close" title="Close" class="close">X</a>
+            <form
+              action="/product/deleteProduct/<%=prod.id%>?_method=DELETE"
+              method="post"
+              class="form-product"
+              enctype="multipart/form-data"
+            >
+              <label
+                >¿Está seguro que desea eliminar el producto
+                <%=prod.name%>?</label
+              >
+              <br />
+              <br />
+              <button class="deletebutton" type="submit">
+                ELIMINAR PRODUCTO
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <%})%> <%}else if(locals.productsByBcategoryAndBrand){%> <%
+        productsByBcategoryAndBrand.forEach(prod =>{%>
+        <div class="ap-card">
+          <h3><%= prod.name%></h3>
+          <img src="<%=prod.image.img1%>" alt="imagen" />
+          <h3>$ <%= prod.price%></h3>
+          <% let enlaceEdit='/product/editProduct/'+prod.id %> <% let
+          enlaceDelete='#modalDelete' +prod.id %> <% let modDelete='modalDelete'
+          +prod.id %>
+          <a href="<%=enlaceEdit%>"
+            ><button name="" id="">Editar producto</button></a
+          >
+          <br />
+          <a href="<%=enlaceDelete%>"><button>Eliminar producto</button></a>
+        </div>
+
+        <div id="<%=modDelete%>" class="modalDialog">
+          <div class="modal-content">
+            <a href="#close" title="Close" class="close">X</a>
+            <form
+              action="/product/deleteProduct/<%=prod.id%>?_method=DELETE"
+              method="post"
+              class="form-product"
+              enctype="multipart/form-data"
+            >
+              <label
+                >¿Está seguro que desea eliminar el producto
+                <%=prod.name%>?</label
+              >
+              <br />
+              <br />
+              <button class="deletebutton" type="submit">
+                ELIMINAR PRODUCTO
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <%})%> <%}else{}%>
+      </div>
     </section>
     <%-include('../partials/Footer')%>
-</body>
+  </body>
 </html>

@@ -1,0 +1,51 @@
+.ap-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  justify-content: center;
+  padding: 20px 10%;
+}
+
+.ap-buscador {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  width: 100%;
+  gap: 20px;
+}
+
+.ap-buscador-titulo {
+  text-align: center;
+  background-color: var(--secondary);
+  border-radius: 8px;
+}
+
+.ap-buscador .ap-buscador-contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10%;
+}
+
+.ap-buscador-contenedor-categoria-marca > h3 {
+  text-align: center;
+}
+
+.ap-from-select-one > select {
+  width: 90%;
+  height: 30px;
+}
+
+.ap-form-button {
+  width: 30%;
+  margin: 10px 35%;
+}
+
+.ap-form-button > input {
+  background-color: var(--secondary);
+  width: 100%;
+  color: white;
+  padding: 5px 15%;
+  border-radius: 8px;
+}
