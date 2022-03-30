@@ -56,3 +56,31 @@ Igualemente, es importante seguir realizando reuniones para aclarar nuestras dud
 **Less of:** Mantener una comunicación constante con los miembros de nuestro equipo, toda vez que nuestras actividades se conectan entre sí y, por ello, se requiere avanzar a la par con el objetivo de evitar errores subsanables en los entregables del sprint.
 
 **Stop Doing:** Si nuestra principal falencia es la falta de comunicación constante respecto del estado o avance de nuestras actividades, se hace necesario mejorar los canales de comunicación con nuestros equipo e informarnos constantemente, en caso de no poder asistir a las reuniones, de todas las actividades y temas tratados en la reunión. Del igual modo, debemos comprometernos a brindar información detallada respecto de lo que hemos desarrollado de los entregables para el sprint.
+
+## Tercer Sprint
+
+### 1. ¿Qué hicimos bien en nuestro primer Sprint?
+
+- La distribución de tareas y responsabilidades para la entrega de los requerimientos técnicos del Sprint se desarrolló de manera equitativa y de acuerdo a las habilidades de cada uno de nuestros integrantes.
+- Se mantuvo constante la metodología de trabajo que nos planteamos desde el primer Sprint (acorde a nuestras habilidades) para realizar de manera más equilibrada el desarrollo de las nuevas actividades.
+- En el desarrollo de nuestro tercer Sprint hemos cumplido con las tareas a desarrollar y, estamos rotando en las funciones para adquirir y mejorar nuestras habilidades.
+
+### 2. ¿Qué hicimos mal en nuestro primer sprint?
+
+- Si bien es cierto, existe un canal de comunicación más participativo, nos hemos reunido muy poco todos los miembros del equipo, lo cual dificulta la toma de decisiones importantes.
+
+### 3. Metodología retrospectiva de la estrella de mar
+
+**Start Doing:** Mantener la constancia y esfuerzo con los que hemos realizado los anteriores Sprints, pues gracias al cumplimiento del cronograma y metodología establecidos hemos adelantado gran parte del proyecto.
+
+Realizar correcciones sobre las plantillas ya realizadas con el fin de corregir los pequeños errores que estas pudiesen contener.
+
+**More of:** Continuar informándonos y adoptar metodologías relacionadas con los patrones de diseño en el desarrollo de software colaborativo, tales como la estructura-flujo estándar para la distribución del trabajo mediante el sistema de control de versiones, y con respecto a este sprint, el objetivo será perfeccionar esta técnica junto con la integración del paradigma de diseño MVC (modelo,vista,controlador) desarrollada recientemente en clase.
+
+Igualemente, es importante seguir realizando reuniones para aclarar nuestras dudas entre nosotros respecto de las temáticas a abordar en el sprint, toda vez que esto genera mayor claridad y asimilación del contenido teórico del curso.
+
+**Keep Doing:** Mantener la asignación de roles de responsabilidad específica para el control y seguimiento de nuestros avances respecto de las diferentes plataformas de trabajo recomendadas por los docentes. Lo anterior con fines informativos respecto del estado de nuestro proyecto en cada una de nuestras reuniones.
+
+**Less of:** Seguir trabajando constantemente de manera conjunta en el desarrollo del Sprint.
+
+**Stop Doing:** Mantener los canales de comunicación constante ya establecidos con el objetivo de colaborarnos y apoyarnos en caso de existir dudas respecto del desarrollo del sprint.
