@@ -44,7 +44,6 @@ const productController = {
     if (Object.keys(err).length>0) {
       res.render('./products/createProduct', { errors: err, old: req.body ,categories,brands});
     } else {
-      console.log(req.body, req.file)
       let reqBody = req.body;
       let reqFile = req.file;
       productModel.create(reqBody, reqFile);
@@ -88,14 +87,13 @@ const productController = {
     let products = productModel.read();
     let parameter = req.query.search.toLowerCase();
     if(parameter==''){
-      let err = "Digite valor válido"
-      res.render('./admin/adminProductMain',{categories,brands,err})
+      let err = "Digite valor válido";
+      res.render('./admin/adminProductMain',{categories,brands,err,products});
     }else{
 
       let find = products.filter( prod => prod.name.toLowerCase().includes(parameter));
       if(find.length>0){
 
-        console.log("Entra aqui poruqe hay productos")
         res.render('./admin/adminProductMain',{find,categories,brands})
       }else{
 
@@ -110,7 +108,7 @@ const productController = {
     let products = productModel.read();
     res.render('./admin/adminProductMain',{categories,brands,products});
   },
-  loadMainAdminProductBy: (req,res)=>{
+  searchProducstBy: (req,res)=>{
     let category = req.query.category;
     let brand = req.query.brand;
     let products = productModel.read();

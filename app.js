@@ -9,6 +9,7 @@ const userRoutes = require('./src/routers/users.routes');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
 
+
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'src/views'));
 

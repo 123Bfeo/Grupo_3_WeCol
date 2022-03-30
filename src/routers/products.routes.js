@@ -22,7 +22,7 @@ productRoutes.put('/product/editProduct/:id',upload.single('imageEdit'),validate
 productRoutes.delete('/product/deleteProduct/:id',productController.deleteProduct);
 productRoutes.get('/product/createProduct',productController.loadProduct);
 productRoutes.get('/products/searchProduct',productController.searchProduct);
-productRoutes.get('/product/adminProductBy',productController.loadMainAdminProductBy);
+productRoutes.get('/product/adminProductBy',productController.searchProducstBy);
 productRoutes.get('/product/adminProductMain',productController.loadMainAdminProduct);
 productRoutes.get('/product/editProduct/:id',productController.loadEditProduct);
 

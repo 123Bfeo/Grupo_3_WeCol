@@ -21,6 +21,9 @@ const userController = {
       res.render('./users/login',{error: errors.mapped(),old:req.body})
     }else{
       let adminUsers = userModel.readAdminUsers();
+      console.log(typeof req.body.rememberUser);
+      res.cookie('Nuevo user',req.body.email,{maxAge: 120000});
+      res.cookie('isAdmin',true,{maxAge: 120000});
       res.send(adminUsers);
 
     }

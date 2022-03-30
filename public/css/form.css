@@ -30,6 +30,11 @@
   color: var(--placeholder);
 }
 
+#rememberUser{
+  color: var(--placeholder);
+  font: var(--parrafo);
+}
+
 .form-label10 i {
   position: absolute;
   right: 0;

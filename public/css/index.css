@@ -30,31 +30,6 @@
 @import './paymentRequest.css';
 @import './contact.css';
 @import './adminProductMain.css';
-
-
-/* Components */
-@import './header.css';
-@import './hero.css';
-@import './main.css';
-@import './hero-recommended.css';
-@import './categories.css';
-@import './ofers.css';
-@import './new.css';
-@import './brands.css';
-@import './newsLater.css';
-@import './aboutUs.css';
-@import './productDetail.css';
-@import './footer.css';
-@import './productDetail.css';
-@import './productDet.css';
-@import './productCart.css';
-@import './privacyPolitics.css';
-@import './agreePolitics.css';
-@import './login.css';
-@import './register.css';
-@import './form.css';
-@import './paymentRequest.css';
-@import './contact.css';
 @import './create.css';
 
 

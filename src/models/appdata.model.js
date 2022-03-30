@@ -12,13 +12,7 @@ const categoryModel = {
             fs.readFileSync(path.resolve("src/data/brands.JSON"))
         )
         return [categories,brands];
-    },
-    readBrands: function () {
-        const brands = JSON.parse(
-            fs.readFileSync(path.resolve("src/data/brands.JSON"))
-        );
-        return products;
-    },
+    }
 
 } 
 

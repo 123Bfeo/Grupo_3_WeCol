@@ -142,23 +142,6 @@
   },
   {
     "id": 10,
-    "name": "Escuela Superior de Administración ",
-    "price": "234234234",
-    "description": "dasdasdaasdasssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss",
-    "category": "Accesorios",
-    "brand": "Logitech",
-    "rating": "5.0",
-    "image": {
-      "img1": "/img/1648567651645_.jpg",
-      "img2": "/img/iphone.png",
-      "img3": "/img/razer.jpg",
-      "img4": "/img/macbookAir.png",
-      "img5": "/img/razer.jpg",
-      "img6": "/img/iphone.png"
-    }
-  },
-  {
-    "id": 11,
     "name": "Asus Zephryre 16GB",
     "price": "234234",
     "description": "sadasdasd",
@@ -167,23 +150,6 @@
     "rating": "5.0",
     "image": {
       "img1": "/img/1648570025143_.png",
-      "img2": "/img/iphone.png",
-      "img3": "/img/razer.jpg",
-      "img4": "/img/macbookAir.png",
-      "img5": "/img/razer.jpg",
-      "img6": "/img/iphone.png"
-    }
-  },
-  {
-    "id": 12,
-    "name": "Amante bandido",
-    "price": "24",
-    "description": "sin misteiro",
-    "category": "Teclados",
-    "brand": "Logitech",
-    "rating": "5.0",
-    "image": {
-      "img1": "/img/1648571357373_.jpg",
       "img2": "/img/iphone.png",
       "img3": "/img/razer.jpg",
       "img4": "/img/macbookAir.png",
