@@ -8,7 +8,7 @@ const [categories,brands] = readCategoriesAndBrands();
 
 const productController = {
   allProducts: (req, res) => {
-    const title = 'Admin'
+    const title = 'Admin';
     res.render("product", { title });
   },
 
