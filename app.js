@@ -14,7 +14,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'src/views'));
 
 app.use(session({
-        secret: "Cruz",
+        secret: 'Cruz',
         resave: false,
         saveUninitialized: true
       }
