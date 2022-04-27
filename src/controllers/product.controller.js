@@ -1,6 +1,5 @@
 const { validationResult } = require('express-validator');
 //Importaciones modelos
-const path = require('path');
 const productModel = require('../models/product.model');
 
 const {readCategoriesAndBrands} = require('../models/appdata.model');
@@ -101,10 +100,10 @@ const productController = {
 
         const noFind = "No se encontró ningun producto";
         res.render('./admin/adminProductMain',{categories,brands,noFind})
-      } 
+      }
 
     }
-    
+
   },
   loadMainAdminProduct : (req,res)=>{
     let products = productModel.read();
@@ -117,7 +116,7 @@ const productController = {
     let products = productModel.read();
     if(category==''&&brand==''){
 
-      let errCB = "Seleccione una categoría o una marca"    
+      let errCB = "Seleccione una categoría o una marca"
       res.render('./admin/adminProductMain',{categories,brands,errCB,products})
     }else if(category==''){
 
@@ -129,7 +128,7 @@ const productController = {
       let productsByBcategory = products.filter(prod => prod.category==category);
       res.render('./admin/adminProductMain',{categories,brands,productsByBcategory});
     }else{
-    
+
       let productsByBcategoryAndBrand = products.filter(prod => prod.category==category&&prod.brand==brand);
       res.render('./admin/adminProductMain',{categories,brands,productsByBcategoryAndBrand});
 

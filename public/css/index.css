@@ -50,13 +50,14 @@
 @import "./admin/adminFilterSearch.css";
 @import "./admin/adminProductMain.css";
 @import "./admin/adminSearch.css";
+@import './admin/admin_productsContainer.css';
 
 /* Partials */
 @import "./partials/btn_adminCreateProduct.css";
 
 :root {
   /* Colores */
-  --bg-dark: #0f0e0e;
+  --bg-dark: #323945;
   --white: #fff;
   --secondary: rgb(231, 138, 0);
   --placeholder: rgba(231, 138, 0, 0.5);
@@ -149,7 +150,6 @@ body {
   font: var(--span1);
   color: var(--text-gray);
 }
-
 @media (min-width: 768px) {
   .titulo {
     font: var(--tituloH1Bigger);

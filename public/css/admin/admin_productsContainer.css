@@ -1,0 +1,27 @@
+@import './admin_listFilter.css';
+/* @import '../components/cards_container.css'; */
+
+
+
+
+
+
+
+
+.tile {
+	width:23%;
+	height:100px;
+	float:left;
+	transition:all 1s;
+	margin:0.5%;
+	padding:0.5%;
+}
+.green {
+	background:#66dd99;
+}
+.blue {
+	background:#6666ff;
+}
+.red {
+	background:#ff4466;
+}
