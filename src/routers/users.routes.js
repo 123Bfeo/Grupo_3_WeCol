@@ -10,8 +10,8 @@ const userController = require(CONTROLLER_PATH);
 const validatorMiddleware = require('../middlewares/validatorMiddleware');
 const validatorLoginUser = validatorMiddleware.loginUser();
 
-userRoutes.get('/register', userController.register);
 userRoutes.get('/login', userController.login);
+userRoutes.get('/register', userController.register);
 userRoutes.post('/loginUser',validatorLoginUser,userController.loginUser);
 
 module.exports = userRoutes;

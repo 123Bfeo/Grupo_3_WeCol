@@ -77,7 +77,7 @@ Realizar correcciones sobre las plantillas ya realizadas con el fin de corregir 
 
 **More of:** Continuar informándonos y adoptar metodologías relacionadas con los patrones de diseño en el desarrollo de software colaborativo, tales como la estructura-flujo estándar para la distribución del trabajo mediante el sistema de control de versiones, y con respecto a este sprint, el objetivo será perfeccionar esta técnica junto con la integración del paradigma de diseño MVC (modelo,vista,controlador) desarrollada recientemente en clase.
 
-Igualemente, es importante seguir realizando reuniones para aclarar nuestras dudas entre nosotros respecto de las temáticas a abordar en el sprint, toda vez que esto genera mayor claridad y asimilación del contenido teórico del curso.
+Igualmente, es importante seguir realizando reuniones para aclarar nuestras dudas entre nosotros respecto de las temáticas a abordar en el sprint, toda vez que esto genera mayor claridad y asimilación del contenido teórico del curso.
 
 **Keep Doing:** Mantener la asignación de roles de responsabilidad específica para el control y seguimiento de nuestros avances respecto de las diferentes plataformas de trabajo recomendadas por los docentes. Lo anterior con fines informativos respecto del estado de nuestro proyecto en cada una de nuestras reuniones.
 

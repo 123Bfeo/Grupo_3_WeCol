@@ -1,4 +1,4 @@
-const fs = require('fs');
+// const fs = require('fs');
 const path = require('path');
 const {validationResult} = require('express-validator');
 const userModel = require(path.resolve('src/models/user.model'));
@@ -13,7 +13,7 @@ const userController = {
     const title = 'Login';
     res.render('./users/login', { err: err, title });
   },
-  loginUser:(req,res)=>{ 
+  loginUser:(req,res)=>{
 
     const errors = validationResult(req);
     if(!errors.isEmpty()){

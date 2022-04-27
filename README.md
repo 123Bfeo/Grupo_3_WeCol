@@ -62,6 +62,3 @@ Escogimos esto sitios pues fueron los principales referentes en cuanto al diseñ
 3.	[Collect UI](https://collectui.com/challenges/sign-up?sort=latest) fue una fuente de inspiración en el ámbito estético de nuestro sitio web, tales como el diseño de las secciones de nuestra plataforma web y los formularios para iniciar sesión y de registro. <br>
 
 4.	Las plantillas de [Templatemonster](https://www.templatemonster.com/es/categoria/tienda-software-plantillas/) se tomaron como referente para escoger y elaborar el flujo de nuestra plataforma e-commerce. <br>
-
-
-
