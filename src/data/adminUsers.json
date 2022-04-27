@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "avatar": "https://fgdfgdgfg.com",
+    "avatar": "https://github.com/SoyChechoGonzalez/wecol_images/blob/main/profile-images/83625172.jpeg",
     "firstname":"Luis",
     "lastname": "",
     "username": "",
@@ -13,7 +13,7 @@
   },
   {
     "id": "2",
-    "avatar": "https://fgdfgdgfg.com",
+    "avatar": "https://github.com/SoyChechoGonzalez/wecol_images/blob/main/profile-images/83625172.jpeg",
     "firstname":"Jennifer",
     "lastname": "",
     "username": "",
@@ -25,19 +25,19 @@
   },
   {
     "id": "3",
-    "avatar": "https://fgdfgdgfg.com",
+    "avatar": "https://github.com/SoyChechoGonzalez/wecol_images/blob/main/profile-images/83625172.jpeg",
     "firstname":"Sergio",
-    "lastname": "",
-    "username": "",
-    "email": "",
-    "password": "",
-    "cellphone": "",
-    "address": "",
+    "lastname": "González Sánchez",
+    "username": "soychechogonzalez",
+    "email": "soysergiogonzalez@outlook.es",
+    "password": "o@YmGPD7fMpM3gXvu",
+    "cellphone": "3000000000",
+    "address": "Calle false 123",
     "role": "admin"
   },
   {
     "id": "4",
-    "avatar": "https://fgdfgdgfg.com",
+    "avatar": "https://github.com/SoyChechoGonzalez/wecol_images/blob/main/profile-images/83625172.jpeg",
     "firstname":"Julian",
     "lastname": "",
     "username": "",
@@ -49,7 +49,7 @@
   },
   {
     "id": "5",
-    "avatar": "https://fgdfgdgfg.com",
+    "avatar": "https://github.com/SoyChechoGonzalez/wecol_images/blob/main/profile-images/83625172.jpeg",
     "firstname":"Jhon",
     "lastname": "",
     "username": "",
