@@ -14,7 +14,6 @@ const userController = {
     res.render('./users/login', { err: err, title });
   },
   loginUser:(req,res)=>{
-
     const errors = validationResult(req);
     if(!errors.isEmpty()){
       res.render('./users/login',{error: errors.mapped(),old:req.body})
@@ -26,6 +25,7 @@ const userController = {
       res.send(adminUsers);
 
     }
+    
 
     /* let email = req.body.email;
     let password = req.body.password;

@@ -11,7 +11,8 @@ const validatorMiddleware = require('../middlewares/validatorMiddleware');
 const validatorLoginUser = validatorMiddleware.loginUser();
 
 userRoutes.get('/login', userController.login);
+userRoutes.post('/login',validatorLoginUser,userController.loginUser);
+
 userRoutes.get('/register', userController.register);
-userRoutes.post('/loginUser',validatorLoginUser,userController.loginUser);
 
 module.exports = userRoutes;
