@@ -1,30 +1,29 @@
 // const fs = require('fs');
-const path = require('path');
-const {validationResult} = require('express-validator');
-const userModel = require(path.resolve('src/models/user.model'));
+const { resolve } = require('path');
+const { validationResult } = require('express-validator');
+const userModel = require(resolve('src/models/user.model'));
 
 const userController = {
-  register: (req, res) => {
-    const title = 'Registro';
+  register (req, res) {
+    const title = 'Registrar Usuario';
     res.render('./users/register', { title });
   },
-  login: (req, res) => {
-    let err = false;
-    const title = 'Login';
-    res.render('./users/login', { err: err, title });
+  login (req, res) {
+    const error = false;
+    const title = 'Iniciar Sesión';
+    res.render('./users/login', { error, title });
   },
-  loginUser:(req,res)=>{
-
-    const errors = validationResult(req);
-    if(!errors.isEmpty()){
-      res.render('./users/login',{error: errors.mapped(),old:req.body})
-    }else{
-      let adminUsers = userModel.readAdminUsers();
-      console.log(typeof req.body.rememberUser);
-      res.cookie('Nuevo user',req.body.email,{maxAge: 120000});
-      res.cookie('isAdmin',true,{maxAge: 120000});
+  loginUser (req, res){
+    const error = validationResult(req);
+    if(!error.isEmpty()){
+      res.render('./users/login', { error: error.mapped(), old:req.body});
+    } else {
+      const adminUsers = userModel.readAdminUsers();
+      // console.log(adminUsers);
+      // console.log(typeof req.body.rememberUser);
+      res.cookie('Nuevo Usuario', req.body.email, { maxAge: 120000 });
+      res.cookie('isAdmin', true, { maxAge: 120000 });
       res.send(adminUsers);
-
     }
 
     /* let email = req.body.email;

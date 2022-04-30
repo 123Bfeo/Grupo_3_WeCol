@@ -1,8 +1,6 @@
   <%- include('../partials/Head') %>
-
   <body>
     <%- include('../partials/Header') %>
-
     <main class="main-login wrapper">
       <picture>
         <img src="/img/mouse2.png" alt="Mouse" title="Mouse" />
@@ -14,7 +12,7 @@
             <i class="fas fa-user"></i>
           </label>
           <%if(locals.error && error.email){%>
-            <label class="label-err-log" for="err"><%=error.email.msg%></label>
+            <label class="label-err-log" for="err"><%= error.email.msg%></label>
           <%}%>
           <label for="" class="form-label10">
             <input type="password" name="password" placeholder="Contraseña" value="<%=locals.old && locals.old.password ? old.password : ''%>"/>
@@ -25,7 +23,7 @@
           <%}%>
         </article>
             <label for="rememberUser" id="rememberUser">Recordar usuario</label>
-            <input type="checkbox" name="rememberUser"/>
+            <input type="checkbox" name="rememberUser" id='rememberUser'/>
         <article class="btnContainer">
           <input type="submit" class="btn btnFirst" value="Iniciar Sesión" >
           <a href="/register" class="btn btnSecond"> Registrarse </a>
