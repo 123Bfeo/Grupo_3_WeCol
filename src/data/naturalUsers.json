@@ -1,0 +1,49 @@
+[
+ {
+  "id": 1,
+  "name": "Luis",
+  "lastname": "nuñez",
+  "email": "luis@gmail.com",
+  "password": "$2a$10$zY4j7MsehNd7X4tKVV..XeGG57YnKm4Rw/UK41MRCp.Z9c0Mlkvoa"
+ },
+ {
+  "id": 2,
+  "name": "jose",
+  "lastname": "nuñez",
+  "email": "jo@gmail.com",
+  "password": "$2a$10$1TCSWdqAnHjuy6WPeaDyrO.1erCQUJdtpllV/qMGnI0JCJmsAbLgi",
+  "avatar": "1651331263523.jpg"
+ },
+ {
+  "id": 3,
+  "name": "Maelo",
+  "lastname": "Ruiz",
+  "email": "Mae@gmail.com",
+  "password": "$2a$10$jqLNYjcEJuhkZMBV0KB15uhhJe54T4R9Zqvo0xyXhVREmiamUcYtm",
+  "avatar": "1651351011379.jpg"
+ },
+ {
+  "id": 4,
+  "name": "daniel",
+  "lastname": "rocha",
+  "email": "dani@gmail.com",
+  "password": "$2a$10$/Bo68btqVQZDRZNUCOOu.udVhwCgjZmqzl6BqjuFi579I/1Qn0Z5q",
+  "avatar": "1651352973629.jpg"
+ },
+ {
+  "id": 5,
+  "name": "checho",
+  "lastname": "gonzales",
+  "email": "che@gmail.com",
+  "password": "$2a$10$5WiV6PrQaDAdOwh8R5pCQ.aesakBJXcXq5/31HAHu2Vj.lvPTrE62",
+  "avatar": "1651355455762.jpg"
+ },
+ {
+  "id": 6,
+  "name": "adriana",
+  "lastname": "rocha",
+  "email": "adri@gmail.com",
+  "password": "$2a$10$sXZfQbl3Y3RnTnCLdh2LBODJvbrKvWxkwQuwxDk1s59o/I.k/f0CK",
+  "avatar": "1651356126217.jpg"
+ }
+]

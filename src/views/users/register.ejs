@@ -8,24 +8,69 @@
     <main class="main wrapper">
       <section class="register-content">
         <article class="form-container gap24">
-          <form action="" class="form gap24">
+          <form action="/user/register"  method="POST" enctype="multipart/form-data" class="form gap24">
             <article class="form-content gap24">
+
               <label for="" class="form-label10">
-                <input type="text" placeholder="Nombre" />
+                <input type="text" name="name" placeholder="Nombre" value="<%= locals.oldData ? oldData.name: null %>"/>
                 <i class="fas fa-user"></i>
               </label>
+              <div>
+                <% if(locals.errors && errors.name) { %> 
+                  <div>
+                    <p style="color: brown;"><%=errors.name.msg%> </p>
+                  </div>
+                <% } %> 
+              </div>
+
               <label for="" class="form-label10">
-                <input type="text" placeholder="Apellido" required />
+                <input type="text" name="lastname" placeholder="Apellido" value="<%= locals.oldData ? oldData.lastname: null %>"/>
                 <i class="fas fa-user"></i>
               </label>
+              <div>
+                <% if(locals.errors && errors.lastname) { %> 
+                  <div>
+                    <p style="color: brown;"><%=errors.lastname.msg%> </p>
+                  </div>
+                <% } %> 
+              </div>
+
+             
+
               <label for="" class="form-label10">
-                <input type="email" placeholder="Correo electrónico" required />
+                <input type="email" name="email" placeholder="Correo electrónico" value="<%= locals.oldData ? oldData.email: null %>"/>
                 <i class="fas fa-at"></i>
               </label>
+              <div>
+                <% if(locals.errors && errors.email) { %> 
+                  <div style="background-color: brown;">
+                    <p style="color: rgb(0, 0, 0);"><%=errors.email.msg%> </p>
+                  </div>
+                <% } %> 
+              </div>
+
               <label for="" class="form-label10">
-                <input type="password" placeholder="Contraseña" required />
+                <input type="password" name="password" placeholder="Contraseña" />
                 <i class="fas fa-lock"></i>
               </label>
+              <div>
+                <% if(locals.errors && errors.password) { %> 
+                  <div>
+                    <p style="color: brown;"><%=errors.password.msg%> </p>
+                  </div>
+                <% } %> 
+              </div>
+
+              <label for="avatar" class="form-label10">
+                <input type="file" name="avatar" id="avatar"/>
+              </label>
+              <div>
+                <% if(locals.errors && errors.avatar) { %> 
+                  <div>
+                    <p style="color: brown;"><%=errors.avatar.msg%> </p>
+                  </div>
+                <% } %> 
+              </div>
             </article>
             <article class="btnContainer">
               <button type="submit" class="btn btnSecond">Registrarse</button>

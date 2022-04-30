@@ -1,11 +1,75 @@
 const fs = require('fs');
-const path = require('path');
+const { resolve } = require('path');
+
 
 const userModel = {
-    readAdminUsers: function(){
-			const pathResolve = path.resolve('src/data/adminUsers.json')
-			const readFile =  fs.readFileSync(pathResolve);
+    getAdminUsers: () => {
+			const fileName = resolve('src/data/adminUsers.json')
+			const readFile = readFileSync(fileName);
 			return JSON.stringify(readFile);
-    }
+    },
+    //---------------------------//
+	
+   fileName: './src/data/naturalUsers.json',
+
+	getNaturalUser:function (){
+		return JSON.parse(fs.readFileSync(this.fileName, "utf-8"));
+	},
+	
+    generateId:function (){
+		const allNaturalUsers = this.listNaturalUsers();
+		const lastIdUser =allNaturalUsers.pop();
+		if(lastIdUser){
+			return lastIdUser.id + 1;
+		}
+		return 1;
+	},
+
+	listNaturalUsers:function(){
+        return this.getNaturalUser();
+	},
+    
+	createNaturalUsers:function (dataNaturalUser){
+		const allNaturalUsers = this.listNaturalUsers();
+        const newNaturalUser = {
+			id:this.generateId(),
+			...dataNaturalUser
+		}
+		allNaturalUsers.push(newNaturalUser);
+       fs.writeFileSync(this.fileName, JSON.stringify(allNaturalUsers, null, ' '));
+	   return true;
+	},
+
+	searchNaturalUserId: function (id){
+		const allNaturalUsers = this.listNaturalUsers();
+		const searchNaturalUserId = allNaturalUsers.find(user => user.id === id );
+		return searchNaturalUserId;
+	},
+
+	searchNaturalUserEmail: function (email){
+		const allNaturalUsers = this.listNaturalUsers();
+		const searchNaturalUser = allNaturalUsers.find(user => user.email === email );
+		return searchNaturalUser;
+	},
+
+	deleteNaturalUsers: function (id){
+		const allNaturalUsers = this.listNaturalUsers();
+		const deleteUser =  allNaturalUsers.filter(user => user.id != id);
+		fs.writeFileSync(this.fileName(), JSON.stringify(deleteUser, null, ' '));
+		return "User Delete";
+	}
+    
 }
 module.exports = userModel;
+
+//console.log(userModel.searchNaturalUserEmail("jose@gmail.com"));
+//console.log(userModel.listNaturalUsers());
+
+/*console.log(userModel.createNaturalUsers(
+{
+  name: "fernanda",
+  lastname: "perez",
+  email: "fer@gmail.com",
+  password: "fer123"
+}
+))*/
