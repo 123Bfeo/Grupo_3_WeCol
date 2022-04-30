@@ -21,7 +21,7 @@ const mainController = {
     res.render('privacyPolitics', { title });
   },
   agreePolitics: (req, res) => {
-    const title = 'Politicas';
+    const title = 'Políticas';
     res.render('agreePolitics', { title });
   },
   adminCreate: (req, res) => {

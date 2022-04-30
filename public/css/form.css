@@ -22,7 +22,7 @@
   width: 100%;
   font: var(--parrafo);
   background: none;
-  color: var(--white);
+  color: #000000;
   padding-inline: 8px 48px;
 }
 .form-label10 input::placeholder {

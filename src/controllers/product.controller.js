@@ -114,29 +114,29 @@ const productController = {
     let category = req.query.category;
     let brand = req.query.brand;
     let products = productModel.read();
-    if(category==''&&brand==''){
+    if(category === '' && brand === ''){
 
       let errCB = "Seleccione una categoría o una marca"
       res.render('./admin/adminProductMain',{categories,brands,errCB,products})
-    }else if(category==''){
+    }else if(category === ''){
 
-      let productsByBrand = products.filter(prod => prod.brand==brand);
+      let productsByBrand = products.filter(prod => prod.brand === brand);
       res.render('./admin/adminProductMain',{categories,brands,productsByBrand});
 
-    }else if(brand==''){
+    }else if(brand === ''){
 
-      let productsByBcategory = products.filter(prod => prod.category==category);
+      let productsByBcategory = products.filter(prod => prod.category === category);
       res.render('./admin/adminProductMain',{categories,brands,productsByBcategory});
     }else{
 
-      let productsByBcategoryAndBrand = products.filter(prod => prod.category==category&&prod.brand==brand);
+      let productsByBcategoryAndBrand = products.filter(prod => prod.category === category && prod.brand === brand);
       res.render('./admin/adminProductMain',{categories,brands,productsByBcategoryAndBrand});
 
     }
   },
   loadEditProduct: (req,res)=>{
     let products = productModel.read();
-    let product = products.find(prod => prod.id == req.params.id);
+    let product = products.find(prod => prod.id === req.params.id);
     res.render('./products/editProduct',{categories,brands,product});
   }
 };

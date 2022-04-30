@@ -3,9 +3,9 @@ const path = require('path');
 
 const userModel = {
     readAdminUsers: function(){
-        const adminUsers = JSON.parse(fs.readFileSync(path.resolve('src/data/adminUsers.json')));
-        return adminUsers;
+			const pathResolve = path.resolve('src/data/adminUsers.json')
+			const readFile =  fs.readFileSync(pathResolve);
+			return JSON.stringify(readFile);
     }
 }
-
 module.exports = userModel;
