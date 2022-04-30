@@ -1,0 +1,113 @@
+.modalDialog {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+.modalDialog .modal-content {
+	font-family: var(--primaryFont);
+	width: 45%;
+	position: relative;
+	height: auto;
+	margin: 10% auto;
+	padding: 5px 10px 13px 10px;
+	border-radius: 10px;
+	background: #fff;
+  	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	display: flex;
+	flex-direction: column;
+}
+
+.modalDialog .modal-content .deletebutton{
+	background-color: rgb(202, 78, 78);
+}
+
+.item-product {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.item-product textarea{
+	width: 80%;
+	font-family: var(--primaryFont);
+}
+
+.item-product input{
+	font-family: var(--primaryFont);
+	border-radius: 8px;
+}
+
+.iplabel{
+	background-color: var(--secondary);
+	border-radius: 8px;
+	padding: 4px 2px;
+	color: white;
+	width: 20vw;
+	border-style: solid;
+	width: 100%;
+}
+
+
+
+.form-product{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.form-product button{
+	background-color: var(--secondary);
+	color: white;
+	font-family: var(--primaryFont);
+	padding: 5px 5px;
+	text-align: center;
+	border-radius: 6px;
+}
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { 
+    background: var(--secondary); 
+}
+
+@media screen and (max-width: 768px) {
+
+	.modalDialog .modal-content {
+		width: 90%;
+	}
+
+	
+
+  }

@@ -22,12 +22,17 @@
   width: 100%;
   font: var(--parrafo);
   background: none;
-  color: var(--white);
+  color: #000000;
   padding-inline: 8px 48px;
 }
 .form-label10 input::placeholder {
   font: var(--parrafo);
   color: var(--placeholder);
+}
+
+#rememberUser{
+  color: var(--placeholder);
+  font: var(--parrafo);
 }
 
 .form-label10 i {

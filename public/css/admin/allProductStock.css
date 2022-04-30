@@ -1,0 +1,44 @@
+.allProductStock {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--white);
+  width: 100%;
+  align-items: center;
+}
+.verticalLine {
+  width: 2px;
+  background-color: var(--secondary);
+  height: 100%;
+  max-height: 124px;
+}
+.allProductStock div p {
+  /* font-size: 64px; */
+  font: var(--stockNumber);
+}
+.allProductStock div span {
+  font: var(--span1);
+  color: var(--secondary);
+  text-align: center;
+  display: block;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .allProductStock{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .allProductStock div{
+    justify-content: center;
+    margin: 12px  ;
+  }
+
+  .verticalLine {
+    width: 100%;
+    background-color: var(--secondary);
+    height: 2px;
+  }
+}

@@ -1,0 +1,25 @@
+.ap-buscador-contenedor-nombre {
+  width: 30%;
+}
+
+.ap-buscador-contenedor-nombre .text-search {
+  height: 30px;
+  width: 100%;
+  padding: 2px 5%;
+}
+
+.ap-buscador-contenedor-nombre .text-search ::placeholder {
+  color: var(--secondary);
+}
+.ap-form-button-name {
+  width: 60%;
+  margin: 10px 20%;
+}
+
+.ap-form-button-name > input {
+  background-color: var(--secondary);
+  width: 100%;
+  color: white;
+  padding: 5px 15%;
+  border-radius: 8px;
+}

@@ -5,7 +5,6 @@
   color: var(--secondary);
   font: var(--small-paragraph);
 }
-
 form {
   display: flex;
   flex-direction: column;

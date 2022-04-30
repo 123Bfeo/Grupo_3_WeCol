@@ -1,0 +1,20 @@
+<div class="ap-buscador-contenedor-nombre">
+  <form action="/products/searchProduct">
+    <label for="search"><h3>Buscar por nombre</h3></label>
+    <br />
+    <input
+      type="text"
+      name="search"
+      class="text-search"
+      placeholder="Producto"
+    />
+    <% if(locals.err){%>
+    <label for="err" style="background-color: rgb(190, 68, 68); width: 100%"
+      ><%=err%></label
+    >
+    <%}%>
+    <div class="ap-form-button-name">
+      <input type="submit" value="Buscar" />
+    </div>
+  </form>
+</div>

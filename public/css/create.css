@@ -1,0 +1,103 @@
+
+.create{
+    background-color: gray;
+}
+
+.cp-div-form{
+    background-color: rgba(255, 255, 255, 0.952);
+    width: 70%;
+    justify-content: center;
+    margin: 30px 15%;
+    border-radius: 9px;
+    font-family: var(--primaryFont);
+    
+}
+
+.cp-div-form h3{
+    padding: 20px 20px;
+    font-size: 1.5rem;
+}
+
+.cp-form{
+    padding: 20px 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cp-form .cp-form-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cp-form-content > img{
+    width: 25%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.cp-form textarea {
+    resize: none;
+    border-style: solid;
+    font-family: var(--primaryFont);
+    width: 55%;
+    height: 90px;
+    padding: 3px 14px;
+
+}
+
+.cp-form input{
+    width: 55%;
+    height: 35px;
+    padding: 3px 14px;
+    
+}
+
+.cp-form select{
+    width: 60%;
+    height: 30px;
+    border-radius: 8px;
+}
+
+.cp-form .form-button{
+    background-color: var(--secondary);
+    color: wheat;
+}
+
+.cp-form .cp-form-error{
+    background-color: rgb(218, 76, 76);
+    color: wheat;
+    width: 55%;
+}
+.cp-form .cp-form-content-select{
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 580px) {
+    
+    .cp-form input{
+        width: 90%       
+    }
+    .cp-form textarea {
+        width: 90%;
+    
+    }
+    .cp-form .cp-form-content-select{
+        flex-direction: column;
+    }
+    .cp-form select{
+        width: 90%;
+    }
+    .cp-form .cp-form-error{
+        width: 90%;
+    }
+    
+    .cp-form-content > img{
+        width: 100%;
+    }
+
+
+}

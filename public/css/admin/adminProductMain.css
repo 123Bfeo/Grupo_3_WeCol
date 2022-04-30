@@ -1,0 +1,34 @@
+@import '../components/cards_container.css';
+
+.ap-main {
+  font-family: var(--primaryFont);
+}
+
+.ap-title {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: var(--secondary);
+  width: 100%;
+  padding: 15px;
+}
+
+.ap-insertar button {
+  background-color: var(--secondary);
+  color: white;
+  padding: 10px 10%;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.ap-form-selects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10%;
+}
+
+.ap-section {
+  margin: 20px 1%;
+}

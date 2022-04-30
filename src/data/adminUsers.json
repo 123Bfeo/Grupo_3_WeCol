@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "avatar": "https://github.com/SoyChechoGonzalez/wecol_images/blob/main/profile-images/83625172.jpeg",
+    "firstname":"Luis",
+    "lastname": "",
+    "documentID": "",
+    "email": "luis.nunez@wecol.com",
+    "password": "123456",
+    "cellphone": "3000000000",
+    "address": "",
+    "role": "admin"
+  },
+  {
+    "id": "2",
+    "avatar": "https://github.com/SoyChechoGonzalez/wecol_images/blob/main/profile-images/83625172.jpeg",
+    "firstname":"Jennifer",
+    "lastname": "",
+    "documentID": "",
+    "email": "jennifer.perez@wecol.com",
+    "password": "",
+    "cellphone": "3000000000",
+    "address": "",
+    "role": "admin"
+  },
+  {
+    "id": "3",
+    "avatar": "https://github.com/SoyChechoGonzalez/wecol_images/blob/main/profile-images/83625172.jpeg",
+    "firstname":"Sergio",
+    "lastname": "González Sánchez",
+    "documentID": "1040183295",
+    "email": "sergio.gonzalez@wecol.com",
+    "password": "o@YmGPD7fMpM3gXvu",
+    "cellphone": "3000000000",
+    "address": "Calle false 123",
+    "role": "admin"
+  },
+  {
+    "id": "4",
+    "avatar": "https://github.com/SoyChechoGonzalez/wecol_images/blob/main/profile-images/83625172.jpeg",
+    "firstname":"Julian",
+    "lastname": "",
+    "documentID": "",
+    "email": "julian.excobar@wecol.com",
+    "password": "",
+    "cellphone": "3000000000",
+    "address": "",
+    "role": "admin"
+  },
+  {
+    "id": "5",
+    "avatar": "https://github.com/SoyChechoGonzalez/wecol_images/blob/main/profile-images/83625172.jpeg",
+    "firstname":"Jhon",
+    "lastname": "",
+    "documentID": "",
+    "email": "jhon.carvajal@wecol.com",
+    "password": "",
+    "cellphone": "3000000000",
+    "address": "",
+    "role": "admin"
+  }
+]

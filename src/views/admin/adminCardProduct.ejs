@@ -1,0 +1,21 @@
+<div class="adminItemCard">
+    <div class="adminCardHead">
+<!--         <input type="checkbox" /> -->
+        <picture class='adminImgCard'>
+            <img src="<%= prod.image.img1 %>" alt="" />
+        </picture>
+        <span><%= prod.name %></span>
+    </div>
+    <div class='adminCardFoot'>
+        <div class="adminEditDetail">
+            <span class='available'>Disponibilidad: 3 Unidades</span>
+            <span class='price'><%= prod.price %></span>
+        </div>
+        <div class="adminEditTrash">
+            <% const enlaceDelete='#modalDelete' + prod.id %>
+            <% const modDelete='modalDelete' + prod.id %>
+            <a href="<%= enlaceDelete %>"><i class="fas fa-trash-alt"></i></a>
+            <a href="<%=  %>"><i class="fas fa-pencil-alt"></i></a>
+        </div>
+    </div>
+</div>

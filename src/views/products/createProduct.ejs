@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<%-include('../partials/Head')%>
+
+    <body class="create">
+        <%-include('../partials/adminHeader')%>
+            <div class="cp-div-form">
+                <h3>CREAR NUEVO PRODUCTO</h3>
+                <form action="/products/insert" method="post" class="cp-form" enctype="multipart/form-data">
+                    <div class="cp-form-content">
+                        <label for="name">Nombre del producto</label>
+                        <input type="text" name="name" id="" placeholder="Nombre" value="<%=locals.old && old.name ? old.name : ''%>">
+                        <% if(locals.errors && locals.errors.name){%>
+                            <label class="cp-form-error" for="name"><%=errors.name.msg%></label>
+                        <%}%>
+                    </div>
+                    <div class="cp-form-content">
+                        <label for="price">Precio de venta</label>
+                        <input type="number" step="any" name="price" id="price" placeholder="3500" value="<%=locals.old && old.price ? old.price : ''%>">
+                        <% if(locals.errors && locals.errors.price){%>
+                            <label class="cp-form-error" for="name"><%=errors.price.msg%></label>
+                        <%}%>
+                    </div>
+                    <% if(locals.old && old.description){%>
+                        <div class="cp-form-content">
+                            <label for="description">Descrición del producto</label>
+                            <textarea name="description" id="" placeholder="Descripcion" ><%=old.description%></textarea>
+                            <% if(locals.errors && locals.errors.description){%>
+                                <label class="cp-form-error" for="name"><%=errors.description.msg%></label>
+                            <%}%>
+                        </div>
+                    <% }else{%>
+                        <div class="cp-form-content">
+                            <label for="description">Descrición del producto</label>
+                            <textarea name="description" id="" placeholder="Descripcion" ></textarea>
+                            <% if(locals.errors && locals.errors.description){%>
+                                <label class="cp-form-error" for="name"><%=errors.description.msg%></label>
+                            <%}%>
+                        </div>
+                    <%}%>
+                    
+                    <div class="cp-form-content-select">
+                        <div class="cat-1">
+                            <label for="category">Seleccione una categoría</label>
+                            <select name="category">
+                            <option value="">Seleccione...</option>
+                            <%categories.forEach(category =>{%>
+                                <%if(locals.old && old.category == category.nombre){%>
+                                    <option id="<%=category.id%>" value="<%=category.nombre%>" selected><%=category.nombre%></option>
+                                <%}else{%>
+                                    <option id="<%=category.id%>" value="<%=category.nombre%>"><%=category.nombre%></option>
+                                <%}%>
+                            <%})%>
+                          </select>
+                        </div>
+                        <div class="cat-2">
+                            <label for="brand">Seleccione una marca</label>
+                            <select name="brand">
+                            <option value="">Seleccione...</option>
+                            <%brands.forEach(brand =>{%>
+                                <%if(locals.old && old.brand == brand.nombre){%>
+                                    <option value="<%=brand.nombre%>" selected><%=brand.nombre%></option>
+                                <%}else{%>
+                                    <option value="<%=brand.nombre%>"><%=brand.nombre%></option>
+                                <%}%>
+                            <%})%>
+                          </select>
+                        </div>
+                        
+                    </div>
+                    <%if(locals.errors && errors.select){%>
+                        <label class="cp-form-error" for="ferror"><%=errors.select.msg%></label>
+                    <%}%>
+                    <div class="cp-form-content">
+                        <label for="image"><strong>Subir imagen del producto</strong> </label>
+                        <input type="file" name="image" id="">
+                        <% if(locals.errors && locals.errors.image){%>
+                            <label class="cp-form-error" for="name"><%=errors.image.msg%></label>
+                        <%}%>
+                    </div> 
+                    <input class="form-button" type="submit" value="CARGAR PRODUCTO">
+        
+                </form>
+            </div>
+        <%-include('../partials/Footer')%>
+    </body>
+
+</html>

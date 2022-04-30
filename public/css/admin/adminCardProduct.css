@@ -1,0 +1,73 @@
+.adminItemCard {
+  display: flex;
+  flex-direction: column;
+  width: 177px;
+  border: 1px solid red;
+  border-radius: 16px;
+  align-items: center;
+  padding: 4px 16px;
+  margin-top: 24px;
+  min-height: 80px;
+}
+.adminItemCard:hover {
+  background: rgba(91, 91, 91, 0.2);
+
+}
+.adminImgCard {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  width: 350px;
+  border:1px solid blue;
+}
+.adminImgCard input {
+  outline: 1px solid #1e5180;
+}
+.adminImgCard span {
+  font: var(--link-header);
+  color: #323c47;
+}
+.adminItemCard picture {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  border-radius: 50%;
+}
+.adminItemCard picture img {
+  width: 100%;
+  border-radius: 50%;
+}
+.adminItemCard .adminEditDetail .available {
+  border: 1px solid green;
+  width: 100%;
+  padding-inline-end: 100px;
+}
+.adminItemCard .adminEditDetail .price {
+  border: 1px solid rebeccapurple;
+  width: 100%;
+  text-align: right;
+  display: flex;
+  align-items: center;
+}
+.adminItemCard .adminEditDetail .price:before {
+  content: '$ ';
+}
+
+.adminItemCard .adminEditDetail {
+  border: 1px solid red;
+  display: flex;
+  width: 300px;
+}
+.adminItemCard .adminEditDetail span {
+  color: var(--text-gray);
+  font: var(--small-paragraph);
+}
+.adminItemCard .adminEditTrash {
+  display: flex;
+  gap: 8px;
+  border: 1px solid green;
+}
+.adminItemCard .adminEditTrash i {
+  color: var(--secondary);
+  font-size: 24px;
+}

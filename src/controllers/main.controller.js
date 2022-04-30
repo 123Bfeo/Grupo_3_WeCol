@@ -1,30 +1,33 @@
 const fs = require('fs');
 const path = require('path');
-const products = JSON.parse(
-  fs.readFileSync(path.resolve('src/models/products.JSON'))
-);
+const productModel = require('../models/product.model');
 
 const mainController = {
   index: (req, res) => {
-    res.render('index', { products: products });
+    let products = productModel.read();
+    const title = 'Home';
+    res.render('index', { products: products, title });
   },
   aboutUs: (req, res) => {
-    res.render('aboutUs');
+    const title = 'Detalle de producto';
+    res.render('aboutUs', { title });
   },
   contact: (req, res) => {
-    res.render('contact');
+    const title = 'Contacto';
+    res.render('contact', { title });
   },
   privacyPolitics: (req, res) => {
-    res.render('privacyPolitics');
+    const title = 'Política de Privacidad';
+    res.render('privacyPolitics', { title });
   },
   agreePolitics: (req, res) => {
-    res.render('agreePolitics');
+    const title = 'Políticas';
+    res.render('agreePolitics', { title });
   },
-  register: (req, res) => {
-    res.render('./users/register');
-  },
-  login: (req, res) => {
-    res.render('./users/login');
+  adminCreate: (req, res) => {
+    const title = 'Administrador Productos';
+    let products = productModel.read();
+    res.render('./admin/adminCreate', { products: products, title });
   },
 };
 

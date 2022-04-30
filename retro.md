@@ -1,6 +1,8 @@
-## Retroalimentación del primer Sprint
+# Retroalimentación de Sprints
 
 Como equipo estamos enfocados en nuestra mejora continua, por ello, dentro de nuestra metodología evaluativa iniciaremos identificando nuestros puntos fuertes y débiles durante el desarrollo del primer sprint. Posteriormente, utilizaremos parte de la metodología de retrospectiva de la estrella de mar para identificar que actividades y tareas podemos realizar con el fin de optimizar nuestro proceso de aprendizaje y la eficiencia de nuestro trabajo como equipo.
+
+## Primer Sprint
 
 ### 1. ¿Qué hicimos bien en nuestro primer Sprint?
 
@@ -26,8 +28,59 @@ Como equipo estamos enfocados en nuestra mejora continua, por ello, dentro de nu
 
 **Stop Doing:** Queremos ser un poco más rígidos en cuanto a la entrega de nuestros avances con el fin de desarrollar mejor nuestra eficiencia y compromiso grupal. Lo anterior, debido a que cada vez el nivel de complejidad de las actividades va aumentando conforme se avanzan los sprints.
 
-## Retroalimentación del Segundo Sprint
-
-Como equipo estamos enfocados en nuestra mejora continua, por ello, dentro de nuestra metodología evaluativa iniciaremos identificando nuestros puntos fuertes y débiles durante el desarrollo del primer sprint. Posteriormente, utilizaremos parte de la metodología de retrospectiva de la estrella de mar para identificar que actividades y tareas podemos realizar con el fin de optimizar nuestro proceso de aprendizaje y la eficiencia de nuestro trabajo como equipo.
+## Segundo Sprint
 
 ### 1. ¿Qué hicimos bien en nuestro primer Sprint?
+
+- La distribución de tareas y responsabilidades para la entrega de los requerimientos técnicos del Sprint se desarrolló de manera equitativa y de acuerdo a las habilidades de cada uno de nuestros integrantes.
+- Se tuvo en cuenta la metodología de trabajo del primer sprint (Desarrollo de los Wireframes) para realizar de manera más equilibrada el desarrollo de las nuevas actividades asignadas en el segundo sprint.
+- Aparte de realizar una retroalimentación respecto de cómo estábamos trabajando en equipo, se llevaron a cabo sesiones para aclarar dudas respecto de la temática a tratar y las tareas asignadas a cada uno de nuestros miembros.
+
+### 2. ¿Qué hicimos mal en nuestro primer sprint?
+
+- La falta de comunicación constante entre nosotros fue una de las grandes falencias en nuestro equipo, pues no siempre se tenía conocimiento respecto del avance o estado de las actividades asignadas a todos nuestros miembros.
+- Si bien es cierto que en el desarrollo del sprint existieron reuniones de planificación y ejecución de actividades delegadas a cada uno de nuestros miembros para el cumplimiento de las mismas, esta falta de comunicación género algunos errores entre los entregables que realizamos, por ejemplo, se repitieron o, por el contrario, se chocaron algunos de los nombres asignados a las clases entre el HTML y el CSS de los Wireframes.
+
+### 3. Metodología retrospectiva de la estrella de mar
+
+**Start Doing:** Realizar reuniones diarias para desarrollar nuestro Daily grupal, y seguir implementando nuestras reuniones semanales conforme se venía desarrollando para el Weakly.
+
+Así mismo, preparar con anterioridad el material establecido para el desarrollo de nuestros sprints. De tal forma que las dudas respecto al mismo se solucionen conforme se avance a la par con los contenidos del curso.
+
+**More of:** Continuar informándonos y adoptar metodologías relacionadas con los patrones de diseño en el desarrollo de software colaborativo, tales como la estructura-flujo estándar para la distribución del trabajo mediante el sistema de control de versiones, y con respecto a este sprint, el objetivo será perfeccionar esta técnica junto con la integración del paradigma de diseño MVC (modelo,vista,controlador) desarrollada recientemente en clase.
+
+Igualemente, es importante seguir realizando reuniones para aclarar nuestras dudas entre nosotros respecto de las temáticas a abordar en el sprint, toda vez que esto genera mayor claridad y asimilación del contenido teórico del curso.
+
+**Keep Doing:** Mantener la asignación de roles de responsabilidad específica para el control y seguimiento de nuestros avances respecto de las diferentes plataformas de trabajo recomendadas por los docentes. Lo anterior con fines informativos respecto del estado de nuestro proyecto en cada una de nuestras reuniones.
+
+**Less of:** Mantener una comunicación constante con los miembros de nuestro equipo, toda vez que nuestras actividades se conectan entre sí y, por ello, se requiere avanzar a la par con el objetivo de evitar errores subsanables en los entregables del sprint.
+
+**Stop Doing:** Si nuestra principal falencia es la falta de comunicación constante respecto del estado o avance de nuestras actividades, se hace necesario mejorar los canales de comunicación con nuestros equipo e informarnos constantemente, en caso de no poder asistir a las reuniones, de todas las actividades y temas tratados en la reunión. Del igual modo, debemos comprometernos a brindar información detallada respecto de lo que hemos desarrollado de los entregables para el sprint.
+
+## Tercer Sprint
+
+### 1. ¿Qué hicimos bien en nuestro primer Sprint?
+
+- La distribución de tareas y responsabilidades para la entrega de los requerimientos técnicos del Sprint se desarrolló de manera equitativa y de acuerdo a las habilidades de cada uno de nuestros integrantes.
+- Se mantuvo constante la metodología de trabajo que nos planteamos desde el primer Sprint (acorde a nuestras habilidades) para realizar de manera más equilibrada el desarrollo de las nuevas actividades.
+- En el desarrollo de nuestro tercer Sprint hemos cumplido con las tareas a desarrollar y, estamos rotando en las funciones para adquirir y mejorar nuestras habilidades.
+
+### 2. ¿Qué hicimos mal en nuestro primer sprint?
+
+- Si bien es cierto, existe un canal de comunicación más participativo, nos hemos reunido muy poco todos los miembros del equipo, lo cual dificulta la toma de decisiones importantes.
+
+### 3. Metodología retrospectiva de la estrella de mar
+
+**Start Doing:** Mantener la constancia y esfuerzo con los que hemos realizado los anteriores Sprints, pues gracias al cumplimiento del cronograma y metodología establecidos hemos adelantado gran parte del proyecto.
+
+Realizar correcciones sobre las plantillas ya realizadas con el fin de corregir los pequeños errores que estas pudiesen contener.
+
+**More of:** Continuar informándonos y adoptar metodologías relacionadas con los patrones de diseño en el desarrollo de software colaborativo, tales como la estructura-flujo estándar para la distribución del trabajo mediante el sistema de control de versiones, y con respecto a este sprint, el objetivo será perfeccionar esta técnica junto con la integración del paradigma de diseño MVC (modelo,vista,controlador) desarrollada recientemente en clase.
+
+Igualmente, es importante seguir realizando reuniones para aclarar nuestras dudas entre nosotros respecto de las temáticas a abordar en el sprint, toda vez que esto genera mayor claridad y asimilación del contenido teórico del curso.
+
+**Keep Doing:** Mantener la asignación de roles de responsabilidad específica para el control y seguimiento de nuestros avances respecto de las diferentes plataformas de trabajo recomendadas por los docentes. Lo anterior con fines informativos respecto del estado de nuestro proyecto en cada una de nuestras reuniones.
+
+**Less of:** Seguir trabajando constantemente de manera conjunta en el desarrollo del Sprint.
+
+**Stop Doing:** Mantener los canales de comunicación constante ya establecidos con el objetivo de colaborarnos y apoyarnos en caso de existir dudas respecto del desarrollo del sprint.

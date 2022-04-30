@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/Head') %>
+
+  <body>
+    <%- include('../partials/Header') %>
+
+    <main class="productCart wrapper" id="productCart">
+      <section class="productList">
+        <div class="contenedorProductos">
+          <article class="detailProductCard">
+            <div class="productOption">
+              <picture class="imgProduct">
+                <img src="/img/earphone.png" alt="" />
+              </picture>
+
+              <div class="productosElegidos">
+                <div class="nombrePrecio">
+                  <h3>USB Speaker Portable</h3>
+                  <p>$100.99</p>
+                </div>
+
+<<<<<<< HEAD:src/views/productCart.ejs
+                <%- include('./partials/quantity') %>
+=======
+                <%- include('../partials/quantity') %>
+
+>>>>>>> main:src/views/products/productCart.ejs
+              </div>
+              <i class="fas fa-trash-alt"></i>
+            </div>
+          </article>
+
+          <article class="detailProductCard">
+            <div class="productOption">
+              <picture class="imgProduct">
+                <img src="/img/earphone.png" alt="" />
+              </picture>
+
+              <div class="productosElegidos">
+                <div class="nombrePrecio">
+                  <h3>USB Speaker Portable</h3>
+                  <p>$100.99</p>
+                </div>
+
+<<<<<<< HEAD:src/views/productCart.ejs
+                <%- include('./partials/quantity') %>
+=======
+                <%- include('../partials/quantity') %>
+
+>>>>>>> main:src/views/products/productCart.ejs
+              </div>
+              <i class="fas fa-trash-alt"></i>
+            </div>
+          </article>
+
+          <article class="detailProductCard ultimoArt">
+            <div class="productOption">
+              <picture class="imgProduct">
+                <img src="/img/earphone.png" alt="" />
+              </picture>
+
+              <div class="productosElegidos">
+                <div class="nombrePrecio">
+                  <h3>USB Speaker Portable</h3>
+                  <p>$100.99</p>
+                </div>
+
+<<<<<<< HEAD:src/views/productCart.ejs
+                <div class="cantidad">
+                  <button id="disminuir" onclick="disminuir()">-</button>
+                  <input type="text" id="cantidad" value="0" />
+                  <button id="aumentar1" onclick="aumentar(event.target)">
+                    +
+                  </button>
+                </div>
+=======
+                  <%- include('../partials/quantity') %>
+                  
+>>>>>>> main:src/views/products/productCart.ejs
+              </div>
+              <i class="fas fa-trash-alt"></i>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="summaryOfPurchase">
+        <div class="resumen">
+          <h3>
+            Resumen de compra
+            <i class="fas fa-chevron-down fa-lg" id="desplegar1"></i>
+          </h3>
+          <div class="articulos">
+            <div class="art1">
+              <h4>x1 USB Speaker Portable</h4>
+              <p>$100.00</p>
+            </div>
+            <div class="art1">
+              <h4>x1 Joystick Pro</h4>
+              <p>$100.00</p>
+            </div>
+            <div class="art1">
+              <h4>x1 Smarphone 5G</h4>
+              <p>$100.00</p>
+            </div>
+          </div>
+          <p class="verificacion">
+            Tus paquetes pueden llegar en envíos diferentes. VERIFICA TU
+            DIRECCIÓN DE ENVÍO. Una vez la compra es finalizada, los cambios
+            dependerán de la disponibilidad de la transportadora.
+          </p>
+          <div class="totalpago">
+            <p>Total</p>
+            <p>$300.00</p>
+          </div>
+          <div class="boton">
+            <button value="submit">Continar con la Compra</button>
+          </div>
+
+          <p class="pago">Forma de pago aceptadas</p>
+          <div class="iconos">
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-amex"></i>
+            <i class="fab fa-cc-paypal"></i>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%- include('../partials/Footer') %>
+
+    <script>
+      function aumentar() {
+        let cambioDeValor = parseInt(document.getElementById("cantidad").value);
+        ++cambioDeValor; //cambioDeValor += 1;  //cambioDeValor + 1;
+        document.getElementById("cantidad").value = cambioDeValor;
+      }
+      function disminuir() {
+        let cambioDeValor = parseInt(document.getElementById("cantidad").value);
+        if (cambioDeValor > 0) {
+          --cambioDeValor; //cambioDeValor -= 1;  //cambioDeValor - 1;
+        }
+        document.getElementById("cantidad").value = cambioDeValor;
+      }
+    </script>
+  </body>
+</html>

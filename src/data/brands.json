@@ -1,0 +1,31 @@
+[
+    {
+        "id": "1",
+        "nombre" : "Samsung"
+    },
+    {
+        "id": "2",
+        "nombre" : "Apple"
+    },
+    {
+        "id": "3",
+        "nombre" : "Logitech"
+    },
+    {
+        "id": "4",
+        "nombre" : "Marshall"
+    },
+    {
+        "id": "5",
+        "nombre" : "Beats"
+    },
+    {
+        "id": "6",
+        "nombre" : "Alien"
+    },
+    {
+        "id": "7",
+        "nombre" : "Sony"
+    }
+
+]
