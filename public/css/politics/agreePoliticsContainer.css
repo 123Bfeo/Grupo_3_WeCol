@@ -1,0 +1,27 @@
+.agreePoliticsContainer {
+	color: var(--secondary);
+	display: flex;
+	justify-content: space-between;
+	inline-size: 100%;
+	gap: 24px;
+	margin-block: 24px;
+}
+.agreePoliticsContainer .textPolitics {
+	inline-size: 100%;
+	max-inline-size: 324px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+.agreePoliticsContainer .textPolitics input[type='checkbox'] {
+	min-inline-size: 24px;
+	min-block-size: 24px;
+}
+.agreePoliticsContainer .textPolitics span{
+	color: var(--secondary);
+	text-align: center;
+}
+.agreePoliticsContainer .textPolitics a {
+	color: var(--secondary);
+	text-decoration: underline;
+}

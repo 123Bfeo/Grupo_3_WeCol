@@ -1,28 +1,15 @@
+@import './components/sectionsForm.css';
+@import './politics/agreePoliticsContainer.css';
+
 .register-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid green;
-  width: 100%;
+  gap: 40px;
+  max-inline-size: 700px;
+  margin-block: 40px;
 }
-.politicsContainer picture {
-  display: none;
-}
-
 @media (min-width: 768px) {
   .register-content {
-    flex-direction: row;
     justify-content: space-evenly;
-    gap: 100px;
-  }
-  .politicsContainer {
-    max-width: 50%;
-  }
-  .politicsContainer picture {
-    display: block;
-  }
-  .politicsContainer picture img {
-    width: 100%;
   }
 }

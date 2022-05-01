@@ -26,17 +26,22 @@
 @import "./agreePolitics.css";
 @import "./login.css";
 @import "./register.css";
-@import "./form.css";
 @import "./paymentRequest.css";
 @import "./contact.css";
 @import "./create.css";
+
+/* Forms */
+@import './forms/index.css';
+
+/* Buttons */
+@import './buttons/index.css';
 
 /* Components */
 @import "./components/borders.css";
 @import "./components/wrapper.css";
 @import "./components/card.css";
 @import "./components/button.css";
-@import "./compnents/sliderDetail.css";
+@import "./components/sliderDetail.css";
 @import "./components/productDetailHero.css";
 @import "./components/quantity.css";
 
@@ -57,10 +62,11 @@
 
 :root {
   /* Colores */
-  --bg-dark: #323945;
+  --bg-dark2: #323945;
+  --bg-dark: radial-gradient(circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgb(10, 7, 35) 97.5%);
   --white: #fff;
   --secondary: rgb(231, 138, 0);
-  --placeholder: rgba(231, 138, 0, 0.5);
+  --placeholder: rgba(231, 138, 0, 0.3);
   --text-gray: rgb(91, 91, 91);
   --text-gray-opacity: rgba(91, 91, 91, 0.5);
   --stars-color: #ffd687;
@@ -77,7 +83,7 @@
   --subtituloH2Small: bold 32px/40px var(--secondFont);
   --subtituloH3: bold 24px/32px var(--secondFont);
   --subtituloH3Small: bold 16px/24px var(--secondFont);
-  --parrafo: 24px/32px var(--primaryFont);
+  --parrafo: 16px/24px var(--primaryFont);
   --small-paragraph: 16px/24px var(--primaryFont);
   --span1: 12px/16px var(--primaryFont);
   --punctuation: bold 24px/32px var(--primaryFont);
@@ -87,7 +93,7 @@
   --btn-small: bold 12px/16px var(--primaryFont);
 }
 body {
-  background-color: var(--bg-dark);
+  background: var(--bg-dark);
 }
 .titulo {
   font: var(--tituloH1Small);

@@ -1,118 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%- include('../partials/Head') %>
+<%- include('../partials/Head') %>
 
-  <body>
-    <%- include('../partials/Header') %>
+<body>
+<%- include('../partials/Header') %>
 
-    <main class="main wrapper">
-      <section class="register-content">
-        <article class="form-container gap24">
-          <form action="/user/register"  method="POST" enctype="multipart/form-data" class="form gap24">
-            <article class="form-content gap24">
+<main class="main wrapper">
+	<section class="register-content">
+		<%- include('../components/sectionsForm') %>
+		<%- include('../forms/registerForm_container') %>
+	</section>
+</main>
 
-              <label for="" class="form-label10">
-                <input type="text" name="name" placeholder="Nombre" value="<%= locals.oldData ? oldData.name: null %>"/>
-                <i class="fas fa-user"></i>
-              </label>
-              <div>
-                <% if(locals.errors && errors.name) { %> 
-                  <div>
-                    <p style="color: brown;"><%=errors.name.msg%> </p>
-                  </div>
-                <% } %> 
-              </div>
-
-              <label for="" class="form-label10">
-                <input type="text" name="lastname" placeholder="Apellido" value="<%= locals.oldData ? oldData.lastname: null %>"/>
-                <i class="fas fa-user"></i>
-              </label>
-              <div>
-                <% if(locals.errors && errors.lastname) { %> 
-                  <div>
-                    <p style="color: brown;"><%=errors.lastname.msg%> </p>
-                  </div>
-                <% } %> 
-              </div>
-
-             
-
-              <label for="" class="form-label10">
-                <input type="email" name="email" placeholder="Correo electrónico" value="<%= locals.oldData ? oldData.email: null %>"/>
-                <i class="fas fa-at"></i>
-              </label>
-              <div>
-                <% if(locals.errors && errors.email) { %> 
-                  <div style="background-color: brown;">
-                    <p style="color: rgb(0, 0, 0);"><%=errors.email.msg%> </p>
-                  </div>
-                <% } %> 
-              </div>
-
-              <label for="" class="form-label10">
-                <input type="password" name="password" placeholder="Contraseña" />
-                <i class="fas fa-lock"></i>
-              </label>
-              <div>
-                <% if(locals.errors && errors.password) { %> 
-                  <div>
-                    <p style="color: brown;"><%=errors.password.msg%> </p>
-                  </div>
-                <% } %> 
-              </div>
-
-              <label for="avatar" class="form-label10">
-                <input type="file" name="avatar" id="avatar"/>
-              </label>
-              <div>
-                <% if(locals.errors && errors.avatar) { %> 
-                  <div>
-                    <p style="color: brown;"><%=errors.avatar.msg%> </p>
-                  </div>
-                <% } %> 
-              </div>
-            </article>
-            <article class="btnContainer">
-              <button type="submit" class="btn btnSecond">Registrarse</button>
-            </article>
-          </form>
-          <div class="footForm">
-            <span
-              >Ya estás registrado ? <a href="/user/login">Iniciar Sesión</a>
-            </span>
-            <div>
-              <span>Registrarse con</span>
-              <div class="social">
-                <i class="fab fa-google"></i>
-                <i class="fab fa-facebook"></i>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="politicsContainer">
-          <picture>
-            <img src="/img/keyboard.png" alt="" />
-          </picture>
-          <div>
-            <input type="checkbox" />
-            <span
-              >Declaro que leí y acepto la
-              <a href=""
-                >Política de Privacidad y Tratamiento de Datos de WeCol</a
-              >
-            </span>
-          </div>
-          <div>
-            <input type="checkbox" />
-            <span
-              >Autorizo el tratamiento de mis datos personales conforme a la
-              <a href=""> Política de Tratamiento de Datos de WeCol</a></span
-            >
-          </div>
-        </article>
-      </section>
-    </main>
-
-    <%- include('../partials/Footer') %>
-  </body>
+<%- include('../partials/Footer') %>
+</body>
 </html>

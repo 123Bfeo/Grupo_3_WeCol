@@ -1,0 +1,74 @@
+@import '../components/colorErrorMessage.css';
+:root{
+	--placeholderText: bold 16px/24px var(--secondFont);
+	--icons: rgba(231, 138, 0, 0.7);
+}
+.registerForm_container {
+	inline-size: 100%;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.form-content {
+	display: flex;
+	justify-content: space-between;
+	gap: 24px;
+	inline-size: 100%;
+}
+.formSide{
+	inline-size: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+.form-label {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.form-label .formTitleLabel{
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	inline-size: 80%;
+}
+.form-label .formTitleLabel span{
+	color: var(--white);
+	text-transform: uppercase;
+	font: var(--placeholderText);
+}
+.form-label .formTitleLabel i {
+	color: var(--icons);
+	font-size: 16px;
+}
+.form-label input:not(input[type="file"]){
+	padding: 8px;
+	border: none;
+	inline-size: 100%;
+	font: var(--placeholderText);
+	color: var(--bg-dark);
+}
+.form-label input[type='file'] {
+	padding: 8px;
+	border: none;
+	background: var(--white);
+	cursor: pointer;
+}
+.form-label input:focus {
+	outline: 2px solid var(--secondary);
+}
+.form-label input::placeholder {
+	font: var(--placeholderText);
+	color: var(--placeholder);
+	padding-inline: 8px;
+}
+.formLabelInfo{
+	display: flex;
+}
+.errorMessage {
+	inline-size: 100%;
+	text-align: right;
+}

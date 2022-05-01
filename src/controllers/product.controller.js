@@ -18,7 +18,7 @@ const productController = {
   ,
   productDetail: (req, res) => {
     let products = productModel.read();
-    let findProduct = products.find((prod) => prod.id == req.params.id);
+    let findProduct = products.find((prod) => prod.id === req.params.id);
     let arrayImg = findProduct.image;
     const arr = Object.values(arrayImg);
     const title = 'Detalle de producto';
@@ -39,7 +39,7 @@ const productController = {
     if (!req.file) {
       err.image = { msg: "Ingrese un archivo con formato válido (jpeg,png,jpg)" }
     }
-    if (req.body.category == '' || req.body.brand == '') {
+    if (req.body.category === '' || req.body.brand === '') {
       err.select = { msg: "Seleccione una categoría y una marca" }
     }
 
@@ -57,14 +57,14 @@ const productController = {
 
     const errors = validationResult(req);
     let err = errors.mapped();
-    if (req.body.category == '' || req.body.brand == '') {
-      console.log("no hay categori")
+    if (req.body.category === '' || req.body.brand === '') {
+      console.log("no hay categoría")
       err.select = { msg: "Seleccione una categoría y una marca" }
     }
 
     if (Object.keys(err).length > 0) {
       let products = productModel.read();
-      let product = products.find(prod => prod.id == req.params.id);
+      let product = products.find(prod => prod.id === req.params.id);
       res.render('./products/editProduct', { errors: err, old: req.body, categories, brands, product });
     } else {
       let products = productModel.read();
@@ -87,7 +87,7 @@ const productController = {
   searchProduct: (req, res) => {
     let products = productModel.read();
     let parameter = req.query.search.toLowerCase();
-    if (parameter == '') {
+    if (parameter === '') {
       let err = "Digite valor válido";
       res.render('./admin/adminProductMain', { categories, brands, err, products });
     } else {
@@ -103,7 +103,6 @@ const productController = {
       }
 
     }
-
 
   },
   loadMainAdminProduct: (req, res) => {

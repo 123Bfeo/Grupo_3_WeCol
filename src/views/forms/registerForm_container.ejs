@@ -1,0 +1,112 @@
+<section class="registerForm_container">
+	<form action="/user/register"  method="POST" enctype="multipart/form-data" class="form">
+		<article class="form-content">
+			<article class='formSide'>
+				<div>
+					<label for="name" class="form-label">
+						<div class='formLabelInfo'>
+							<div class='formTitleLabel'>
+								<i class="fas fa-user"></i>
+								<span>Nombres</span>
+							</div>
+							<div class='errorMessage'>
+								<% if(locals.errors && errors.name) { %>
+									<p class='colorErrorMessage'><%= errors.name.msg %></p>
+								<% } %>
+							</div>
+						</div>
+						<input type="text" name="name" placeholder="John" id='name' value="<%= locals.oldData ? oldData.name: null %>"/>
+					</label>
+				</div>
+				<div>
+					<label for="lastname" class="form-label">
+						<div class='formLabelInfo'>
+							<div class='formTitleLabel'>
+								<i class="fas fa-user"></i>
+								<span>Apellidos</span>
+							</div>
+							<div class='errorMessage'>
+								<% if(locals.errors && errors.lastname) { %>
+									<p class='colorErrorMessage'><%= errors.lastname.msg %></p>
+								<% } %>
+							</div>
+						</div>
+						<input type="text" name="lastname" placeholder="Doe" id='lastname' value="<%= locals.oldData ? oldData.lastname: null %>"/>
+					</label>
+				</div>
+				<div>
+					<label for="username" class="form-label">
+						<div class='formLabelInfo'>
+							<div class='formTitleLabel'>
+								<i class="fas fa-user"></i>
+								<span>Nombre de usuario</span>
+							</div>
+							<div class='errorMessage'>
+								<% if(locals.errors && errors.username) { %>
+									<p class='colorErrorMessage'><%= errors.username.msg %> </p>
+								<% } %>
+							</div>
+						</div>
+						<input type="text" name="username" placeholder="john.doe" id='username' value="<%= locals.oldData ? oldData.username: null %>"/>
+					</label>
+				</div>
+			</article>
+			<article class='formSide'>
+				<div>
+					<label for="email" class="form-label">
+						<div class='formLabelInfo'>
+							<div class='formTitleLabel'>
+								<i class="fas fa-at"></i>
+								<span>Correo</span>
+							</div>
+							<div class='errorMessage'>
+								<% if(locals.errors && errors.email) { %>
+								<p class='colorErrorMessage'><%=errors.email.msg%> </p>
+								<% } %>
+							</div>
+						</div>
+
+						<input type="email" name="email" placeholder="john@doe.com" id='email' value="<%= locals.oldData ? oldData.email: null %>"/>
+					</label>
+
+				</div>
+				<div>
+					<label for="password" class="form-label">
+						<div class='formLabelInfo'>
+							<div class='formTitleLabel'>
+								<i class="fas fa-lock"></i>
+								<span>Contraseña</span>
+							</div>
+							<div class='errorMessage'>
+								<% if(locals.errors && errors.password) { %>
+									<p class='colorErrorMessage'><%= errors.password.msg %> </p>
+								<% } %>
+							</div>
+						</div>
+						<input type="password" name="password" placeholder="" id='password' />
+					</label>
+				</div>
+				<div>
+					<label for="avatar" class="form-label">
+						<div class='formLabelInfo'>
+							<div class='formTitleLabel'>
+								<i class="fas fa-lock"></i>
+								<span>Cargar Foto</span>
+							</div>
+							<div class='errorMessage'>
+								<% if(locals.errors && errors.avatar) { %>
+								<p class='colorErrorMessage'><%=errors.avatar.msg%> </p>
+								<% } %>
+							</div>
+						</div>
+						<input type="file" name="avatar" id="avatar" accept='image/png, image/jpeg'/>
+					</label>
+				</div>
+			</article>
+		</article>
+		<article>
+			<%- include('../politics/agreePoliticsContainer') %>
+			<%- include('../buttons/btnRegister') %>
+		</article>
+	</form>
+</section>
