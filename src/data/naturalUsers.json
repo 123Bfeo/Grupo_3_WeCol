@@ -38,5 +38,14 @@
   "email": "soysergiogonzalez@outlook.es",
   "password": "$2a$10$BH0C./XSFGzc70s2xxpmq.lDBoRvCTtOoGm.j50CTb1n2WRQ1eETC",
   "avatar": "1651383463311.png"
+ },
+ {
+  "id": 6,
+  "name": "liliana",
+  "lastname": "martinez",
+  "username": "",
+  "email": "ll@gmail.com",
+  "password": "$2a$10$tp4NYDap56i01AueHNzsH.hTZYXVavxRU5LwL261IJ5m2TAuJwVoi",
+  "avatar": "1651421197973.jpg"
  }
 ]
