@@ -3,62 +3,62 @@ const { resolve } = require('path');
 
 
 const userModel = {
-    getAdminUsers: () => {
-			const fileName = resolve('src/data/adminUsers.json')
-			const readFile = readFileSync(fileName);
-			return JSON.stringify(readFile);
-    },
-    //---------------------------//
-	
-   fileName: './src/data/naturalUsers.json',
+	getAdminUsers: () => {
+		const fileName = resolve('src/data/adminUsers.json')
+		const readFile = readFileSync(fileName);
+		return JSON.stringify(readFile);
+	},
+	//---------------------------//
 
-	getNaturalUser:function (){
+	fileName: './src/data/naturalUsers.json',
+
+	getNaturalUser: function () {
 		return JSON.parse(fs.readFileSync(this.fileName, "utf-8"));
 	},
-	
-    generateId:function (){
+
+	generateId: function () {
 		const allNaturalUsers = this.listNaturalUsers();
-		const lastIdUser =allNaturalUsers.pop();
-		if(lastIdUser){
+		const lastIdUser = allNaturalUsers.pop();
+		if (lastIdUser) {
 			return lastIdUser.id + 1;
 		}
 		return 1;
 	},
 
-	listNaturalUsers:function(){
-        return this.getNaturalUser();
+	listNaturalUsers: function () {
+		return this.getNaturalUser();
 	},
-    
-	createNaturalUsers:function (dataNaturalUser){
+
+	createNaturalUsers: function (dataNaturalUser) {
 		const allNaturalUsers = this.listNaturalUsers();
-        const newNaturalUser = {
-			id:this.generateId(),
+		const newNaturalUser = {
+			id: this.generateId(),
 			...dataNaturalUser
 		}
 		allNaturalUsers.push(newNaturalUser);
-       fs.writeFileSync(this.fileName, JSON.stringify(allNaturalUsers, null, ' '));
-	   return true;
+		fs.writeFileSync(this.fileName, JSON.stringify(allNaturalUsers, null, ' '));
+		return true;
 	},
 
-	searchNaturalUserId: function (id){
+	searchNaturalUserId: function (id) {
 		const allNaturalUsers = this.listNaturalUsers();
-		const searchNaturalUserId = allNaturalUsers.find(user => user.id === id );
+		const searchNaturalUserId = allNaturalUsers.find(user => user.id === id);
 		return searchNaturalUserId;
 	},
 
-	searchNaturalUserEmail: function (email){
+	searchNaturalUserEmail: function (field, text) {
 		const allNaturalUsers = this.listNaturalUsers();
-		const searchNaturalUser = allNaturalUsers.find(user => user.email === email );
+		const searchNaturalUser = allNaturalUsers.find(user => user[field] === text);
 		return searchNaturalUser;
 	},
 
-	deleteNaturalUsers: function (id){
+	deleteNaturalUsers: function (id) {
 		const allNaturalUsers = this.listNaturalUsers();
-		const deleteUser =  allNaturalUsers.filter(user => user.id != id);
+		const deleteUser = allNaturalUsers.filter(user => user.id != id);
 		fs.writeFileSync(this.fileName(), JSON.stringify(deleteUser, null, ' '));
 		return "User Delete";
 	}
-    
+
 }
 module.exports = userModel;
 

@@ -2,8 +2,8 @@ const { validationResult } = require('express-validator');
 //Importaciones modelos
 const productModel = require('../models/product.model');
 
-const {readCategoriesAndBrands} = require('../models/appdata.model');
-const [categories,brands] = readCategoriesAndBrands();
+const { readCategoriesAndBrands } = require('../models/appdata.model');
+const [categories, brands] = readCategoriesAndBrands();
 
 const productController = {
   allProducts: (req, res) => {
@@ -13,7 +13,7 @@ const productController = {
 
   loadProduct: (req, res) => {
     const title = 'Nuevo Producto';
-    res.render('./products/createProduct', { title , categories ,brands})
+    res.render('./products/createProduct', { title, categories, brands })
   }
   ,
   productDetail: (req, res) => {
@@ -36,15 +36,15 @@ const productController = {
 
     let errors = validationResult(req);
     let err = errors.mapped();
-    if(!req.file){
-      err.image = {msg: "Ingrese un archivo con formato válido (jpeg,png,jpg)"}
+    if (!req.file) {
+      err.image = { msg: "Ingrese un archivo con formato válido (jpeg,png,jpg)" }
     }
-    if(req.body.category==''||req.body.brand==''){
-      err.select = {msg: "Seleccione una categoría y una marca"}
+    if (req.body.category == '' || req.body.brand == '') {
+      err.select = { msg: "Seleccione una categoría y una marca" }
     }
 
-    if (Object.keys(err).length>0) {
-      res.render('./products/createProduct', { errors: err, old: req.body ,categories,brands});
+    if (Object.keys(err).length > 0) {
+      res.render('./products/createProduct', { errors: err, old: req.body, categories, brands });
     } else {
       let reqBody = req.body;
       let reqFile = req.file;
@@ -57,15 +57,15 @@ const productController = {
 
     const errors = validationResult(req);
     let err = errors.mapped();
-    if(req.body.category==''||req.body.brand==''){
+    if (req.body.category == '' || req.body.brand == '') {
       console.log("no hay categori")
-      err.select = {msg: "Seleccione una categoría y una marca"}
+      err.select = { msg: "Seleccione una categoría y una marca" }
     }
 
-    if (Object.keys(err).length>0) {
+    if (Object.keys(err).length > 0) {
       let products = productModel.read();
       let product = products.find(prod => prod.id == req.params.id);
-      res.render('./products/editProduct', { errors: err, old: req.body ,categories,brands,product});
+      res.render('./products/editProduct', { errors: err, old: req.body, categories, brands, product });
     } else {
       let products = productModel.read();
       let id = req.params.id;
@@ -84,60 +84,61 @@ const productController = {
 
   },
 
-  searchProduct: (req,res)=>{
+  searchProduct: (req, res) => {
     let products = productModel.read();
     let parameter = req.query.search.toLowerCase();
-    if(parameter==''){
+    if (parameter == '') {
       let err = "Digite valor válido";
-      res.render('./admin/adminProductMain',{categories,brands,err,products});
-    }else{
+      res.render('./admin/adminProductMain', { categories, brands, err, products });
+    } else {
 
-      let find = products.filter( prod => prod.name.toLowerCase().includes(parameter));
-      if(find.length>0){
+      let find = products.filter(prod => prod.name.toLowerCase().includes(parameter));
+      if (find.length > 0) {
 
-        res.render('./admin/adminProductMain',{find,categories,brands})
-      }else{
+        res.render('./admin/adminProductMain', { find, categories, brands })
+      } else {
 
         const noFind = "No se encontró ningun producto";
-        res.render('./admin/adminProductMain',{categories,brands,noFind})
+        res.render('./admin/adminProductMain', { categories, brands, noFind })
       }
 
     }
 
+
   },
-  loadMainAdminProduct : (req,res)=>{
+  loadMainAdminProduct: (req, res) => {
     let products = productModel.read();
     const title = "Administrador de productos";
-    res.render('./admin/adminProductMain',{categories,brands,products,title});
+    res.render('./admin/adminProductMain', { categories, brands, products, title });
   },
-  searchProducstBy: (req,res)=>{
+  searchProducstBy: (req, res) => {
     let category = req.query.category;
     let brand = req.query.brand;
     let products = productModel.read();
-    if(category === '' && brand === ''){
+    if (category === '' && brand === '') {
 
       let errCB = "Seleccione una categoría o una marca"
-      res.render('./admin/adminProductMain',{categories,brands,errCB,products})
-    }else if(category === ''){
+      res.render('./admin/adminProductMain', { categories, brands, errCB, products })
+    } else if (category === '') {
 
       let productsByBrand = products.filter(prod => prod.brand === brand);
-      res.render('./admin/adminProductMain',{categories,brands,productsByBrand});
+      res.render('./admin/adminProductMain', { categories, brands, productsByBrand });
 
-    }else if(brand === ''){
+    } else if (brand === '') {
 
       let productsByBcategory = products.filter(prod => prod.category === category);
-      res.render('./admin/adminProductMain',{categories,brands,productsByBcategory});
-    }else{
+      res.render('./admin/adminProductMain', { categories, brands, productsByBcategory });
+    } else {
 
       let productsByBcategoryAndBrand = products.filter(prod => prod.category === category && prod.brand === brand);
-      res.render('./admin/adminProductMain',{categories,brands,productsByBcategoryAndBrand});
+      res.render('./admin/adminProductMain', { categories, brands, productsByBcategoryAndBrand });
 
     }
   },
-  loadEditProduct: (req,res)=>{
+  loadEditProduct: (req, res) => {
     let products = productModel.read();
     let product = products.find(prod => prod.id === req.params.id);
-    res.render('./products/editProduct',{categories,brands,product});
+    res.render('./products/editProduct', { categories, brands, product });
   }
 };
 
