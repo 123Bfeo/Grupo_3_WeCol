@@ -32,18 +32,11 @@
  },
  {
   "id": 5,
-  "name": "checho",
-  "lastname": "gonzales",
-  "email": "che@gmail.com",
-  "password": "$2a$10$5WiV6PrQaDAdOwh8R5pCQ.aesakBJXcXq5/31HAHu2Vj.lvPTrE62",
-  "avatar": "1651355455762.jpg"
- },
- {
-  "id": 6,
-  "name": "adriana",
-  "lastname": "rocha",
-  "email": "adri@gmail.com",
-  "password": "$2a$10$sXZfQbl3Y3RnTnCLdh2LBODJvbrKvWxkwQuwxDk1s59o/I.k/f0CK",
-  "avatar": "1651356126217.jpg"
+  "name": "Sergio",
+  "lastname": "González Sánchez",
+  "username": "SoyChechoGonzalez",
+  "email": "soysergiogonzalez@outlook.es",
+  "password": "$2a$10$BH0C./XSFGzc70s2xxpmq.lDBoRvCTtOoGm.j50CTb1n2WRQ1eETC",
+  "avatar": "1651383463311.png"
  }
 ]

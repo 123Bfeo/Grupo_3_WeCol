@@ -1,5 +1,5 @@
 .header {
-  background-color: var(--bg-dark);
+  background: var(--bg-dark);
   min-inline-size: 100vw;
   font-weight: 700;
   font-family: var(--link-header);

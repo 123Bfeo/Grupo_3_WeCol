@@ -23,11 +23,7 @@ main .arrow-sliderProcut {
   align-items: center;
   text-align: center;
 }
-main .fas {
-  color: rgb(235, 146, 3);
-  width: 30px;
-  height: 30px;
-}
+
 main .activo {
   color: rgb(230, 224, 214);
   width: 30px;

@@ -1,4 +1,4 @@
-input[type="radio"] {
+/* input[type="radio"] {
 	display:none;
 }
 label {
@@ -43,3 +43,4 @@ input[type="radio"][id="green"]:checked ~ .blue, input[type="radio"][id="green"]
 	margin:0;
 	opacity:0;
 }
+*/

@@ -23,10 +23,6 @@
 .btnSecond {
   color: var(--secondary);
 }
-.btnContainer {
-  display: flex;
-  gap: 16px;
-}
 
 .btn-add i {
   color: var(--white);
