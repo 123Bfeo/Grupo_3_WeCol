@@ -108,7 +108,8 @@ const productController = {
   loadMainAdminProduct: (req, res) => {
     let products = productModel.read();
     const title = "Administrador de productos";
-    res.render('./admin/adminProductMain', { categories, brands, products, title });
+    const user = req.session.userLogged;
+    res.render('./admin/adminProductMain', { categories, brands, products, title, user });
   },
   searchProducstBy: (req, res) => {
     let category = req.query.category;

@@ -64,6 +64,7 @@ const userController = {
     if (userToLogin) {
       let comaparaPasswordUser = bcryptjs.compareSync(req.body.password, userToLogin.password);
       if (comaparaPasswordUser) {
+        req.session.userLogged = userToLogin
         return res.redirect("/product/adminProductMain");
       }
       return res.render('./users/login', {
