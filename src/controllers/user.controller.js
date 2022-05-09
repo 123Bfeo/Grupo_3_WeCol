@@ -21,7 +21,7 @@ const userController = {
     }
 
 
-    let userInBD = userModel.searchNaturalUserEmail("email", req.body.email);
+    let userInBD = userModel.searchNaturalUserEmail(req.body.email);
 
     if (userInBD) {
       return res.render('./users/register', {
@@ -59,7 +59,7 @@ const userController = {
         oldData: req.body
       })
     }
-    let userToLogin = userModel.searchNaturalUserEmail("email", req.body.email);
+    let userToLogin = userModel.searchNaturalUserEmail(req.body.email);
 
     if (userToLogin) {
       let comaparaPasswordUser = bcryptjs.compareSync(req.body.password, userToLogin.password);

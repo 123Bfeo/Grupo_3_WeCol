@@ -46,7 +46,7 @@ const userModel = {
 		return searchNaturalUserId;
 	},
 
-	searchNaturalUserEmail: function (field, text) {
+	searchNaturalUserEmail: function (text, field = "email") {
 		const allNaturalUsers = this.listNaturalUsers();
 		const searchNaturalUser = allNaturalUsers.find(user => user[field] === text);
 		return searchNaturalUser;
@@ -62,10 +62,13 @@ const userModel = {
 }
 module.exports = userModel;
 
-//console.log(userModel.searchNaturalUserEmail("jose@gmail.com"));
+//console.log(userModel.searchNaturalUserEmail("luis@gmail.com"));
+//console.log(userModel.getNaturalUser())
 //console.log(userModel.listNaturalUsers());
-
+//console.log(userModel.searchNaturalUserId(3));
+//console.log(userModel.searchNaturalUserEmail("jo@gmail.com"));
 /*console.log(userModel.createNaturalUsers(
+
 {
   name: "fernanda",
   lastname: "perez",

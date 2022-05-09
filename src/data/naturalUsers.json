@@ -47,5 +47,14 @@
   "email": "ll@gmail.com",
   "password": "$2a$10$tp4NYDap56i01AueHNzsH.hTZYXVavxRU5LwL261IJ5m2TAuJwVoi",
   "avatar": "1651421197973.jpg"
+ },
+ {
+  "id": 7,
+  "name": "yuliana",
+  "lastname": "marrueco",
+  "username": "",
+  "email": "yu@gmail.com",
+  "password": "$2a$10$qQsy77zB4LoXMp.pYE3sGeQyAg2HIgQTTGBGnGgpbt.GyCXa/2pai",
+  "avatar": "1651887303144.jpg"
  }
 ]
