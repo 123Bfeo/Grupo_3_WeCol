@@ -1,223 +1,223 @@
 <!DOCTYPE html>
 <html lang="es">
-  <%- include('./partials/head') %>
+<%- include('./partials/head') %>
 
-  <body>
-    <%- include('./partials/Header') %>
-    <main class="main">
-      <section class="hero">
-        <div class="hero-content">
-          <img src="/img/mouse-logitech.png" alt="Banner" title="Banner" />
-          <div class="hero-product">
-            <h2 class="titulo white">Logitech Mx Master 3</h2>
-            <a href="/productCart" class="btn btn-add-cart">
-              <span>Añadir al carrito</span>
-              <i class="fas fa-shopping-cart"></i>
-            </a>
-          </div>
-        </div>
-      </section>
-      <section class="hero-recommended wrapper">
-        <div class="recommended-content">
-          <article class="left-img">
-            <picture>
-              <img src="/img/mouse.png" alt="" />
-            </picture>
-          </article>
-          <article class="right-img">
-            <picture class="img-top">
-              <img src="/img/headphone.png" alt="Headphone" title="Headphone" />
-            </picture>
-            <picture class="img-bottom">
-              <img
-                src="/img/marshall.png"
-                alt="Marshall Speaker"
-                title="Marshall Speaker"
-              />
-            </picture>
-          </article>
-        </div>
-      </section>
-      <section class="categories wrapper">
-        <h3 class="subtituloH3 orange">
-          <span>Ver todas las categorías</span>
-          <i class="fas fa-chevron-right"></i>
-        </h3>
-        <article class="categories-card">
-          <div class="categorie">
-            <i class="fas fa-mouse"></i>
-            <span>Mouse</span>
-          </div>
-          <div class="categorie">
-            <i class="fas fa-keyboard"></i>
-            <span>Teclados</span>
-          </div>
-          <div class="categorie">
-            <i class="fas fa-headphones-alt"></i>
-            <span>Audifonos</span>
-          </div>
-          <div class="categorie">
-            <i class="fas fa-clock"></i>
-            <span>Relojes</span>
-          </div>
-          <div class="categorie">
-            <i class="fab fa-autoprefixer"></i>
-            <span>Accesorios</span>
-          </div>
-          <div class="categorie">
-            <i class="fas fa-laptop"></i>
-            <span>Portátiles</span>
-          </div>
-          <div class="categorie">
-            <i class="fas fa-mobile"></i>
-            <span>Celulares</span>
-          </div>
-        </article>
-      </section>
-      <section class="ofers wrapper">
-        <h2 class="subtituloH2 gray">Productos en Oferta</h2>
-        <article class="ofers-cards">
-          <div class="card-off">
-            <picture class="card-img">
-              <img src="/img/earphone.png" alt="earphone" title="earphone" />
-              <span>25% OFF</span>
-            </picture>
-            <div class="card-off-description">
-              <span class="product-name">AirPods</span>
-              <span class="product-price">
+<body>
+<%- include('./components/header/Header') %>
+<main class="main">
+	<section class="hero">
+		<div class="hero-content">
+			<img src="/img/mouse-logitech.png" alt="Banner" title="Banner" />
+			<div class="hero-product">
+				<h2 class="titulo white">Logitech Mx Master 3</h2>
+				<a href="/productCart" class="btn btn-add-cart">
+					<span>Añadir al carrito</span>
+					<i class="fas fa-shopping-cart"></i>
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="hero-recommended wrapper">
+		<div class="recommended-content">
+			<article class="left-img">
+				<picture>
+					<img src="/img/mouse.png" alt="" />
+				</picture>
+			</article>
+			<article class="right-img">
+				<picture class="img-top">
+					<img src="/img/headphone.png" alt="Headphone" title="Headphone" />
+				</picture>
+				<picture class="img-bottom">
+					<img
+						src="/img/marshall.png"
+						alt="Marshall Speaker"
+						title="Marshall Speaker"
+					/>
+				</picture>
+			</article>
+		</div>
+	</section>
+	<section class="categories wrapper">
+		<h3 class="subtituloH3 orange">
+			<span>Ver todas las categorías</span>
+			<i class="fas fa-chevron-right"></i>
+		</h3>
+		<article class="categories-card">
+			<div class="categorie">
+				<i class="fas fa-mouse"></i>
+				<span>Mouse</span>
+			</div>
+			<div class="categorie">
+				<i class="fas fa-keyboard"></i>
+				<span>Teclados</span>
+			</div>
+			<div class="categorie">
+				<i class="fas fa-headphones-alt"></i>
+				<span>Audifonos</span>
+			</div>
+			<div class="categorie">
+				<i class="fas fa-clock"></i>
+				<span>Relojes</span>
+			</div>
+			<div class="categorie">
+				<i class="fab fa-autoprefixer"></i>
+				<span>Accesorios</span>
+			</div>
+			<div class="categorie">
+				<i class="fas fa-laptop"></i>
+				<span>Portátiles</span>
+			</div>
+			<div class="categorie">
+				<i class="fas fa-mobile"></i>
+				<span>Celulares</span>
+			</div>
+		</article>
+	</section>
+	<section class="ofers wrapper">
+		<h2 class="subtituloH2 gray">Productos en Oferta</h2>
+		<article class="ofers-cards">
+			<div class="card-off">
+				<picture class="card-img">
+					<img src="/img/earphone.png" alt="earphone" title="earphone" />
+					<span>25% OFF</span>
+				</picture>
+				<div class="card-off-description">
+					<span class="product-name">AirPods</span>
+					<span class="product-price">
                 <div class="real-price">$2.650.000</div>
                 <i>-</i>
                 <div class="current-price">$1.897.500</div>
               </span>
-              <div class="available">
+					<div class="available">
                 <span class="available-quantity">
                   <p>Disponibles: 5</p>
                   <p>Vendidos: 2</p>
                 </span>
-                <button class="progress-quantity"></button>
-              </div>
-            </div>
-          </div>
-          <div class="card-off">
-            <picture class="card-img">
-              <img src="/img/earphone.png" alt="earphone" title="earphone" />
-              <span>25% OFF</span>
-            </picture>
-            <div class="card-off-description">
-              <span class="product-name">AirPods</span>
-              <span class="product-price">
+						<button class="progress-quantity"></button>
+					</div>
+				</div>
+			</div>
+			<div class="card-off">
+				<picture class="card-img">
+					<img src="/img/earphone.png" alt="earphone" title="earphone" />
+					<span>25% OFF</span>
+				</picture>
+				<div class="card-off-description">
+					<span class="product-name">AirPods</span>
+					<span class="product-price">
                 <div class="real-price">$2.650.000</div>
                 <i>-</i>
                 <div class="current-price">$1.897.500</div>
               </span>
-              <div class="available">
+					<div class="available">
                 <span class="available-quantity">
                   <p>Disponibles: 5</p>
                   <p>Vendidos: 2</p>
                 </span>
-                <button class="progress-quantity"></button>
-              </div>
-            </div>
-          </div>
-          <div class="card-off">
-            <picture class="card-img">
-              <img src="/img/earphone.png" alt="earphone" title="earphone" />
-              <span>25% OFF</span>
-            </picture>
-            <div class="card-off-description">
-              <span class="product-name">AirPods</span>
-              <span class="product-price">
+						<button class="progress-quantity"></button>
+					</div>
+				</div>
+			</div>
+			<div class="card-off">
+				<picture class="card-img">
+					<img src="/img/earphone.png" alt="earphone" title="earphone" />
+					<span>25% OFF</span>
+				</picture>
+				<div class="card-off-description">
+					<span class="product-name">AirPods</span>
+					<span class="product-price">
                 <div class="real-price">$2.650.000</div>
                 <i>-</i>
                 <div class="current-price">$1.897.500</div>
               </span>
-              <div class="available">
+					<div class="available">
                 <span class="available-quantity">
                   <p>Disponibles: 5</p>
                   <p>Vendidos: 2</p>
                 </span>
-                <button class="progress-quantity"></button>
-              </div>
-            </div>
-          </div>
-          <div class="card-off">
-            <picture class="card-img">
-              <img src="/img/earphone.png" alt="earphone" title="earphone" />
-              <span>25% OFF</span>
-            </picture>
-            <div class="card-off-description">
-              <span class="product-name">AirPods</span>
-              <span class="product-price">
+						<button class="progress-quantity"></button>
+					</div>
+				</div>
+			</div>
+			<div class="card-off">
+				<picture class="card-img">
+					<img src="/img/earphone.png" alt="earphone" title="earphone" />
+					<span>25% OFF</span>
+				</picture>
+				<div class="card-off-description">
+					<span class="product-name">AirPods</span>
+					<span class="product-price">
                 <div class="real-price">$2.650.000</div>
                 <i>-</i>
                 <div class="current-price">$1.897.500</div>
               </span>
-              <div class="available">
+					<div class="available">
                 <span class="available-quantity">
                   <p>Disponibles: 5</p>
                   <p>Vendidos: 2</p>
                 </span>
-                <button class="progress-quantity"></button>
-              </div>
-            </div>
-          </div>
-          <div class="card-off">
-            <picture class="card-img">
-              <img src="/img/earphone.png" alt="earphone" title="earphone" />
-              <span>25% OFF</span>
-            </picture>
-            <div class="card-off-description">
-              <span class="product-name">AirPods</span>
-              <span class="product-price">
+						<button class="progress-quantity"></button>
+					</div>
+				</div>
+			</div>
+			<div class="card-off">
+				<picture class="card-img">
+					<img src="/img/earphone.png" alt="earphone" title="earphone" />
+					<span>25% OFF</span>
+				</picture>
+				<div class="card-off-description">
+					<span class="product-name">AirPods</span>
+					<span class="product-price">
                 <div class="real-price">$2.650.000</div>
                 <i>-</i>
                 <div class="current-price">$1.897.500</div>
               </span>
-              <div class="available">
+					<div class="available">
                 <span class="available-quantity">
                   <p>Disponibles: 5</p>
                   <p>Vendidos: 2</p>
                 </span>
-                <button class="progress-quantity"></button>
-              </div>
-            </div>
-          </div>
-        </article>
-      </section>
-      <section class="new wrapper">
-        <article class="nuevo-filtro">
-          <span class="nuevo">Nuevo</span>
-          <span class="filtrar">Filtrar</span>
-        </article>
-        <article class="cards_container"><%- include('./partials/card') %></article>
-      </section>
-      <section class="brands wrapper">
-        <h3 class="subtituloH3 placeholder">Manejamos las siguientes marcas</h3>
-        <article class="brand-list">
-          <h2 class="brand">Samsung</h2>
-          <h2 class="brand">Apple</h2>
-          <h2 class="brand">Logitech</h2>
-          <h2 class="brand">Marshall</h2>
-          <h2 class="brand">Beats</h2>
-          <h2 class="brand">Alien</h2>
-        </article>
-      </section>
-      <section class="newsLater">
-        <i class="fas fa-newspaper"></i>
-        <article class="updates">
-          <h2>Recibir actualizaciones</h2>
-          <p>
-            Registrese ahora y obtenga las ultimas actualizaciones y
-            promociones.
-          </p>
-        </article>
-        <article class="e-mail">
-          <input type="e-mail" placeholder="Ingrése su correo" />
-          <button type="submit" class="btn-enviar">Enviar</button>
-        </article>
-      </section>
-    </main>
+						<button class="progress-quantity"></button>
+					</div>
+				</div>
+			</div>
+		</article>
+	</section>
+	<section class="new wrapper">
+		<article class="nuevo-filtro">
+			<span class="nuevo">Nuevo</span>
+			<span class="filtrar">Filtrar</span>
+		</article>
+		<article class="cards_container"><%- include('./partials/card') %></article>
+	</section>
+	<section class="brands wrapper">
+		<h3 class="subtituloH3 placeholder">Manejamos las siguientes marcas</h3>
+		<article class="brand-list">
+			<h2 class="brand">Samsung</h2>
+			<h2 class="brand">Apple</h2>
+			<h2 class="brand">Logitech</h2>
+			<h2 class="brand">Marshall</h2>
+			<h2 class="brand">Beats</h2>
+			<h2 class="brand">Alien</h2>
+		</article>
+	</section>
+	<section class="newsLater">
+		<i class="fas fa-newspaper"></i>
+		<article class="updates">
+			<h2>Recibir actualizaciones</h2>
+			<p>
+				Registrese ahora y obtenga las ultimas actualizaciones y
+				promociones.
+			</p>
+		</article>
+		<article class="e-mail">
+			<input type="e-mail" placeholder="Ingrése su correo" />
+			<button type="submit" class="btn-enviar">Enviar</button>
+		</article>
+	</section>
+</main>
 
-    <%- include('./partials/Footer') %>
-  </body>
+<%- include('./partials/Footer') %>
+</body>
 </html>

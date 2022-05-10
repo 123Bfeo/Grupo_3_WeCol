@@ -1,7 +1,6 @@
-//Importaciones nativas
 const express = require('express');
+const router = express.Router();
 const path = require('path');
-const userRoutes = express.Router();
 //requiero multer
 const multer = require('multer');
 const multerDiskStorage = require('../middlewares/multermiddleware');
@@ -18,13 +17,14 @@ const userController = require('../controllers/user.controller');
 const validationRegister = require('../middlewares/validationRegister')
 const validationLogin = require('../middlewares/validationLogin');
 
-userRoutes.get('/login', userController.login);
-userRoutes.post('/login', validationLogin, userController.loginUser);
+router.get('/login', userController.login);
+router.post('/login', validationLogin, userController.loginUser);
 //userRoutes.post('/login',validatorLoginUser,userController.loginUser);
 
-userRoutes.get('/register', userController.register);
-userRoutes.post('/register', fileUpload.single("avatar"), validationRegister, userController.processRegister);
+router.get('/register', userController.register);
+router.post('/register', fileUpload.single("avatar"), validationRegister, userController.processRegister);
 
+router.get('/logout', userController.logout);
 
-module.exports = userRoutes;
+module.exports = router;
 

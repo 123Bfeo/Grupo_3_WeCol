@@ -24,7 +24,7 @@ router.delete('/deleteProduct/:id', productController.deleteProduct);
 router.get('/createProduct', productController.loadProduct);
 router.get('/searchProduct', productController.searchProduct);
 router.get('/adminProductBy', productController.searchProducstBy);
-router.get('/adminProductMain', productController.loadMainAdminProduct);
+// router.get('/adminProductMain', productController.loadMainAdminProduct);
 router.get('/editProduct/:id', productController.loadEditProduct);
 
 module.exports = router;

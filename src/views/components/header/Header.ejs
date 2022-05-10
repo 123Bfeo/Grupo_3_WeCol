@@ -1,0 +1,24 @@
+<header class="header">
+	<section class="wrapper">
+		<a href="/" class="logo">
+			<div>
+				<img src="/img/Logo.svg" alt="Wecol" title="Wecol" />
+			</div>
+		</a>
+		<%- include('./headerNav') %>
+		<article class="header-right">
+			<button class="menu-toggle" id="menuToggle">
+				<i class="fas fa-bars"></i>
+			</button>
+			<%- include('../userLoggedMiddleware') %>
+
+
+			<a href='/logout'>Cerrar Sesión</a>
+			<a href="/productCart">
+				<i class="fas fa-shopping-cart"></i>
+			</a>
+		</article>
+	</section>
+</header>
+
+<!-- 1651368577725.png -->

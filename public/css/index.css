@@ -7,7 +7,7 @@
 @import "./reset.css";
 
 /* Secciones */
-@import "./header.css";
+@import './components/header/header.css';
 @import "./hero.css";
 @import "./main.css";
 @import "./hero-recommended.css";

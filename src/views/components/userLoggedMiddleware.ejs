@@ -1,0 +1,12 @@
+<article class='userLoggedMiddleware'>
+    <a href="/login" class="user">
+        <picture>
+            <img src='./Profile-users/<%= locals.userLogged.avatar %>' alt='' width='50'>
+        </picture>
+        <!-- <i class="fas fa-user"></i> -->
+    </a>
+    <a href='/admin'>
+        <span><%= locals.userLogged.name %></span>
+        <span><%= locals.userLogged.lastname %></span>
+    </a>
+</article>

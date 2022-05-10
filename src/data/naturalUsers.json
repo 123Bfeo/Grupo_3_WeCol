@@ -37,7 +37,7 @@
   "username": "SoyChechoGonzalez",
   "email": "soysergiogonzalez@outlook.es",
   "password": "$2a$10$BH0C./XSFGzc70s2xxpmq.lDBoRvCTtOoGm.j50CTb1n2WRQ1eETC",
-  "avatar": "1651383463311.png"
+  "avatar": "luis.jpg"
  },
  {
   "id": 6,
@@ -56,5 +56,14 @@
   "email": "yu@gmail.com",
   "password": "$2a$10$qQsy77zB4LoXMp.pYE3sGeQyAg2HIgQTTGBGnGgpbt.GyCXa/2pai",
   "avatar": "1651887303144.jpg"
+ },
+ {
+  "id": 8,
+  "name": "Sergio",
+  "lastname": "Martinez",
+  "username": "",
+  "email": "martin@outlook.es",
+  "password": "$2a$10$8.FHhZuDmYdfJfE2QOFTrezMrnw..1RZIkUtGr7hDf5iYeomCg2um",
+  "avatar": "1652131220616.png"
  }
 ]

@@ -1,11 +1,11 @@
   <%- include('../partials/Head') %>
   <body>
-    <%- include('../partials/Header') %>
+    <%- include('../components/header/Header') %>
     <main class="main-login wrapper">
       <picture>
         <img src="/img/mouse2.png" alt="Mouse" title="Mouse" />
       </picture>
-      <form action="/user/login" method="POST" class="form gap32">
+      <form action="/login" method="POST" class="form gap32">
         <article class="form-content gap32">
           <label for="" class="form-label10">
             <input type="text" name="email" placeholder="Usuario o correo electrónico" value="<%=locals.old && locals.old.email ? old.email : ''%>"/>
@@ -31,7 +31,7 @@
             <input type="checkbox" name="rememberUser" id='rememberUser'/>
         <article class="btnContainer">
           <input type="submit" class="btn btnFirst" value="Iniciar Sesión" >
-          <a href="/user/register" class="btn btnSecond"> Registrarse </a>
+          <a href="/register" class="btn btnSecond"> Registrarse </a>
         </article>
         <span class="footForm"
           >¿ Olvidaste tu contraseña ? <a href="/forgotPassword">Recuperala</a>
