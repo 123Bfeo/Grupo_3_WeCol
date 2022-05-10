@@ -84,3 +84,50 @@ Igualemente, es importante seguir realizando reuniones para aclarar nuestras dud
 **Less of:** Seguir trabajando constantemente de manera conjunta en el desarrollo del Sprint.
 
 **Stop Doing:** Mantener los canales de comunicación constante ya establecidos con el objetivo de colaborarnos y apoyarnos en caso de existir dudas respecto del desarrollo del sprint.
+
+## Cuarto Sprint
+
+### 1. ¿Qué hicimos bien en nuestro primer Sprint?
+
+El cronograma pactado hasta este momento se ha cumplido conforme a lo acordado entre nosotros, incluso estamos un poco más adelantados de lo esperado. Así mismo, el panel de administración de productos tiene mayores funcionalidades y una gama de opciones más amplia.
+
+### 2. ¿Qué hicimos mal en nuestro primer sprint?
+
+Debemos mejorar el diseño del Framework del administrador de productos para que sea más amigable y entendible, por ello, es necesario modificar la estructura del mismo. Por otro lado, debemos seguir con los canales de comunicación constante conforme los habíamos planteado desde el inicio de los Sprints.
+
+### 3. Metodología retrospectiva de la estrella de mar
+
+**Start Doing:** Buscar maneras de comunicación no sincrónica en caso de no podernos reunirnos todos los miembros del equipo, pues entendemos que todos tenemos responsabilidades que cumplir y diferentes tiempos de disponibilidad para asistir a los encuentros grupales.
+
+**More of:** A pesar de no poder asistir en su totalidad a todas nuestras reuniones, siempre estamos pendientes de los avances de nuestros proyectos e intentamos entregar todas las tareas asignadas. De igual forma, existen dos subgrupos asignados para el Frontend y Backend del proyecto en desarrollo.
+
+Por consiguiente, nos parece importante buscar otras formas de comunicación asincrónica, ya que es importante tener claro el estado y avance del proyecto.
+
+**Keep Doing:** Mantener la asignación de roles de responsabilidad específica para el control y seguimiento de nuestros avances respecto de las diferentes plataformas de trabajo recomendadas por los docentes. Lo anterior con fines informativos respecto del estado de nuestro proyecto en cada una de nuestras reuniones.
+
+**Less of:** Desarrollar o implementar nuevos canales de comunicación constante teniendo en cuenta la disponibilidad de nuestros compañeros. Así mismo, mantener el avance de nuestras actividades conforme a los roles y subgrupos asignados.
+
+**Stop Doing:** Establecer canales sincrónicos y asincrónicos de comunicación constante ya establecidos con el objetivo de colaborarnos y apoyarnos en caso de existir dudas respecto del desarrollo del sprint.
+
+## Quinto Sprint
+
+### 1. ¿Qué hicimos bien en nuestro primer Sprint?
+
+- Rediseñamos el framework de la vista del administrador de productos, para que fuesen más entendibles y deducibles las funcionalidades que posee esta vista.
+- Agregamos más funcionalidades y detalles al usuario del administrador de productos.
+
+### 2. ¿Qué hicimos mal en nuestro primer sprint?
+
+- No nos han funcionado las reuniones Daily, ya que por motivos de disponibilidad de nuestros compañeros, no siempre nos podemos reunir, por tanto, hemos optado por adoptar otras metodologías como la subdivisión del grupo, de este modo, será más fácil cumplir con las actividades propuestas en el Sprint.
+
+### 3. Metodología retrospectiva de la estrella de mar
+
+**Start Doing:** Generar nuevas estrategias de comunicación y desarrollo para la elaboración de las actividades propuestas en el sprint, ya que no fue posible continuar con las reuniones Daily, la subdivisión de grupo en Frontend (Sergio y Jennifer) y Backend (Julián y Luis) nos ha permitido mantener comunicación, pero hace falta más comunicación para compilar y complementar las actividades.
+
+**More of:** Mantener la subdivision del grupo para realizar los entregables y aprovechar las habilidades técnicas de cada uno de nuestros miembros.
+
+**Keep Doing:** Mantener la asignación de roles de responsabilidad específica para el control y seguimiento de nuestros avances respecto de las diferentes plataformas de trabajo recomendadas por los docentes. Lo anterior con fines informativos respecto del estado de nuestro proyecto en cada una de nuestras reuniones.
+
+**Less of:** Seguir trabajando constantemente de manera conjunta a través de los subgrupos acordados en el desarrollo del Sprint.
+
+**Stop Doing:** Dejaremos de realizar las reuniones Daily opcionales pues no se estaban cumpliendo por la disponibilidad de tiempo de nuestros compañeros y las bitácoras se podían omitir al tener el tablero de Trello actualizado.
