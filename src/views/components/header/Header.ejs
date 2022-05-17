@@ -1,30 +1,26 @@
 <header class="header">
-	<section class="wrapper">
-		<a href="/" class="logo">
-			<div>
-				<img src="/img/Logo.svg" alt="Wecol" title="Wecol" />
-			</div>
-		</a>
-		<% if ( !locals.isLogged ) { %>
-			<%- include('./headerNav') %>
-		<% } %>
-		<article class="header-right">
-			<button class="menu-toggle" id="menuToggle">
-				<i class="fas fa-bars"></i>
-			</button>
-			<% if (locals.isLogged) { %>
-				<%- include('../userLogged') %>
-				<a href='/logout'>Cerrar Sesión</a>
-			<% } else { %>
-				<a href='/login'>
-					<i class="fas fa-user"></i>
-				</a>
-			<% } %>
-			<a href="/productCart">
-				<i class="fas fa-shopping-cart"></i>
-			</a>
-		</article>
-	</section>
+  <section class="wrapper">
+    <a href="/" class="logo">
+      <div>
+        <img src="/img/Logo.svg" alt="Wecol" title="Wecol" />
+      </div>
+    </a>
+    <% if ( !locals.isLogged ) { %> <%- include('./headerNav') %> <% } %>
+    <article class="header-right">
+      <button class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <% if (locals.isLogged) { %> <%- include('../userLogged') %> <% } else {
+      %>
+      <a href="/login">
+        <i class="fas fa-user"></i>
+      </a>
+      <% } %>
+      <a href="/productCart">
+        <i class="fas fa-shopping-cart"></i>
+      </a>
+    </article>
+  </section>
 </header>
 
 <!-- 1651368577725.png -->

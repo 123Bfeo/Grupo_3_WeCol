@@ -1,19 +1,49 @@
 .userLogged {
-	display: flex;
-	align-items: center;
-	gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 .userLogged_img {
-	inline-size: 56px;
-	block-size: 56px;
+  width: 56px;
+  height: 56px;
 }
 .userLogged_img img {
-	inline-size: 100%;
-	block-size: 100%;
-	object-fit: cover;
-	border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+  border-radius: 50%;
 }
 .userLogged_fullName {
-	color: var(--white);
-	font: var(--link-header);
+  position: relative;
+}
+#profileOptions {
+  cursor: pointer;
+}
+.userLogged_fullName span {
+  font: var(--link-header);
+  color: var(--white);
+}
+.userLogged_fullName i {
+  color: var(--secondary);
+}
+.profileDetails {
+  background: var(--bg-dark);
+  margin-top: 8px;
+  display: none;
+  flex-direction: column;
+  width: 156px;
+  padding: 8px;
+  position: absolute;
+  right: 0;
+}
+.profileDetails a {
+  color: black;
+  padding: 4px 8px;
+  color: var(--white);
+}
+.profileDetails a:hover {
+  background-color: var(--secondary);
+}
+.profileDetails_show {
+  display: flex;
 }

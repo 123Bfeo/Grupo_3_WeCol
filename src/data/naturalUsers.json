@@ -65,5 +65,14 @@
   "email": "martin@outlook.es",
   "password": "$2a$10$8.FHhZuDmYdfJfE2QOFTrezMrnw..1RZIkUtGr7hDf5iYeomCg2um",
   "avatar": "1652131220616.png"
+ },
+ {
+  "id": 9,
+  "name": "Jennifer ",
+  "lastname": "Pérez Romero",
+  "username": "",
+  "email": "Jealpero.21@gmail.com",
+  "password": "$2a$10$joEvB/NLiuFH3ZpeSpEkcuql0bQdxunKnYbJj7btyMcClalvEABOi",
+  "avatar": "1652804880042.png"
  }
 ]

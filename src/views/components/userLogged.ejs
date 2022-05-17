@@ -1,8 +1,18 @@
-<article class='userLogged'>
-    <a href="/login" class="userLogged_img">
-        <img src='./Profile-users/<%= locals.userLogged.avatar %>' alt='' />
-    </a>
-    <a href='/admin' class='userLogged_fullName'>
-        <span><%= locals.userLogged.name %> <%= locals.userLogged.lastname %></span>
-    </a>
+<article class="userLogged">
+  <picture class="userLogged_img">
+    <img src="./Profile-users/<%= locals.userLogged.avatar %>" alt="" />
+  </picture>
+  <div class="userLogged_fullName">
+    <div id="profileOptions">
+      <span>
+        <%= locals.userLogged.name %> <%= locals.userLogged.lastname %>
+      </span>
+      <i class="fas fa-angle-down"></i>
+    </div>
+    <div id="profileDetails" class="profileDetails">
+      <a href="/profileDetails">Perfil</a>
+      <a href="/logout">Cerrar Sesión</a>
+    </div>
+  </div>
 </article>
+<script defer src="/js/headerU/userLogged.js"></script>
