@@ -1,0 +1,63 @@
+@import './headerNav.css';
+@import '../userLogged.css';
+
+.header {
+	background: var(--bg-dark);
+	min-inline-size: 100vw;
+	font-weight: 700;
+	font-family: var(--link-header);
+	block-size: 100px;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+.header .wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.login {
+	color: var(--white);
+	margin-block-start: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+.login i {
+	font-size: 24px;
+}
+.header .fa-shopping-cart {
+	color: var(--secondary);
+	font-size: 1.5rem;
+}
+.header-right {
+	display: flex;
+	gap: 8px;
+}
+.header-right .menu-toggle {
+	border: none;
+	background: none;
+}
+.menu-toggle i {
+	color: var(--white);
+	font-size: 1.5rem;
+}
+.user {
+	display: none;
+}
+@media screen and (min-width: 580px) {
+	.user {
+		display: block;
+		font-size: 24px;
+		color: var(--white);
+	}
+	.menu-toggle {
+		display: none;
+	}
+	
+	.login {
+		display: none;
+	}
+}

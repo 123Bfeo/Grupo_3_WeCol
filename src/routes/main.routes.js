@@ -1,12 +1,11 @@
-//Importaciones nativas
 const express = require('express');
-const path = require('path');
 const mainRoutes = express.Router();
 
-const CONTROLLER_PATH = path.resolve('src/controllers/main.controller');
-const mainController = require(CONTROLLER_PATH);
+const mainController = require('../controllers/main.controller');
 
-mainRoutes.get('/', mainController.index);
+const sessionDetectMiddleware = require('../middlewares/sessionDetect.middleware');
+
+mainRoutes.get('/', sessionDetectMiddleware, mainController.index);
 mainRoutes.get('/aboutUs', mainController.aboutUs);
 mainRoutes.get('/contact', mainController.contact);
 mainRoutes.get('/privacyPolitics', mainController.privacyPolitics);

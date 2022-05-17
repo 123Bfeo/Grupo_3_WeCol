@@ -1,6 +1,6 @@
 const { body } = require('express-validator');
 
-const validatorMiddleware = {
+const validateCreateProductFormMiddleware = {
 	createProduct() {
 		return [
 			body('name').notEmpty().withMessage('Diligencie el campo nombre').bail(),
@@ -11,4 +11,4 @@ const validatorMiddleware = {
 	}
 }
 
-module.exports = validatorMiddleware;
+module.exports = validateCreateProductFormMiddleware;

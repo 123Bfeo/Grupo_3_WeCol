@@ -1,30 +1,24 @@
-//Importaciones nativas
 const express = require('express');
-const path = require('path');
-const userRoutes = express.Router();
-//requiero multer
 const multer = require('multer');
-const multerDiskStorage = require('../middlewares/multermiddleware');
-let fileUpload = multer({ storage: multerDiskStorage });
 
+const router = express.Router();
 
+const multerDiskStorageMiddleware = require('../middlewares/multerDiskStorage.middleware');
+const sessionDetectMiddleware = require('../middlewares/sessionDetect.middleware');
+const validateUserRegisterFormMiddleware = require('../middlewares/validateUserRegisterForm.middleware')
+const validateUserLoginFormMiddleware = require('../middlewares/validateUserLoginForm.middleware');
 
+const fileUpload = multer({ storage: multerDiskStorageMiddleware });
 
-
-
-//Importaciones
 const userController = require('../controllers/user.controller');
-// validaciones para el registro
-const validationRegister = require('../middlewares/validationRegister')
-const validationLogin = require('../middlewares/validationLogin');
 
-userRoutes.get('/login', userController.login);
-userRoutes.post('/login', validationLogin, userController.loginUser);
+router.get('/login', sessionDetectMiddleware, userController.login);
+router.post('/login', validateUserLoginFormMiddleware, userController.loginUser);
 //userRoutes.post('/login',validatorLoginUser,userController.loginUser);
 
-userRoutes.get('/register', userController.register);
-userRoutes.post('/register', fileUpload.single("avatar"), validationRegister, userController.processRegister);
+router.get('/register', sessionDetectMiddleware, userController.register);
+router.post('/register', fileUpload.single("avatar"), validateUserRegisterFormMiddleware, userController.processRegister);
 
+router.get('/logout', userController.logout);
 
-module.exports = userRoutes;
-
+module.exports = router;
