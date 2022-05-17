@@ -20,7 +20,6 @@ const userController = {
       })
     }
 
-
     let userInBD = userModel.searchNaturalUserEmail(req.body.email);
 
     if (userInBD) {
