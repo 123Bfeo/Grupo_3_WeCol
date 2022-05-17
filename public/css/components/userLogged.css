@@ -1,0 +1,19 @@
+.userLogged {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+.userLogged_img {
+	inline-size: 56px;
+	block-size: 56px;
+}
+.userLogged_img img {
+	inline-size: 100%;
+	block-size: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+.userLogged_fullName {
+	color: var(--white);
+	font: var(--link-header);
+}

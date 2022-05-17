@@ -1,20 +1,13 @@
-//Importaciones nativas
 const express = require('express');
-const { resolve } = require('path');
 const router = express.Router();
 
-//Importaciones
-const CONTROLLER_PATH = resolve('src/controllers/product.controller');
-const productController = require(CONTROLLER_PATH);
+const productController = require('../controllers/product.controller');
 
-//Middlewares
-const validatorMiddleware = require('../middlewares/validatorMiddleware');
-const fileMiddleware = require('../middlewares/fileMiddleware');
+const validateCreateProductFormMiddleware = require('../middlewares/validateCreateProductForm.middleware');
+const productImageMiddleware = require('../middlewares/productImage.middleware');
 
-//Instancias de los middlewares
-const validateCreateProduct = validatorMiddleware.createProduct();
-const upload = fileMiddleware.addFile();
-
+const validateCreateProduct = validateCreateProductFormMiddleware.createProduct();
+const upload = productImageMiddleware.addFile();
 
 router.get('/', productController.allProducts);
 router.post('/insert', upload.single('image'), validateCreateProduct, productController.insertProduct);
@@ -23,7 +16,7 @@ router.put('/editProduct/:id', upload.single('imageEdit'), validateCreateProduct
 router.delete('/deleteProduct/:id', productController.deleteProduct);
 router.get('/createProduct', productController.loadProduct);
 router.get('/searchProduct', productController.searchProduct);
-router.get('/adminProductBy', productController.searchProducstBy);
+router.get('/adminProductBy', productController.searchProductsBy);
 // router.get('/adminProductMain', productController.loadMainAdminProduct);
 router.get('/editProduct/:id', productController.loadEditProduct);
 

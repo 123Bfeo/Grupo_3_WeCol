@@ -9,7 +9,7 @@ const adminRoutes = require('./src/routes/admin.routes');
 const userRoutes = require('./src/routes/users.routes');
 const factureRoutes = require('./src/routes/facture.routes');
 const productRoutes = require('./src/routes/products.routes');
-const userLoggedMiddleware = require('./src/middlewares/userLoggedMiddleware');
+const userLoggedMiddleware = require('./src/middlewares/userLogged.middleware');
 
 const app = express();
 

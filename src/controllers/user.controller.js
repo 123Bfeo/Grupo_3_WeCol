@@ -1,6 +1,7 @@
 const { validationResult } = require('express-validator');
+const { hashSync, compareSync } = require('bcryptjs');
+
 const userModel = require('../models/user.model');
-const bcryptjs = require('bcryptjs');
 
 const userController = {
   register: (req, res) => {
@@ -15,7 +16,6 @@ const userController = {
         oldData: req.body
       })
     }
-
     const userInBD = userModel.searchNaturalUserEmail(req.body.email);
     if (userInBD) {
       return res.render('./register', {
@@ -27,18 +27,14 @@ const userController = {
         oldData: req.body
       })
     }
-
     const userToCreate = {
       ...req.body,
-      password: bcryptjs.hashSync(req.body.password, 10),
+      password: hashSync(req.body.password, 10),
       avatar: req.file.filename
-    }
+    };
     userModel.createNaturalUsers(userToCreate);
     res.redirect('/login');
   },
-
-  //---------------------------//
-
   login: (req, res) => {
     const error = false;
     const title = 'Iniciar Sesión';
@@ -53,9 +49,9 @@ const userController = {
       })
     }
     const userToLogin = userModel.searchNaturalUserEmail(req.body.email);
-
+    
     if (userToLogin) {
-      const comparePasswordUser = bcryptjs.compareSync(req.body.password, userToLogin.password);
+      const comparePasswordUser = compareSync(req.body.password, userToLogin.password);
       if (comparePasswordUser) {
         req.session.userLogged = userToLogin
         return res.redirect("/admin");
@@ -79,7 +75,6 @@ const userController = {
     //res.cookie('isAdmin', true, { maxAge: 120000 });
     //res.send(adminUsers);
   },
-  
   logout: (req, res) => {
     req.session.destroy();
     res.redirect('/');

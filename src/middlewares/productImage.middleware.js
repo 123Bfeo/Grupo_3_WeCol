@@ -1,7 +1,7 @@
-const { resolve, extname }= require('path');
+const { resolve, extname } = require('path');
 const multer = require('multer');
 
-const fileMiddleware = {
+const productImageMiddleware = {
 	addFile: ()=>{
 		const storage = multer.diskStorage({
 			destination:(req,file,cb)=>{
@@ -26,5 +26,4 @@ const fileMiddleware = {
 	}
 };
 
-module.exports = fileMiddleware;
-
+module.exports = productImageMiddleware;

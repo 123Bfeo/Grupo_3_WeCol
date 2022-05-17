@@ -1,5 +1,5 @@
 @import './headerNav.css';
-@import '../userLoggedMiddleware.css';
+@import '../userLogged.css';
 
 .header {
 	background: var(--bg-dark);
