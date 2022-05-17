@@ -1,11 +1,6 @@
 # Grupo_3_WeCol
 
-_Link Sprint1:_ https://trello.com/invite/b/yI2ayq40/4d43a6fc2c1dbe2d7586c877d8f35118/sprint1 \
-_link Sprint2:_ https://trello.com/invite/b/VcmHEOr9/70362851b7e87ec9830c66571c7c2b4d/sprint2 \
-_link Sprint3:_ https://trello.com/invite/b/e9IXFazf/73336b34f1dd3e97559276fe33f90384/sprint3 \
-_link Sprint4:_ https://trello.com/invite/b/3apzS0Gm/37cc6e23917d5614830345c16f5829ca/sprint-4 \
-_Link Sprint5:_ https://trello.com/invite/b/VvoPYkbK/5f55089004f63e6f99841dadb2f99896/sprint-5 \
-_Link Sprint6_ https://trello.com/invite/b/azKxooly/04b30d9717f13c5c80dabc897ff9f578/sprint-6 \
+_Link Tablero Proyecto Integrador:_ https://trello.com/grupo_3_wecolservice \
 _Link Figma:_ https://www.figma.com/file/8Ys6LGI5Kl3sqP7J0lMNBA/WeCol?node-id=0%3A1
 
 ### Descripción de la oferta de productos
