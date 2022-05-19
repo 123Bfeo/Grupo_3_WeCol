@@ -1,66 +1,46 @@
-/*.headerNav {
-	position: absolute;
-	background-color: var(--bg-dark);
-	right: 0;
-	top: 100px;
-	inline-size: 0;
-	block-size: 100vh;
-	padding-inline-start: 32px;
-	overflow-x: hidden;
-	opacity: 0;
-	border-top: 1px solid #fff;
-	border-left: 1px solid #fff;
-	transition: opacity 0.25s ease-in-out, inline-size 0.25s, right 0s 0.25s;
-}*/
-.headerNav .menuItems {
+.menuItems {
 	display: flex;
-	justify-content: center;
-	gap: 24px;
+	gap: 32px;
 }
-nav a {
+.menuItems a {
 	color: var(--white);
 }
-.active {
-	inline-size: 80%;
-	transition: opacity 0.25s ease-out, inline-size 0.25s;
-	opacity: 1;
-}
-.submenuItem {
-	cursor: pointer;
-}
 .submenuToggle {
-	display: flex;
-	flex-direction: column;
-	border: 1px solid red;
-	inline-size: 150px;
 	position: relative;
 }
-.submenuItem:hover {
-	background:#5b78a7;
+.submenuItem {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	cursor: pointer;
+}
+.submenuItem i {
+	color: var(--white);
 }
 .submenu {
 	display: none;
-	margin-block-start: 30px;
-	inline-size: 100%;
-	flex-direction: column;
-	background: var(--bg-dark);
-}
-.submenuContainer{
-	border: 1px solid red;
-}
-.headerNav ul .submenuToggle:hover > .submenu {
-	display: flex;
 	position: absolute;
+	left: 0;
+	top: 40px;
+	background: var(--bg-dark);
+	flex-direction: column;
+	gap: 8px;
+	inline-size: 150px;
+	padding-block: 8px;
 }
-@media screen and (min-width: 580px) {
-	.headerNav {
-		position: initial;
-		inline-size: 100%;
-		block-size: 100%;
-		/* opacity: 1; */
-		border-top: none;
-		border-left: none;
-		padding-inline-start: 0;
-	}
-	
+.submenu li {
+	padding: 4px 24px;
+	cursor: pointer;
+}
+.submenu li:hover {
+	background: var(--secondary);
+}
+.show {
+	display: flex;
+}
+#submenuItem_icon {
+	transition: transform .3s;
+}
+.rotate {
+	transform: rotate(90deg);
 }

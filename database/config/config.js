@@ -1,7 +1,7 @@
 module.exports = {
   'development': {
     'username': 'root',
-    'password': 'p*bvFMwUy*aR',
+    'password': 'QbvFMwUyxaRSabWH%$v6x7Z',
     'database': 'wecol_db',
     'host': '127.0.0.1',
     'dialect': 'mysql'

@@ -63,13 +63,15 @@
 :root {
   /* Colores */
   --bg-dark2: #323945;
-  --bg-dark: radial-gradient(circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgb(10, 7, 35) 97.5%);
-  --white: #fff;
-  --secondary: rgb(231, 138, 0);
+  /* --bg-dark: radial-gradient(circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgb(10, 7, 35) 97.5%); */
+  --bg-dark: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #080C24;;
+  --white: #FFF;
+  --icon-color: var(--white);
+  /* --secondary: rgb(231, 138, 0); */
+  --secondary: conic-gradient(from 103.1deg at 50% 50%, #E97DD8 -50.2deg, #3A1C71 121.03deg, #E97DD8 309.8deg, #3A1C71 481.03deg);
   --placeholder: rgba(231, 138, 0, 0.3);
   --text-gray: rgb(91, 91, 91);
   --text-gray-opacity: rgba(91, 91, 91, 0.5);
-  --stars-color: #ffd687;
   --gray2: #383838;
   --blue-admin-i: #0832de;
 
@@ -94,6 +96,7 @@
 }
 body {
   background: var(--bg-dark);
+  background: #6D9;
 }
 .titulo {
   font: var(--tituloH1Small);

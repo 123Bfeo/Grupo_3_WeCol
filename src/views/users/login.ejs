@@ -2,28 +2,25 @@
   <body>
     <%- include('../components/header/Header') %>
     <main class="main-login wrapper">
-      <picture>
-        <img src="/img/mouse2.png" alt="Mouse" title="Mouse" />
-      </picture>
       <form action="/login" method="POST" class="form gap32">
         <article class="form-content gap32">
           <label for="" class="form-label10">
-            <input type="text" name="email" placeholder="Usuario o correo electrónico" value="<%=locals.old && locals.old.email ? old.email : ''%>"/>
+            <input type="text" name="email" placeholder="Usuario o correo electrónico" value="<%= locals.old && locals.old.email ? old.email : '' %>"/>
             <i class="fas fa-user"></i>
           </label>
           <% if(locals.errors && errors.email) { %> 
             <div>
-              <p style="color: brown;"><%=errors.email.msg%> </p>
+              <p style="color: brown;"><%= errors.email.msg %> </p>
             </div>
           <% } %> 
 
           <label for="" class="form-label10">
-            <input type="password" name="password" placeholder="Contraseña" value="<%=locals.old && locals.old.password ? old.password : ''%>"/>
+            <input type="password" name="password" placeholder="Contraseña" value="<%= locals.old && locals.old.password ? old.password : '' %>"/>
             <i class="fas fa-lock"></i>
           </label>
           <% if(locals.errors && errors.password) { %> 
             <div>
-              <p style="color: brown;"><%=errors.password.msg%> </p>
+              <p style="color: brown;"><%= errors.password.msg %> </p>
             </div>
           <% } %> 
         </article>
@@ -40,4 +37,3 @@
     </main>
     <%- include('../partials/Footer') %>
   </body>
-</html>
