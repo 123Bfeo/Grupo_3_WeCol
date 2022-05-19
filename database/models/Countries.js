@@ -1,5 +1,5 @@
 module.exports = function (sequelize, dataTypes) {
-    let alias = "Role";
+    let alias = "Countrie";
 
     let cols = {
         id: {
@@ -13,19 +13,18 @@ module.exports = function (sequelize, dataTypes) {
     };
 
     let config = {
-        tableName: "roles",
+        tableName: "countries",
         timestamps: false,
     };
 
-    let Role = sequelize.define(alias, cols, config);
-    Role.associate = function (models) {
-        Role.belongsToMany(models.User, {
-            as: "roleUsers",
-            through: "users_roles",
-            foreingnkey: "users_id",
-            otherkey: "roles_id",
+    let Countrie = sequelize.define(alias, cols, config);
+    Countrie.associate = function (models) {
+        Countrie.hasMany(models.User, {
+            as: "contrieUser",
+            foreingnkey: "countries_id",
             timestamps: false
         })
     }
-    return Role;
+
+    return Countrie
 }

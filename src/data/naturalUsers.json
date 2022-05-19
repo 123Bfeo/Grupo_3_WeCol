@@ -1,78 +1,9 @@
 [
- {
-  "id": 1,
-  "name": "Luis",
-  "lastname": "nuñez",
-  "email": "luis@gmail.com",
-  "password": "$2a$10$zY4j7MsehNd7X4tKVV..XeGG57YnKm4Rw/UK41MRCp.Z9c0Mlkvoa"
- },
- {
-  "id": 2,
-  "name": "jose",
-  "lastname": "nuñez",
-  "email": "jo@gmail.com",
-  "password": "$2a$10$1TCSWdqAnHjuy6WPeaDyrO.1erCQUJdtpllV/qMGnI0JCJmsAbLgi",
-  "avatar": "1651331263523.jpg"
- },
- {
-  "id": 3,
-  "name": "Maelo",
-  "lastname": "Ruiz",
-  "email": "Mae@gmail.com",
-  "password": "$2a$10$jqLNYjcEJuhkZMBV0KB15uhhJe54T4R9Zqvo0xyXhVREmiamUcYtm",
-  "avatar": "1651351011379.jpg"
- },
- {
-  "id": 4,
-  "name": "daniel",
-  "lastname": "rocha",
-  "email": "dani@gmail.com",
-  "password": "$2a$10$/Bo68btqVQZDRZNUCOOu.udVhwCgjZmqzl6BqjuFi579I/1Qn0Z5q",
-  "avatar": "1651352973629.jpg"
- },
- {
-  "id": 5,
-  "name": "Sergio",
-  "lastname": "González Sánchez",
-  "username": "SoyChechoGonzalez",
-  "email": "soysergiogonzalez@outlook.es",
-  "password": "$2a$10$BH0C./XSFGzc70s2xxpmq.lDBoRvCTtOoGm.j50CTb1n2WRQ1eETC",
-  "avatar": "luis.jpg"
- },
- {
-  "id": 6,
-  "name": "liliana",
-  "lastname": "martinez",
-  "username": "",
-  "email": "ll@gmail.com",
-  "password": "$2a$10$tp4NYDap56i01AueHNzsH.hTZYXVavxRU5LwL261IJ5m2TAuJwVoi",
-  "avatar": "1651421197973.jpg"
- },
- {
-  "id": 7,
-  "name": "yuliana",
-  "lastname": "marrueco",
-  "username": "",
-  "email": "yu@gmail.com",
-  "password": "$2a$10$qQsy77zB4LoXMp.pYE3sGeQyAg2HIgQTTGBGnGgpbt.GyCXa/2pai",
-  "avatar": "1651887303144.jpg"
- },
- {
-  "id": 8,
-  "name": "Sergio",
-  "lastname": "Martinez",
-  "username": "",
-  "email": "martin@outlook.es",
-  "password": "$2a$10$8.FHhZuDmYdfJfE2QOFTrezMrnw..1RZIkUtGr7hDf5iYeomCg2um",
-  "avatar": "1652131220616.png"
- },
- {
-  "id": 9,
-  "name": "Jennifer ",
-  "lastname": "Pérez Romero",
-  "username": "",
-  "email": "Jealpero.21@gmail.com",
-  "password": "$2a$10$joEvB/NLiuFH3ZpeSpEkcuql0bQdxunKnYbJj7btyMcClalvEABOi",
-  "avatar": "1652804880042.png"
- }
+  {
+    "id": 1,
+    "name": "Luis",
+    "lastname": "nuñez",
+    "email": "luis@gmail.com",
+    "password": "$2a$10$zY4j7MsehNd7X4tKVV..XeGG57YnKm4Rw/UK41MRCp.Z9c0Mlkvoa"
+  }
 ]

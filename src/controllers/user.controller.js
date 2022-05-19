@@ -8,6 +8,7 @@ const userController = {
     const title = 'Registrar Usuario';
     res.render('./users/register', { title });
   },
+
   processRegister: (req, res) => {
     const resultValidation = validationResult(req);
     if (resultValidation.errors.length > 0) {
@@ -16,9 +17,10 @@ const userController = {
         oldData: req.body
       })
     }
-    const userInBD = userModel.searchNaturalUserEmail(req.body.email);
+    let userInBD = userModel.searchNaturalUserEmail(req.body.email);
+
     if (userInBD) {
-      return res.render('./register', {
+      return res.render('./users/register', {
         errors: {
           email: {
             msg: 'este correo ya esta registrado'
@@ -27,19 +29,24 @@ const userController = {
         oldData: req.body
       })
     }
-    const userToCreate = {
+
+    let userToCreate = {
       ...req.body,
-      password: hashSync(req.body.password, 10),
+      password: bcryptjs.hashSync(req.body.password, 10),
       avatar: req.file.filename
-    };
+    }
     userModel.createNaturalUsers(userToCreate);
-    res.redirect('/login');
+    res.redirect('/user/login');
+
   },
+
+
   login: (req, res) => {
     const error = false;
     const title = 'Iniciar Sesión';
     res.render('./users/login', { error, title });
   },
+
   loginUser: (req, res) => {
     const resultValidation = validationResult(req);
     if (resultValidation.errors.length > 0) {
@@ -48,13 +55,14 @@ const userController = {
         oldData: req.body
       })
     }
-    const userToLogin = userModel.searchNaturalUserEmail(req.body.email);
+
+    let userToLogin = userModel.searchNaturalUserEmail(req.body.email);
 
     if (userToLogin) {
-      const comparePasswordUser = compareSync(req.body.password, userToLogin.password);
-      if (comparePasswordUser) {
+      let comaparaPasswordUser = bcryptjs.compareSync(req.body.password, userToLogin.password);
+      if (comaparaPasswordUser) {
         req.session.userLogged = userToLogin
-        return res.redirect("/admin");
+        return res.redirect("/product/adminProductMain");
       }
       return res.render('./users/login', {
         errors: {
@@ -67,20 +75,18 @@ const userController = {
     return res.render('./users/login', {
       errors: {
         email: {
-          msg: 'no se encontró el correo registrado'
+          msg: 'no se encontro el correo registrado'
         }
       }
     })
-    //res.cookie('Nuevo Usuario', req.body.email, { maxAge: 120000 });
-    //res.cookie('isAdmin', true, { maxAge: 120000 });
-    //res.send(adminUsers);
+
   },
+
   logout: (req, res) => {
     req.session.destroy();
     res.redirect('/');
   }
 }
-
 module.exports = userController;
 
 

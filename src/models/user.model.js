@@ -3,18 +3,12 @@ const { resolve } = require('path');
 
 
 const userModel = {
-	getAdminUsers: () => {
-		const fileName = resolve('src/data/adminUsers.json')
-		const readFile = readFileSync(fileName);
-		return JSON.stringify(readFile);
-	},
-	
 	fileName: './src/data/naturalUsers.json',
-	
+
 	getNaturalUser: function () {
 		return JSON.parse(readFileSync(this.fileName, "utf-8"));
 	},
-	
+
 	generateId: function () {
 		const allNaturalUsers = this.listNaturalUsers();
 		const lastIdUser = allNaturalUsers.pop();
@@ -23,11 +17,11 @@ const userModel = {
 		}
 		return 1;
 	},
-	
+
 	listNaturalUsers: function () {
 		return this.getNaturalUser();
 	},
-	
+
 	createNaturalUsers: function (dataNaturalUser) {
 		const allNaturalUsers = this.listNaturalUsers();
 		const newNaturalUser = {
@@ -38,24 +32,24 @@ const userModel = {
 		writeFileSync(this.fileName, JSON.stringify(allNaturalUsers, null, ' '));
 		return true;
 	},
-	
+
 	searchNaturalUserId: function (id) {
 		const allNaturalUsers = this.listNaturalUsers();
 		return allNaturalUsers.find(user => user.id === id);
 	},
-	
+
 	searchNaturalUserEmail: function (text, field = "email") {
 		const allNaturalUsers = this.listNaturalUsers();
 		return allNaturalUsers.find(user => user[field] === text);
 	},
-	
+
 	deleteNaturalUsers: function (id) {
 		const allNaturalUsers = this.listNaturalUsers();
 		const deleteUser = allNaturalUsers.filter(user => user.id !== id);
 		writeFileSync(this.fileName(), JSON.stringify(deleteUser, null, ' '));
 		return "User Delete";
 	}
-	
+
 }
 module.exports = userModel;
 
