@@ -1,18 +1,23 @@
     <form action="/login" method="POST" class="form">
-        <article class="form-content border">
-            <label for="" class="form-label10">
-                <input type="text" name="email" placeholder="Usuario o correo electrónico" value="<%= locals.old && locals.old.email ? old.email : '' %>"/>
-                <i class="fas fa-user"></i>
+        <article class="form-content loginForm">
+            <label for="" class="form-label">
+                <span class='formTitleLabel'>
+                    <i class="fas fa-user"></i>
+                    <span>Nombres</span>
+                </span>
+                <input type="text" name="email" placeholder="" value="<%= locals.old && locals.old.email ? old.email : '' %>"/>
             </label>
             <% if(locals.errors && errors.email) { %>
                 <div>
                     <p style="color: brown;"><%= errors.email.msg %> </p>
                 </div>
             <% } %>
-
-            <label for="" class="form-label10">
-                <input type="password" name="password" placeholder="Contraseña" value="<%= locals.old && locals.old.password ? old.password : '' %>"/>
-                <i class="fas fa-lock"></i>
+            <label for="" class="form-label">
+                <span class='formTitleLabel'>
+                    <i class="fas fa-lock"></i>
+                    <span>Contraseña</span>
+                </span>
+                <input type="password" name="password" placeholder="" value="<%= locals.old && locals.old.password ? old.password : '' %>"/>
             </label>
             <% if(locals.errors && errors.password) { %>
                 <div>

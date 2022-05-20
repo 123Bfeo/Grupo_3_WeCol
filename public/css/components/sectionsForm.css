@@ -10,18 +10,13 @@
 }
 .sections-form a {
 	color: var(--white);
-	position: relative;
 }
-.sections-form a::after {
-	content: '';
-	position: absolute;
+
+.active {
 	bottom: 0;
-	left: 0;
-	inline-size: 100%;
 	block-size: 4px;
-	background-color: var(--secondary);
-	opacity: 0;
-	transition: opacity 300ms, transform 300ms;
+	background: var(--secondary);
+	transition: none;
 }
 .sections-form a:hover::after,
 .sections-form a:focus::after {
