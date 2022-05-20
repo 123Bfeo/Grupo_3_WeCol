@@ -93,10 +93,12 @@
 
   /* Botones */
   --btn-small: bold 12px/16px var(--primaryFont);
+  
+  /* Input */
+  --inputText: 16px/24px var(--secondFont);
 }
 body {
   background: var(--bg-dark);
-  background: #6D9;
 }
 .titulo {
   font: var(--tituloH1Small);
@@ -153,7 +155,6 @@ body {
 .rate .starRate {
   display: flex;
   align-items: center;
-  color: var(--stars-color);
 }
 .span1 {
   font: var(--span1);
