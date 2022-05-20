@@ -1,13 +1,13 @@
-module.exports = (sequelize, datatypes) => {
+module.exports = (sequelize, dataTypes) => {
 	const alias = 'Brand';
 	const cols = {
 		id: {
-			type: datatypes.INTEGER,
+			type: dataTypes.INTEGER,
 			primaryKey: true,
 			autoIncrement: true
 		},
 		name: {
-			type: datatypes.STRING,
+			type: dataTypes.STRING,
 			notNull: true,
 		}
 	};
@@ -20,9 +20,8 @@ module.exports = (sequelize, datatypes) => {
 	Brand.associate = function (models) {
 		Brand.hasMany(models.Product, {
 			as: "brandProduct",
-			foreingnkey: "brands_id"
+			foreignKey: "brands_id"
 		})
 	}
-
 	return Brand;
 };
