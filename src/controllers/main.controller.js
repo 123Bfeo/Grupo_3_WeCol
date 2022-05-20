@@ -1,10 +1,13 @@
 const productModel = require('../models/product.model');
+const db = require('../../database/models');
 
 const mainController = {
   index: (req, res) => {
     const products = productModel.read();
     const title = 'Home';
-    res.render('index', { products, title });
+    db.Category.findAll().then(function (category) {
+      res.render('index', { title, category, products });
+    })
   },
   aboutUs: (req, res) => {
     const title = 'Detalle de producto';
@@ -30,3 +33,6 @@ const mainController = {
 };
 
 module.exports = mainController;
+
+
+

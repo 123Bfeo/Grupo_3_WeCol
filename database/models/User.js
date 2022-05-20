@@ -48,22 +48,22 @@ module.exports = function (sequelize, dataTypes) {
             foreignKey: "roles_id",
             otherKey: "users_id",
             timestamps: false
-        })
-        User.hasMany(models.opinions, {
+        });
+        User.hasMany(models.Opinion, {
             as: "userOpinions",
             foreignKey: "users_id3",
             timestamps: false
-        })
-        User.belongsTo(models.Countrie, {
+        });
+        User.belongsTo(models.Country, {
             as: "userCountry",
             foreignKey: "countries_id",
             timestamps: false
-        })
-        User.belongsTo(models.Shoppingcart, {
+        });
+        User.belongsTo(models.ShoppingCart, {
             as: "userShoppingCart",
             foreignKey: "users_id2",
             timestamps: false
-        })
+        });
 
     }
     return User;

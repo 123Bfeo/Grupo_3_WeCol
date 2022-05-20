@@ -32,11 +32,11 @@ const userController = {
 
     const userToCreate = {
       ...req.body,
-      password: hashSync(req.body.password, 10),
+      password: bcrypt.hashSync(req.body.password, 10),
       avatar: req.file.filename
     }
     userModel.createNaturalUsers(userToCreate);
-    res.redirect('/user/login');
+    res.redirect('/login');
 
   },
 
@@ -58,7 +58,7 @@ const userController = {
     const userToLogin = userModel.searchNaturalUserEmail(req.body.email);
 
     if (userToLogin) {
-      const comparePasswordUser = compareSync(req.body.password, userToLogin.password);
+      const comparePasswordUser = bcrypt.compareSync(req.body.password, userToLogin.password);
       if (comparePasswordUser) {
         req.session.userLogged = userToLogin
         return res.redirect("/admin");

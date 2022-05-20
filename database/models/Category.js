@@ -10,12 +10,12 @@ module.exports = function (sequelize, dataTypes) {
 			type: dataTypes.STRING,
 		}
 	};
-	
+
 	const config = {
 		tableName: "categories",
 		timestamps: false,
 	};
-	
+
 	const Category = sequelize.define(alias, cols, config);
 	Category.associate = function (models) {
 		Category.hasMany(models.Product, {
@@ -25,3 +25,5 @@ module.exports = function (sequelize, dataTypes) {
 	}
 	return Category;
 }
+
+
