@@ -5,5 +5,14 @@
     "lastname": "nuñez",
     "email": "luis@gmail.com",
     "password": "$2a$10$zY4j7MsehNd7X4tKVV..XeGG57YnKm4Rw/UK41MRCp.Z9c0Mlkvoa"
+  },
+  {
+    "id": 2,
+    "name": "liliana",
+    "lastname": "martinez",
+    "username": "",
+    "email": "ll@gmail.com",
+    "password": "$2a$10$brKIwZnCY671pg2jG8q1auobOqdVyZl5OHyJRQ7t87RqZKvTKyc4m",
+    "avatar": "1653061768395.jpg"
   }
 ]

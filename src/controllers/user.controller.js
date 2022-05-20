@@ -1,5 +1,5 @@
 const { validationResult } = require('express-validator');
-const { hashSync, compareSync } = require('bcryptjs');
+const bcrypt = require('bcryptjs');
 
 const userModel = require('../models/user.model');
 
@@ -17,6 +17,7 @@ const userController = {
         oldData: req.body
       })
     }
+
     let userInBD = userModel.searchNaturalUserEmail(req.body.email);
 
     if (userInBD) {
@@ -32,11 +33,11 @@ const userController = {
 
     let userToCreate = {
       ...req.body,
-      password: bcryptjs.hashSync(req.body.password, 10),
+      password: bcrypt.hashSync(req.body.password, 10),
       avatar: req.file.filename
     }
     userModel.createNaturalUsers(userToCreate);
-    res.redirect('/user/login');
+    res.redirect('/login');
 
   },
 
@@ -59,7 +60,7 @@ const userController = {
     let userToLogin = userModel.searchNaturalUserEmail(req.body.email);
 
     if (userToLogin) {
-      let comaparaPasswordUser = bcryptjs.compareSync(req.body.password, userToLogin.password);
+      let comaparaPasswordUser = bcrypt.compareSync(req.body.password, userToLogin.password);
       if (comaparaPasswordUser) {
         req.session.userLogged = userToLogin
         return res.redirect("/product/adminProductMain");
