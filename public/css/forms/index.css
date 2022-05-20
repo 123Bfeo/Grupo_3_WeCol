@@ -1,1 +1,2 @@
-@import './registerForm_container.css';
+@import '../components/colorErrorMessage.css';
+@import './form_container.css';

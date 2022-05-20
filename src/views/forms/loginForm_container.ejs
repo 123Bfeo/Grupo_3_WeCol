@@ -1,0 +1,32 @@
+    <form action="/login" method="POST" class="form">
+        <article class="form-content border">
+            <label for="" class="form-label10">
+                <input type="text" name="email" placeholder="Usuario o correo electrónico" value="<%= locals.old && locals.old.email ? old.email : '' %>"/>
+                <i class="fas fa-user"></i>
+            </label>
+            <% if(locals.errors && errors.email) { %>
+                <div>
+                    <p style="color: brown;"><%= errors.email.msg %> </p>
+                </div>
+            <% } %>
+
+            <label for="" class="form-label10">
+                <input type="password" name="password" placeholder="Contraseña" value="<%= locals.old && locals.old.password ? old.password : '' %>"/>
+                <i class="fas fa-lock"></i>
+            </label>
+            <% if(locals.errors && errors.password) { %>
+                <div>
+                    <p style="color: brown;"><%= errors.password.msg %> </p>
+                </div>
+            <% } %>
+        </article>
+        <label for="rememberUser" id="rememberUser">Recordar usuario</label>
+        <input type="checkbox" name="rememberUser" id='rememberUser'/>
+        <article class="btnContainer">
+            <input type="submit" class="btn btnFirst" value="Iniciar Sesión" >
+            <a href="/register" class="btn btnSecond"> Registrarse </a>
+        </article>
+        <span class="footForm"
+        >¿ Olvidaste tu contraseña ? <a href="/forgotPassword">Recuperala</a>
+        </span>
+    </form>
