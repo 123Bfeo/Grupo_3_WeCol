@@ -1,23 +1,5 @@
-@import '../components/colorErrorMessage.css';
-:root{
-	--placeholderText: bold 16px/24px var(--secondFont);
-	--icons: rgba(231, 138, 0, 0.7);
-}
-.registerForm_container {
-	inline-size: 100%;
-}
-.form {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-.form-content {
-	display: flex;
-	justify-content: space-between;
-	gap: 24px;
-	inline-size: 100%;
-}
+
+
 .formSide{
 	inline-size: 100%;
 	display: flex;

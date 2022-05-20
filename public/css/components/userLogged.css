@@ -4,8 +4,8 @@
   gap: 12px;
 }
 .userLogged_img {
-  width: 56px;
-  height: 56px;
+  width: 48px;
+  height: 48px;
 }
 .userLogged_img img {
   width: 100%;
@@ -18,31 +18,35 @@
 }
 #profileOptions {
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 .userLogged_fullName span {
   font: var(--link-header);
   color: var(--white);
 }
-.userLogged_fullName i {
-  color: var(--secondary);
-}
+
 .profileDetails {
   background: var(--bg-dark);
   margin-top: 8px;
   display: none;
   flex-direction: column;
   width: 156px;
-  padding: 8px;
   position: absolute;
+  top: 32px;
   right: 0;
+  padding-block: 8px;
+}
+.profileDetails li {
+  padding: 8px 24px;
+  cursor: pointer;
 }
 .profileDetails a {
-  color: black;
-  padding: 4px 8px;
   color: var(--white);
 }
-.profileDetails a:hover {
-  background-color: var(--secondary);
+.profileDetails li:hover {
+  background: var(--secondary);
 }
 .profileDetails_show {
   display: flex;

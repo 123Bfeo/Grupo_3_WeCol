@@ -1,7 +1,6 @@
 module.exports = function (sequelize, dataTypes) {
-    let alias = "User";
-
-    let cols = {
+    const alias = "User";
+    const cols = {
         id: {
             type: dataTypes.INTEGER,
             primaryKey: true,
@@ -36,33 +35,33 @@ module.exports = function (sequelize, dataTypes) {
         }
     };
 
-    let config = {
+    const config = {
         tableName: "users",
         timestamps: false,
     };
 
-    let User = sequelize.define(alias, cols, config);
+    const User = sequelize.define(alias, cols, config);
     User.associate = function (models) {
         User.belongsToMany(models.Role, {
             as: "userRole",
             through: "users_roles",
-            foreingnkey: "roles_id",
-            otherkey: "users_id",
+            foreignKey: "roles_id",
+            otherKey: "users_id",
             timestamps: false
         })
         User.hasMany(models.opinions, {
             as: "userOpinions",
-            foreingnkey: "users_id3",
+            foreignKey: "users_id3",
             timestamps: false
         })
         User.belongsTo(models.Countrie, {
-            as: "userContrie",
-            foreingnkey: "countries_id",
+            as: "userCountry",
+            foreignKey: "countries_id",
             timestamps: false
         })
         User.belongsTo(models.Shoppingcart, {
-            as: "userShoppingcart",
-            foreingnkey: "users_id2",
+            as: "userShoppingCart",
+            foreignKey: "users_id2",
             timestamps: false
         })
 

@@ -11,7 +11,7 @@
 .submenuItem {
 	display: flex;
 	align-items: center;
-	gap: 4px;
+	gap: 8px;
 	cursor: pointer;
 }
 .submenuItem i {
@@ -29,7 +29,7 @@
 	padding-block: 8px;
 }
 .submenu li {
-	padding: 4px 24px;
+	padding: 8px 24px;
 	cursor: pointer;
 }
 .submenu li:hover {

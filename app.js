@@ -41,6 +41,7 @@ app.use('/facture', factureRoutes);
 
 
 const PORT = 3000;
+const hostname = 'localhost';
 app.listen(process.env.PORT || PORT, () => {
-	console.log(`Servidor corriendo en el puerto ${ PORT }`);
+	console.log(`Servidor corriendo en http://${hostname}:${PORT}`);
 });

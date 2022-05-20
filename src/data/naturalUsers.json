@@ -1,4 +1,5 @@
 [
+<<<<<<< HEAD
   {
     "id": 1,
     "name": "Luis",
@@ -16,3 +17,22 @@
     "avatar": "1653061768395.jpg"
   }
 ]
+=======
+ {
+  "id": 1,
+  "name": "Luis",
+  "lastname": "nuñez",
+  "email": "luis@gmail.com",
+  "password": "$2a$10$zY4j7MsehNd7X4tKVV..XeGG57YnKm4Rw/UK41MRCp.Z9c0Mlkvoa"
+ },
+ {
+  "id": 2,
+  "name": "Sergio",
+  "lastname": "González Sánchez",
+  "username": "",
+  "email": "soysergiogonzalez@outlook.es",
+  "password": "$2a$10$JOYzsbsJkYfeGAiqLxV/HehSS2j3XCyjIQTuwczN2uTPZLf3nfFsW",
+  "avatar": "1653008337555.jpg"
+ }
+]
+>>>>>>> 1788058233a8f2744cb24c34c5006f455b4f6895
