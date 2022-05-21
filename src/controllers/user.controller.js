@@ -2,11 +2,14 @@ const { validationResult } = require('express-validator');
 const bcrypt = require('bcryptjs');
 
 const userModel = require('../models/user.model');
+const db = require('../../database/models');
 
 const userController = {
   register: (req, res) => {
     const title = 'Registrar Usuario';
-    res.render('./users/register', { title });
+    db.Category.findAll().then(function (category) {
+      res.render('./users/register', { title, category });
+    })
   },
 
   processRegister: (req, res) => {
@@ -43,7 +46,9 @@ const userController = {
   login: (req, res) => {
     const error = false;
     const title = 'Iniciar Sesión';
-    res.render('./users/login', { error, title });
+    db.Category.findAll().then(function (category) {
+    res.render('./users/login', { error, title, category });
+    })
   },
 
   loginUser: (req, res) => {

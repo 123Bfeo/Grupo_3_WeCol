@@ -58,13 +58,9 @@
 	color: var(--placeholder);
 	padding-inline: 4px;
 }
-/*.form-label input:focus {
+.form-label input:focus {
 	outline: 2px solid var(--placeholder);
 }
-.errorMessage {
-	inline-size: 100%;
-	text-align: right;
-}*/
 
 @media screen and (min-width: 768px) {
 	.form-content.registerForm {

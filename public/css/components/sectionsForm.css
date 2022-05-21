@@ -11,15 +11,7 @@
 .sections-form a {
 	color: var(--white);
 }
-
 .active {
-	bottom: 0;
 	block-size: 4px;
 	background: var(--secondary);
-	transition: none;
-}
-.sections-form a:hover::after,
-.sections-form a:focus::after {
-	opacity: 1;
-	transform: translate3d(0, 0.2em, 0);
 }
