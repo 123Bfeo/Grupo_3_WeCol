@@ -15,7 +15,7 @@ module.exports = function (sequelize, dataTypes) {
 		description: {
 			type: dataTypes.TEXT,
 		},
-		imagen: {
+		image: {
 			type: dataTypes.TEXT,
 		},
 		categories_id: {
@@ -25,12 +25,12 @@ module.exports = function (sequelize, dataTypes) {
 			type: dataTypes.INTEGER,
 		}
 	}
-	
+
 	const config = {
-		tableName: "Product",
+		tableName: "products",
 		timestamps: false,
 	};
-	
+
 	const Product = sequelize.define(alias, cols, config);
 	Product.associate = function (models) {
 		Product.belongsTo(models.Brand, {

@@ -21,3 +21,4 @@ router.get('/adminProductBy', productController.searchProductsBy);
 router.get('/editProduct/:id', productController.loadEditProduct);
 
 module.exports = router;
+

@@ -3,13 +3,29 @@ const db = require('../../database/models');
 
 const mainController = {
 
-  index: (req, res) => {
+  index: async (req, res) => {
+
     const products = productModel.read();
     const title = 'Home';
-    db.Category.findAll().then(function (category) {
-      res.render('index', { title, category, products });
+    /*let data = {
+      categorias: null,
+      productos: null
+    }
+
+    data.categorias = await db.Category.findAll()
+
+    data.productos = await db.Product.findAll()
+
+    console.log('=================================================================', data);
+    res.render('index', { data, products })*/
+    let reqCategory = db.Category.findAll();
+    let reqProduct = db.Product.findAll();
+
+    Promise.all([reqCategory, reqProduct]).then(function ([category, product]) {
+      res.render('index', { category, product, title, products })
     })
   },
+
   aboutUs: (req, res) => {
     const title = 'Detalle de producto';
     db.Category.findAll().then(function (category) {

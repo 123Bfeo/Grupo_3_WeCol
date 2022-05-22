@@ -2,8 +2,9 @@ const { validationResult } = require('express-validator');
 
 const productModel = require('../models/product.model');
 const { readCategoriesAndBrands } = require('../models/appdata.model');
+const db = require('../../database/models');
 
-const [ categories, brands ] = readCategoriesAndBrands();
+const [categories, brands] = readCategoriesAndBrands();
 
 const productController = {
   allProducts: (req, res) => {
@@ -20,11 +21,10 @@ const productController = {
     const arrayImg = findProduct.image;
     const arr = Object.values(arrayImg);
     const title = 'Detalle de producto';
-    res.render('./products/productDet', {
-      product: findProduct,
-      arrayImg: arr,
-      title,
-    });
+    db.Category.findAll().then(function (category) {
+      res.render('./products/productDet', { title, category, product: findProduct, arrayImg: arr });
+    })
+
   },
   adminProducts: (req, res) => {
     const title = 'administrador producto';
@@ -53,13 +53,13 @@ const productController = {
   editProduct: (req, res) => {
     const errors = validationResult(req);
     const err = errors.mapped();
-    
+
     if (req.body.category === '' || req.body.brand === '') {
       console.log("No hay categoría")
       const msg = 'Seleccione una categoría y una marca';
       err.select = { msg }
     }
-    
+
     if (Object.keys(err).length > 0) {
       const products = productModel.read();
       const product = products.find(prod => prod.id === req.params.id);
@@ -98,7 +98,7 @@ const productController = {
     const category = req.query.category;
     const brand = req.query.brand;
     const products = productModel.read();
-    
+
     if (category === '' && brand === '') {
       const errCB = "Seleccione una categoría o una marca"
       res.render('./admin/adminProductMain', { categories, brands, errCB, products })
