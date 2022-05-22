@@ -9,6 +9,8 @@ const productImageMiddleware = require('../middlewares/productImage.middleware')
 const validateCreateProduct = validateCreateProductFormMiddleware.createProduct();
 const upload = productImageMiddleware.addFile();
 
+
+
 router.get('/', productController.allProducts);
 router.post('/insert', upload.single('image'), validateCreateProduct, productController.insertProduct);
 router.get('/productDet/:id', productController.productDetail);
