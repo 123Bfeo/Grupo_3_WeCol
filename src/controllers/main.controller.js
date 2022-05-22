@@ -1,7 +1,7 @@
-const productModel = require('../models/product.model');
 const db = require('../../database/models');
 
 const mainController = {
+<<<<<<< HEAD
 
   index: async (req, res) => {
 
@@ -24,6 +24,17 @@ const mainController = {
     Promise.all([reqCategory, reqProduct]).then(function ([category, product]) {
       res.render('index', { category, product, title, products })
     })
+=======
+  index: (req, res) => {
+    const title = 'Home';
+    const reqCategory = db.Category.findAll();
+    const reqProduct = db.Product.findAll();
+  
+    Promise.all([reqCategory, reqProduct])
+      .then(([category, product]) => {
+        res.render('index', { title, category, product })
+      })
+>>>>>>> d94c57af963923b458f2c95a2bbe9d732b9ad648
   },
 
   aboutUs: (req, res) => {

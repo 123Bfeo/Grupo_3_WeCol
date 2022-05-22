@@ -49,21 +49,5 @@ const userModel = {
 		writeFileSync(this.fileName(), JSON.stringify(deleteUser, null, ' '));
 		return "User Delete";
 	}
-
 }
 module.exports = userModel;
-
-//console.log(userModel.searchNaturalUserEmail("luis@gmail.com"));
-//console.log(userModel.getNaturalUser())
-//console.log(userModel.listNaturalUsers());
-//console.log(userModel.searchNaturalUserId(3));
-//console.log(userModel.searchNaturalUserEmail("jo@gmail.com"));
-/*console.log(userModel.createNaturalUsers(
-
-{
-  name: "fernanda",
-  lastname: "perez",
-  email: "fer@gmail.com",
-  password: "fer123"
-}
-))*/

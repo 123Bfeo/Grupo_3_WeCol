@@ -1,19 +1,29 @@
 const { validationResult } = require('express-validator');
+<<<<<<< HEAD
 
 const productModel = require('../models/product.model');
 const { readCategoriesAndBrands } = require('../models/appdata.model');
 const db = require('../../database/models');
 
 const [categories, brands] = readCategoriesAndBrands();
+=======
+const db = require('../../database/models')
+>>>>>>> d94c57af963923b458f2c95a2bbe9d732b9ad648
 
 const productController = {
   allProducts: (req, res) => {
-    const title = 'Admin';
-    res.render("product", { title });
+    const title = 'Management';
+    const reqCategory = db.Category.findAll();
+    const reqProduct = db.Product.findAll();
+    
+    Promise.all([reqCategory, reqProduct])
+      .then(([category, product]) => {
+        res.render('index', { title, category, product })
+      })
   },
   loadProduct: (req, res) => {
     const title = 'Nuevo Producto';
-    res.render('./products/createProduct', { title, categories, brands })
+    res.render('./products/createProduct', { title })
   },
   productDetail: (req, res) => {
     const products = productModel.read();
@@ -42,7 +52,7 @@ const productController = {
       err.select = { msg }
     }
     if (Object.keys(err).length > 0) {
-      res.render('./products/createProduct', { errors: err, old: req.body, categories, brands });
+      res.render('./products/createProduct', { errors: err, old: req.body });
     } else {
       const reqBody = req.body;
       const reqFile = req.file;
@@ -63,7 +73,7 @@ const productController = {
     if (Object.keys(err).length > 0) {
       const products = productModel.read();
       const product = products.find(prod => prod.id === req.params.id);
-      res.render('./products/editProduct', { errors: err, old: req.body, categories, brands, product });
+      res.render('./products/editProduct', { errors: err, old: req.body, product });
     } else {
       const products = productModel.read();
       const id = req.params.id;
@@ -83,14 +93,14 @@ const productController = {
     const parameter = req.query.search.toLowerCase();
     if (parameter === '') {
       const err = "Digite valor válido";
-      res.render('./admin/adminProductMain', { categories, brands, err, products });
+      res.render('./admin/adminProductMain', { err, products });
     } else {
       const find = products.filter(prod => prod.name.toLowerCase().includes(parameter));
       if (find.length > 0) {
-        res.render('./admin/adminProductMain', { find, categories, brands })
+        res.render('./admin/adminProductMain', { find })
       } else {
         const noFind = "No se encontró ningún producto";
-        res.render('./admin/adminProductMain', { categories, brands, noFind })
+        res.render('./admin/adminProductMain', { noFind })
       }
     }
   },
@@ -101,22 +111,22 @@ const productController = {
 
     if (category === '' && brand === '') {
       const errCB = "Seleccione una categoría o una marca"
-      res.render('./admin/adminProductMain', { categories, brands, errCB, products })
+      res.render('./admin/adminProductMain', { errCB, products })
     } else if (category === '') {
       const productsByBrand = products.filter(prod => prod.brand === brand);
-      res.render('./admin/adminProductMain', { categories, brands, productsByBrand });
+      res.render('./admin/adminProductMain', { productsByBrand });
     } else if (brand === '') {
       const productsByCategory = products.filter(prod => prod.category === category);
-      res.render('./admin/adminProductMain', { categories, brands, productsByCategory });
+      res.render('./admin/adminProductMain', { productsByCategory });
     } else {
       const productsByCategoryAndBrand = products.filter(prod => prod.category === category && prod.brand === brand);
-      res.render('./admin/adminProductMain', { categories, brands, productsByCategoryAndBrand });
+      res.render('./admin/adminProductMain', { productsByCategoryAndBrand });
     }
   },
   loadEditProduct: (req, res) => {
     const products = productModel.read();
     const product = products.find(prod => prod.id === req.params.id);
-    res.render('./products/editProduct', { categories, brands, product: product });
+    res.render('./products/editProduct', { product: product });
   }
 };
 
