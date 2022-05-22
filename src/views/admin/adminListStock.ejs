@@ -2,9 +2,9 @@
     <%- include('../partials/btn_adminCreateProduct') %>
   <article class="adminListEdit">
       <% products.forEach(prod=>{ %>
-          <%- include('./adminCardProduct', { prod }) %>
-          <% const modDelete = 'modalDelete' + prod.id %>
-          <%- include('./adminDeleteProduct', { prod, modDelete })%>
+          <%# include('./adminCardProduct', { prod }) %>
+          <%# const modDelete = 'modalDelete' + prod.id %>
+          <%# include('./adminDeleteProduct', { prod, modDelete })%>
       <%})%>
   </article>
 </section>

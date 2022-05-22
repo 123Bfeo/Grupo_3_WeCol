@@ -1,17 +1,14 @@
-const productModel = require('../models/product.model');
-//const db = require('../../database/models')
-
-const { readCategoriesAndBrands } = require('../models/appdata.model');
-const [categories, brands] = readCategoriesAndBrands();
+const db = require('../../database/models')
 
 const adminController = {
 	adminController: (req, res) => {
-		const products = productModel.read();
 		const title = "Administrador de productos";
-		res.render('./admin/adminProductMain', { categories, brands, products, title });
+		const reqCategory = db.Category.findAll();
+		const reqProduct = db.Product.findAll();
+		Promise.all([reqCategory, reqProduct])
+			.then(([category, product]) => {
+				res.render('./admin/admin', { title, category, product })
+			})
 	}
 }
 module.exports = adminController;
-/*db.Category.findAll().then(function(category){
-			res.render('./admin/adminProductMain', {categories, brands, products, title, category:category});
-		}) */

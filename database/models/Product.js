@@ -15,7 +15,7 @@ module.exports = function (sequelize, dataTypes) {
 		description: {
 			type: dataTypes.TEXT,
 		},
-		imagen: {
+		image: {
 			type: dataTypes.TEXT,
 		},
 		categories_id: {
@@ -27,7 +27,7 @@ module.exports = function (sequelize, dataTypes) {
 	}
 	
 	const config = {
-		tableName: "Product",
+		tableName: "products",
 		timestamps: false,
 	};
 	

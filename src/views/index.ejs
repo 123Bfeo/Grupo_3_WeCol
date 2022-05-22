@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
-  <%- include('./partials/head') %>
+<%- include('./partials/head') %>
 
-  <body>
-    <%- include('./components/header/Header') %>
-    <!--<main class="main">
+<body>
+<%- include('./components/header/Header') %>
+<main class="main">
     <section class="hero">
         <div class="hero-content">
             <img src="/img/mouse-logitech.png" alt="Banner" title="Banner" />
@@ -38,122 +38,14 @@
             </article>
         </div>
     </section>
-    <section class="ofers wrapper">
-        <h2 class="subtituloH2 gray">Productos en Oferta</h2>
-        <article class="ofers-cards">
-            <div class="card-off">
-                <picture class="card-img">
-                    <img src="/img/earphone.png" alt="earphone" title="earphone" />
-                    <span>25% OFF</span>
-                </picture>
-                <div class="card-off-description">
-                    <span class="product-name">AirPods</span>
-                    <span class="product-price">
-                <div class="real-price">$2.650.000</div>
-                <i>-</i>
-                <div class="current-price">$1.897.500</div>
-              </span>
-                    <div class="available">
-                <span class="available-quantity">
-                  <p>Disponibles: 5</p>
-                  <p>Vendidos: 2</p>
-                </span>
-                        <button class="progress-quantity"></button>
-                    </div>
-                </div>
-            </div>
-            <div class="card-off">
-                <picture class="card-img">
-                    <img src="/img/earphone.png" alt="earphone" title="earphone" />
-                    <span>25% OFF</span>
-                </picture>
-                <div class="card-off-description">
-                    <span class="product-name">AirPods</span>
-                    <span class="product-price">
-                <div class="real-price">$2.650.000</div>
-                <i>-</i>
-                <div class="current-price">$1.897.500</div>
-              </span>
-                    <div class="available">
-                <span class="available-quantity">
-                  <p>Disponibles: 5</p>
-                  <p>Vendidos: 2</p>
-                </span>
-                        <button class="progress-quantity"></button>
-                    </div>
-                </div>
-            </div>
-            <div class="card-off">
-                <picture class="card-img">
-                    <img src="/img/earphone.png" alt="earphone" title="earphone" />
-                    <span>25% OFF</span>
-                </picture>
-                <div class="card-off-description">
-                    <span class="product-name">AirPods</span>
-                    <span class="product-price">
-                <div class="real-price">$2.650.000</div>
-                <i>-</i>
-                <div class="current-price">$1.897.500</div>
-              </span>
-                    <div class="available">
-                <span class="available-quantity">
-                  <p>Disponibles: 5</p>
-                  <p>Vendidos: 2</p>
-                </span>
-                        <button class="progress-quantity"></button>
-                    </div>
-                </div>
-            </div>
-            <div class="card-off">
-                <picture class="card-img">
-                    <img src="/img/earphone.png" alt="earphone" title="earphone" />
-                    <span>25% OFF</span>
-                </picture>
-                <div class="card-off-description">
-                    <span class="product-name">AirPods</span>
-                    <span class="product-price">
-                <div class="real-price">$2.650.000</div>
-                <i>-</i>
-                <div class="current-price">$1.897.500</div>
-              </span>
-                    <div class="available">
-                <span class="available-quantity">
-                  <p>Disponibles: 5</p>
-                  <p>Vendidos: 2</p>
-                </span>
-                        <button class="progress-quantity"></button>
-                    </div>
-                </div>
-            </div>
-            <div class="card-off">
-                <picture class="card-img">
-                    <img src="/img/earphone.png" alt="earphone" title="earphone" />
-                    <span>25% OFF</span>
-                </picture>
-                <div class="card-off-description">
-                    <span class="product-name">AirPods</span>
-                    <span class="product-price">
-                <div class="real-price">$2.650.000</div>
-                <i>-</i>
-                <div class="current-price">$1.897.500</div>
-              </span>
-                    <div class="available">
-                <span class="available-quantity">
-                  <p>Disponibles: 5</p>
-                  <p>Vendidos: 2</p>
-                </span>
-                        <button class="progress-quantity"></button>
-                    </div>
-                </div>
-            </div>
-        </article>
-    </section>
     <section class="new wrapper">
-        <article class="nuevo-filtro">
-            <span class="nuevo">Nuevo</span>
-            <span class="filtrar">Filtrar</span>
-        </article>
         <article class="cards_container"><%- include('./partials/card') %></article>
+    </section>
+    <section class='products'>
+        <% for (let i = 0; i < product.length; i++) { %>
+            <a href=''><%= product[i].name %></a>
+        <% } %>
+
     </section>
     <section class="brands wrapper">
         <h3 class="subtituloH3 placeholder">Manejamos las siguientes marcas</h3>
@@ -171,17 +63,17 @@
         <article class="updates">
             <h2>Recibir actualizaciones</h2>
             <p>
-                Registrese ahora y obtenga las ultimas actualizaciones y
+                Registrese ahora y obtenga las últimas actualizaciones y
                 promociones.
             </p>
         </article>
         <article class="e-mail">
-            <input type="e-mail" placeholder="Ingrése su correo" />
+            <input type="e-mail" placeholder="Ingrese su correo" />
             <button type="submit" class="btn-enviar">Enviar</button>
         </article>
     </section>
-</main> -->
+</main>
 
-    <%# include('./partials/Footer') %>
-  </body>
+<%- include('./partials/Footer') %>
+</body>
 </html>
