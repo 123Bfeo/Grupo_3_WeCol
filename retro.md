@@ -131,3 +131,29 @@ Por consiguiente, nos parece importante buscar otras formas de comunicación asi
 **Less of:** Seguir trabajando constantemente de manera conjunta a través de los subgrupos acordados en el desarrollo del Sprint.
 
 **Stop Doing:** Dejaremos de realizar las reuniones Daily opcionales pues no se estaban cumpliendo por la disponibilidad de tiempo de nuestros compañeros y las bitácoras se podían omitir al tener el tablero de Trello actualizado.
+
+## Sexto Sprint
+
+### 1. ¿Qué hicimos bien en nuestro primer Sprint?
+
+- Se complementa nuestra base de datos de MySQL actualizada en cuanto a productos y usuarios.
+- Hemos logrado modificar, editar y eliminar datos desde nuestra base MySQL a través de nuestra página web. Así mismo hemos agregado más funcionalidades a nuestra plataforma como, por ejemplo, los usuarios pueden validar sus datos en nuestro sitio y estos son almacenados en nuestra base de datos.
+- Reorganizamos los links de nuestro tablero de tareas Trello, pues generaba confusión y no permitía el ingreso y corrección por parte de los tutores. Por tanto, contamos con un link único a nuestro espacio de trabajo, el cual visualiza de forma pública los tableros de trabajo de cada Sprint.
+  
+### 2. ¿Qué hicimos mal en nuestro primer sprint?
+
+- Hemos sido bastante flexibles en muchos aspectos y, en consecuencia, esto nos ha costado la constancia y ritmo de trabajo. Por tanto, decidimos ser más rígidos en la toma de decisiones que afectan directamente a nuestro equipo.  
+- Debemos verificar con mayor detenimiento los estados de los tableros de los Sprint (Privad, espacio de trabajo y público), pues, aunque tengamos una organización establecida en los tableros y estemos trabajado en ellos, al enviar los links los tutores no han podido acceder a dichos tableros.
+
+### 3. Metodología retrospectiva de la estrella de mar
+
+**Start Doing:** Generar espacios de comunicación, ser estratégicos respecto a las decisiones de diseño y funcionalidad de nuestra página teniendo en cuenta el tiempo y recursos con los que disponemos. Organizar los detalles de nuestro código para que sea más prolijo.
+
+**More of:** Unificar nuestras actividades en conjunto del Frontend y del Backend de forma que el código se entrelace y no se generen errores en el código.
+
+**Keep Doing:** Mantener la asignación de roles de responsabilidad específica para el control y seguimiento de nuestros avances respecto de las diferentes plataformas de trabajo recomendadas por los docentes. Lo anterior con fines informativos respecto del estado de nuestro proyecto en cada una de nuestras reuniones.
+
+**Less of:** Trabajo individual, es momento de unificar y pulir nuestro código para minimizar los posibles errores.
+
+**Stop Doing:** Dejaremos de realizar las reuniones Daily pues no se estaban cumpliendo por la disponibilidad de tiempo de nuestros compañeros y las bitácoras se podían omitir al tener el tablero de Trello actualizado. 
+
