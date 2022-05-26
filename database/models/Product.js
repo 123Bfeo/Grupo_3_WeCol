@@ -16,7 +16,7 @@ module.exports = function (sequelize, dataTypes) {
 			type: dataTypes.TEXT,
 		},
 		image: {
-			type: dataTypes.TEXT,
+			type: dataTypes.STRING,
 		},
 		categories_id: {
 			type: dataTypes.INTEGER,
@@ -35,22 +35,22 @@ module.exports = function (sequelize, dataTypes) {
 	Product.associate = function (models) {
 		Product.belongsTo(models.Brand, {
 			as: "productBrands",
-			foreignKey: "brands_id"
+			foreignKey: "brands_id",
 		});
 		Product.belongsTo(models.Category, {
 			as: "productCategory",
-			foreignKey: "categories_id"
+			foreignKey: "categories_id",
 		})
 		Product.hasMany(models.Opinion, {
 			as: "productOpinions",
-			foreignKey: "products_id2"
+			foreignKey: "products_id2",
 		})
 		Product.belongsToMany(models.ShoppingCart, {
 			as: "productShoppingCart",
 			through: "products_shoppingcart",
 			foreignKey: "products_id",
 			otherKey: "shoppingcart_id",
-			timestamps: false
+			timestamps: false,
 		});
 	}
 	return Product;

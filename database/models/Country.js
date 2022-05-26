@@ -10,18 +10,17 @@ module.exports = function (sequelize, dataTypes) {
 			type: dataTypes.STRING,
 		}
 	};
-	
+
 	const config = {
 		tableName: "countries",
 		timestamps: false,
 	};
-	
+
 	const Country = sequelize.define(alias, cols, config);
 	Country.associate = function (models) {
 		Country.hasMany(models.User, {
 			as: "countryUser",
 			foreignKey: "countries_id",
-			timestamps: false
 		})
 	}
 	return Country

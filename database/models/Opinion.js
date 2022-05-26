@@ -19,23 +19,21 @@ module.exports = function (sequelize, dataTypes) {
 			type: dataTypes.INTEGER
 		}
 	};
-	
+
 	const config = {
 		tableName: "opinions",
 		timeStamps: false,
 	};
-	
+
 	const Opinion = sequelize.define(alias, cols, config);
 	Opinion.associate = function (models) {
 		Opinion.belongsTo(models.Product, {
 			as: "opinionProduct",
 			foreignKey: "products_id2",
-			timestamps: false
 		})
 		Opinion.belongsTo(models.User, {
 			as: "opinionUser",
 			foreignKey: "users_id3",
-			timestamps: false
 		})
 	}
 	return Opinion;

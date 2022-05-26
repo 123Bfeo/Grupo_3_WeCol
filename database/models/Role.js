@@ -10,21 +10,19 @@ module.exports = function (sequelize, dataTypes) {
 			type: dataTypes.STRING,
 		}
 	};
-	
+
 	const config = {
 		tableName: "roles",
 		timestamps: false,
 	};
-	
+
 	const Role = sequelize.define(alias, cols, config);
 	Role.associate = function (models) {
-		Role.belongsToMany(models.User, {
+		Role.hasMany(models.User, {
 			as: "roleUsers",
-			through: "users_roles",
-			foreignKey: "users_id",
-			otherKey: "roles_id",
-			timestamps: false
+			foreignKey: "roles_id",
 		})
 	}
 	return Role;
+
 }
