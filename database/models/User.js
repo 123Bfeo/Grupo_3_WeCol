@@ -22,7 +22,7 @@ module.exports = function (sequelize, dataTypes) {
             type: dataTypes.STRING,
         },
         phone: {
-            type: dataTypes.BIGINT,
+            type: dataTypes.INTEGER,
         },
         avatar: {
             type: dataTypes.TEXT,
@@ -32,6 +32,9 @@ module.exports = function (sequelize, dataTypes) {
         },
         countries_id: {
             type: dataTypes.INTEGER,
+        },
+        roles_id: {
+            type: dataTypes.INTEGER
         }
     };
 
@@ -42,27 +45,23 @@ module.exports = function (sequelize, dataTypes) {
 
     const User = sequelize.define(alias, cols, config);
     User.associate = function (models) {
-        User.belongsToMany(models.Role, {
+        User.belongsTo(models.Role, {
             as: "userRole",
-            through: "users_roles",
             foreignKey: "roles_id",
-            otherKey: "users_id",
-            timestamps: false
         });
         User.hasMany(models.Opinion, {
             as: "userOpinions",
             foreignKey: "users_id3",
-            timestamps: false
+
         });
         User.belongsTo(models.Country, {
             as: "userCountry",
             foreignKey: "countries_id",
-            timestamps: false
+
         });
-        User.belongsTo(models.ShoppingCart, {
+        User.hasOne(models.ShoppingCart, {
             as: "userShoppingCart",
-            foreignKey: "users_id2",
-            timestamps: false
+            foreignKey: "users_id2"
         });
 
     }

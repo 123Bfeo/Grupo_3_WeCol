@@ -12,21 +12,22 @@ module.exports = function (sequelize, dataTypes) {
 		saledate: {
 			type: dataTypes.DATE,
 		},
-		users_id: {
+		users_id2: {
 			type: dataTypes.INTEGER,
 		}
 	};
-	
+
 	const config = {
 		tableName: "shoppingcart",
 		timestamps: false,
 	};
-	
+
 	const ShoppingCart = sequelize.define(alias, cols, config);
 	ShoppingCart.associate = function (models) {
 		ShoppingCart.belongsTo(models.User, {
 			as: "ShoppingCartUser",
 			foreignKey: "users_id2"
+
 		});
 		ShoppingCart.belongsToMany(models.Product, {
 			as: "ShoppingCartProduct",

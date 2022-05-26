@@ -2,8 +2,7 @@
   <!--  sliderProduct vista principal-->
   <section class="sliderProduct-zoom">
     <div class="zoom-slider">
-
-      <img src="<%=arrayImg[0] %>" class="img-remplazar" />
+      <img src="" class="img-remplazar" />
     </div>
   </section>
   <main class="containerrReferencia-goblal">
@@ -16,30 +15,6 @@
     <section class="containers-Slider">
       <section class="slidersProduct-Detail">
         <!--vistas de referencias -->
-          <%let cont=0;%>
-          
-          <%for(let i=0;i<arrayImg.length;i++){%>
-          <%if(cont%3==0){%>
-            <article class="slidersProduct-ref">
-              <div class="imgSlider-product">
-                <img
-                  src="<%=arrayImg[i] %>"
-                  class="img-slider-principal img-activa"
-                />
-              </div>
-          <%} else{%>
-          <div class="imgSlider-product">
-            <img
-              src="<%=arrayImg[i] %>"
-              class="img-slider-principal img-activa"
-            />
-          </div>
-          <%}%>
-          <%if(cont==2 || cont==5){%>
-              </article>
-          <%}%>
-          <% cont+=1%>
-          <%}%>
       </section>
     </section>
     <!--flecha desplazo siguiente-->
@@ -48,4 +23,3 @@
     </div>
   </main>
 </div>
-

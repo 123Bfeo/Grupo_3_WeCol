@@ -13,14 +13,14 @@ module.exports = (sequelize, dataTypes) => {
 	};
 	const config = {
 		tableName: 'brands',
-		timestamp: false
+		timestamps: false,
 	};
 	const Brand = sequelize.define(alias, cols, config);
 
 	Brand.associate = function (models) {
 		Brand.hasMany(models.Product, {
 			as: "brandProduct",
-			foreignKey: "brands_id"
+			foreignKey: "brands_id",
 		})
 	}
 	return Brand;

@@ -11,16 +11,22 @@ const upload = productImageMiddleware.addFile();
 
 
 
+//Todos los productos
 router.get('/', productController.allProducts);
-router.post('/insert', upload.single('image'), validateCreateProduct, productController.insertProduct);
-router.get('/productDet/:id', productController.productDetail);
-router.put('/editProduct/:id', upload.single('imageEdit'), validateCreateProduct, productController.editProduct);
-router.delete('/deleteProduct/:id', productController.deleteProduct);
-router.get('/createProduct', productController.loadProduct);
-router.get('/searchProduct', productController.searchProduct);
-router.get('/adminProductBy', productController.searchProductsBy);
-// router.get('/adminProductMain', productController.loadMainAdminProduct);
-router.get('/editProduct/:id', productController.loadEditProduct);
+//Crear un producto
+router.get('/create', productController.createProduct);
+router.post('/create', upload.single('image'), validateCreateProduct, productController.saveProduct);
+// Editar un producto
+router.get('/edit/:id', validateCreateProduct, productController.editProduct);
+router.put('/edit/:id', upload.single('imageEdit'), validateCreateProduct, productController.updateProduct);
+// Eliminar un Producto
+router.get('/detail/:id', productController.detailProduct);
+// Detalles de un producto
+router.delete('/delete/:id', productController.deleteProduct);
+// Buscar un producto por ID
+router.get('/search/:id', productController.searchProduct);
+
 
 module.exports = router;
+
 
