@@ -1,10 +1,9 @@
 const { validationResult } = require('express-validator');
 // const bcrypt = require('bcryptjs');
-const { compareSync, hashSync } = require('bcryptjs')
+const bcrypt = require('bcryptjs')
 const db = require('../../database/models');
 
 const userController = {
-
   //todos los usuarios
   allUser: (req, res) => {
     db.User.findAll().then(function (user) {
