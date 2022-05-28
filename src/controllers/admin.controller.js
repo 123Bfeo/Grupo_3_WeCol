@@ -9,6 +9,8 @@ const adminController = {
 			.then(([category, product]) => {
 				res.render('./admin/admin', { title, category, product })
 			})
+
 	}
 }
 module.exports = adminController;
+

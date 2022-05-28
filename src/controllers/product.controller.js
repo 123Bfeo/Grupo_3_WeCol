@@ -10,7 +10,7 @@ const productController = {
     Promise.all([reqCategory, reqProduct])
       .then(([category, product]) => {
         //res.render('index', { title, category, product })
-        res.rend({ category, product })
+        res.send({ category, product })
       });
   },
   //VISTA para EDITAR producto

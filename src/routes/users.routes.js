@@ -6,7 +6,7 @@ const router = express.Router();
 const multerDiskStorageMiddleware = require('../middlewares/multerDiskStorage.middleware');
 const sessionDetectMiddleware = require('../middlewares/sessionDetect.middleware');
 const validateUserRegisterFormMiddleware = require('../middlewares/validateUserRegisterForm.middleware')
-const validateUserLoginFormMiddleware = require('../middlewares/validateUserLoginForm.middleware');
+//const validateUserLoginFormMiddleware = require('../middlewares/validateUserLoginForm.middleware');
 
 const fileUpload = multer({ storage: multerDiskStorageMiddleware });
 
@@ -18,7 +18,7 @@ const userController = require('../controllers/user.controller');
 router.get('/allUser', sessionDetectMiddleware, userController.allUser);
 //vista de login y envio de formulario
 router.get('/login', sessionDetectMiddleware, userController.login);
-router.post('/login', validateUserLoginFormMiddleware, userController.processlogin);
+router.post('/login', userController.processlogin);
 //vista de formulario y envio de formulario
 router.get('/register', sessionDetectMiddleware, userController.register);
 router.post('/register', fileUpload.single("avatar"), validateUserRegisterFormMiddleware, userController.processRegister);
@@ -29,3 +29,5 @@ router.get('/edit/:id', userController.editUser)
 router.put('/edit/:id', userController.updateUser)
 
 module.exports = router;
+
+//userlogin  validateUserLoginFormMiddleware,

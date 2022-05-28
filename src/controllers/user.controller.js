@@ -13,11 +13,15 @@ const userController = {
 
   //Login de user Views
   login: (req, res) => {
-    res.send('Estoy en el login ');
+    db.Category.findAll().then(function (category) {
+      res.render('./users/login', { category });
+    })
   },
 
   // Loguearme  un usuario
   processlogin: (req, res) => {
+    console.log(req.body.email);
+    console.log("=======Estoy aqui=======");
     db.User.findOne(
       {
         where: {
@@ -25,19 +29,23 @@ const userController = {
         }
       }
     ).then(function (user) {
-      res.send({ user })
+      return res.redirect("/admin")
     })
 
   },
 
   // vistas para Crear o Registar un usuario
   register: (req, res) => {
-    //const title = 'Registrar Usuario';
-    res.send('estoy en el register')
+    db.Category.findAll().then(function (category) {
+      res.render('./users/register', { category });
+    })
+
   },
 
   // se Crea o se Registra  un usuario
   processRegister: (req, res) => {
+    console.log(req.body.address)
+    console.log("===========")
     db.User.create(
       {
         username: req.body.userName,
