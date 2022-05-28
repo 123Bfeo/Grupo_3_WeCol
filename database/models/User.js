@@ -25,7 +25,7 @@ module.exports = function (sequelize, dataTypes) {
             type: dataTypes.INTEGER,
         },
         avatar: {
-            type: dataTypes.TEXT,
+            type: dataTypes.STRING,
         },
         password: {
             type: dataTypes.STRING,
@@ -34,7 +34,9 @@ module.exports = function (sequelize, dataTypes) {
             type: dataTypes.INTEGER,
         },
         roles_id: {
-            type: dataTypes.INTEGER
+            type: dataTypes.INTEGER,
+            defaultValue: true
+
         }
     };
 

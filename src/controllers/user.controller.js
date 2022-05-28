@@ -44,21 +44,25 @@ const userController = {
 
   // se Crea o se Registra  un usuario
   processRegister: (req, res) => {
-    console.log(req.body.address)
-    console.log("===========")
+    console.log(req.file.filename)
+    console.log("====================")
     db.User.create(
       {
-        username: req.body.userName,
-        firstname: req.body.firstName,
-        lastname: req.body.lastName,
+        username: req.body.username,
+        firstname: req.body.name,
+        lastname: req.body.lastname,
         address: req.body.address,
         email: req.body.email,
         phone: req.body.phone,
-        avatar: req.body.avatar,
+        avatar: req.file.filename,
         password: req.body.password,
-        countries_id: req.body.country
-      });
-    res.send('Usuario creado');
+        countries_id: req.body.country,
+        roles_id: req.body.roles_id
+      }).then(function () {
+
+        res.redirect('/login');
+      })
+    //res.send('Usuario creado');
   },
 
   //eliminar un usuario

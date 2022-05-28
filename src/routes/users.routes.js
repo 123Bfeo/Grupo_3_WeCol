@@ -21,7 +21,7 @@ router.get('/login', sessionDetectMiddleware, userController.login);
 router.post('/login', userController.processlogin);
 //vista de formulario y envio de formulario
 router.get('/register', sessionDetectMiddleware, userController.register);
-router.post('/register', fileUpload.single("avatar"), validateUserRegisterFormMiddleware, userController.processRegister);
+router.post('/register', fileUpload.single("avatar"), userController.processRegister);
 // eliminar un usuario
 router.delete('/delete/:id', userController.deleteUser);
 //vista actualizar y enviar datos de usuario
@@ -31,3 +31,4 @@ router.put('/edit/:id', userController.updateUser)
 module.exports = router;
 
 //userlogin  validateUserLoginFormMiddleware,
+// validateUserRegisterFormMiddleware
