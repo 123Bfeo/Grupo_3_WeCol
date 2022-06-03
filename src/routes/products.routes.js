@@ -12,7 +12,7 @@ const upload = productImageMiddleware.addFile();
 
 
 //Todos los productos
-router.get('/', productController.allProducts);
+router.get('/product', productController.allProducts);
 //Crear un producto
 router.get('/create', productController.createProduct);
 router.post('/create', upload.single('image'), validateCreateProduct, productController.saveProduct);
