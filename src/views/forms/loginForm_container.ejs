@@ -1,37 +1,42 @@
-    <form action="/login" method="POST" class="form">
-        <article class="form-content loginForm">
-            <label for="" class="form-label">
-                <span class='formTitleLabel'>
-                    <i class="fas fa-user"></i>
-                    <span>Nombres</span>
-                </span>
-                <input type="text" name="email" placeholder="" value="<%= locals.old && locals.old.email ? old.email : '' %>"/>
-            </label>
-            <% if(locals.errors && errors.email) { %>
-                <div>
-                    <p style="color: brown;"><%= errors.email.msg %> </p>
-                </div>
-            <% } %>
-            <label for="" class="form-label">
-                <span class='formTitleLabel'>
-                    <i class="fas fa-lock"></i>
-                    <span>Contraseña</span>
-                </span>
-                <input type="password" name="password" placeholder="" value="<%= locals.old && locals.old.password ? old.password : '' %>"/>
-            </label>
-            <% if(locals.errors && errors.password) { %>
-                <div>
-                    <p style="color: brown;"><%= errors.password.msg %> </p>
-                </div>
-            <% } %>
-        </article>
-        <label for="rememberUser" id="rememberUser">Recordar usuario</label>
-        <input type="checkbox" name="rememberUser" id='rememberUser'/>
-        <article class="btnContainer">
-            <input type="submit" class="btn btnFirst" value="Iniciar Sesión" >
-            <a href="/register" class="btn btnSecond"> Registrarse </a>
-        </article>
-        <span class="footForm"
-        >¿ Olvidaste tu contraseña ? <a href="/forgotPassword">Recuperala</a>
-        </span>
-    </form>
+<form action="/login" method="POST" class="form">
+  <article class="form-content loginForm">
+    <label for="" class="form-label">
+      <span class="formTitleLabel">
+        <i class="fas fa-user"></i>
+        <span>Nombres</span>
+      </span>
+      <input
+        type="text"
+        name="email"
+        placeholder="Example@gmail.com"
+        value="<%=locals.oldData ? oldData.email: null  %>"
+      />
+    </label>
+    <% if(locals.errors && errors.email) { %>
+    <div>
+      <p style="color: brown"><%= errors.email.msg %></p>
+    </div>
+    <% } %>
+    <label for="" class="form-label">
+      <span class="formTitleLabel">
+        <i class="fas fa-lock"></i>
+        <span>Contraseña</span>
+      </span>
+      <input type="password" name="password" placeholder="**********" />
+    </label>
+    <% if(locals.errors && errors.password) { %>
+    <div>
+      <p style="color: brown"><%= errors.password.msg %></p>
+    </div>
+    <% } %>
+  </article>
+  <label for="rememberUser" id="rememberUser">Recordar usuario</label>
+  <input type="checkbox" name="rememberUser" id="rememberUser" />
+  <article class="btnContainer">
+    <input type="submit" class="btn btnFirst" value="Iniciar Sesión" />
+    <a href="/register" class="btn btnSecond"> Registrarse </a>
+  </article>
+  <span class="footForm"
+    >¿ Olvidaste tu contraseña ? <a href="/forgotPassword">Recuperala</a>
+  </span>
+</form>

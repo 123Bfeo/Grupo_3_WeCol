@@ -2,6 +2,7 @@ const { validationResult } = require('express-validator');
 // const bcrypt = require('bcryptjs');
 const bcrypt = require('bcryptjs')
 const db = require('../../database/models');
+//const session = require('express-session');
 
 const userController = {
   //todos los usuarios
@@ -20,18 +21,69 @@ const userController = {
 
   // Loguearme  un usuario
   processlogin: (req, res) => {
-    console.log(req.body.email);
-    console.log("=======Estoy aqui=======");
-    db.User.findOne(
-      {
-        where: {
-          email: req.body.email
-        }
-      }
-    ).then(function (user) {
-      return res.redirect("/admin")
-    })
+    const resultValidation = validationResult(req)
+    if (resultValidation.errors.length > 0) {
+      db.Category.findAll().then(function (category) {
+        return res.render("./users/login", {
+          errors: resultValidation.mapped(),
+          oldData: req.body, category
+        })
+      })
+    }
 
+
+    else {
+      db.User.findOne(
+        {
+          where: {
+            email: req.body.email,
+          }
+        }
+      ).then(function (userToLogin) {
+        if (userToLogin) {
+          if (bcrypt.compareSync(req.body.password, userToLogin.password)) {
+            if (userToLogin.roles_id === 2) {
+              delete userToLogin.password;
+              req.session.userLogged = userToLogin;
+              return res.redirect("/admin")
+            }
+            else {
+              delete userToLogin.password;
+              req.session.userLogged = userToLogin
+              return res.redirect("/")
+            }
+          }
+          else {
+            db.Category.findAll().then(function (category) {
+              res.render("./users/login",
+                {
+                  errors: {
+                    email: {
+                      msg: 'Estas credenciales son incorrectas'
+                    }
+                  },
+                  category
+                }
+              )
+            })
+          }
+        }
+        else {
+          db.Category.findAll().then(function (category) {
+            res.render("./users/login",
+              {
+                errors: {
+                  email: {
+                    msg: 'Correo no Registado'
+                  }
+                },
+                category
+              }
+            )
+          })
+        }
+      })
+    }
   },
 
   // vistas para Crear o Registar un usuario
@@ -39,32 +91,64 @@ const userController = {
     db.Category.findAll().then(function (category) {
       res.render('./users/register', { category });
     })
-
   },
 
   // se Crea o se Registra  un usuario
   processRegister: (req, res) => {
-    console.log(req.file.filename)
-    console.log("====================")
-    db.User.create(
-      {
-        username: req.body.username,
-        firstname: req.body.name,
-        lastname: req.body.lastname,
-        address: req.body.address,
-        email: req.body.email,
-        phone: req.body.phone,
-        avatar: req.file.filename,
-        password: req.body.password,
-        countries_id: req.body.country,
-        roles_id: req.body.roles_id
-      }).then(function () {
-
-        res.redirect('/login');
+    const resultValidation = validationResult(req)
+    if (resultValidation.errors.length > 0) {
+      db.Category.findAll().then(function (category) {
+        res.render("./users/register", {
+          errors: resultValidation.mapped(),
+          oldData: req.body, category
+        })
       })
-    //res.send('Usuario creado');
-  },
+    }
+    else {
+      db.User.findOne(
+        {
+          where: {
+            email: req.body.email,
+          }
+        }
+      ).then(function (user) {
+        if (user) {
+          db.Category.findAll().then(function (category) {
 
+            res.render("./users/register",
+              {
+                errors: {
+                  email: {
+                    msg: "Correo ya registrado"
+                  }
+                },
+                category
+              }
+            )
+          })
+
+        }
+        else {
+          db.User.create(
+            {
+              username: req.body.username,
+              firstname: req.body.name,
+              lastname: req.body.lastname,
+              address: req.body.address,
+              email: req.body.email,
+              phone: req.body.phone,
+              avatar: req.file.filename,
+              password: bcrypt.hashSync(req.body.password, 10),
+              countries_id: req.body.country,
+              roles_id: req.body.roles_id
+            }).then(function () {
+              res.redirect('/login');
+            })
+        }
+      })
+    }
+
+  },
   //eliminar un usuario
   deleteUser: (req, res) => {
     db.User.destroy(
@@ -80,7 +164,6 @@ const userController = {
     db.User.findByPk(req.params.id).then(function (user) {
       res.send({ user });
     })
-    console.log("==========SALIDA===========")
   },
 
   updateUser: (req, res) => {
@@ -105,6 +188,10 @@ const userController = {
     );
     res.send('ya actualice el usuario')
   },
+  logout: (req, res) => {
+    req.session.destroy();
+    res.redirect('/');
+  }
 
 
 
