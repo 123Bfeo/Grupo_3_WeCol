@@ -3,15 +3,18 @@ const { join, resolve } = require('path');
 const methodOverride = require('method-override');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
+const cors = require('cors')
 
 const mainRoutes = require('./src/routes/main.routes');
 const adminRoutes = require('./src/routes/admin.routes');
 const userRoutes = require('./src/routes/users.routes');
 const factureRoutes = require('./src/routes/facture.routes');
 const productRoutes = require('./src/routes/products.routes');
+const productsApiRouter = require('./src/routes/Api/products.api')
 const userLoggedMiddleware = require('./src/middlewares/userLogged.middleware');
 
 const app = express();
+app.use(cors())
 
 app.set('view engine', 'ejs');
 app.set('views', join(__dirname, 'src/views'));
@@ -37,10 +40,10 @@ app.use('/admin', adminRoutes);
 
 app.use('/product', productRoutes);
 app.use('/facture', factureRoutes);
-// app.use('/user', userRoutes);
 
+app.use('/api', productsApiRouter)
 
-const PORT = 3000;
+const PORT = 3001;
 const hostname = 'localhost';
 app.listen(process.env.PORT || PORT, () => {
 	console.log(`Servidor corriendo en http://${hostname}:${PORT}`);
