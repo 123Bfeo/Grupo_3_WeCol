@@ -106,8 +106,8 @@ const productController = {
     Promise.all([reqCategory, reqProduct],
       { include: [{ association: "productCategory" }] })
       .then(([category, product]) => {
-        res.send({ product, category })
-        //res.render('./products/productDet', { title, product, category });
+        //res.rende('./products/productDet', { title, product, category })
+        res.render('./products/productDet', { title, product, category });
       });
   },
 
