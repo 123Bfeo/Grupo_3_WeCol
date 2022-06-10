@@ -19,9 +19,9 @@ router.post('/create', upload.single('image'), validateCreateProduct, productCon
 // Editar un producto
 router.get('/edit/:id', validateCreateProduct, productController.editProduct);
 router.put('/edit/:id', upload.single('imageEdit'), validateCreateProduct, productController.updateProduct);
-// Eliminar un Producto
-router.get('/detail/:id', productController.detailProduct);
 // Detalles de un producto
+router.get('/detail/:id', productController.detailProduct);
+// Eliminar un Producto
 router.delete('/delete/:id', productController.deleteProduct);
 // Buscar un producto por ID
 router.get('/search/:id', productController.searchProduct);
