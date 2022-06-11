@@ -1,0 +1,84 @@
+.Header {
+	inline-size: 100vw;
+	block-size:  100%;
+	background: var(--bg-dark);
+}
+.HeaderContainer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	block-size: 5em;
+}
+.ProfileAction_Header {
+	display: flex;
+	align-items: center;
+}
+.ProfileAction picture {
+	display: block;
+	inline-size: 3em;
+	border-radius: 50%;
+}
+.ProfileAction picture img {
+	inline-size: 100%;
+	border-radius: inherit;
+}
+.HeaderArrowIcon {
+	color: var(--primaryColor);
+	font-size: 1.5em;
+}
+.ProfileAction {
+	position: relative;
+}
+.ProfileAction_Body {
+	position: absolute;
+	top: 4em;
+	right: 0;
+	inline-size: 18em;
+	padding: 2em 1em;
+	border: 0.2em solid var(--primaryColor);
+	border-radius: 0.6em;
+	display: none;
+}
+
+.ProfileAction_BodyActive {
+	display: block;
+}
+.ProfileAction_BodyRotateIcon{
+	transform: rotate(180deg);
+	transition: all 0.3s linear;
+}
+
+.ProfileAction_BodyHead {
+	display: flex;
+	align-items: center;
+	gap: 1em;
+	border-bottom: 1px solid var(--gray10);
+}
+.ProfileAction_BodyProfileOptions span:nth-child(1){
+	color: var(--white);
+	font-family: var(--specialFont);
+	font-weight: 700;
+}
+
+.ProfileAction_BodyProfileOptions span:nth-child(2){
+	color: var(--white);
+	font-family: var(--specialFont);
+	font-weight: 400;
+	font-size: 0.75em;
+}
+.ProfileAction_BodyFoot .closeSession {
+	color: var(--white);
+	font-family: var(--specialFont);
+	font-size: 1em;
+	font-weight: 700;
+	display: inline-block;
+	margin-block-start: 1em;
+	cursor: pointer;
+}
+.ProfileAction_BodyFoot .closeSession:hover {
+	color: var(--primaryColor);
+}
+.ProfileAction_BodyProfileOptions {
+	display: flex;
+	flex-direction: column;
+}

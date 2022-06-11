@@ -1,22 +1,18 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 
 const Categories = () => {
 	const [ categories, setCategories ] = useState([]);
 	
-	const apiGet = () => {
+	useEffect(() => {
 		fetch("http://localhost:3001/api/products")
-			.then((response) => response.json())
-			.then((response) => {
-				console.log(response.data.category);
-				setCategories(response.data.category);
+			.then(response => response.json())
+			.then(data => {
+				console.log(data.data.category);
+				setCategories(data.data.category);
 			})
-			.catch(error => console.log( error ))
-	};
-	
+	}, [])
 	return (
 		<div>
-			My API <br />
-			<button onClick={ apiGet }>Fetch API</button>
 			<div>
 				<ul>
 					{

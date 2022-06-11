@@ -1,0 +1,23 @@
+:root {
+	--bg-dark: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #080C24;
+	--borderGradient: linear-gradient(105deg, rgb(241, 239, 239) 0%, rgb(150, 144, 144) 100%);
+	--primaryColor: #E97DD8;
+	--white: #FFF;
+	--gray10: #44495F;
+	
+	--specialFont: 'Source Serif Pro', serif;;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background: var(--bg-dark);
+	overflow: hidden;
+}
+.wrapper {
+	max-inline-size: 80em;
+	margin: 0 auto;
+	padding-inline: 1.5em;
+}
