@@ -1,0 +1,14 @@
+.MainContainer {
+	background: var(--bg-dark);
+	inline-size: 100%;
+	block-size: 100%;
+	padding: 1em;
+	
+}
+
+.MainContent {
+	border: 1px solid red;
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+}

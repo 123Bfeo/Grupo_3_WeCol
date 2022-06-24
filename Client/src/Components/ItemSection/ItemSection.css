@@ -1,0 +1,25 @@
+.ItemSectionContainer {
+	inline-size: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+.ItemSection {
+	padding-inline-start: 1.5em;
+}
+.ItemSection a {
+	color: var(--white);
+	font-size: 1.7em;
+	font-weight: 700;
+	font-family: var(--primaryFont);
+	padding: 0.3em;
+	list-style: none;
+	display: block;
+	inline-size: 100%;
+}
+.ItemSection a:hover {
+	background:  var(--bgGray);
+}
+.ItemSectionActive {
+	background: var(--bgGray);
+}

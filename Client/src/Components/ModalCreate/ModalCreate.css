@@ -1,0 +1,39 @@
+.ModalBackground {
+	position: absolute;
+	right: 0;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(10, 10, 10, 0.86);
+}
+.ModalCard {
+	margin: 20vh auto;
+	display: block;
+	width: 60%;
+	height: 60%;
+	background-color: lightgray;
+	border-radius: 5px;
+}
+.buttonOpenModal {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1em;
+	padding: 1em;
+	font-size: var(--specialFont);
+	font-weight: 700;
+	border: 2px solid var(--primaryColor);
+	cursor: copy;
+}
+.buttonOpenModal:hover {
+	background: var(--inputPlaceholder);
+	color: var(--white);
+	transform: scale(1.1);
+}
+.buttonOpenModalIcon {
+	position: absolute;
+	left: -25px;
+}
+.buttonOpenModalIconActive {
+	left: 0;
+}

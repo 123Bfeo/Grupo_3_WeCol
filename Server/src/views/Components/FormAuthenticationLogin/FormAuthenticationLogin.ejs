@@ -1,0 +1,14 @@
+<article class='FormAuthentication'>
+    <picture>
+        <img src='/img/favicon.svg' alt='Logo' title='Logo'>
+    </picture>
+    <form action='/login' method='POST' class='FormContainer'>
+
+        <div class='FormContent'>
+            <%- include('../LabelInput/LabelInput', { id: 'username', label: 'Usuario', type: 'text', name: 'username', placeholder: 'Usuario' }) %>
+            <%- include('../LabelInput/LabelInput', { id: 'password', label: 'Password', type: 'password', name: 'password', placeholder: 'Password' }) %>
+        </div>
+
+        <%- include('../ButtonForm/ButtonForm', { name: 'Iniciar Sesión' }) %>
+    </form>
+</article>

@@ -1,0 +1,48 @@
+.SectionListItems {
+	border: 1px solid blue;
+	block-size: 100%;
+	inline-size: 100%;
+	display: block;
+}
+.SectionListItemContent {
+	border: 1px solid green;
+}
+
+.TableBodyCard {
+	border: 1px solid rebeccapurple;
+}
+
+.ItemCardImg {
+	display: block;
+	inline-size: 50px;
+	block-size: 50px;
+	border-radius: 50%;
+}
+.ItemCardImg img {
+	display: block;
+	inline-size: 100%;
+	block-size: 100%;
+	border-radius: 50%;
+}
+.CardBodyItem {
+	border: 1px solid blue;
+}
+
+table, th, td {
+	border: 1px solid black;
+}
+th {
+	background: var(--primaryColor);
+	color: var(--white);
+	padding: 1em;
+}
+th:hover {
+	opacity: 0.5;
+}
+table {
+	border-collapse: collapse;
+	inline-size: 100%;
+}
+td:hover:not(:nth-child(2)) {
+	background: var(--gray20);
+}
