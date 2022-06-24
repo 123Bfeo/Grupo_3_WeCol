@@ -1,0 +1,16 @@
+.LabelInput input {
+	inline-size: 100%;
+	padding: 1.5em 3em 1.5em 1.5em;
+	border: none;
+}
+.LabelInput input:focus {
+	outline: 2px solid var(--orange);
+}
+.LabelInput span {
+	color: var(--white);
+	font-family: var(--primaryFont);
+	font-weight: 700;
+}
+.LabelInput input::placeholder {
+	color: var(--placeholder);
+}

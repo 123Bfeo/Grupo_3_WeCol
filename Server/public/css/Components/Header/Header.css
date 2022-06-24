@@ -1,19 +1,25 @@
-@import './headerNav.css';
-@import '../userLogged.css';
+@import './Header.css';
+@import '../HeaderNav/HeaderNav.css';
 
-.header {
+.Header {
 	background: var(--bg-dark);
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	min-inline-size: 100vw;
-	font-weight: 700;
-	font-family: var(--link-header);
-	block-size: 64px;
+	inline-size: 100vw;
+	block-size: 100%;
 	position: sticky;
 	top: 0;
 	z-index: 1;
 }
+.HeaderContainer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	block-size: 5em;
+}
+
+
+
+
+
 .logo {
 	display: block;
 	inline-size: 100px;

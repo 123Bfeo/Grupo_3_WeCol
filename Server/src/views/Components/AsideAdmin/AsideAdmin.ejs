@@ -1,0 +1,15 @@
+<aside class='AsideAdmin' id='AsideAdmin'>
+    <article class='AsideAdminContainer'>
+        <picture class='AsideAdminContainerImage'>
+            <img src='/img/Logo.svg' alt=''>
+            <img src='/img/Favicon.svg' alt='' class='AsideAdminContainerImageIcon' id='AsideAdminContainerImageIcon'>
+        </picture>
+        <div class='AsideSectionContainer'>
+            <%- include('../AsideSection/AsideSection', { list: 'Usuarios', href: '/admin/users' }) %>
+            <%- include('../AsideSection/AsideSection', { list: 'Productos', href: '/admin/products' }) %>
+        </div>
+    </article>
+    <article class='BarDecoration'></article>
+</aside>
+
+<script src='/js/Components/AsideAdmin/AsideAdmin.js'></script>

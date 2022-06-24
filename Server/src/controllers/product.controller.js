@@ -3,7 +3,12 @@ const db = require('../../database/models');
 
 
 const productController = {
-  //TODOS los productos
+  products: (req, res) => {
+    db.Product.findAll().then(function (product) {
+      res.render('./Pages/Products/Products', { product })
+    })
+  },
+  
   allProducts: (req, res) => {
     const reqCategory = db.Category.findAll();
     const reqProduct = db.Product.findAll();

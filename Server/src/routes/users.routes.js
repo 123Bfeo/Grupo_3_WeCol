@@ -28,6 +28,7 @@ router.delete('/delete/:id', userController.deleteUser);
 router.get('/edit/:id', userController.editUser)
 router.put('/edit/:id', userController.updateUser)
 
+router.get('/users', userController.users);
 // sessionDetectMiddleware,
 
 module.exports = router;

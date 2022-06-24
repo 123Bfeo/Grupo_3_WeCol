@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang='es'>
+    <%- include('../../Components/Head/Head') %>
+<body class="Admin">
+    <%- include('../../Components/AsideAdmin/AsideAdmin') %>
+    <%- include('../../Components/UserLogged/UserLogged') %>
+    <main class='Main'>
+        <section class='ModalCreateProduct' id='ModalCreateProduct'>
+            <%- include('../../Components/ButtonCreate/ButtonCreate', { ButtonAction: 'Producto', Button: 'Product' }) %>
+        </section>
+        <%- include('../../Components/TableProducts/TableProducts') %>
+    </main>
+    <script src='/js/Components/ModalCreateProduct/ModalCreateProduct.js'></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+.AsideAdmin {
+	background: var(--bg-dark);
+	height: 100vh;
+	inline-size: 300px;
+	position: relative;
+	z-index: 1;
+	left: -250px;
+	transition: left 0.5s ease-in-out;
+	overflow-x: hidden;
+}
+.AsideAdminActive {
+	left: 0;
+}
+.BarDecoration {
+	background: #E97DD8;
+	height: 100vh;
+	inline-size: 0.5em;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.AsideAdminContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 50px;
+	padding-block-start: 2.5em;
+}
+.AsideAdminContainerImage {
+	display: flex;
+	align-items: center;
+}
+.AsideAdminContainerImageIcon {
+	position: absolute;
+	right: 0.5em;
+	inline-size: 2.5em;
+	transition: right 0.5s ease-in-out;
+}
+.AsideAdminContainerImageIconHidde {
+	transition: right 0.5s ease-in-out;
+	right: -3.1em;
+}

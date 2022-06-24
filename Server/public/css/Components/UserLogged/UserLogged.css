@@ -1,0 +1,86 @@
+.UserLogged {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  inline-size: 50px;
+  block-size: 50px;
+  position: absolute;
+  z-index: 1;
+  right: 48px;
+  top: 24px;
+}
+.ProfileAction_Header {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+}
+.ProfileAction picture {
+  display: block;
+  inline-size: 3em;
+  block-size: 3em;
+  border-radius: 50%;
+}
+.ProfileAction picture img {
+  inline-size: 100%;
+  block-size: 100%;
+  border-radius: inherit;
+}
+.ProfileAction_Header i {
+  color: #E97DD8;
+  font-size: 1.5em;
+  transition: transform 0.3s linear;
+}
+.ProfileAction_Body {
+  position: absolute;
+  top: 4em;
+  right: 0;
+  inline-size: 18em;
+  padding: 2em 1em;
+  border: 0.2em solid #E97DD8;
+  border-radius: 0.6em;
+  display: none;
+  background: var(--bg-dark);
+  transition: display 2s ease-in;
+}
+.ProfileAction_BodyActive {
+  display: block;
+  transition: display 2s ease-in;
+}
+.ProfileActionArrowIconRotate{
+  transform: rotate(90deg);
+  transition: transform 0.3s linear;
+}
+.ProfileAction_BodyHead {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  border-bottom: 2px solid var(--gray10);
+  padding-block-end: 10px;
+}
+.ProfileAction_BodyProfileOptions span:nth-child(1){
+  color: var(--white);
+  font-family: var(--primaryFont);
+  font-weight: 700;
+}
+.ProfileAction_BodyProfileOptions span:nth-child(2){
+  color: var(--white);
+  font-family: var(--primaryFont);
+  font-weight: 400;
+  font-size: 0.75em;
+}
+.ProfileAction_BodyProfileOptions {
+  display: flex;
+  flex-direction: column;
+}
+.ProfileAction_BodyFoot .closeSession {
+  color: var(--white);
+  font-family: var(--primaryFont);
+  font-size: 1em;
+  font-weight: 700;
+  display: inline-block;
+  margin-block-start: 1em;
+  cursor: pointer;
+}
+.ProfileAction_BodyFoot .closeSession:hover {
+  color: var(--pink);
+}

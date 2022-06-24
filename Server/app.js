@@ -10,7 +10,7 @@ const adminRoutes = require('./src/routes/admin.routes');
 const userRoutes = require('./src/routes/users.routes');
 const factureRoutes = require('./src/routes/facture.routes');
 const productRoutes = require('./src/routes/products.routes');
-const productsApiRouter = require('./src/routes/Api/products.api')
+const productApiRouter = require('./src/routes/Api/productApiRoutes')
 const userLoggedMiddleware = require('./src/middlewares/userLogged.middleware');
 
 const app = express();
@@ -36,12 +36,12 @@ app.use(userLoggedMiddleware);
 
 // Invocación de rutas
 app.use('/', mainRoutes, userRoutes);
-app.use('/admin', adminRoutes);
+app.use('/admin', adminRoutes, userRoutes, productRoutes);
 
 app.use('/product', productRoutes);
 app.use('/facture', factureRoutes);
 
-app.use('/api', productsApiRouter)
+app.use('/api', productApiRouter)
 
 const PORT = 3001;
 const hostname = 'localhost';

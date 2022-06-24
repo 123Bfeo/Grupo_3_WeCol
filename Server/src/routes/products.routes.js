@@ -5,6 +5,7 @@ const productController = require('../controllers/product.controller');
 
 const validateCreateProductFormMiddleware = require('../middlewares/validateCreateProductForm.middleware');
 const productImageMiddleware = require('../middlewares/productImage.middleware');
+const userController = require('../controllers/user.controller');
 
 const validateCreateProduct = validateCreateProductFormMiddleware.createProduct();
 const upload = productImageMiddleware.addFile();
@@ -25,6 +26,9 @@ router.get('/detail/:id', productController.detailProduct);
 router.delete('/delete/:id', productController.deleteProduct);
 // Buscar un producto por ID
 router.get('/search/:id', productController.searchProduct);
+
+router.get('/products', productController.products);
+
 
 
 module.exports = router;

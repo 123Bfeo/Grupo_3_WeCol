@@ -1,12 +1,13 @@
-<%-include('../partials/Head')%>
-	<body class="ap-main">
-<%-include('../components/header/HeaderClient')%>
-<div class="ap-title">
-	<h2>PANEL DE ADMINISTRACIÓN PARA PRODUCTOS WECOL</h2>
-</div>
-<section class="ap-section">
-	<%- include("./adminFilterSearch") %>
-	<%- include("./btn_adminCreateProduct") %>
-	<%- include('./admin_productsContainer') %>
-</section>
-<%-include('../partials/Footer')%>
+<!doctype html>
+<html lang='es'>
+	<%-include('../../Components/Head/Head')%>
+	<body class="Admin">
+			<%- include('../../Components/AsideAdmin/AsideAdmin') %>
+			<div class='UserLoggedContent'>
+				<%- include('../../Components/UserLogged/UserLogged') %>
+			</div>
+			<main >
+
+			</main>
+	</body>
+</html>

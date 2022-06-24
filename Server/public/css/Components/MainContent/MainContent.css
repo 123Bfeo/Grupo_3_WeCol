@@ -1,0 +1,16 @@
+.Main {
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	padding-block: 100px 20px;
+	padding-inline: 70px 20px;
+}
+.MainContent {
+	background: white;
+	block-size: 100%;
+	inline-size: 100%;
+	border-radius: 1.5em;
+	padding: 1em;
+	border: 1px solid green;
+}
+

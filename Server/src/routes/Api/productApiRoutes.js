@@ -8,6 +8,3 @@ router.get('/products', productApiController.allProducts);
 router.get('/users', userApiController.allUsers);
 
 module.exports = router;
-
-
-

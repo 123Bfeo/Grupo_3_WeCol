@@ -1,0 +1,29 @@
+<nav class="HeaderNav" id="nav">
+    <article class="login">
+        <span> Te damos la Bienvenida</span>
+        <div class="btn-log">
+            <a href="/login">
+                <button class="btn-small btn-login">Iniciar Sesión</button>
+            </a>
+            <a href="/register">
+                <button class="btn-small btn-register">Registrarse</button>
+            </a>
+        </div>
+    </article>
+    <ul class="menuItems">
+        <li class="submenuToggle">
+            <a class="submenuItem" id="submenuItem">
+                <span>Categorías</span>
+                <i class="fa-solid fa-angle-right" id="submenuItem_icon"></i>
+            </a>
+            <ul class="submenu" id="submenu">
+                <% for(let i =0; i<category.length; i++) { %>
+                <li><a href=""><%=category[i].name %></a></li>
+                <% } %>
+            </ul>
+        </li>
+        <li><a href="/aboutUs">Ofertas</a></li>
+        <li><a href="/contact">PQRS</a></li>
+    </ul>
+</nav>
+<script defer src="/js/Components/HeaderNav/HeaderNav.js"></script>
