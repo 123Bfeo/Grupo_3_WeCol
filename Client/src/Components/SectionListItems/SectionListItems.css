@@ -1,17 +1,8 @@
-.SectionListItems {
-	border: 1px solid blue;
-	block-size: 100%;
-	inline-size: 100%;
-	display: block;
+.CardBodyItem td:nth-child(1),
+.CardBodyItem td:nth-child(2),
+.CardBodyItem td:last-child{
+	inline-size: 50px;
 }
-.SectionListItemContent {
-	border: 1px solid green;
-}
-
-.TableBodyCard {
-	border: 1px solid rebeccapurple;
-}
-
 .ItemCardImg {
 	display: block;
 	inline-size: 50px;
@@ -25,24 +16,34 @@
 	border-radius: 50%;
 }
 .CardBodyItem {
-	border: 1px solid blue;
 }
 
 table, th, td {
-	border: 1px solid black;
+	border: 1px solid var(--white);
+	padding: 0.5em;
+	color: var(--white);
 }
 th {
 	background: var(--primaryColor);
-	color: var(--white);
 	padding: 1em;
 }
 th:hover {
 	opacity: 0.5;
 }
-table {
+thead:first-child {
+	inline-size: 10px;
+}
+.Table {
 	border-collapse: collapse;
 	inline-size: 100%;
 }
-td:hover:not(:nth-child(2)) {
+td:nth-child(3) {
+	text-transform: capitalize;
+}
+td:nth-child(3):hover {
 	background: var(--gray20);
+	color: var(--black);
+}
+.TableBodyCard {
+	border: 1px solid blue;
 }

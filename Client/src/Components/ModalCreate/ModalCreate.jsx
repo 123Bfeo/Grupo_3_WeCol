@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './ModalCreate.css';
-import {AiOutlinePlus} from 'react-icons/all';
 
 const ModalCreate = (props) => {
 	const [show, setShow] = useState(false);
@@ -17,7 +16,7 @@ const ModalCreate = (props) => {
 				</div>
 			</div>
 			<span className="buttonOpenModal" onClick={ handleModalShow }>
-				<span>{ props.createItem }</span>
+				<span>{ props.buttonCreateItem }</span>
 			</span>
 		</section>
 	)

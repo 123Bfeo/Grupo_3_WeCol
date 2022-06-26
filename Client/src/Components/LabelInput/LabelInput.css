@@ -1,8 +1,0 @@
-.LabelInput input {
-	display: block;
-	inline-size: 100%;
-	padding: 1.5em 3em 1.5em 1.5em;
-}
-.LabelInput input::placeholder {
-	color: var(--inputPlaceholder);
-}

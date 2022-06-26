@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import './SectionListItems.css';
+import '../SectionListItems/SectionListItems.css';
 
-const SectionListItems = () => {
+const SectionListItemsProducts = () => {
 	const [products, setProducts] = useState([]);
 	
 	useEffect(() => {
@@ -15,14 +15,12 @@ const SectionListItems = () => {
 	return (
 		<div className='SectionListItems'>
 			<div className='SectionListItemsContent'>
-				{
-				
-				}
-				<table>
+				<table className='Table'>
 					<thead>
 						<th>Id</th>
 						<th>Imagen</th>
 						<th>Ref Producto</th>
+						<th>Acciones</th>
 					</thead>
 					<tbody className='TableBodyCard'>
 						{
@@ -36,6 +34,10 @@ const SectionListItems = () => {
 											</picture>
 										</td>
 										<td>{product.name}</td>
+										<td className='Actions'>
+											<button className='ButtonEdit'>Editar</button>
+											<button className='ButtonDelete'>Eliminar</button>
+										</td>
 									</tr>
 								)
 							})
@@ -47,4 +49,4 @@ const SectionListItems = () => {
 	)
 }
 
-export default SectionListItems;
+export default SectionListItemsProducts;

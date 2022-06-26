@@ -12,11 +12,14 @@
 	--primaryFont:  'Roboto', sans-serif;
 	font-family: var(--primaryFont);
 	--bgGray: rgb(91, 91, 91);
+	--bgGray2: #1d1d1d;
 }
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+html {
 }
 body {
 	background: var(--black);

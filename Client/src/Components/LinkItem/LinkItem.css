@@ -1,0 +1,18 @@
+.LinkItem {
+	font-size: 2em;
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+	color: var(--white);
+}
+.LinkItem:hover {
+	background: var(--gray10);
+}
+.LinkItem > i{
+	font-size: 40px;
+	padding: 0.1em;
+	transition: transform 0.3s;
+}
+.LinkItem:hover > i {
+	transform: matrix3d(1, 0.1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 2);
+}

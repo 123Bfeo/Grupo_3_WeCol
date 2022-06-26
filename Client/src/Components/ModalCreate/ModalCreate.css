@@ -23,12 +23,12 @@
 	font-size: var(--specialFont);
 	font-weight: 700;
 	border: 2px solid var(--primaryColor);
-	cursor: copy;
-}
-.buttonOpenModal:hover {
+	cursor: default;
 	background: var(--inputPlaceholder);
 	color: var(--white);
-	transform: scale(1.1);
+}
+.buttonOpenModal:hover {
+	transform: scale(0.9);
 }
 .buttonOpenModalIcon {
 	position: absolute;
