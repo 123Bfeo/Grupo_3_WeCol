@@ -1,12 +1,15 @@
 import { useEffect, useState } from 'react';
+import './Pagination.css';
 import ReactPaginate from 'react-paginate';
+import {AiTwotoneEdit, MdDelete} from 'react-icons/all';
+
 
 const Pagination = (props) => {
 	const { items } = props;
-	const [currentItems, setCurrentItems] = useState(null);
+	const [currentItems, setCurrentItems] = useState([]);
 	const [pageCount, setPageCount] = useState(0);
 	const [itemOffset, setItemOffset] = useState(0);
-	const itemsPerPage = 10;
+	const itemsPerPage = 7;
 	
 	useEffect(() => {
 		const endOffset = itemOffset + itemsPerPage;
@@ -19,16 +22,61 @@ const Pagination = (props) => {
 		setItemOffset(newOffset);
 	};
 	
+	const handleDelete = (id) => {
+		const config = {
+			method: "DELETE",
+		};
+		fetch(`http://localhost:3001/product/delete/${id}`, config)
+			.then((response) => response.text())
+			.catch((error) => console.log(error));
+	}
+	
 	return (
 		<>
+			<table className='Table'>
+				<thead>
+					<tr>
+						<th>Id</th>
+						<th>Imagen</th>
+						<th>Ref Producto</th>
+						<th>Acciones</th>
+					</tr>
+				</thead>
+				<tbody className='TableBodyCard'>
+				{
+					currentItems.map(product => {
+						return (
+							<tr key={product.id} className='CardBodyItem'>
+								<td>{product.id}</td>
+								<td>
+									<picture className='ItemCardImg'>
+										<img src={`http://localhost:3001/img/products/${ product.image }`} alt={product.name} title={product.name} />
+									</picture>
+								</td>
+								<td>{product.name}</td>
+								<td className='Actions'>
+									<button><AiTwotoneEdit /></button>
+									<button onClick={ () => handleDelete(product.id) }><MdDelete /></button>
+								</td>
+							</tr>
+						)
+					})
+				}
+				</tbody>
+			</table>
 			<ReactPaginate
 				breakLabel="..."
-				nextLabel="next >"
+				nextLabel="Siguiente >"
 				onPageChange={handlePageClick}
 				pageRangeDisplayed={5}
 				pageCount={pageCount}
-				previousLabel="< previous"
+				previousLabel="< Anterior"
 				renderOnZeroPageCount={null}
+				containerClassName='pagination'
+				pageLinkClassName='page-num'
+				previousLinkClassName='page-num'
+				nextLinkClassName='page-num'
+				activeClassName='active'
 			/>
 		</>
 	);

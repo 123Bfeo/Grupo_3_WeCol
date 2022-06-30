@@ -15,7 +15,8 @@
 	block-size: 100%;
 	border-radius: 50%;
 }
-.CardBodyItem {
+.CardBodyItem:not(:last-child) {
+	margin-bottom: 3rem;
 }
 
 table, th, td {
