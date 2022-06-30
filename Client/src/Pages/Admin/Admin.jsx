@@ -11,7 +11,6 @@ const Admin = () => {
 	return (
 		<section className='Admin'>
 			<Sidebar />
-			<article className='UserLogged'></article>
 			<Main />
 		</section>
 	)

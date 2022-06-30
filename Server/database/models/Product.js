@@ -9,20 +9,12 @@ module.exports = function (sequelize, dataTypes) {
 		name: {
 			type: dataTypes.STRING,
 		},
-		price: {
-			type: dataTypes.INTEGER,
-		},
 		description: {
-			type: dataTypes.TEXT,
+			type: dataTypes.STRING,
 		},
 		image: {
 			type: dataTypes.STRING,
-		},
-		categories_id: {
-			type: dataTypes.INTEGER,
-		},
-		brands_id: {
-			type: dataTypes.INTEGER,
+			defaultValue: 'sergio.png'
 		}
 	}
 

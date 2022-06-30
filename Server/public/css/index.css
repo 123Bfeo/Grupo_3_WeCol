@@ -8,7 +8,7 @@
 @import './wrapper.css';
 
 /* Secciones */
-/* @import './Components/Header/Header.css';
+@import './Components/Header/Header.css';
 @import './hero.css';
 @import './main.css';
 @import './hero-recommended.css';
@@ -28,25 +28,25 @@
 @import './register.css';
 @import './paymentRequest.css';
 @import './contact.css';
-@import './create.css'; */
+@import './create.css';
 
 /* Forms */
-/* @import './forms/index.css'; */
+ @import './forms/index.css';
 
-/* Buttons */
-/* @import './buttons/index.css'; */
+ /* Buttons */
+ @import './buttons/index.css';
 
 /* Components */
-/* @import 'public/css/Components/borders.css';
+@import 'public/css/Components/borders.css';
 @import 'public/css/wrapper.css';
 @import 'public/css/Components/card.css';
 @import 'public/css/Components/button.css';
 @import 'public/css/Components/sliderDetail.css';
 @import 'public/css/Components/productDetailHero.css';
-@import 'public/css/Components/quantity.css'; */
+@import 'public/css/Components/quantity.css';
 
 /* Admin */
-/* @import './admin/modalCreateProduct.css';
+@import './admin/modalCreateProduct.css';
 @import './admin/allProductStock.css';
 @import './admin/adminListStock.css';
 @import './admin/adminCreate.css';
@@ -55,10 +55,10 @@
 @import './admin/adminFilterSearch.css';
 @import './admin/adminProductMain.css';
 @import './admin/adminSearch.css';
-@import './admin/admin_productsContainer.css'; */
+@import './admin/admin_productsContainer.css';
 
 /* Partials */
-/* @import './partials/btn_adminCreateProduct.css'; */
+ @import './partials/btn_adminCreateProduct.css';
 
 
 

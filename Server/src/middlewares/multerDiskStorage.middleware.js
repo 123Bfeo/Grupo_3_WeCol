@@ -3,7 +3,7 @@ const { join, extname } = require ('path');
 
 const multerDiskStorage = multer.diskStorage({
   destination: (req, file, callback) => {
-    const profile = join(__dirname, '../../public/Profile-users');
+    const profile = join(__dirname, '../../public/img/users');
     callback(null, profile);
   },
   

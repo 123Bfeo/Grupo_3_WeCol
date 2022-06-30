@@ -18,10 +18,12 @@ const SectionListItemsUsers = () => {
 			<div className='SectionListItemsContent'>
 				<table className='Table'>
 					<thead className='TableHead'>
-						<th>Id</th>
-						<th>Imagen</th>
-						<th>Nombre</th>
-						<th>Acciones</th>
+						<tr>
+							<th>Id</th>
+							<th>Imagen</th>
+							<th>Nombre</th>
+							<th>Acciones</th>
+						</tr>
 					</thead>
 					<tbody className='TableBodyCard'>
 						{
@@ -31,7 +33,7 @@ const SectionListItemsUsers = () => {
 										<td>{user.id}</td>
 										<td>
 											<picture className='ItemCardImg'>
-												<img src={user.avatar} alt={user.name} title={user.name} />
+												<img src={`http://localhost:3001/img/users/${user.avatar}`} alt={user.name} title={user.name} />
 											</picture>
 										</td>
 										<td>{user.firstname} { user.lastname}</td>

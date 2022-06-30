@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import './Sidebar.css';
 import Logo from '../../Logo.svg';
 import Favicon from '../../Favicon.svg';
+import { Link } from 'react-router-dom';
 
 import { ProSidebar } from "react-pro-sidebar";
 import LinkItem from '../LinkItem/LinkItem';
@@ -21,9 +22,11 @@ const Sidebar = () => {
 	return (
 				<ProSidebar collapsed={ menuCollapse } className='ProSidebar' onMouseOver={ menuMouseOver } onMouseLeave={ menuMouseLeave }>
 					<header className='SidebarHeader'>
-						<picture className="SidebarPicture">
-							<img src={ menuCollapse ? Favicon : Logo }  alt='Img'/>
-						</picture>
+						<Link to='/'>
+							<picture className="SidebarPicture">
+								<img src={ menuCollapse ? Favicon : Logo }  alt='Img'/>
+							</picture>
+						</Link>
 					</header>
 					<section className='SidebarContent'>
 						<LinkItem to='/users' icon={ <FaHeart /> }>Usuarios</LinkItem>

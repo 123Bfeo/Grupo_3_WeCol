@@ -8,7 +8,11 @@ const userController = {
 					data: {
 						users
 					},
-					count: users.length,
+					count: {
+						users: users.length,
+						userLast: users[users.length - 1]
+					},
+					route: 'http://localhost:3001/img/users/',
 					status: 200,
 				});
 			})
