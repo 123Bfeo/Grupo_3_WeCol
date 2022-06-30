@@ -1,0 +1,36 @@
+.TableUsers{
+	border: 1px solid red;
+}
+.img {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center; }
+
+.TableHead {
+	background: #99b19c; }
+.TableHead th {
+	padding: 30px;
+	color: white; }
+.Table tbody tr {
+	margin-bottom: 10px; }
+.Table tbody th, .table tbody td {
+	border: none;
+	padding: 30px;
+	font-size: 14px;
+	background: #fff;
+	border-bottom: 4px solid #f8f9fd;
+	vertical-align: middle; }
+.Table tbody td.quantity {
+	width: 10%; }
+.Table tbody td .img {
+	width: 100px;
+	height: 80px; }
+.Table tbody td .email span {
+	display: block; }
+.Table tbody td .email span:last-child {
+	font-size: 12px;
+	color: rgba(0, 0, 0, 0.3); }
+.Table tbody td .close span {
+	font-size: 12px;
+	color: #dc3545; }
+

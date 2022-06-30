@@ -1,0 +1,49 @@
+.CardBodyItem td:nth-child(1),
+.CardBodyItem td:nth-child(2),
+.CardBodyItem td:last-child{
+	inline-size: 50px;
+}
+.ItemCardImg {
+	display: block;
+	inline-size: 50px;
+	block-size: 50px;
+	border-radius: 50%;
+}
+.ItemCardImg img {
+	display: block;
+	inline-size: 100%;
+	block-size: 100%;
+	border-radius: 50%;
+}
+.CardBodyItem {
+}
+
+table, th, td {
+	border: 1px solid var(--white);
+	padding: 0.5em;
+	color: var(--white);
+}
+th {
+	background: var(--primaryColor);
+	padding: 1em;
+}
+th:hover {
+	opacity: 0.5;
+}
+thead:first-child {
+	inline-size: 10px;
+}
+.Table {
+	border-collapse: collapse;
+	inline-size: 100%;
+}
+td:nth-child(3) {
+	text-transform: capitalize;
+}
+td:nth-child(3):hover {
+	background: var(--gray20);
+	color: var(--black);
+}
+.TableBodyCard {
+	border: 1px solid blue;
+}

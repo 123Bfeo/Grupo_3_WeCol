@@ -1,0 +1,76 @@
+.LastItem {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	inline-size: 100%;
+	padding-inline: 5em;
+}
+
+.LastCard {
+	block-size: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #f5f5f5;
+	border-radius: 10px;
+	padding: 0 10em;
+	position: relative;
+}
+.LastCardContent {
+	display: flex;
+	flex-direction: column;
+}
+.LastCreationTitle {
+	font-weight: bold;
+	color: #000;
+	text-align: center;
+	border: 2px solid var(--black);
+	padding: 0.5em 1em;
+}
+.LastCardImage {
+	position: absolute;
+	top: 0.8em;
+	left: 0.8em;
+	border-radius: 50%;
+	background: var(--primaryColor);
+	color: var(--white);
+	padding: 0.2em;
+	display: block;
+	inline-size: 60px;
+	block-size: 60px;
+}
+.LastCardImage img {
+	inline-size: 100%;
+	block-size: 100%;
+	border-radius: 50%;
+	object-fit: cover;
+}
+.LastCardContentHead {
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+}
+.LastCardContentHead .TitleName {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: var(--primaryColor);
+}
+.LastCardContentHead .EmojiFlag {
+	font-size: 4em;
+	margin-right: 0.5em;
+}
+.LastCardContentBodyHead {
+	display: flex;
+	flex-direction: column;
+}
+.LastCardContentBodyHeadName {
+	font-size: 2em;
+	font-weight: bold;
+}
+.LastCardContentBodyHead span:nth-child(2) {
+	opacity: 0.5;
+}
+.LastCardContentBodyHeadDescription {
+	font-size: 1em;
+	opacity: 0.5;
+}

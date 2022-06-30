@@ -49,7 +49,7 @@ Es abogada en el sector tecnológico y estudiante de Desarrollo web Full Stack, 
 [Logitechg](https://www.logitechg.com/es-roam/community.html)<br>
 [Amazon](https://www.amazon.com/)
 
-### Descripcion de por que elegimos estos sitios web como inspiracion
+### Descripción de porque elegimos estos sitios web como inspiración
 
 Escogimos esto sitios pues fueron los principales referentes en cuanto al diseño, estilo, productos, público objetivo y, en general, concepto de e-commerce que se acercaban más a nuestras ideas para el desarrollo de nuestro sitio web. <br>
 

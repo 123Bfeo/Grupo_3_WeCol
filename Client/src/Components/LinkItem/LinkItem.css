@@ -1,0 +1,22 @@
+.LinkItem {
+	font-size: 1.5em;
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+	color: var(--white);
+}
+.LinkItem:hover {
+	background: var(--gray10);
+}
+.LinkItem > i{
+	font-size: 1.5em;
+	padding: 0.1em;
+	transition: transform 0.3s;
+}
+.LinkItem > i svg {
+	fill: var(--white);
+	stroke-width: 0;
+}
+.LinkItem:hover > i {
+	transform: matrix3d(1, 0.1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 2);
+}

@@ -1,7 +1,7 @@
 const factureController = {
   productCart: (req, res) => {
     const title = 'Carrito de Compras';
-    res.render('./products/productCart',{ title });
+    res.render('./products/productCart', { title });
   },
   facture: (req, res) => {
     const title = 'Factura de compra';

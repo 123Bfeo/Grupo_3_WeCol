@@ -1,0 +1,11 @@
+.ModalCreateProduct {
+	inline-size: 600px;
+	block-size: 600px;
+	background: white;
+	position: absolute;
+	top: 20%;
+	left: 20%;
+}
+.ModalCreateProductActive {
+	display: block;
+}

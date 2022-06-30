@@ -1,0 +1,53 @@
+.ModalCreate {
+	font-size: 1rem;
+}
+.ModalBackground {
+	position: absolute;
+	right: 0;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(10, 10, 10, 0.86);
+}
+.ModalContent {
+	margin: 20vh auto;
+	display: block;
+	width: 60%;
+	height: 60%;
+	background-color: lightgray;
+	border-radius: 5px;
+	position: relative;
+}
+.buttonOpenModal {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1em;
+	padding: 1em;
+	font-size: var(--specialFont);
+	font-weight: 700;
+	border: 2px solid var(--primaryColor);
+	cursor: default;
+	background: var(--inputPlaceholder);
+	color: var(--white);
+}
+.buttonOpenModal:hover {
+	transform: scale(0.9);
+}
+.GrFormClose {
+	position: absolute;
+	top: -0.5em;
+	right: -0.5em;
+	font-size: 2em;
+	background: var(--white);
+	border-radius: 50%;
+	box-shadow: #1D1D1D;
+	cursor: pointer;
+}
+.FormContent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 1em;
+}

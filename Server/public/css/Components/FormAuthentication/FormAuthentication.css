@@ -1,0 +1,32 @@
+@import '../ButtonForm/ButtonForm.css';
+@import '../LabelInput/LabelInput.css';
+
+.FormAuthentication{
+	inline-size: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5em;
+}
+.FormContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5em;
+}
+.FormContent {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+}
+.HaveAccount {
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+}
+.HaveAccount span{
+	color: var(--white);
+}
+.HaveAccount a {
+	color: var(--primaryColor)
+}

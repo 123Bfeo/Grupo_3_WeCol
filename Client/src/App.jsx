@@ -1,14 +1,17 @@
-import React from 'react'
-import './App.css'
-import Header from './Components/Header/Header';
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+
+import './App.css';
+import Admin from './Pages/Admin/Admin';
+
 
 function App() {
-
-  return (
-    <div className="App">
-      <Header />
-    </div>
-  )
+	
+	return (
+		<BrowserRouter>
+			<Admin />
+		</BrowserRouter>
+	)
 }
 
 export default App

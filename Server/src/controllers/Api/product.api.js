@@ -13,8 +13,10 @@ const productController = {
 					},
 					count: {
 						category: category.length,
-						product: product.length
+						product: product.length,
+						productLast: product[product.length - 1]
 					},
+					route: 'http://localhost:3001/img/products/',
 					status: 200
 				})
 			})
@@ -23,4 +25,3 @@ const productController = {
 };
 
 module.exports = productController;
-

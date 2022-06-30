@@ -1,4 +1,4 @@
-@import '../components/cards_container.css';
+@import 'public/css/Components/cards_container.css';
 
 .ap-main {
   font-family: var(--primaryFont);

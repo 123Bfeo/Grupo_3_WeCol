@@ -1,0 +1,16 @@
+<article class='FormAuthentication'>
+    <picture>
+        <img src='/img/favicon.svg' alt='Logo' title='Logo'>
+    </picture>
+    <form action='/login' method='POST' class='FormContainer'>
+
+        <div class='FormContent'>
+            <%- include('../LabelInput/LabelInput', { id: 'fullname', label: 'Nombre Completo', type: 'text', name: 'fullname', placeholder: 'John Doe' }) %>
+            <%- include('../LabelInput/LabelInput', { id: 'username', label: 'Usuario', type: 'text', name: 'username', placeholder: 'john.doe' }) %>
+            <%- include('../LabelInput/LabelInput', { id: 'email', label: 'Correo', type: 'email', name: 'email', placeholder: 'jhon@doe.com' }) %>
+            <%- include('../LabelInput/LabelInput', { id: 'password', label: 'Contraseña', type: 'password', name: 'password', placeholder: 'Contraseña' }) %>
+        </div>
+
+        <%- include('../ButtonForm/ButtonForm', { name: 'Iniciar Sesión' }) %>
+    </form>
+</article>

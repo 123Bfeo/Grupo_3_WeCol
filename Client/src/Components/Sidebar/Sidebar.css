@@ -1,0 +1,43 @@
+.ProSidebar {
+	inline-size: 272px;
+	block-size: 100vh;
+	overflow-x: hidden;
+	background: var(--bgGray2);
+	transition: inline-size, left, right, 0.3s;
+	border-inline-start: 4px solid var(--primaryColor);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: sticky;
+	top: 0;
+	left: 0;
+}
+.ProSidebar.collapsed {
+	transition: inline-size, left, right, 0.3s;
+	inline-size: 72px;
+}
+.SidebarHeader {
+	padding-block: 0.5em;
+	display: block;
+	border-block-end: 2px solid var(--gray10);
+	inline-size: 100%;
+}
+.SidebarPicture {
+	padding-inline-start: 0.5em;
+}
+.SidebarContent {
+	padding-inline-start: 0.5em;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+.SidebarFooter {
+	padding-inline-start: 0.5em;
+	border-block-start: 2px solid var(--gray10);
+}
+.pro-sidebar-layout {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	block-size: 100vh;
+}
