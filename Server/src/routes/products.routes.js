@@ -24,7 +24,7 @@ router.post('/create', productController.saveProduct);
 // Eliminar un Producto
 // router.get('/detail/:id', productController.detailProduct);
 // Detalles de un producto
-// router.delete('/delete/:id', productController.deleteProduct);
+router.delete('/delete/:id', productController.deleteProduct);
 // Buscar un producto por ID
 // router.get('/search/:id', productController.searchProduct);
 

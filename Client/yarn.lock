@@ -669,6 +669,11 @@ prop-types@^15.6.1:
     object-assign "^4.1.1"
     react-is "^16.13.1"
 
+react-confirm-alert@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/react-confirm-alert/-/react-confirm-alert-3.0.2.tgz#a64eb6ab1a82891314d20e03a1a39ad39d96e8fa"
+  integrity sha512-4yjYlhURDc1P6c/9A20C0w4EHx9kik9kHjjgmuIGD0F5sSQcmSstU1qwPrkFL3gJaMKWunckEtTw/7cARW3ZFg==
+
 react-country-flag@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/react-country-flag/-/react-country-flag-3.0.2.tgz#54c37abe2c87251e95b0f40bb4c09b000f4669e7"

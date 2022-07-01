@@ -1,7 +1,11 @@
 import { useEffect, useState } from 'react';
 import './Pagination.css';
 import ReactPaginate from 'react-paginate';
+<<<<<<< HEAD
 import {AiTwotoneEdit, MdDelete} from 'react-icons/all';
+=======
+import { AiFillDelete, FiEdit2 } from 'react-icons/all';
+>>>>>>> SGS
 
 
 const Pagination = (props) => {
@@ -9,7 +13,11 @@ const Pagination = (props) => {
 	const [currentItems, setCurrentItems] = useState([]);
 	const [pageCount, setPageCount] = useState(0);
 	const [itemOffset, setItemOffset] = useState(0);
+<<<<<<< HEAD
 	const itemsPerPage = 7;
+=======
+	const itemsPerPage = 2;
+>>>>>>> SGS
 	
 	useEffect(() => {
 		const endOffset = itemOffset + itemsPerPage;
@@ -35,12 +43,21 @@ const Pagination = (props) => {
 		<>
 			<table className='Table'>
 				<thead>
+<<<<<<< HEAD
 					<tr>
 						<th>Id</th>
 						<th>Imagen</th>
 						<th>Ref Producto</th>
 						<th>Acciones</th>
 					</tr>
+=======
+				<tr>
+					<th>Id</th>
+					<th>Imagen</th>
+					<th>Ref Producto</th>
+					<th>Acciones</th>
+				</tr>
+>>>>>>> SGS
 				</thead>
 				<tbody className='TableBodyCard'>
 				{
@@ -55,8 +72,13 @@ const Pagination = (props) => {
 								</td>
 								<td>{product.name}</td>
 								<td className='Actions'>
+<<<<<<< HEAD
 									<button><AiTwotoneEdit /></button>
 									<button onClick={ () => handleDelete(product.id) }><MdDelete /></button>
+=======
+									<button><FiEdit2 /></button>
+									<button onClick={ () => handleDelete(product.id) }><AiFillDelete /></button>
+>>>>>>> SGS
 								</td>
 							</tr>
 						)
