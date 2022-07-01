@@ -47,3 +47,15 @@ td:nth-child(3):hover {
 .TableBodyCard {
 	border: 1px solid blue;
 }
+.Actions button {
+	background: none;
+	border: none;
+}
+.Actions svg {
+	fill: var(--white);
+	color: var(--white);
+	font-size: 30px;
+}
+.Actions svg:hover {
+	transform: scale(1.2);
+}

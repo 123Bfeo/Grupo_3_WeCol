@@ -18,10 +18,7 @@ const productController = {
         res.send({ category, product })
       });
   },
-
- 
-
-  //Guardar producto CREADO
+  
   saveProduct: (req, res) => {
     console.log(req.body);
     db.Product.create(
@@ -32,6 +29,15 @@ const productController = {
 
     res.send('ya la guarde');
   },
+  
+  deleteProduct: (req, res) => {
+    db.Product.destroy({
+      where: {
+        id: req.params.id
+      }
+    })
+    res.send('eliminado')
+  }
 
 
 
