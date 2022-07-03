@@ -1,27 +1,29 @@
 <header class="Header">
   <section class='HeaderContainer wrapper'>
-    <a href="/" class="logo">
-      <img src="/img/Logo.svg" alt="Logo WeCol" title="Logo WeCol" />
+    <%- include('../Logotipo/Logotipo') %>
+    <a class="OpenMenuToggle" id="OpenMenuToggle">
+      <i class="fas fa-bars"></i>
     </a>
-    <% if (!locals.isLogged) { %> <%- include('../HeaderNav/HeaderNav') %> <% } %>
-    <article class="ProfileAction">
+    <nav class='MenuNavigation' id='MenuNavigation'>
+      <%- include('../HeaderNav/HeaderNav') %>
+    </nav>
+    <!--<article class="ProfileAction">
+    <%# if (!locals.isLogged) { %> <%# include('../HeaderNav/HeaderNav') %> <# } %>
       <div class='ProfileAction_Header'>
         <picture>
           <img src='' alt=''/>
         </picture>
       </div>
 
-      <a class="menu-toggle" id="menuToggle">
-        <i class="fas fa-bars"></i>
-      </a>
-      <% if (locals.isLogged) { %> <%- include('../UserLogged/UserLogged') %> <% } else { %>
+      <%#  if (locals.isLogged) { %> <%# include('../UserLogged/UserLogged') %> <%# } else { %>
         <a href="/login">
           <i class="fas fa-user"></i>
         </a>
-      <% } %>
+      <%#  } %>
       <a href="/productCart">
         <i class="fas fa-shopping-cart"></i>
       </a>
-    </article>
+    </article>-->
   </section>
 </header>
+<script src='/js/Components/Header/Header.js'></script>

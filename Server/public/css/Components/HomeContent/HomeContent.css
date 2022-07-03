@@ -1,0 +1,18 @@
+.HeroHomeContent {
+	border: 1px solid red;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.HeroText {
+	display: flex;
+	flex-direction: column;
+}
+.HeroText span {
+	color: var(--white);
+	font-family: var(--primaryFont);
+	font-size: 64px;
+	font-weight: bold;
+	margin-bottom: 1rem;
+	
+}

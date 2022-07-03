@@ -1,0 +1,7 @@
+.Logo {
+	display: block;
+	inline-size: 100px;
+}
+.Logo img {
+	inline-size: 100%;
+}

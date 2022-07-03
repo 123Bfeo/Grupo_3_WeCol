@@ -14,7 +14,7 @@ const fileUpload = multer({
 	storage: fileProductMiddleware,
 })
 //Todos los productos
-router.get('/product', productController.allProducts);
+// router.get('/product', productController.allProducts);
 //Crear un producto
 // router.get('/create', productController.createProduct);
 router.post('/create', productController.saveProduct);

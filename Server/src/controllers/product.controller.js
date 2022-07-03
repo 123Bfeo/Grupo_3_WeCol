@@ -9,7 +9,7 @@ const productController = {
     })
   },
   
-  allProducts: (req, res) => {
+  /* allProducts: (req, res) => {
     const reqCategory = db.Category.findAll();
     const reqProduct = db.Product.findAll();
     Promise.all([reqCategory, reqProduct])
@@ -17,7 +17,7 @@ const productController = {
         //res.render('index', { title, category, product })
         res.send({ category, product })
       });
-  },
+  },*/
   
   saveProduct: (req, res) => {
     console.log(req.body);

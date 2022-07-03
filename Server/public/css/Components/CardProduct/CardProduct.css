@@ -1,0 +1,32 @@
+.CardProduct {
+	border: 1px solid red;
+	inline-size: 260px;
+	max-block-size: 400px;
+	background: var(--white);
+}
+.CardProductHead {
+	inline-size: 100%;
+}
+.CardProductHead img {
+	inline-size: 100%;
+	block-size: 100%;
+	display: block;
+}
+.CardProductBody {
+	border: 1px solid green;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5em;
+}
+.CardProductBodyText {
+	display: flex;
+	flex-direction: column;
+	gap: 0.2em;
+}
+.CardProductBodyText span {
+	font-weight: bold;
+}
+.CardProductBodyText p {
+	font-size: 0.8em;
+	color: var(--text-gray);
+}

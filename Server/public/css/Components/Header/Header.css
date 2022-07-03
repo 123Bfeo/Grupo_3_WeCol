@@ -1,13 +1,10 @@
-@import './Header.css';
-@import '../HeaderNav/HeaderNav.css';
-
 .Header {
 	background: var(--bg-dark);
 	inline-size: 100vw;
 	block-size: 100%;
 	position: sticky;
 	top: 0;
-	z-index: 1;
+	z-index: 2;
 }
 .HeaderContainer {
 	display: flex;
@@ -15,47 +12,7 @@
 	justify-content: space-between;
 	block-size: 5em;
 }
-
-
-
-
-
-.logo {
-	display: block;
-	inline-size: 100px;
-}
-.logo img {
-	inline-size: 100%;
-}
-.login {
-	color: var(--white);
-	margin-block-start: 24px;
-	display: flex;
-	flex-direction: column;
-	gap: 8px;
-}
-.login i {
-	font-size: 24px;
-}
-.header-right {
-	display: flex;
-	align-items: center;
-	gap: 124px;
-}
-.header-right i {
+.OpenMenuToggle {
 	color: var(--icon-color);
-}
-.user {
-	display: none;
-}
-@media screen and (min-width: 580px) {
-	.user {
-		display: block;
-	}
-	.menu-toggle {
-		display: none;
-	}
-	.login {
-		display: none;
-	}
+	font-size: 2em;
 }

@@ -7,9 +7,15 @@
 @import './reset.css';
 @import './wrapper.css';
 
+/* Components */
+@import './Components/Components.css';
+
+/* Pages */
+@import './Pages/Pages.css';
+
+
 /* Secciones */
-@import './Components/Header/Header.css';
-@import './hero.css';
+/*@import './hero.css';
 @import './main.css';
 @import './hero-recommended.css';
 @import './categories.css';
@@ -28,25 +34,25 @@
 @import './register.css';
 @import './paymentRequest.css';
 @import './contact.css';
-@import './create.css';
+@import './create.css';*/
 
 /* Forms */
- @import './forms/index.css';
+ /*@import './forms/index.css';*/
 
  /* Buttons */
  @import './buttons/index.css';
 
 /* Components */
-@import 'public/css/Components/borders.css';
+/* @import 'public/css/Components/borders.css';
 @import 'public/css/wrapper.css';
 @import 'public/css/Components/card.css';
 @import 'public/css/Components/button.css';
 @import 'public/css/Components/sliderDetail.css';
 @import 'public/css/Components/productDetailHero.css';
-@import 'public/css/Components/quantity.css';
+@import 'public/css/Components/quantity.css';*/
 
 /* Admin */
-@import './admin/modalCreateProduct.css';
+/* @import './admin/modalCreateProduct.css';
 @import './admin/allProductStock.css';
 @import './admin/adminListStock.css';
 @import './admin/adminCreate.css';
@@ -55,40 +61,34 @@
 @import './admin/adminFilterSearch.css';
 @import './admin/adminProductMain.css';
 @import './admin/adminSearch.css';
-@import './admin/admin_productsContainer.css';
+@import './admin/admin_productsContainer.css'; */
 
 /* Partials */
- @import './partials/btn_adminCreateProduct.css';
+/* @import './partials/btn_adminCreateProduct.css'; */
 
 
 
 
 
-/* Pages */
-@import './Pages/Pages.css';
-
-/* Components */
-@import './Components/Components.css';
 
 :root {
   /* Colores */
   --black: #000;
+  --white: #FFF;
   --bg-dark2: #323945;
-  /* --bg-dark: radial-gradient(circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgb(10, 7, 35) 97.5%); */
   --bg-dark: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #080C24;;
   --gray10: #44495F;
-  --pink: #E97DD8;
-  --white: #FFF;
   --icon-color: var(--white);
-  /* --secondary: rgb(231, 138, 0); */
-  --secondary: conic-gradient(from 103.1deg at 50% 50%, #E97DD8 -50.2deg, #3A1C71 121.03deg, #E97DD8 309.8deg, #3A1C71 481.03deg);
-  --placeholder: rgba(231, 138, 0, 0.3);
-  --text-gray: rgb(91, 91, 91);
+  
+  --secondary10: rgb(233, 125, 216);
+  --secondary20: rgb(231, 138, 0);
+  
+  --placeholder10: rgba(231, 138, 0, 0.3);
+  --text-gray: rgb(167, 167, 167);
   --text-gray-opacity: rgba(91, 91, 91, 0.5);
   --gray2: #383838;
   --blue-admin-i: #0832de;
   
-  --orange: #E78A00;
   /* Tipografías */
   --primaryFont: "Roboto";
   --secondFont: "Source Serif Pro";
@@ -110,6 +110,8 @@
   
   /* Input */
   --inputText: 16px/24px var(--secondFont);
+  
+  font-family: var(--primaryFont);
 }
 body {
   background: var(--black);
