@@ -1,32 +1,75 @@
+.ProductsSectionHomeContent {
+	display: grid;
+	grid-template-columns: repeat(
+		auto-fit,
+		minmax(250px, 1fr));
+	gap: 16px;
+}
+
 .CardProduct {
-	border: 1px solid red;
-	inline-size: 260px;
-	max-block-size: 400px;
-	background: var(--white);
+	position: relative;
+	border-radius: 5px;
+	box-shadow: 0 5px 10px rgba(255,255,255,0.3);
+	block-size: 300px;
+	overflow: hidden;
 }
-.CardProductHead {
-	inline-size: 100%;
-}
-.CardProductHead img {
+
+.CardProduct > picture {
 	inline-size: 100%;
 	block-size: 100%;
-	display: block;
+	margin: 20px auto 0 auto;
 }
+
+.CardProduct > picture > img {
+	inline-size: 100%;
+	block-size: 90%;
+}
+
 .CardProductBody {
-	border: 1px solid green;
+	background: var(--white);
+	border-radius: 0 10px;
+	padding-inline: 1.5em;
+	padding-block: 0.5em 1em;
+	position: absolute;
+	bottom: -6em;
+	inline-size: 100%;
+	transition: box-shadow .3s ease-in-out,
+	bottom .3s ease-in-out;
 	display: flex;
 	flex-direction: column;
-	gap: 1.5em;
+	gap: 1em;
 }
-.CardProductBodyText {
+
+.CardProduct:hover .CardProductBody {
+	box-shadow: 0 -5px 10px rgba(0,0,0,0.3);
+	bottom: 0;
+}
+
+.CardProductBodyDetails {
+	line-height: 1em;
+	padding-block: 0.3em;
 	display: flex;
-	flex-direction: column;
-	gap: 0.2em;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 2em;
+	overflow-x: hidden;
 }
-.CardProductBodyText span {
-	font-weight: bold;
+.btn {
+	background-color: #192a56;
+	border-radius: 5px;
+	color: #FFF;
+	display: block;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: capitalize;
+	width: 100%;
+	transition: box-shadow .3s ease-in-out,
+	transform .3s ease-in-out;
 }
-.CardProductBodyText p {
-	font-size: 0.8em;
-	color: var(--text-gray);
+
+.btn:hover {
+	box-shadow: 0 5px 10px rgba(0,0,0,.3);
+	transform: translateY(-2px);
 }
+
