@@ -22,7 +22,7 @@ router.post('/create', productController.saveProduct);
 //router.get('/edit/:id', validateCreateProduct, productController.editProduct);
 //router.put('/edit/:id', upload.single('imageEdit'), validateCreateProduct, productController.updateProduct);
 // Detalles de un producto
-//router.get('/detail/:id', productController.detailProduct);
+router.get('/detail/:id', productController.detailProduct);
 // Eliminar un Producto
 //router.delete('/delete/:id', productController.deleteProduct);
 // Buscar un producto por ID
