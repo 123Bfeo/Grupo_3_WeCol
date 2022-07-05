@@ -1,4 +1,11 @@
 @import './Header/Header.css';
+@import './HeaderNav/HeaderNav.css';
+@import './Logotipo/Logotipo.css';
+@import './ButtonGoToAuthentication/ButtonGoToAuthentication.css';
+@import './CardProduct/CardProduct.css';
+@import './ProductsSectionHome/ProductsSectionHome.css';
+@import './AddToCartButton/AddToCartButton.css';
+
 @import './FormAuthentication/FormAuthentication.css';
 @import './AsideAdmin/AsideAdmin.css';
 @import 'public/css/Components/TableUsers/TableUsers.css';

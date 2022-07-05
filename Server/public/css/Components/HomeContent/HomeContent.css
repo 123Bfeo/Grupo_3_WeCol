@@ -1,0 +1,86 @@
+.HeroHome {
+	inline-size: 100%;
+	block-size: 400px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.HomeContent {
+	position: relative;
+
+}
+.HeroPicture {
+	inline-size: 100%;
+	object-fit: cover;
+	block-size: 100%;
+}
+.HeroPicture img {
+	display: block;
+	inline-size: 100%;
+	block-size: 100%;
+	object-fit: cover;
+}
+.HeroHomeContent {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+	top: 0;
+	inline-size: 100%;
+	block-size: 100%;
+	padding-inline: 20px;
+}
+.HeroHomeContent:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	inline-size: 100%;
+	block-size: 100%;
+	background: var(--gray10);
+	opacity: 0.3;
+}
+.HeroHomeContent .ArrowSlideIcons {
+	inline-size: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.HeroHomeContent i {
+	background: var(--white);
+	color: var(--secondary20);
+	padding: 0.5em;
+	border-radius: 0.5em;
+}
+.HeroText {
+	display: flex;
+	flex-direction: column;
+}
+.HeroText span {
+	color: var(--white);
+	font-family: var(--primaryFont);
+	font-size: 64px;
+	font-weight: bold;
+	margin-bottom: 1rem;
+	
+}
+.HeroHomeContentInfo {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	margin-inline-start: 5em;
+}
+.HeroHomeContentInfo span:nth-child(1) {
+	background: var(--secondary20);
+	color: var(--white);
+	font-family: var(--primaryFont);
+	font-size: 56px;
+	font-weight: bold;
+	padding-inline: 0.5em 1em;
+}
+.HeroHomeContentInfo span:nth-child(2) {
+	color: var(--white);
+	font-family: var(--primaryFont);
+	font-size: 32px;
+	font-weight: bold;
+}

@@ -1,13 +1,5 @@
 .wrapper {
   max-inline-size: 1280px;
-  margin: 0 auto;
-  padding: 24px;
-}
-
-.wrapperHeader {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-inline-size: 1280px;
-  padding: 24px;
+  margin: auto;
+  padding: 0 24px;
 }

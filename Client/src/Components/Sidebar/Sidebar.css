@@ -8,13 +8,11 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	position: sticky;
-	top: 0;
-	left: 0;
+	position: fixed;
 }
 .ProSidebar.collapsed {
 	transition: inline-size, left, right, 0.3s;
-	inline-size: 72px;
+	inline-size: 64px;
 }
 .SidebarHeader {
 	padding-block: 0.5em;

@@ -9,7 +9,7 @@ const productController = {
       })
   },
 
-  allProducts: (req, res) => {
+  /* allProducts: (req, res) => {
     const reqCategory = db.Category.findAll();
     const reqProduct = db.Product.findAll();
     Promise.all([reqCategory, reqProduct])
@@ -17,11 +17,8 @@ const productController = {
         //res.render('index', { title, category, product })
         res.send({ category, product })
       });
-  },
+  },*/
 
-
-
-  //Guardar producto CREADO
   saveProduct: (req, res) => {
     console.log(req.body);
     db.Product.create(
@@ -31,6 +28,15 @@ const productController = {
       });
 
     res.send('ya la guarde');
+  },
+
+  deleteProduct: (req, res) => {
+    db.Product.destroy({
+      where: {
+        id: req.params.id
+      }
+    })
+    res.send('eliminado')
   },
 
   //detalle del producto

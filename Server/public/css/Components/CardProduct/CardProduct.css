@@ -1,0 +1,60 @@
+.ProductsSectionHomeContent {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 16px;
+}
+
+.CardProduct {
+	position: relative;
+	border-radius: 5px;
+	box-shadow: 0 5px 10px rgba(255,255,255,0.3);
+	block-size: 250px;
+	overflow: hidden;
+}
+
+.CardProduct > picture {
+	inline-size: 100%;
+	block-size: 100%;
+	margin: 20px auto 0 auto;
+}
+
+.CardProduct > picture > img {
+	inline-size: 100%;
+	block-size: 90%;
+}
+
+.CardProductBody {
+	background: var(--white);
+	border-radius: 0 10px;
+	padding-inline: 1.5em;
+	padding-block: 0.5em 1em;
+	position: absolute;
+	bottom: -6em;
+	inline-size: 100%;
+	transition: box-shadow .3s ease-in-out,
+	bottom .3s ease-in-out;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.CardProduct:hover .CardProductBody {
+	box-shadow: 0 -5px 10px rgba(0,0,0,0.3);
+	bottom: 0;
+}
+
+.CardProductBodyDetails {
+	line-height: 1em;
+	padding-block: 0.3em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 2em;
+	overflow-x: hidden;
+}
+.CardProductBodyPrice {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1em;
+}

@@ -1,0 +1,3 @@
+WeCol S.A.S. It is oriented to electronic commerce whose main objective is to connect companies and consumers to a select offer of technological products with great positioning in the market, which have high-quality certification and generate effective solutions to the needs of our clients.
+
+As a platform, we are a one-stop-shop for the commercialization of optimal items for use at home, at work, and in leisure spaces: Smart TVs, video game consoles (Nintendo, Xbox, PlayStation), computers in their widest range ( Gamer type, corporate, for personal use) and smartphones. In addition, we have a specialized catalog to improve the experience of our customers in the use of these devices: Wireless headbands, ergonomic keyboards, and mice.
