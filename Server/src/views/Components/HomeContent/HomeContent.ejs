@@ -1,20 +1,24 @@
 <main class="Main">
     <section class='HomeContent wrapper'>
         <section class="HeroHome">
-            <div class="HeroHomeContent">
-                <article class='HeroText'>
-                    <span>
-                        Realice una compra fácil con
-                    </span>
+            <picture class='HeroPicture'>
+                <img src='/img/products/portatilBanner.jpeg' alt='VR Glases' title='VR Glases'>
+            </picture>
+            <div class='HeroHomeContent'>
+                <!--<div class='ArrowSlideIcons'>
+                    <i class="fa-solid fa-angle-left"></i>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>-->
+                <div class='HeroHomeContentInfo'>
+                    <span>Los mejores dispositivos</span>
+                    <span>Compre fácil y seguro con</span>
                     <picture>
                         <img src='/img/brands/PSE.svg' alt='PSE Logo' title='PSE Logo'>
                     </picture>
-                </article>
-                <picture class='HeroPicture'>
-                    <img src='/img/products/glasesVR.png' alt='VR Glases' title='VR Glases'>
-                </picture>
+                </div>
             </div>
         </section>
+        <%- include('../BrandsContent/BrandsContent')%>
         <%- include('../ProductsSectionHome/ProductsSectionHome')%>
     </section>
 </main>

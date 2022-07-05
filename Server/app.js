@@ -11,6 +11,7 @@ const userRoutes = require('./src/routes/users.routes');
 const factureRoutes = require('./src/routes/facture.routes');
 const productRoutes = require('./src/routes/products.routes');
 const productApiRouter = require('./src/routes/Api/productApiRoutes')
+const brandApiRouter = require('./src/routes/Api/brandApiRoutes')
 const userLoggedMiddleware = require('./src/middlewares/userLogged.middleware');
 
 const app = express();
@@ -41,7 +42,7 @@ app.use('/admin', adminRoutes, userRoutes, productRoutes);
 app.use('/product', productRoutes);
 app.use('/facture', factureRoutes);
 
-app.use('/api', productApiRouter)
+app.use('/api', productApiRouter, brandApiRouter)
 
 const PORT = 3001;
 const hostname = 'localhost';

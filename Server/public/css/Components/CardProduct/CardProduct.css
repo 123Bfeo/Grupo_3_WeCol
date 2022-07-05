@@ -1,8 +1,6 @@
 .ProductsSectionHomeContent {
 	display: grid;
-	grid-template-columns: repeat(
-		auto-fit,
-		minmax(250px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 	gap: 16px;
 }
 
@@ -10,7 +8,7 @@
 	position: relative;
 	border-radius: 5px;
 	box-shadow: 0 5px 10px rgba(255,255,255,0.3);
-	block-size: 300px;
+	block-size: 250px;
 	overflow: hidden;
 }
 
@@ -54,22 +52,9 @@
 	font-size: 2em;
 	overflow-x: hidden;
 }
-.btn {
-	background-color: #192a56;
-	border-radius: 5px;
-	color: #FFF;
-	display: block;
-	padding: 10px;
-	text-align: center;
-	text-decoration: none;
-	text-transform: capitalize;
-	width: 100%;
-	transition: box-shadow .3s ease-in-out,
-	transform .3s ease-in-out;
+.CardProductBodyPrice {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1em;
 }
-
-.btn:hover {
-	box-shadow: 0 5px 10px rgba(0,0,0,.3);
-	transform: translateY(-2px);
-}
-
