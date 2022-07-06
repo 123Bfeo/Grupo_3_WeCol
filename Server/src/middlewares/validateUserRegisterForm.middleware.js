@@ -2,7 +2,7 @@ const path = require('path');
 const { body } = require('express-validator');
 
 const validationsRegister = [
-    body('name').notEmpty().withMessage('Por favor, indica tu nombre'),
+    body('firstname').notEmpty().withMessage('Por favor, indica tu nombre'),
     body('lastname').notEmpty().withMessage('Indica tu apellido'),
     body('username').notEmpty().withMessage('Por favor,  nombre de usuario'),
     body('email').notEmpty().withMessage('Este Campo no puede estar vacío').bail()

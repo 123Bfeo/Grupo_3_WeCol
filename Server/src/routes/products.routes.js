@@ -22,13 +22,7 @@ router.post('/create', productController.saveProduct);
 //router.get('/edit/:id', validateCreateProduct, productController.editProduct);
 //router.put('/edit/:id', upload.single('imageEdit'), validateCreateProduct, productController.updateProduct);
 // Detalles de un producto
-<<<<<<< HEAD
-router.get('/detail/:id', productController.detailProduct);
-// Eliminar un Producto
-//router.delete('/delete/:id', productController.deleteProduct);
-=======
 router.delete('/delete/:id', productController.deleteProduct);
->>>>>>> f783064a49406f90a5db120518647ae81c4a07f2
 // Buscar un producto por ID
 // router.get('/search/:id', productController.searchProduct);
 
