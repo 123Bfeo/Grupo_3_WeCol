@@ -127,6 +127,10 @@ const userController = {
 		}
 
 	},
+	logout: (req, res) => {
+		req.session.destroy();
+		res.redirect('/');
+	},
 	//eliminar un usuario
 	// deleteUser: (req, res) => {
 	// 	db.User.destroy(
@@ -166,10 +170,7 @@ const userController = {
 	// 	);
 	// 	res.send('ya actualice el usuario')
 	// },
-	// logout: (req, res) => {
-	// 	req.session.destroy();
-	// 	res.redirect('/');
-	// },
+
 
 	// users: (req, res) => {
 	// 	db.User.findAll().then(function (user) {

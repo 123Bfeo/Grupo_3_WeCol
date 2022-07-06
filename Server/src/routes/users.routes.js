@@ -11,9 +11,8 @@ const validateUserLoginFormMiddleware = require('../middlewares/validateUserLogi
 const fileUpload = multer({ storage: multerDiskStorageMiddleware });
 
 const userController = require('../controllers/user.controller');
-//sessionDetectMiddleware, validateUserLoginFormMiddleware,
 //cerrar sesion
-//router.get('/logout', userController.logout);
+router.get('/logout', userController.logout);
 // Todos los user
 //router.get('/allUser', sessionDetectMiddleware, userController.allUser);
 //vista de login y envio de formulario
