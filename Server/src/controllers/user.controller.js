@@ -1,37 +1,24 @@
 const { validationResult } = require('express-validator');
-// const bcrypt = require('bcryptjs');
 const bcrypt = require('bcryptjs')
 const db = require('../../database/models');
-//const session = require('express-session');
 
 const userController = {
-	//todos los usuarios
-	allUser: (req, res) => {
-		db.User.findAll().then(function (user) {
-			res.send({ user })
-		})
-	},
 	
-	//Register de user Views
+	//Login user Views
 	login: (req, res) => {
-		db.Category.findAll().then(function (category) {
-			res.render('./Pages/Login/Login', { category });
-		})
+		res.render('./Pages/Login/Login')
 	},
 	
-	// Loguearme  un usuario
+	//Logueo un usuario
 	processlogin: (req, res) => {
 		const resultValidation = validationResult(req)
-		console.log(resultValidation);
 		if (resultValidation.errors.length > 0) {
-			db.Category.findAll().then(function (category) {
-				return res.render("./Pages/Login/Login", {
-					errors: resultValidation.mapped(),
-					oldData: req.body, category
-				})
+			return res.render("./Pages/Login/Login", {
+				errors: resultValidation.mapped(),
+				oldData: req.body
 			})
+			
 		}
-		
 		else {
 			db.User.findOne(
 				{
@@ -42,69 +29,59 @@ const userController = {
 			).then(function (userToLogin) {
 				if (userToLogin) {
 					if (bcrypt.compareSync(req.body.password, userToLogin.password)) {
-						if (userToLogin.roles_id === 2) {
-							delete userToLogin.password;
-							req.session.userLogged = userToLogin;
-							return res.redirect("/admin")
-						}
-						else {
-							delete userToLogin.password;
-							req.session.userLogged = userToLogin
-							return res.redirect("/")
-						}
+						delete userToLogin.password;
+						req.session.userLogged = userToLogin
+						return res.redirect("/")
 					}
 					else {
-						db.Category.findAll().then(function (category) {
-							res.render("./Pages/Login/Login",
-								{
-									errors: {
-										email: {
-											msg: 'Estas credenciales son incorrectas'
-										}
-									},
-									category
-								}
-							)
-						})
-					}
-				}
-				else {
-					db.Category.findAll().then(function (category) {
 						res.render("./Pages/Login/Login",
 							{
 								errors: {
 									email: {
-										msg: 'Correo no Registado'
+										msg: 'Estas credenciales son incorrectas'
 									}
-								},
-								category
+								}
 							}
 						)
-					})
+						
+					}
+				}
+				else {
+					
+					res.render("./Pages/Login/Login",
+						{
+							errors: {
+								email: {
+									msg: 'Correo no Registado'
+								}
+							},
+						}
+					)
+					
 				}
 			})
 		}
 	},
 	
-	// vistas para Crear o Registar un usuario
+	// vistas para  Registar un usuario
 	register: (req, res) => {
-		db.Category.findAll().then(function (category) {
-			res.render('./Pages/Register/Register', { category });
-		})
+		res.render('./Pages/Register/Register')
 	},
 	
-	// se Crea o se Registra  un usuario
+	// Registro de Usuario
 	processRegister: (req, res) => {
 		const resultValidation = validationResult(req)
 		if (resultValidation.errors.length > 0) {
-			db.Category.findAll().then(function (category) {
-				res.render("./users/register", {
-					errors: resultValidation.mapped(),
-					oldData: req.body, category
-				})
+			res.render("./Pages/Register/Register", {
+				errors: resultValidation.mapped(),
+				oldData: req.body
 			})
+			
 		}
 		else {
+			console.log("$$$$$$$$$")
+			console.log(req.body.email)
+			console.log("$$$$$$$$$")
 			db.User.findOne(
 				{
 					where: {
@@ -112,92 +89,94 @@ const userController = {
 					}
 				}
 			).then(function (user) {
+				console.log("*********")
+				console.log(user)
+				console.log("*********")
 				if (user) {
-					db.Category.findAll().then(function (category) {
-						
-						res.render("./users/register",
-							{
-								errors: {
-									email: {
-										msg: "Correo ya registrado"
-									}
-								},
-								category
+					res.render('./Pages/Register/Register',
+						{
+							errors: {
+								email: {
+									msg: "Correo ya registrado"
+								}
 							}
-						)
-					})
+						}
+					)
 					
 				}
 				else {
+					console.log(req.body)
 					db.User.create(
-						{
-							username: req.body.username,
-							firstname: req.body.name,
-							lastname: req.body.lastname,
-							address: req.body.address,
-							email: req.body.email,
-							phone: req.body.phone,
-							avatar: req.file.filename,
-							password: bcrypt.hashSync(req.body.password, 10),
-							countries_id: req.body.country,
-							roles_id: req.body.roles_id
-						}).then(function () {
-						res.redirect('/login');
-					})
+							{
+								firstname: req.body.firstname,
+								lastname: req.body.lastname,
+								username: req.body.username,
+								address: req.body.address,
+								email: req.body.email,
+								phone: req.body.phone,
+								avatar: req.file.filename,
+								password: bcrypt.hashSync(req.body.password, 10),
+								countries_id: req.body.country,
+								roles_id: req.body.roles_id
+							})
+						.then(function () {
+							res.redirect('/Login');
+						})
 				}
 			})
 		}
 		
 	},
-	//eliminar un usuario
-	deleteUser: (req, res) => {
-		db.User.destroy(
-			{
-				where: {
-					id: req.params.id
-				}
-			});
-		res.send("ya esta borrada la usuario");
-	},
-	//Actualizar User
-	editUser: (req, res) => {
-		db.User.findByPk(req.params.id).then(function (user) {
-			res.send({ user });
-		})
-	},
-	
-	updateUser: (req, res) => {
-		db.User.update(
-			{
-				username: req.body.username,
-				firstname: req.body.firstname,
-				lastname: req.body.lastname,
-				address: req.body.address,
-				email: req.body.email,
-				phone: req.body.phone,
-				avatar: req.body.avatar,
-				password: req.body.password,
-				countries_id: req.body.country,
-				roles_id: req.body.roles_id
-			},
-			{
-				where: {
-					id: req.params.id
-				}
-			}
-		);
-		res.send('ya actualice el usuario')
-	},
 	logout: (req, res) => {
 		req.session.destroy();
 		res.redirect('/');
 	},
+	//eliminar un usuario
+	// deleteUser: (req, res) => {
+	// 	db.User.destroy(
+	// 		{
+	// 			where: {
+	// 				id: req.params.id
+	// 			}
+	// 		});
+	// 	res.send("ya esta borrada la usuario");
+	// },
+	//Actualizar User
+	// editUser: (req, res) => {
+	// 	db.User.findByPk(req.params.id).then(function (user) {
+	// 		res.send({ user });
+	// 	})
+	// },
 	
-	users: (req, res) => {
-		db.User.findAll().then(function (user) {
-			res.render('./Pages/Users/Users', { user });
-		})
-	}
+	// updateUser: (req, res) => {
+	// 	db.User.update(
+	// 		{
+	// 			username: req.body.username,
+	// 			firstname: req.body.firstname,
+	// 			lastname: req.body.lastname,
+	// 			address: req.body.address,
+	// 			email: req.body.email,
+	// 			phone: req.body.phone,
+	// 			avatar: req.body.avatar,
+	// 			password: req.body.password,
+	// 			countries_id: req.body.country,
+	// 			roles_id: req.body.roles_id
+	// 		},
+	// 		{
+	// 			where: {
+	// 				id: req.params.id
+	// 			}
+	// 		}
+	// 	);
+	// 	res.send('ya actualice el usuario')
+	// },
+	
+	
+	// users: (req, res) => {
+	// 	db.User.findAll().then(function (user) {
+	// 		res.render('./Pages/Users/Users', { user });
+	// 	})
+	// }
 	
 	
 	
@@ -276,6 +255,9 @@ const userController = {
 	// }
 }
 module.exports = userController;
+
+
+
 
 
 

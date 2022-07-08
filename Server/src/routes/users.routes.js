@@ -15,7 +15,7 @@ const userController = require('../controllers/user.controller');
 //cerrar sesion
 router.get('/logout', userController.logout);
 // Todos los user
-router.get('/allUser', sessionDetectMiddleware, userController.allUser);
+//router.get('/allUser', sessionDetectMiddleware, userController.allUser);
 //vista de login y envio de formulario
 router.get('/login', sessionDetectMiddleware, userController.login);
 router.post('/login', validateUserLoginFormMiddleware, userController.processlogin);
@@ -23,12 +23,12 @@ router.post('/login', validateUserLoginFormMiddleware, userController.processlog
 router.get('/register', sessionDetectMiddleware, userController.register);
 router.post('/register', fileUpload.single("avatar"), validateUserRegisterFormMiddleware, userController.processRegister);
 // eliminar un usuario
-router.delete('/delete/:id', userController.deleteUser);
+//router.delete('/delete/:id', userController.deleteUser);
 //vista actualizar y enviar datos de usuario
-router.get('/edit/:id', userController.editUser)
-router.put('/edit/:id', userController.updateUser)
+//router.get('/edit/:id', userController.editUser)
+//router.put('/edit/:id', userController.updateUser)
 
-router.get('/users', userController.users);
+//router.get('/users', userController.users);
 // sessionDetectMiddleware,
 
 module.exports = router;

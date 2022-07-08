@@ -83,7 +83,8 @@
   --secondary10: rgb(233, 125, 216);
   --secondary20: rgb(231, 138, 0);
   
-  --placeholder10: rgba(231, 138, 0, 0.3);
+  --placeholder10: rgb(233, 125, 216, 0.5);
+  --placeholder20: rgba(231, 138, 0, 0.3);
   --text-gray: rgb(167, 167, 167);
   --text-gray-opacity: rgba(91, 91, 91, 0.5);
   --gray2: #383838;

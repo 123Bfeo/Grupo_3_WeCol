@@ -1,0 +1,26 @@
+.BrandsContent {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+.BrandsContentHead span {
+	font-family: var(--secondFont);
+	color: var(--placeholder20);
+	font-size: 1.5em;
+	font-weight: bold;
+}
+.BrandsList {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.BrandsList span {
+	font-family: var(--secondFont);
+	color: var(--gray10);
+	font-size: 2.5em;
+	font-weight: bold;
+}
+.BrandsList span:hover {
+	color: var(--placeholder10);
+}

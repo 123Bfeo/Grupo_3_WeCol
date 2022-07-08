@@ -21,9 +21,9 @@ app.set('view engine', 'ejs');
 app.set('views', join(__dirname, 'src/views'));
 
 app.use(session({
-	secret: 'secreto',
-	resave: false,
-	saveUninitialized: false
+		secret: 'secreto',
+		resave: false,
+		saveUninitialized: false
 	}
 ));
 const publicPath = resolve('public');

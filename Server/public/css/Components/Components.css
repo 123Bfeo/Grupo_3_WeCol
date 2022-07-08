@@ -5,6 +5,8 @@
 @import './CardProduct/CardProduct.css';
 @import './ProductsSectionHome/ProductsSectionHome.css';
 @import './AddToCartButton/AddToCartButton.css';
+@import './BrandsList/BrandsList.css';
+@import './ProductsFilterCards/ProductsFilterCards.css';
 
 @import './FormAuthentication/FormAuthentication.css';
 @import './AsideAdmin/AsideAdmin.css';

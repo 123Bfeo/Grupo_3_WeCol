@@ -4,23 +4,20 @@ const db = require('../../database/models');
 const mainController = {
   index: (req, res) => {
     const title = 'Home';
-    const reqCategory = db.Category.findAll();
-    const reqProduct = db.Product.findAll();
-
-    Promise.all([reqCategory, reqProduct])
-      .then(([category, product]) => {
-        res.render('index', { title, category, product })
+    db.Product.findAll()
+      .then(( product ) => {
+        res.render('index', { title, product })
       });
   },
-
-
-  aboutUs: (req, res) => {
+  
+  
+  /*aboutUs: (req, res) => {
     const title = 'A cerca';
     db.Category.findAll().then(function (category) {
       res.render('aboutUs', { title, category });
     })
   },
-
+  
   contact: (req, res) => {
     const title = 'Contacto';
     db.Category.findAll().then(function (category) {
@@ -39,10 +36,9 @@ const mainController = {
     const title = 'Administrador Productos';
     const products = productModel.read();
     res.render('./admin/adminCreate', { products, title });
-  },
+  },*/
 };
 
 module.exports = mainController;
-
 
 

@@ -19,6 +19,9 @@ module.exports = function (sequelize, dataTypes) {
 		image: {
 			type: dataTypes.STRING,
 			defaultValue: 'sergio.png'
+		},
+		category: {
+			type: dataTypes.STRING,
 		}
 	}
 
@@ -33,10 +36,6 @@ module.exports = function (sequelize, dataTypes) {
 			as: "productBrands",
 			foreignKey: "brands_id",
 		});
-		Product.belongsTo(models.Category, {
-			as: "productCategory",
-			foreignKey: "categories_id",
-		})
 		Product.hasMany(models.Opinion, {
 			as: "productOpinions",
 			foreignKey: "products_id2",
