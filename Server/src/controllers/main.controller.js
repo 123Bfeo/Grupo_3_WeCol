@@ -19,7 +19,6 @@ const mainController = {
   contact: (req, res) => {
     const title = 'Contacto';
     res.render('contact', { title });
-
   },
   // privacyPolitics: (req, res) => {
   //   const title = 'Política de Privacidad';
