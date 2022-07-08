@@ -1,6 +1,3 @@
-const db = require('../../database/models');
-
-
 const mainController = {
   index: (req, res) => {
     const title = 'Home';

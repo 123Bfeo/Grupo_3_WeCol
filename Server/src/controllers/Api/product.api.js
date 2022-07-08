@@ -19,6 +19,18 @@ const productController = {
 			})
 			.catch()
 	},
+	detailProducts: (req, res) => {
+		DB.Product.findByPk(req.params.id)
+			.then((product) => {
+				res.json({
+					data: {
+						product
+					},
+					status: 200
+				})
+			})
+			.catch()
+	},
 };
 
 module.exports = productController;
