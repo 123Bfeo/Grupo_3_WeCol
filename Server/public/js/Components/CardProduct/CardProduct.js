@@ -6,10 +6,10 @@ fetch('http://localhost:3001/api/products')
 		data.data.product.forEach((item) => {
 			const CardProduct = document.createElement('section');
 			CardProduct.innerHTML = `
-			<div class="CardProduct">
+			<a href='http://localhost:3001/api/details/${ item.id }' class="CardProduct">
         <picture class='CardProductHead'>
-        <img src="/img/products/${ item.image }" alt="t-shirt">
-    </picture>
+          <img src="/img/products/${ item.image }" alt="t-shirt">
+        </picture>
         <section class="CardProductBody">
           <div class="CardProductBodyDetails">
             <span>${ item.name }</span>
@@ -24,7 +24,7 @@ fetch('http://localhost:3001/api/products')
           </button>
         </div>
         </section>
-			</div>`;
+			</a>`;
 			ProductsSectionHomeContent.appendChild(CardProduct);
 		});
 	});
