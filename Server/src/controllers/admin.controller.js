@@ -1,3 +1,5 @@
+
+
 const db = require('../../database/models')
 
 const adminController = {
@@ -12,4 +14,3 @@ const adminController = {
 	}
 }
 module.exports = adminController;
-

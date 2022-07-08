@@ -1,4 +1,4 @@
-const submenu = document.getElementById('submenu');
+/*const submenu = document.getElementById('submenu');
 const submenuItem_icon = document.getElementById('submenuItem_icon');
 
 submenu.addEventListener('mouseleave', () => {
@@ -14,4 +14,4 @@ fetch('http://localhost:3001/api/products')
 			li.innerHTML = `<a href="">${item.name}</a>`;
 			submenu.appendChild(li);
 		});
-	});
+	});*/

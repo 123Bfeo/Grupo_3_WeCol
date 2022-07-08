@@ -3,12 +3,12 @@ const bcrypt = require('bcryptjs')
 const db = require('../../database/models');
 
 const userController = {
-
+	
 	//Login user Views
 	login: (req, res) => {
 		res.render('./Pages/Login/Login')
 	},
-
+	
 	//Logueo un usuario
 	processlogin: (req, res) => {
 		const resultValidation = validationResult(req)
@@ -17,7 +17,7 @@ const userController = {
 				errors: resultValidation.mapped(),
 				oldData: req.body
 			})
-
+			
 		}
 		else {
 			db.User.findOne(
@@ -43,11 +43,11 @@ const userController = {
 								}
 							}
 						)
-
+						
 					}
 				}
 				else {
-
+					
 					res.render("./Pages/Login/Login",
 						{
 							errors: {
@@ -57,17 +57,17 @@ const userController = {
 							},
 						}
 					)
-
+					
 				}
 			})
 		}
 	},
-
+	
 	// vistas para  Registar un usuario
 	register: (req, res) => {
 		res.render('./Pages/Register/Register')
 	},
-
+	
 	// Registro de Usuario
 	processRegister: (req, res) => {
 		const resultValidation = validationResult(req)
@@ -76,7 +76,7 @@ const userController = {
 				errors: resultValidation.mapped(),
 				oldData: req.body
 			})
-
+			
 		}
 		else {
 			console.log("$$$$$$$$$")
@@ -102,30 +102,30 @@ const userController = {
 							}
 						}
 					)
-
+					
 				}
 				else {
 					console.log(req.body)
 					db.User.create(
-						{
-							firstname: req.body.firstname,
-							lastname: req.body.lastname,
-							username: req.body.username,
-							address: req.body.address,
-							email: req.body.email,
-							phone: req.body.phone,
-							avatar: req.file.filename,
-							password: bcrypt.hashSync(req.body.password, 10),
-							countries_id: req.body.country,
-							roles_id: req.body.roles_id
-						})
+							{
+								firstname: req.body.firstname,
+								lastname: req.body.lastname,
+								username: req.body.username,
+								address: req.body.address,
+								email: req.body.email,
+								phone: req.body.phone,
+								avatar: req.file.filename,
+								password: bcrypt.hashSync(req.body.password, 10),
+								countries_id: req.body.country,
+								roles_id: req.body.roles_id
+							})
 						.then(function () {
 							res.redirect('/Login');
 						})
 				}
 			})
 		}
-
+		
 	},
 	logout: (req, res) => {
 		req.session.destroy();
@@ -147,7 +147,7 @@ const userController = {
 	// 		res.send({ user });
 	// 	})
 	// },
-
+	
 	// updateUser: (req, res) => {
 	// 	db.User.update(
 	// 		{
@@ -170,20 +170,20 @@ const userController = {
 	// 	);
 	// 	res.send('ya actualice el usuario')
 	// },
-
-
+	
+	
 	// users: (req, res) => {
 	// 	db.User.findAll().then(function (user) {
 	// 		res.render('./Pages/Users/Users', { user });
 	// 	})
 	// }
-
-
-
-
-
-
-
+	
+	
+	
+	
+	
+	
+	
 	// const resultValidation = validationResult(req);
 	// if (resultValidation.errors.length > 0) {
 	//   return res.render('./users/login', {
@@ -191,11 +191,11 @@ const userController = {
 	//     oldData: req.body
 	//   })
 	// }
-
+	
 	// const userToLogin = userModel.searchNaturalUserEmail(req.body.email);
 	// //const userToLogin = db.User.findByPk(req.body.id);
 	// //console.log(`Aquí estamos revisando userToLogin: ${ userToLogin }`);
-
+	
 	// if (userToLogin) {
 	//   const comparePasswordUser = compareSync(req.body.password, userToLogin.password);
 	//   if (comparePasswordUser) {
@@ -209,16 +209,16 @@ const userController = {
 	// return res.render('./users/login', {
 	//   errors: { email: { msg: 'no se encontró el correo registrado' } }
 	// })
-
-
-
+	
+	
+	
 	// register: (req, res) => {
 	//   const title = 'Registrar Usuario';
 	//   db.Category.findAll().then(function (category) {
 	//     res.render('./users/register', { title, category });
 	//   })
 	// },
-
+	
 	// processRegister: (req, res) => {
 	//   const resultValidation = validationResult(req);
 	//   if (resultValidation.errors.length > 0) {
@@ -228,7 +228,7 @@ const userController = {
 	//     })
 	//   }
 	//   const userInBD = userModel.searchNaturalUserEmail(req.body.email);
-
+	
 	//   if (userInBD) {
 	//     return res.render('./users/register', {
 	//       errors: {
@@ -246,15 +246,18 @@ const userController = {
 	//   }
 	//   userModel.createNaturalUsers(userToCreate);
 	//   res.redirect('/login');
-
+	
 	// },
-
+	
 	// logout: (req, res) => {
 	//   req.session.destroy();
 	//   res.redirect('/');
 	// }
 }
 module.exports = userController;
+
+
+
 
 
 

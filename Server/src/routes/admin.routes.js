@@ -8,4 +8,3 @@ router.get('/', adminMiddleware, adminController.adminController);
 
 module.exports = router;
 
-
