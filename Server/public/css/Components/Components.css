@@ -6,7 +6,8 @@
 @import './ProductsSectionHome/ProductsSectionHome.css';
 @import './AddToCartButton/AddToCartButton.css';
 @import './BrandsList/BrandsList.css';
-@import './ProductsFilterCards/ProductsFilterCards.css';
+@import './Footer/Footer.css';
+
 
 @import './FormAuthentication/FormAuthentication.css';
 @import './AsideAdmin/AsideAdmin.css';
