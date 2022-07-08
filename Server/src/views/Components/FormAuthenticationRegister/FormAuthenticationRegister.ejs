@@ -1,17 +1,91 @@
-<article class='FormAuthentication'>
-    <picture>
-        <img src='/img/favicon.svg' alt='Logo' title='Logo'>
-    </picture>
-    <form action='/login' method='POST' class='FormContainer'>
+<article class="FormAuthentication">
+  <picture>
+    <img src="/img/favicon.svg" alt="Logo" title="Logo" />
+  </picture>
+  <form
+    action="/register"
+    method="POST"
+    enctype="multipart/form-data"
+    class="FormContainer"
+  >
+    <div class="FormContent">
+      <%- include('../LabelInput/LabelInput', { id: 'firstname', label:
+      'Nombre', type: 'text', name: 'firstname', placeholder: 'John' }) %>
+      <div>
+        <% if(locals.errors && errors.firstname) {%>
+        <div><%=errors.firstname.msg %></div>
+        <% } %>
+      </div>
+      <%-include('../LabelInput/LabelInput', { id: 'lastname', label:
+      'Apellidos', type: 'text', name: 'lastname', placeholder: 'Doe' }) %>
+      <div>
+        <% if(locals.errors && errors.lastname) {%>
+        <div><%=errors.lastname.msg %></div>
+        <% } %>
+      </div>
+      <%-include('../LabelInput/LabelInput', { id: 'username', label: 'Usuario',
+      type: 'text', name: 'username', placeholder: 'john.doe' }) %>
+      <div>
+        <% if(locals.errors && errors.username) {%>
+        <div><%=errors.username.msg %></div>
+        <% } %>
+      </div>
+      <%-include('../LabelInput/LabelInput', { id: 'email', label: 'Correo',
+      type: 'email', name: 'email', placeholder: 'jhon@doe.com' }) %>
+      <div>
+        <% if(locals.errors && errors.email) {%>
+        <div><%=errors.email.msg %></div>
+        <% } %>
+      </div>
+      <%-include('../LabelInput/LabelInput', { id: 'password', label:
+      'Contraseña', type: 'password', name: 'password', placeholder:
+      'Contraseña' }) %>
+      <div>
+        <% if(locals.errors && errors.password) {%>
+        <div><%=errors.password.msg %></div>
+        <% } %>
+      </div>
 
-        <div class='FormContent'>
-            <%- include('../LabelInput/LabelInput', { id: 'firstname', label: 'Nombre', type: 'text', name: 'firstname', placeholder: 'John' }) %>
-            <%- include('../LabelInput/LabelInput', { id: 'lastname', label: 'Apellidos', type: 'text', name: 'lastname', placeholder: 'Doe' }) %>
-            <%- include('../LabelInput/LabelInput', { id: 'username', label: 'Usuario', type: 'text', name: 'username', placeholder: 'john.doe' }) %>
-            <%- include('../LabelInput/LabelInput', { id: 'email', label: 'Correo', type: 'email', name: 'email', placeholder: 'jhon@doe.com' }) %>
-            <%- include('../LabelInput/LabelInput', { id: 'password', label: 'Contraseña', type: 'password', name: 'password', placeholder: 'Contraseña' }) %>
-        </div>
+      <%-include('../LabelInput/LabelInput', { id: 'phone', label: 'Teléfono',
+      type: 'number', name: 'phone', placeholder: 'Teléfono' }) %>
+      <div>
+        <% if(locals.errors && errors.phone) {%>
+        <div><%=errors.phone.msg %></div>
+        <% } %>
+      </div>
 
-        <%- include('../ButtonForm/ButtonForm', { name: 'Iniciar Sesión' }) %>
-    </form>
+      <%-include('../LabelInput/LabelInput', { id: 'address', label:
+      'Dirección', type: 'text', name: 'address', placeholder: 'Dirección' }) %>
+      <div>
+        <% if(locals.errors && errors.address) {%>
+        <div><%=errors.address.msg %></div>
+        <% } %>
+      </div>
+
+      <%-include('../LabelInput/LabelInput', { id: 'country', label:
+      'Codigo-pais', type: 'number', name: 'country', placeholder: 'Codigo Pais'
+      }) %>
+      <div>
+        <% if(locals.errors && errors.country) {%>
+        <div><%=errors.country.msg %></div>
+        <% } %>
+      </div>
+
+      <label for="avatar">
+        <input
+          type="file"
+          name="avatar"
+          id="avatar"
+          style="background: white"
+        />
+      </label>
+      <div>
+        <% if(locals.errors && errors.avatar) {%>
+        <div><%=errors.avatar.msg %></div>
+        <% } %>
+      </div>
+    </div>
+
+    <%- include('../ButtonForm/ButtonForm', { name: 'Registrarse' }) %>
+  </form>
 </article>

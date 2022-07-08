@@ -1,20 +1,30 @@
 <nav class="HeaderNav" id="nav">
-    <article class="login">
-        <div class='ButtonGoToAuthentication'>
-            <%- include('../ButtonGoToAuthentication/ButtonGoToAuthentication', { action: 'Iniciar Sessión', url: '/login'} ) %>
-            <%- include('../ButtonGoToAuthentication/ButtonGoToAuthentication', { action: 'Registrarse', url: '/register'} ) %>
-        </div>
-    </article>
-    <ul class="menuItems">
-        <li class="submenuToggle">
-            <details class="SubmenuItem" id="SubmenuItem">
-                <summary>Categorías</summary>
-                <ul class="submenu" id="submenu">
-                </ul>
-            </details>
-        </li>
-        <li><a href="/aboutUs">Ofertas</a></li>
-        <li><a href="/contact">PQRS</a></li>
-    </ul>
+  <article class="login">
+    <div class="ButtonGoToAuthentication">
+      <!-- adaptar  en el diseño datos del usuario  -->
+      <!-- *********** -->
+      <div>
+        <article class="ProfileAction">
+          %> <% if (locals.isLogged) { %> <%-include('../UserLogged/UserLogged')
+          %> <% } %>
+        </article>
+      </div>
+      <!-- ********** -->
+      <%- include('../ButtonGoToAuthentication/ButtonGoToAuthentication', {
+      action: 'Iniciar Sessión', url: '/login'} ) %> <%-
+      include('../ButtonGoToAuthentication/ButtonGoToAuthentication', { action:
+      'Registrarse', url: '/register'} ) %>
+    </div>
+  </article>
+  <ul class="menuItems">
+    <li class="submenuToggle">
+      <details class="SubmenuItem" id="SubmenuItem">
+        <summary>Categorías</summary>
+        <ul class="submenu" id="submenu"></ul>
+      </details>
+    </li>
+    <li><a href="/offers">Ofertas</a></li>
+    <li><a href="/contact">PQRS</a></li>
+  </ul>
 </nav>
 <script defer src="/js/Components/HeaderNav/HeaderNav.js"></script>

@@ -5,10 +5,10 @@ const productController = {
   products: (req, res) => {
     db.Product.findAll()
       .then(function (product) {
-      res.render('./Pages/Products/Products', { product })
-    })
+        res.render('./Pages/Products/Products', { product })
+      })
   },
-  
+
   /* allProducts: (req, res) => {
     const reqCategory = db.Category.findAll();
     const reqProduct = db.Product.findAll();
@@ -18,7 +18,7 @@ const productController = {
         res.send({ category, product })
       });
   },*/
-  
+
   saveProduct: (req, res) => {
     console.log(req.body);
     db.Product.create(
@@ -29,7 +29,7 @@ const productController = {
 
     res.send('ya la guarde');
   },
-  
+
   deleteProduct: (req, res) => {
     db.Product.destroy({
       where: {
@@ -37,8 +37,21 @@ const productController = {
       }
     })
     res.send('eliminado')
-  }
+  },
 
+  //detalle del producto
+  detailProduct: (req, res) => {
+    const title = 'Detalle de producto';
+    const reqCategory = db.Category.findAll();
+    const reqProduct = db.Product.findByPk(req.params.id);
+    Promise.all([reqCategory, reqProduct],
+      { include: [{ association: "productCategory" }] })
+      .then(([category, product]) => {
+        //res.rende('./products/productDet', { title, product, category })
+        res.render('./products/productDet', { title, product, category });
+      });
+
+  },
 
 
 };

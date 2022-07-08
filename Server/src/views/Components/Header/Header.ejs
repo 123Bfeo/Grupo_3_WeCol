@@ -1,29 +1,12 @@
 <header class="Header wrapper">
-  <section class='HeaderContainer'>
+  <section class="HeaderContainer">
     <%- include('../Logotipo/Logotipo') %>
     <a class="OpenMenuToggle" id="OpenMenuToggle">
       <i class="fas fa-bars"></i>
     </a>
-    <nav class='MenuNavigation' id='MenuNavigation'>
+    <nav class="MenuNavigation" id="MenuNavigation">
       <%- include('../HeaderNav/HeaderNav') %>
     </nav>
-    <!--<article class="ProfileAction">
-    <%# if (!locals.isLogged) { %> <%# include('../HeaderNav/HeaderNav') %> <# } %>
-      <div class='ProfileAction_Header'>
-        <picture>
-          <img src='' alt=''/>
-        </picture>
-      </div>
-
-      <%#  if (locals.isLogged) { %> <%# include('../UserLogged/UserLogged') %> <%# } else { %>
-        <a href="/login">
-          <i class="fas fa-user"></i>
-        </a>
-      <%#  } %>
-      <a href="/productCart">
-        <i class="fas fa-shopping-cart"></i>
-      </a>
-    </article>-->
   </section>
 </header>
-<script src='/js/Components/Header/Header.js'></script>
+<script src="/js/Components/Header/Header.js"></script>
