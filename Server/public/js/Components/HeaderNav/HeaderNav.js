@@ -1,4 +1,4 @@
-/*const submenu = document.getElementById('submenu');
+const submenu = document.getElementById('submenu');
 const submenuItem_icon = document.getElementById('submenuItem_icon');
 
 submenu.addEventListener('mouseleave', () => {
@@ -9,9 +9,9 @@ submenu.addEventListener('mouseleave', () => {
 fetch('http://localhost:3001/api/products')
 	.then((response) => response.json())
 	.then((data) => {
-		data.data.category.forEach((item) => {
+		data.data.product.forEach((item) => {
 			const li = document.createElement('li');
-			li.innerHTML = `<a href="">${item.name}</a>`;
+			li.innerHTML = `<a href="">${item.category}</a>`;
 			submenu.appendChild(li);
 		});
-	});*/
+	});
