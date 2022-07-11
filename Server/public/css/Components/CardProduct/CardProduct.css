@@ -1,6 +1,6 @@
 .ProductsSectionHomeContent {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 	gap: 16px;
 }
 
@@ -8,8 +8,6 @@
 	position: relative;
 	border-radius: 5px;
 	box-shadow: 0 5px 10px rgba(255,255,255,0.3);
-	block-size: 250px;
-	overflow: hidden;
 }
 
 .CardProduct > picture {
@@ -29,20 +27,19 @@
 	padding-inline: 1.5em;
 	padding-block: 0.5em 1em;
 	position: absolute;
-	bottom: -6em;
 	inline-size: 100%;
+	block-size: 11em;
+	bottom: 0;
 	transition: box-shadow .3s ease-in-out,
 	bottom .3s ease-in-out;
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
+	z-index: -1;
 }
-
 .CardProduct:hover .CardProductBody {
-	box-shadow: 0 -5px 10px rgba(0,0,0,0.3);
-	bottom: 0;
+	bottom: -10em;
 }
-
 .CardProductBodyDetails {
 	line-height: 1em;
 	padding-block: 0.3em;
