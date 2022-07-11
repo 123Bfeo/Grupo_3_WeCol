@@ -1,18 +1,49 @@
-.detalles {
-  width: 100vw;
-  height: auto;
+.detailsProduct {
+  color: white;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.container-imgP {
+  margin-right: 18px;
+}
+.deliveryStock {
+  margin-top: 10px;
+  display: flex;
+}
+.sendIco {
+  margin-right: 10px;
+}
+.rateCount {
+  display: flex;
+}
+.division {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.count {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.name-price {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.descriptionProduct {
+  margin-top: 10px;
+}
+.fa-truck {
+  color: #e78a00;
+}
+.fa-shopping-cart {
+  color: #e78a00;
+}
+.description-P {
+  width: 58%;
 }
 
-.cont {
-  width: 45%;
-  border-width: 1px;
-  border-style: solid;
-  border-color: white;
-  margin: 10px 25px;
-}
+/*******/
 
 .cont h3 {
   color: rgb(151, 85, 151);
@@ -37,19 +68,15 @@
 }
 
 .d {
-  font-family: 'Source Serif Pro';
+  font-family: "Source Serif Pro";
   color: var(--secondary);
   font-size: 25px;
   font-weight: bold;
 }
 
-<<<<<<< HEAD
-.cont-label label{
-    margin: 10px;
-=======
 .opinion {
+  width: 45%;
   margin: 25px 35px;
->>>>>>> main
 }
 
 .opinion p {

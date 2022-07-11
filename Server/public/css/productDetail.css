@@ -103,9 +103,9 @@ form .recordatorio {
   padding: 8px 8px;
   color: var(--secondary);
   transition-duration: 2s;
-    transition-property: background-color;
+  transition-property: background-color;
 }
-.productosApagar .resumen  button:hover{
+.productosApagar .resumen button:hover {
   background-color: var(--secondary);
   color: var(--white);
 }
@@ -182,19 +182,19 @@ form .recordatorio {
     margin-bottom: 20px;
     margin-top: 20px;
   }
-  .botonGuardar button{
+  .botonGuardar button {
     transition-duration: 2s;
     transition-property: background-color;
   }
-  .botonGuardar button:hover{
+  .botonGuardar button:hover {
     background-color: var(--secondary);
     color: var(--white);
   }
-  .botonGuardar button{
+  .botonGuardar button {
     transition-duration: 2s;
     transition-property: background-color;
   }
-  .botonGuardar button:hover{
+  .botonGuardar button:hover {
     background-color: var(--secondary);
     color: var(--white);
   }
