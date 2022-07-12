@@ -1,11 +1,10 @@
 .ButtonGoToAuthentication {
 	display: flex;
-	justify-content: space-evenly;
-	gap: 1.5em;
-	inline-size: 100vw;
+	justify-content: center;
+	gap: 10em;
 }
 .ButtonGoToAuthentication button {
-	background: var(--secondary);
+	background: var(--secondary20);
 	border: none;
 	padding: 8px 16px;
 	font-size: 1em;

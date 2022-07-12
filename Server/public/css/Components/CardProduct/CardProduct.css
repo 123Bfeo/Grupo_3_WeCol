@@ -2,6 +2,7 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 	gap: 16px;
+	border: 1px solid red;
 }
 
 .CardProduct {
@@ -37,9 +38,9 @@
 	gap: 1em;
 	z-index: -1;
 }
-.CardProduct:hover .CardProductBody {
+/*.CardProduct:hover .CardProductBody {
 	bottom: -10em;
-}
+}*/
 .CardProductBodyDetails {
 	line-height: 1em;
 	padding-block: 0.3em;

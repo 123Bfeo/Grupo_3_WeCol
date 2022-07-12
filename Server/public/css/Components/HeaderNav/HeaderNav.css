@@ -1,3 +1,11 @@
+.HeaderNav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	inline-size: 100%;
+	gap: 2em;
+	padding-block: 1em;
+}
 .MenuNavigation {
 	display: flex;
 	position: absolute;
@@ -10,14 +18,22 @@
 .MenuNavigation.Active {
 	top: 5em;
 }
-.SubmenuItem summary {
-	border: 1px solid red;
+.SubmenuItem summary,
+.menuItems li a{
 	color: var(--white);
+	font-weight: bold;
+	cursor: default;
 }
 .SubmenuItem ul {
-	border: 1px solid green;
 	padding-inline-start: 1.5em;
+	padding-block: 0.5em;
 }
 .SubmenuItem ul li a {
 	color: var(--white);
 }
+summary::-webkit-details-marker {
+	display: none;
+}
+/*details > summary:first-of-type {
+	list-style-type: none;
+}*/

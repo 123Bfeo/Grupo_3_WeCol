@@ -1,13 +1,5 @@
 .UserLogged {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  inline-size: 50px;
-  block-size: 50px;
-  position: absolute;
-  z-index: 1;
-  right: 48px;
-  top: 24px;
+  position: relative;
 }
 .ProfileAction_Header {
   display: flex;

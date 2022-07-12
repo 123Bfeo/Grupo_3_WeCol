@@ -16,5 +16,10 @@
 }
 .OpenMenuToggle {
 	color: var(--icon-color);
-	font-size: 2em;
+	font-size: 3em;
+}
+.RightHead {
+	display: flex;
+	align-items: center;
+	gap: 1em;
 }

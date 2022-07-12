@@ -1,18 +1,9 @@
 <nav class="HeaderNav" id="nav">
   <article class="login">
     <div class="ButtonGoToAuthentication">
-      <!-- adaptar  en el diseño datos del usuario  -->
-      <!-- *********** -->
-      <div>
-        <article class="ProfileAction">
-          %> <% if (locals.isLogged) { %> <%-include('../UserLogged/UserLogged')
-          %> <% } %>
-        </article>
-      </div>
-      <!-- ********** -->
       <%- include('../ButtonGoToAuthentication/ButtonGoToAuthentication', {
-      action: 'Iniciar Sessión', url: '/login'} ) %> <%-
-      include('../ButtonGoToAuthentication/ButtonGoToAuthentication', { action:
+      action: 'Iniciar Sessión', url: '/login'} ) %>
+      <%- include('../ButtonGoToAuthentication/ButtonGoToAuthentication', { action:
       'Registrarse', url: '/register'} ) %>
     </div>
   </article>
