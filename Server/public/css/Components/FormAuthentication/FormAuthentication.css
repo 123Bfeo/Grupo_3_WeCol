@@ -1,32 +1,57 @@
-@import '../ButtonForm/ButtonForm.css';
-@import '../LabelInput/LabelInput.css';
+@import "../ButtonForm/ButtonForm.css";
+@import "../LabelInput/LabelInput.css";
 
-.FormAuthentication{
-	inline-size: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 1.5em;
+.FormAuthentication {
+  inline-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
 }
 .FormContainer {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
 }
 .FormContent {
-	display: flex;
-	flex-direction: column;
-	gap: 0.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
 }
 .HaveAccount {
-	display: flex;
-	align-items: center;
-	gap: 0.5em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
 }
-.HaveAccount span{
-	color: var(--white);
+.HaveAccount span {
+  color: var(--white);
 }
 .HaveAccount a {
-	color: var(--primaryColor)
+  color: var(--primaryColor);
 }
+
+.group-validate-errors {
+  color: #e78a00;
+  border: solid 3px #e78a00;
+}
+.group-validate-correct {
+  border: solid 2px rgb(17, 255, 0);
+  color: black;
+}
+
+.p-validate {
+  background-color: #e78a00;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.761);
+  height: 40px;
+  display: none;
+}
+.p-validate_errors {
+  background-color: #e78a00;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  height: 48px;
+  padding: 5px;
+}
+/***********/

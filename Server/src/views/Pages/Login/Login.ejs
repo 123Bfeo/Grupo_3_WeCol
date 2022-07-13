@@ -1,11 +1,14 @@
-<!doctype html>
-<html lang='es'>
-    <%- include('../../Components/Head/Head') %>
-    <body>
-        <%- include('../../Components/Header/Header') %>
-        <div class="Login wrapper">
-            <%- include('../../Components/FormAuthenticationLogin/FormAuthenticationLogin') %>
-        </div>
-        <%- include('../../Components/Footer/Footer') %>
-    </body>
+<!DOCTYPE html>
+<html lang="es">
+  <%- include('../../Components/Head/Head') %>
+  <body>
+    <%- include('../../Components/Header/Header') %>
+    <div class="Login wrapper">
+      <%-
+      include('../../Components/FormAuthenticationLogin/FormAuthenticationLogin')
+      %>
+    </div>
+    <%- include('../../Components/Footer/Footer') %>
+    <script defer src="/js/validateRegister.js"></script>
+  </body>
 </html>
