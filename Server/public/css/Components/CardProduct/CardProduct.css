@@ -8,16 +8,15 @@
 .CardProduct {
 	position: relative;
 	border-radius: 5px;
-	box-shadow: 0 5px 10px rgba(255,255,255,0.3);
 }
 
-.CardProduct > picture {
+.CardProductHead {
 	inline-size: 100%;
 	block-size: 100%;
-	margin: 20px auto 0 auto;
+	position: relative;
 }
 
-.CardProduct > picture > img {
+.CardProductHead > img {
 	inline-size: 100%;
 	block-size: 90%;
 }
@@ -38,9 +37,9 @@
 	gap: 1em;
 	z-index: -1;
 }
-/*.CardProduct:hover .CardProductBody {
-	bottom: -10em;
-}*/
+.CardProduct:hover .CardProductHead {
+	top: -10em;
+}
 .CardProductBodyDetails {
 	line-height: 1em;
 	padding-block: 0.3em;

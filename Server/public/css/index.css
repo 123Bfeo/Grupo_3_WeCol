@@ -112,7 +112,7 @@
   font-family: var(--primaryFont);
 }
 body {
-  background: var(--black);
+  background: var(--bg-dark);
 }
 .titulo {
   font: var(--tituloH1Small);
