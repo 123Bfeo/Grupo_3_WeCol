@@ -5,12 +5,17 @@
     <!-- *********** -->
     <div class="CenterHead">
       <article class="ProfileAction">
-        <% if (locals.isLogged) { %>
-          <%-include('../UserLogged/UserLogged') %>
+        <% if (locals.isLogged) { %> <%-include('../UserLogged/UserLogged') %>
         <% } %>
       </article>
     </div>
     <div class="RightHead">
+      <a href="/product/cart">
+        <i
+          class="fa-solid fa-cart-shopping"
+          style="color: rgb(244, 247, 247)"
+        ></i>
+      </a>
       <a class="OpenMenuToggle" id="OpenMenuToggle">
         <i class="fa-solid fa-grip"></i>
       </a>
