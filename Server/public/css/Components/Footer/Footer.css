@@ -1,6 +1,7 @@
 .footer {
   width: 100%;
   background-color: var(--bg-dark);
+  padding-block: 3em;
 }
 .footer .wrapper {
   display: flex;
