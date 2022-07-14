@@ -9,15 +9,9 @@ const productController = {
       })
   },
 
-  /* allProducts: (req, res) => {
-    const reqCategory = db.Category.findAll();
-    const reqProduct = db.Product.findAll();
-    Promise.all([reqCategory, reqProduct])
-      .then(([category, product]) => {
-        //res.render('index', { title, category, product })
-        res.send({ category, product })
-      });
-  },*/
+  cartProduct: (req, res) => {
+    res.render('./products/productCart')
+  },
 
   saveProduct: (req, res) => {
     console.log(req.body);
