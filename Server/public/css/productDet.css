@@ -5,6 +5,11 @@
 }
 .container-imgP {
   margin-right: 18px;
+  inline-size: 500px;
+  block-size: 500px;
+}
+.container-imgP img {
+  inline-size: 100%;
 }
 .deliveryStock {
   margin-top: 10px;

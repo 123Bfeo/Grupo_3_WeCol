@@ -1,22 +1,35 @@
 <main class="Main">
-  <section class="HomeContent wrapper">
-    <section class="HeroHome">
-      <picture class="HeroPicture">
-        <img
-          src="/img/products/portatilBanner.jpeg"
-          alt="VR Glases"
-          title="VR Glases"
-        />
-      </picture>
-      <div class="HeroHomeContent">
-        <div class="HeroHomeContentInfo">
-          <span>Los mejores dispositivos</span>
-          <span>Compre fácil y seguro con</span>
-          <picture>
-            <img src="/img/brands/PSE.svg" alt="PSE Logo" title="PSE Logo" />
-          </picture>
-        </div>
-      </div>
+    <section class='HomeContent wrapper'>
+        <section class="HeroHome">
+            <picture class='HeroPicture'>
+                <img src='/img/products/portatilBanner.jpeg' alt='VR Glases' title='VR Glases'>
+            </picture>
+            <div class='HeroHomeContent'>
+                <div class='HeroHomeContentInfo'>
+                    <span>Los mejores dispositivos</span>
+                    <span>Compre fácil y seguro con</span>
+                    <picture>
+                        <img src='/img/brands/PSE.svg' alt='PSE Logo' title='PSE Logo'>
+                    </picture>
+                </div>
+            </div>
+        </section>
+        <%- include('../BrandsContent/BrandsContent')%>
+        <%- include('../ProductsSectionHome/ProductsSectionHome')%>
+        <section class="newsLater">
+            <i class="fas fa-newspaper"></i>
+            <article class="updates">
+                <h2>Recibir actualizaciones</h2>
+                <p>
+                    Registrese ahora y obtenga las últimas actualizaciones y
+                    promociones.
+                </p>
+            </article>
+            <article class="e-mail">
+                <input type="e-mail" placeholder="Ingrese su correo" />
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </article>
+        </section>
     </section>
     <%- include('../BrandsContent/BrandsContent')%> <%-
     include('../ProductsSectionHome/ProductsSectionHome')%>
