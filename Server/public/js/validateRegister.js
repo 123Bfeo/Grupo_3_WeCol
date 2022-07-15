@@ -63,7 +63,4 @@ inputs.forEach((input) => {
     input.addEventListener('blur', validateForm)
 })
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
-})
 

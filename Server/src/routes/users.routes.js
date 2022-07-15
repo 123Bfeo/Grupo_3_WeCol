@@ -15,7 +15,7 @@ const userController = require('../controllers/user.controller');
 //cerrar sesion
 router.get('/logout', userController.logout);
 // Todos los user
-//router.get('/allUser', sessionDetectMiddleware, userController.allUser);
+
 //vista de login y envio de formulario
 router.get('/login', sessionDetectMiddleware, userController.login);
 router.post('/login', validateUserLoginFormMiddleware, userController.processlogin);

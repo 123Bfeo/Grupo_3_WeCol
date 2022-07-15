@@ -16,6 +16,9 @@
 /* Secciones */
 @import "./productDet.css";
 @import "./productCart.css";
+@import "./contact.css";
+@import "./aboutUs.css";
+
 /*@import './hero.css';
 @import './main.css';
 @import './hero-recommended.css';
